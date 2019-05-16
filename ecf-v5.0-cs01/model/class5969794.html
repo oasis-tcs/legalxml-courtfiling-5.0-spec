@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Biometric</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Biometric</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_5969794"></a>
+<p>Biometric information associated with a defendant.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_9665282"></a>
+<table><tr><td><div class="element">Attribute <b>dnaLocusValue</b></div></td></tr></table>
+<p>A value for a DNA locus.<br /></p><p>Declaration :</p><ul><li>Uml : + dnaLocusValue : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonDNA/nc:DNALocus/nc:DNALocusValue</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,2</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:DNAAlleleCall1Text</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">biom:DNASTRProfileType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometric/biom:DNASample/biom:DNASTRProfile/biom:DNAAlleleCall1Text</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,2</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9665154"></a>
+<table><tr><td><div class="element">Attribute <b>dnaLocusCategory</b></div></td></tr></table>
+<p>A location within DNA.<br /></p><p>Declaration :</p><ul><li>Uml : + dnaLocusCategory : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonDNA/nc:DNALocus/nc:DNALocusCategoryText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:DNALocusReferenceID</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">biom:DNASTRProfileType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometric/biom:DNASample/biom:DNASTRProfile/biom:DNSLocusReferenceID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">biom:Integer1to999Type  </div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9665026"></a>
+<table><tr><td><div class="element">Attribute <b>dnaLocus</b></div></td></tr></table>
+<p>An image of DNA.<br /></p><p>Declaration :</p><ul><li>Uml : + dnaLocus : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonDNA/nc:DNALocus</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,14</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:DNASTRProfile</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">biom:DNASampleType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometric/biom:DNASample/biom:DNASTRProfile</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">biom:DNASTRProfileType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,14</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9574914"></a>
+<table><tr><td><div class="element">Attribute <b>fingerprint</b></div></td></tr></table>
+<p>A print from a single finger.<br /></p><p>Declaration :</p><ul><li>Uml : + fingerprint : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonFingerprintSet/ecf:FingerprintSet/criminal:Fingerprint/criminal:Fingerprint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:BiometricClassification</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">biom:BiometricDataType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometric/biom:FingerprintImage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">biom:BiometricClassificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9574018"></a>
+<table><tr><td><div class="element">Attribute <b>dna</b></div></td></tr></table>
+<p>A set of DNA associated with a subject.<br /></p><p>Declaration :</p><ul><li>Uml : + dna : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonDNA, nc:PersonDNAImage</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,14</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:BiometricDetailAbstract, (biom:DNASample)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">biom:BiometricDataType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometric/biom:DNASample</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">biom:DNASampleType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9573762"></a>
+<table><tr><td><div class="element">Attribute <b>fingerprintSet</b></div></td></tr></table>
+<p>A set of fingerprints.<br /></p><p>Declaration :</p><ul><li>Uml : + fingerprintSet : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Include biom:BiometricClassificationCategoryCode with value"fingerprints", "10-print" or "2-print"</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonFingerprintSet</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:BiometricClassification</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">biom:BiometricDataType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometric/biom:BiometricClassification/biom:BiometricClassificationCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">biom:BiometricClassificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9573890"></a>
+<table><tr><td><div class="element">Attribute <b>biometricCapturer</b></div></td></tr></table>
+<p>A person who captured a set of biometric images of a subject.<br /></p><p>Declaration :</p><ul><li>Uml : + biometricCapturer : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/j:PersonAugmentation/j:PersonPalmPrint/nc:BiometricCapturer</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:BiometricCapturer</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">biom:BiometricDataType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometri/biom:BiometricImage/biom:BiometricCapturer</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9573634"></a>
+<table><tr><td><div class="element">Attribute <b>biometricImage</b></div></td></tr></table>
+<p>A biometric image of a subject.<br /></p><p>Declaration :</p><ul><li>Uml : + biometricImage : </li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/j:PersonAugmentation/j:PersonPalmPrint/nc:BiometricImage</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:BiometricImageAbstract, (biom:FingerprintImage), (biom:PhysicalFeatureImage), (biom:DNAElectropherogramScreenshotImage)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">biom:BiometricDataType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometric/biom:BiometricImage/biom:BiometricClassificationCategoryCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">biom:FingerprintImageType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9573506"></a>
+<table><tr><td><div class="element">Attribute <b>palmPrint</b></div></td></tr></table>
+<p>A palm print associated with a criminal subject.<br /></p><p>Declaration :</p><ul><li>Uml : + palmPrint : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Include biom:BiometricClassificationCategoryCode with value "palm"</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/j:PersonAugmentation/j:PersonPalmPrint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:BiometricClassificationCategoryCode</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">biom:BiometricClassificationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometric/biom:BiometricClassification/biom:BiometricClassificationCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">biom:BiometricCategoryCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_11216770"></a>
+<table><tr><td><div class="element">Attribute <b>biometricID</b></div></td></tr></table>
+<p>An identifier for a biometric (e.g. fingerprint transaction control number)<br /></p><p>Declaration :</p><ul><li>Uml : + biometricID : <a href="class156162.html#ref4_156162"><b>id</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:RapSheetTransactionControlIdentification</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:SubjectAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/j:RapSheetTransactionControlIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

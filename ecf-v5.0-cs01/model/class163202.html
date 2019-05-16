@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Employment</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Employment</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_163202"></a>
+<p>Employment of an individual by an organization.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:PersonEmploymentAssociation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonEmploymentAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:PersonEmploymentAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_197890"></a>
+<table><tr><td><div class="element">Attribute <b>employeeLocation</b></div></td></tr></table>
+<p>The address of an employer.<br /></p><p>Declaration :</p><ul><li>Uml : + employeeLocation : <a href="class163330.html#ref4_163330"><b>address</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Organization/nc:OrganizationLocation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:OrganizationLocation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentationnc:PersonEmploymentAssociation/nc:Employer/nc:EntityOrganization/nc:OrganizationLocation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:LocationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_2418178"></a>
+<table><tr><td><div class="element">Relation <b>person (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A person employed by an organization.<br /></p><p>Declaration :</p><ul><li>Uml : + person : <a href="class131842.html#ref4_131842"><b>Person</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:PersonEmploymentAssociation/nc:EmpoyeeReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:Employee</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonEmploymentAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:PersonEmploymentAssociation/nc:Person</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_2418306"></a>
+<table><tr><td><div class="element">Relation <b>organization (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>An organization that employs a person.<br /></p><p>Declaration :</p><ul><li>Uml : + organization : <a href="class131970.html#ref4_131970"><b>Organization</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Employer</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonEmploymentAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:PersonEmploymentAssociation/nc:Organization</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CaseAugmentationType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CaseAugmentationType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15721730"></a>
+<p>Properties:</p><ul>
+<li>Notes:<br /><div class="sub">Genericode code list CauseOfActionCode.gc; Genericode code list JurisdictionGroundsCode.gc; Genericode code list ReliefTypeCode.gc</div></li>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil,CaseAugmentationType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34314114"></a>
+<table><tr><td><div class="element">Attribute <b>civil:AmountInControversy</b></div></td></tr></table>
+<p>The amount set forth in an ad damnum clause in a complaint, counter claim, or cross complaint.<br /></p><p>Declaration :</p><ul><li>Uml : + civil:AmountInControversy : <a href="class15721602.html#ref4_15721602"><b>AmountType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil,AmountInControversy</div></li>
+</ul>
+<a name="ref1_34328066"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CauseOfActionCode</b></div></td></tr></table>
+<p>The legal ground on which the request for relief is based.  Allowed values set forth in court policy. Example: the basis(es) for relief in a civil case; the grounds for divorce in a state that does not recognize no-fault divorce; grounds for entry of an order of protection in a domestic violence case.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CauseOfActionCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CauseOfActionCode</div></li>
+</ul>
+<a name="ref1_34332546"></a>
+<table><tr><td><div class="element">Attribute <b>civil:CivilClassActionIndicator</b></div></td></tr></table>
+<p>Whether the filer is requesting that this case proceed as a class action.<br /></p><p>Declaration :</p><ul><li>Uml : + civil:CivilClassActionIndicator : <a href="class15715586.html#ref4_15715586"><b>boolean</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil,CivilClassActionIndicator</div></li>
+</ul>
+<a name="ref1_34338434"></a>
+<table><tr><td><div class="element">Attribute <b>civil:DecedentEstateCase</b></div></td></tr></table>
+<p>Information about a case administering and distributing the assets of a testate or intestate decedent.<br /></p><p>Declaration :</p><ul><li>Uml : + civil:DecedentEstateCase : <a href="class15736962.html#ref4_15736962"><b>DecedentEstateCaseType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil,DecedentEstateCase</div></li>
+</ul>
+<a name="ref1_34352514"></a>
+<table><tr><td><div class="element">Attribute <b>civil:FiduciaryCaseAssociation</b></div></td></tr></table>
+<p>InfInformation about a guardianship, conservatorship, trust, or mental health case.<br /></p><p>Declaration :</p><ul><li>Uml : + civil:FiduciaryCaseAssociation : <a href="class15743362.html#ref4_15743362"><b>FiduciaryCaseAssociationType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil,FiduciaryCaseAssociation</div></li>
+</ul>
+<a name="ref1_34360194"></a>
+<table><tr><td><div class="element">Attribute <b>civil:JurisdictionalGroundsCode</b></div></td></tr></table>
+<p>The grounds for invoking the jurisdiction of a limited jurisdiction court.  Allowed values set forth in Court policy. Not used in general jurisdiction courts.<br /></p><p>Declaration :</p><ul><li>Uml : + civil:JurisdictionalGroundsCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil,JurisdictionalGroundsCode</div></li>
+</ul>
+<a name="ref1_34360578"></a>
+<table><tr><td><div class="element">Attribute <b>civil:JuryDemandIndicator</b></div></td></tr></table>
+<p>Whether filer invokes the right to trial by jury.<br /></p><p>Declaration :</p><ul><li>Uml : + civil:JuryDemandIndicator : <a href="class15715586.html#ref4_15715586"><b>boolean</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil,JuryDemandIndicator</div></li>
+</ul>
+<a name="ref1_34384386"></a>
+<table><tr><td><div class="element">Attribute <b>civil:ReliefTypeCode</b></div></td></tr></table>
+<p>Indicator of the type of relief requested in the case, e.g., damages, equitable relief (injunction).  Allowable values defined in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + civil:ReliefTypeCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 1,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil,ReliefTypeCode</div></li>
+</ul>
+</div>
+</body>
+</html>

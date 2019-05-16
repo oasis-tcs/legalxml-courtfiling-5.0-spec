@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class BaseMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class BaseMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_132226"></a>
+<p>The core information contained in an ECF 5.0 message.<br /></p>
+<p>Directly inherited by : <a href="class145922.html#ref4_145922"><b>ElectronicFilingCallbackMessage</b></a> <a href="class138114.html#ref4_138114"><b>ElectronicFilingMessage</b></a> <a href="class133762.html#ref4_133762"><b>GetCaseListRequestMessage</b></a> <a href="class145154.html#ref4_145154"><b>GetCaseRequestMessage</b></a> <a href="class199426.html#ref4_199426"><b>GetCourtScheduleRequestMessage</b></a> <a href="class134146.html#ref4_134146"><b>GetDocumentRequestMessage</b></a> <a href="class134402.html#ref4_134402"><b>GetFeesCalculationRequestMessage</b></a> <a href="class133250.html#ref4_133250"><b>GetFilingListRequestMessage</b></a> <a href="class132994.html#ref4_132994"><b>GetFilingStatusRequestMessage</b></a> <a href="class142210.html#ref4_142210"><b>GetServiceInformationRequestMessage</b></a> <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a> <a href="class2113666.html#ref4_2113666"><b>NotifyDocumentStampInformationMessage</b></a> <a href="class13742466.html#ref4_13742466"><b>RequestCourtDateRequestMessage</b></a> <a href="class909826.html#ref4_909826"><b>RequestMessage</b></a> <a href="class132866.html#ref4_132866"><b>ResponseMessage</b></a> <a href="class198658.html#ref4_198658"><b>ServeProcessMessage</b></a> </p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:CaseFiling</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_137730"></a>
+<table><tr><td><div class="element">Relation <b>court (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The specific entity within the judicial branch of government in which a case or document is to be filed.<br /></p><p>Declaration :</p><ul><li>Uml : + court : <a href="class145026.html#ref4_145026"><b>Court</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseCourt</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:CourtType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_135682"></a>
+<table><tr><td><div class="element">Attribute <b>receivedTime</b></div></td></tr></table>
+<p>The time an MDE received a Message, on the clock of the MDE, expressed in terms of a 24 hour clock. This time should be no earlier than the ReviewFilingMessage.submissionTime.<br /></p><p>Declaration :</p><ul><li>Uml : + receivedTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentReceivedDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentReceivedDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling/nc:DocumentReceivedDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_135042"></a>
+<table><tr><td><div class="element">Attribute <b>sendingMDELocationID</b></div></td></tr></table>
+<p>Location for the MDE to which asynchronous and service messages can be sent. This unique location is self-assigned by the MDE.<br /></p><p>Declaration :</p><ul><li>Uml : + sendingMDELocationID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:CaseFiling/ecf:SendingMDELocationID, ecf:QueryMessage/ecf:SendingMDELocationID, ecf:QueryResponseMessage/ecf:SendingMDELocationID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:SendingMDELocationID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling/ecf:SendingMDELocationID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_135170"></a>
+<table><tr><td><div class="element">Attribute <b>sendingMDEProfileCode</b></div></td></tr></table>
+<p>Code identifying the service interaction profile being used by the sending filing assembly MDE.  This list should be extensible to accommodate future service interaction profiles. Each code value is specified within the service interaction profile approved for use with ECF.<br /></p><p>Declaration :</p><ul><li>Uml : + sendingMDEProfileCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:CaseFiling/ecf:SendingMDEProfileCode, ecf:QueryMessage/ecf:SendingMDEProfileCode, ecf:QueryResponseMessage/ecf:SendingMDEProfileCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ServiceInteractionProfileCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling/ecf:SendingMDEProfileCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_135426"></a>
+<table><tr><td><div class="element">Attribute <b>submissionTime</b></div></td></tr></table>
+<p>The time that the message left the control of the sending MDE. In a filing this is the Filing Assembly MDE.<br /></p><p>Declaration :</p><ul><li>Uml : + submissionTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentPostDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentPostDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling/nc:DocumentPostDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_134914"></a>
+<table><tr><td><div class="element">Attribute <b>submitterID</b></div></td></tr></table>
+<p>A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the serviceRecipientID for subsequent filings in this case, and asynchronous responses to this filing.<br /></p><p>Declaration :</p><ul><li>Uml : + submitterID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:CaseFiling/nc:DocumentSubmitter/nc:EntityPerson/nc:PersonOtherIdentification, nc:EntityOrganization/nc:OrganizationOtherIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentSubmitter</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling/nc:DocumentSubmitter/nc:EntityRepresentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

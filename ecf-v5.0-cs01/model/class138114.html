@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ElectronicFilingMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ElectronicFilingMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_138114"></a>
+<p>The base message for a message with an asynchronous response.<br /></p>
+<p>Directly inherited by : <a href="class198914.html#ref4_198914"><b>AllocateCourtDateMessage</b></a> <a href="class130690.html#ref4_130690"><b>CoreFilingMessage</b></a> <a href="class2107138.html#ref4_2107138"><b>DocumentStampInformationMessage</b></a> <a href="class145794.html#ref4_145794"><b>RecordDocketingMessage</b></a> <a href="class199170.html#ref4_199170"><b>ReserveCourtDateMessage</b></a> </p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseFiling</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_137986"></a>
+<table><tr><td><div class="element">Relation <b>electronicServiceInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information provided by the filing assembly MDE to the court identifying the persons being served electronically with a copy of this document.<br /></p><p>Declaration :</p><ul><li>Uml : + electronicServiceInformation : <a href="class142466.html#ref4_142466"><b>ElectronicServiceInformation</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingMessage/ecf:ElectronicServiceInformation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ElectronicServiceInformation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filing:FilingMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filing:FilingMessage/ecf:ElectronicServiceInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:ElectronicServiceInformationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_148354"></a>
+<table><tr><td><div class="element">Attribute <b>filingAuthorizedTime</b></div></td></tr></table>
+<p>The time that the filer submitted the filing to the control of the filing assembly provider and authorized it for filing into the court.   At that point and time, the filer could no longer make any changes to the filing.<br /></p><p>Declaration :</p><ul><li>Uml : + filingAuthorizedTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingMessage/nc:DocumentInformationCutOffDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentInformationCutOffDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling/nc:DocumentInformationCutOffDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_148098"></a>
+<table><tr><td><div class="element">Attribute <b>filingID</b></div></td></tr></table>
+<p>An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. "Transaction" means the sequence of messages from initial filing review through receipt of the asynchronous review callback.<br /></p><p>Declaration :</p><ul><li>Uml : + filingID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingMessage/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_1268226"></a>
+<table><tr><td><div class="element">Relation <b>case (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The court case associated with a filing.<br /></p><p>Declaration :</p><ul><li>Uml : + case : <a href="class131586.html#ref4_131586"><b>Case</b></a>, multiplicity : 1,1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filing:FilingMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling/nc:Case</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_15464322"></a>
+<table><tr><td><div class="element">Attribute <b>filerID</b></div></td></tr></table>
+<p>An attorney, judicial official or a pro se (self-represented) litigant who electronically provides  filings (combinations of data and documents) for acceptance and filing by a court, or who has successfully filed filings with a court.<br /></p><p>Declaration :</p><ul><li>Uml : + filerID : <a href="class156162.html#ref4_156162"><b>id</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentFiler</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CaseFiling/ecf:DocumentFiler</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

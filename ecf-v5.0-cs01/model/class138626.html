@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CaseOrigin</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CaseOrigin</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_138626"></a>
+<p>The prior court, police, or prosecutor case from which this case originates. Examples: case appealed to this court from a lower court; case transferred to or removed to this court; case remanded to this court; original proceeding in this court; in some courts, a designation that this case is a reopening of a proceeding in the same court. In the criminal and juvenile delinquency contexts a police incident report number, a prosecution case number, a grand jury case number, or a criminal case bound over to this court for trial from a limited jurisdiction court.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_149634"></a>
+<table><tr><td><div class="element">Attribute <b>caseTitle</b></div></td></tr></table>
+<p>The full title for this case where it originated.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + caseTitle : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase/nc:CaseTitleText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseTitleText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase/nc:CaseTitleText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_149506"></a>
+<table><tr><td><div class="element">Attribute <b>caseTrackingID</b></div></td></tr></table>
+<p>Court case number.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTrackingID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase/nc:CaseTrackingID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase/ecf:CaseAugmentation/ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_149762"></a>
+<table><tr><td><div class="element">Attribute <b>courtName</b></div></td></tr></table>
+<p>The name of the court if the origin is a previous court case.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + courtName : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseCourt</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase/j:CaseAugmentation/j:CaseCourt/j:CourtName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:CourtType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_149890"></a>
+<table><tr><td><div class="element">Attribute <b>originatingOrganizationName</b></div></td></tr></table>
+<p>Name of organization that assigned a previous case identifier. Organization ID is not used here, because the organization may not be a participant in electronic filing.<br /></p><p>Declaration :</p><ul><li>Uml : + originatingOrganizationName : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseParty</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase/ecf:CaseAugmentation/j:CaseParty</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_143746"></a>
+<table><tr><td><div class="element">Relation <b>priorCase (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The prior court, police, or prosecutor case from which this case originates.<br /></p><p>Declaration :</p><ul><li>Uml : + priorCase : <a href="class138626.html#ref4_138626"><b>CaseOrigin</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:CaseLineageCase</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseLineageCase/j:CaseAugmentation/j:CaseLineageCase</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

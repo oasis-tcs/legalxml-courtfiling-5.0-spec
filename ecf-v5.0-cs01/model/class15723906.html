@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DocumentRenditionType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DocumentRenditionType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15723906"></a>
+<p>Descriptors for a rendition of a Document. This is meant to include all the information about the document that is needed to  enter it into the Document Management System.<br /></p>
+<p>Properties:</p><ul>
+<li>Notes:<br /><div class="sub">Genericode code list MultimediaDataMIMEKindText.gc</div></li>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,DocumentRenditionType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34316930"></a>
+<table><tr><td><div class="element">Attribute <b>nc:Attachment</b></div></td></tr></table>
+<p>A binary attachment to a report or document.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:Attachment : <a href="class15723778.html#ref4_15723778"><b>BinaryType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,Attachment</div></li>
+</ul>
+<a name="ref1_34332802"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:ColorRelevantIndicator</b></div></td></tr></table>
+<p>Indicates whether color is or is not relevant for the presentation of the document.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:ColorRelevantIndicator : <a href="class15715586.html#ref4_15715586"><b>boolean</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,ColorRelevantIndicator</div></li>
+</ul>
+<a name="ref1_34343682"></a>
+<table><tr><td><div class="element">Attribute <b>cbrn:MultimediaDataMIMEKindText</b></div></td></tr></table>
+<p>A media type listed in http://www.iana.org/assignments/media-types/index.html.  If the media type is not listed, then describe the media type using free-form text.<br /></p><p>Declaration :</p><ul><li>Uml : + cbrn:MultimediaDataMIMEKindText : <a href="class15717890.html#ref4_15717890"><b>string</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/cbrn/4.1/,MultimediaDataMIMEKindText</div></li>
+</ul>
+<a name="ref1_34344066"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:DocumentRenditionHash</b></div></td></tr></table>
+<p>A hash of the document as it appears in the court record.  This attribute will be populated by either the clerk review process or the court record system.  If the latter, then it will be absent in the RecordDocketingMessage.  It will also be absent in callbacks for rejected documents.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:DocumentRenditionHash : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,DocumentRenditionHash</div></li>
+</ul>
+<a name="ref1_34345218"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:DocumentSignature</b></div></td></tr></table>
+<p>Information describing or constituting the signature on a document submitted to a court for filing<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:DocumentSignature : <a href="class15740162.html#ref4_15740162"><b>DocumentSignatureType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,DocumentSignature</div></li>
+</ul>
+<a name="ref1_34383234"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:RedactedIndicator</b></div></td></tr></table>
+<p>An indicator that sensitive information has been removed from this rendition of the document.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:RedactedIndicator : <a href="class15715586.html#ref4_15715586"><b>boolean</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,RedactedIndicator</div></li>
+</ul>
+</div>
+</body>
+</html>

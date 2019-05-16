@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ArrestingOfficer</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ArrestingOfficer</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_141314"></a>
+<p>An employee of a law enforcement agency who effects an arrest.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestOfficial</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:EnforcementOfficialType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestOfficial</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_157186"></a>
+<table><tr><td><div class="element">Attribute <b>arrestingAgencyORI</b></div></td></tr></table>
+<p>Official FBI-issued identifier for a law enforcement agency.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestingAgencyORI : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestOfficial/j:EnforcementOfficialUnit/nc:OrganizationIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationIdentification, (j:OrganizationORIIdentification)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestOfficial/j:EnforcementOfficialUnit/nc:Organization/j:OrganizationAugmentation/j:OrganizationORIIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_157314"></a>
+<table><tr><td><div class="element">Attribute <b>arrestingOfficerUnit</b></div></td></tr></table>
+<p>Text description of the subdivision of the arresting agency. Example: Fairlawn precinct, Special Operations Division, Drug Task Force.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestingOfficerUnit : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestOfficial/j:EnforcementOfficialUnit/j:EnforcementUnitName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:EnforcementUnitName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:EnforcementUnitType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestOfficial/j:EnforcementOfficialUnit/j:EnforcementUnitName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_157058"></a>
+<table><tr><td><div class="element">Attribute <b>badgeNumber</b></div></td></tr></table>
+<p>Number of an official badge issued by a law enforcement agency to a law enforcement officer.<br /></p><p>Declaration :</p><ul><li>Uml : + badgeNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestOfficial/j:EnforcementOfficialBadgeIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:EnforcementOfficialBadgeIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:EnforcementOfficialType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestOfficial/j:EnforcementOfficialBadgeIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_156930"></a>
+<table><tr><td><div class="element">Attribute <b>personID</b></div></td></tr></table>
+<p>The unique identifier assigned by the court at the time a person is first associated with a case. If the court has not yet assigned an identifier in this case, then the filing assembly MDE will leave this element blank.  This identifier is used to link other information in the case to a particular person.<br /></p><p>Declaration :</p><ul><li>Uml : + personID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestOfficial/nc:RoleOfPersonReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestOfficial/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

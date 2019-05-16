@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DocumentRenditionMetadata</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DocumentRenditionMetadata</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_162690"></a>
+<p>Descriptors for a rendition of a Document. This is meant to include all the information about the document that is needed to  enter it into the Document Management System.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentRenditionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_139906"></a>
+<table><tr><td><div class="element">Relation <b>attachmentMetadata (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information describing an attachment included within a  message. <br /></p><p>Declaration :</p><ul><li>Uml : + attachmentMetadata : <a href="class134658.html#ref4_134658"><b>AttachmentMetadata</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/ecf:AttachmentMetadata</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Attachment</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentRenditionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:Attachment</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_197250"></a>
+<table><tr><td><div class="element">Attribute <b>colorRelevanceIndicator</b></div></td></tr></table>
+<p>Indicates whether color is or is not relevant for the presentation of the document.<br /></p><p>Declaration :</p><ul><li>Uml : + colorRelevanceIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/ecf:ColorRelevantIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ColorRelevantIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentRenditionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/ec:DocumentAugmentation/ecf:ColorRelevantIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_197378"></a>
+<table><tr><td><div class="element">Attribute <b>documentBinaryData</b></div></td></tr></table>
+<p>Embedded document data, in an encoded form acceptable to be included within XML.<br /></p><p>Declaration :</p><ul><li>Uml : + documentBinaryData : <a href="class162818.html#ref4_162818"><b>binary</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentBinary</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Attachment</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentRenditionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:Attachment</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_196994"></a>
+<table><tr><td><div class="element">Attribute <b>documentContentTypeCode</b></div></td></tr></table>
+<p>IANA MIME type specifiying the format of the attachment. Example: application/msword; application/pdf.<br /></p><p>Declaration :</p><ul><li>Uml : + documentContentTypeCode : <a href="class4652418.html#ref4_4652418"><b>BinaryDescriptionCode</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list MultimediaDataMIMEKindText.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentBinary/nc:BinaryCategoryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:MultimediaDataMIMEKindText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentRenditionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/ecf:DocumentAugmentation/cbrn:MIMEContentCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:string</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">application/pdf; application/vnd.openxmlformats-officedocument.wordprocessingml.document; application/vnd.oasis.opendocument.text;</div></li>
+</ul>
+<a name="ref0_139650"></a>
+<table><tr><td><div class="element">Relation <b>documentSignature (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information describing or constituting the signature on a document submitted to a court for filing<br /></p><p>Declaration :</p><ul><li>Uml : + documentSignature : <a href="class148226.html#ref4_148226"><b>DocumentSignature</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentSignature</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentSignature</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentRenditionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentSignature</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:DocumentSignatureType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_197122"></a>
+<table><tr><td><div class="element">Attribute <b>fileSize</b></div></td></tr></table>
+<p>Size of file expressed in kilobytes<br /></p><p>Declaration :</p><ul><li>Uml : + fileSize : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentBinary/nc:BinarySizeValue</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:BinarySizeValue</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:DocumentBinary/nc:BinarySizeValue</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:NonNegativeDecimalType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_196866"></a>
+<table><tr><td><div class="element">Attribute <b>language</b></div></td></tr></table>
+<p>The language in which the document is written.<br /></p><p>Declaration :</p><ul><li>Uml : + language : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentLanguageCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentLanguageAbstract, (nc:DocumentLanguageCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:DocumentLanguageCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">iso_639-3:LanguageCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_197506"></a>
+<table><tr><td><div class="element">Attribute <b>redactedIndicator</b></div></td></tr></table>
+<p>An indicator that sensitive information has been removed from this rendition of the document.  <br /></p><p>Declaration :</p><ul><li>Uml : + redactedIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/ecf:RedactedIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:RedactedIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentRenditionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/ecf:RedactedIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_4260482"></a>
+<table><tr><td><div class="element">Attribute <b>documentBinaryURI</b></div></td></tr></table>
+<p>The location of a document, either a URL or attachment identifier.<br /></p><p>Declaration :</p><ul><li>Uml : + documentBinaryURI : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentBinary/nc:BinaryLocationURI</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:BinaryURI</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:DocumentBinary/nc:BinaryURI</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:anyURI</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9572994"></a>
+<table><tr><td><div class="element">Attribute <b>documentBinaryContents</b></div></td></tr></table>
+<p>The binary contents of a document.<br /></p><p>Declaration :</p><ul><li>Uml : + documentBinaryContents : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentBinary/nc:Base64BinaryObject</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:BinaryObjectAbstract, (nc:Base64BinaryObject)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:DocumentBinary/nc:Base64BinaryObject</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:base64Binary</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9573122"></a>
+<table><tr><td><div class="element">Attribute <b>documentBinaryCapturer</b></div></td></tr></table>
+<p>The person who capturer/scanned a document into binary format.<br /></p><p>Declaration :</p><ul><li>Uml : + documentBinaryCapturer : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentBinary/nc:BinaryCapturer</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:BinaryCapturer</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:DocumentBinary/nc:BinaryCapturer</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9573250"></a>
+<table><tr><td><div class="element">Attribute <b>documentBinaryFormat</b></div></td></tr></table>
+<p>The binary format of a document.<br /></p><p>Declaration :</p><ul><li>Uml : + documentBinaryFormat : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list BinaryFormatText.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentBinary/nc:BinaryFormatStandardName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:BinaryFormatText</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:DocumentBinary/</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">application/json=json; application/msword=doc; application/pdf=pdf; application/vnd.oasis.opendocument.text=odt; application/vnd.openxmlformats-officedocument.wordprocessingml.document=docx; application/xml=xml; </div></li>
+</ul>
+<a name="ref1_9573378"></a>
+<table><tr><td><div class="element">Attribute <b>renditionDescription</b></div></td></tr></table>
+<p>A description of a rendition of a document.<br /></p><p>Declaration :</p><ul><li>Uml : + renditionDescription : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentBinary/nc:BinaryDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:BinaryDescriptionText</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:DocumentBinary/</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

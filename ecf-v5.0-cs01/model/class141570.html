@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Arrest</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Arrest</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_141570"></a>
+<p>The act of taking physical control over the person of another by a law enforcement officer or other person acting under color of law.<br /></p>
+<p> Constraint :</p><ul>See CriminalCase</ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_225794"></a>
+<table><tr><td><div class="element">Attribute <b>arrestLocation</b></div></td></tr></table>
+<p>A location where a subject was arrested.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestLocation : <a href="class163330.html#ref4_163330"><b>address</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestLocation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:ArrestLocation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestLocation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:LocationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_157954"></a>
+<table><tr><td><div class="element">Attribute <b>arrestTime</b></div></td></tr></table>
+<p>The date and time the subject was arrested.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/nc:ActivityDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/nc:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_158082"></a>
+<table><tr><td><div class="element">Attribute <b>arresteeBloodAlcholContentNumber</b></div></td></tr></table>
+<p>The percentage of alcohol the blood of an blood (e.g. .08%). A blank value represents not tested.<br /></p><p>Declaration :</p><ul><li>Uml : + arresteeBloodAlcholContentNumber : float</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestBloodAlcoholContentNumberText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:PersonBloodAlcoholContentNumberText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:PersonBloodAlcoholContentAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestBloodAlcoholContentNumberText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_158210"></a>
+<table><tr><td><div class="element">Attribute <b>arrestingAgencyCaseTrackingNumber</b></div></td></tr></table>
+<p>An identifier assigned to a case by the law enforcement agency.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestingAgencyCaseTrackingNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestAgencyRecordIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ArrestAgencyRecordIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestAgencyRecordIdentification/</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_163714"></a>
+<table><tr><td><div class="element">Attribute <b>arrestingAgencyID</b></div></td></tr></table>
+<p>An alphanumeric identifier issued by the FBI to identify a specific criminal justice agency, in this instance the law enforcement agency which made the arrest. (Ex.  AZ0071300, etc.)<br /></p><p>Declaration :</p><ul><li>Uml : + arrestingAgencyID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/ArrestAgency/j:OrganizationAugmentation/j:OrganizationAlternateName/k:OrganizationAlternateNameCategory</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationIdentification, (j:OrganizationORIIdentification)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestAgency/j:OrganizationAugmentation/j:OrganizationORIIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_163842"></a>
+<table><tr><td><div class="element">Attribute <b>arrestingAgencyName</b></div></td></tr></table>
+<p>The name of the Law Enforcement agency which made the arrest.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestingAgencyName : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestAgency/nc:OrganizationName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestAgency/nc:OrganizationName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_195458"></a>
+<table><tr><td><div class="element">Relation <b>arrestingOfficer (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>An employee of a law enforcement agency who effects an arrest.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestingOfficer : <a href="class141314.html#ref4_141314"><b>ArrestingOfficer</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestOfficial</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ArrestOfficial</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestOfficial</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:EnforcementOfficialType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_195586"></a>
+<table><tr><td><div class="element">Relation <b>booking (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The process by which this arrest is formally recorded by a law enforcement agency at the time the subject is booked or released on bond or personal recognizance.<br /></p><p>Declaration :</p><ul><li>Uml : + booking : <a href="class143106.html#ref4_143106"><b>Booking</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:Booking</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:Booking</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:Booking</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:BookingType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_202498"></a>
+<table><tr><td><div class="element">Relation <b>charge (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The crime or violation for which a defendant is arrested.<br /></p><p>Declaration :</p><ul><li>Uml : + charge : <a href="class143874.html#ref4_143874"><b>Charge</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestCharge</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:ArrestCharge</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestCharge</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_202370"></a>
+<table><tr><td><div class="element">Relation <b>defendant (&lt;directional aggregation&gt;)</b></div></td></tr></table><p> A person arrested.<br /></p><p>Declaration :</p><ul><li>Uml : + defendant : <a href="class143490.html#ref4_143490"><b>Defendant</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestSubject</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ArrestSubject</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:SubjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_164482"></a>
+<table><tr><td><div class="element">Attribute <b>defendantExtraditionStatus</b></div></td></tr></table>
+<p>A code identifying the type of limitation placed on the extradition of a subject from an area outside the immediate jurisdiction of the issuing court.<br /></p><p>Declaration :</p><ul><li>Uml : + defendantExtraditionStatus : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestWarrant/j:WarrantExtraditionLimitationCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:WarrantExtraditionLimitationAbstract, (j:WarrantExtraditionLimitationCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:WarrantType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestWarrant/j:WarrantExtraditionLimitationCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ncic:EXLCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_163586"></a>
+<table><tr><td><div class="element">Attribute <b>incidentNumber</b></div></td></tr></table>
+<p>Unique identifier for a police agency departmental report.  <br /></p><p>Declaration :</p><ul><li>Uml : + incidentNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestAgencyRecordIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ArrestAgencyRecordIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestAgencyRecordIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_202626"></a>
+<table><tr><td><div class="element">Relation <b>juvenile (&lt;directional aggregation&gt;)</b></div></td></tr></table><p> A juvenile arrested.<br /></p><p>Declaration :</p><ul><li>Uml : + juvenile : <a href="class140674.html#ref4_140674"><b>Juvenile</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCaseJuvenile</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:JuvenileCase</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">juvenile:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">hs:JuvenileCaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6173314"></a>
+<table><tr><td><div class="element">Attribute <b>arrestingAgency</b></div></td></tr></table>
+<p>The law enforcement agency that performed an arrest.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestingAgency : string, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestAgency</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:ArrestAgency</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestAgency</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6173442"></a>
+<table><tr><td><div class="element">Attribute <b>arrestingUnit</b></div></td></tr></table>
+<p>The unit of a law enforcement agency performing an arrest.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestingUnit : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestOfficialUnit</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:EnforcementOfficialUnit</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:EnforcementOfficialType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestOfficial/j:EnforcementOfficialUnit</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:EnforcementUnitType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6173698"></a>
+<table><tr><td><div class="element">Attribute <b>arrestWarrant</b></div></td></tr></table>
+<p>An arrest warrant associated with an arrest.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestWarrant : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestWarrant</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ArrestWarrant</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestWarrant</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:WarrantType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9572866"></a>
+<table><tr><td><div class="element">Attribute <b>arrestDisposition</b></div></td></tr></table>
+<p>The disposition of an arrest.<br /></p><p>Declaration :</p><ul><li>Uml : + arrestDisposition : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDisposition</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/nc:ActivityDisposition</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DispositionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

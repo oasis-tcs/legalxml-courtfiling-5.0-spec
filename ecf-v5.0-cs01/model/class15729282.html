@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class RequestCourtDateRequestMessageType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class RequestCourtDateRequestMessageType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15729282"></a>
+<p>A request for available court dates<br /></p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/requestdaterequest,RequestCourtDateRequestMessageType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34323074"></a>
+<table><tr><td><div class="element">Attribute <b>nc:Case</b></div></td></tr></table>
+<p>An aggregation of information about a set of related activities and events.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:Case : <a href="class15722114.html#ref4_15722114"><b>CaseType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,Case</div></li>
+</ul>
+<a name="ref1_34346882"></a>
+<table><tr><td><div class="element">Attribute <b>reservedate:EstimatedDuration</b></div></td></tr></table>
+<p>The estimated duration of a court hearing<br /></p><p>Declaration :</p><ul><li>Uml : + reservedate:EstimatedDuration : <a href="class15740546.html#ref4_15740546"><b>duration</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/reservedate,EstimatedDuration</div></li>
+</ul>
+<a name="ref1_34368386"></a>
+<table><tr><td><div class="element">Attribute <b>requestdaterequest:RequestCourtDateRequestMessageAugmentationPoint</b></div></td></tr></table>
+<p>An extension point for the enclosing message<br /></p><p>Declaration :</p><ul><li>Uml : + requestdaterequest:RequestCourtDateRequestMessageAugmentationPoint : <a href="class15714434.html#ref4_15714434"><b>abstract</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/requestdaterequest,RequestCourtDateRequestMessageAugmentationPoint</div></li>
+</ul>
+<a name="ref1_34376578"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CaseParticipantRoleCode</b></div></td></tr></table>
+<p>A type of participant in a court case<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CaseParticipantRoleCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseParticipantRoleCode</div></li>
+</ul>
+<a name="ref1_34390146"></a>
+<table><tr><td><div class="element">Attribute <b>reservedate:PotentialStartTimeRange</b></div></td></tr></table>
+<p>A time before which a court date must begin<br /></p><p>Declaration :</p><ul><li>Uml : + reservedate:PotentialStartTimeRange : <a href="class15726594.html#ref4_15726594"><b>DateRangeType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/reservedate,PotentialStartTimeRange</div></li>
+</ul>
+</div>
+</body>
+</html>

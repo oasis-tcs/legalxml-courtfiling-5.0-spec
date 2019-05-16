@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class AppellateCaseInformation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class AppellateCaseInformation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_183682"></a>
+<p>Additional information specific to appellate cases.<br /></p>
+<p>Diagram : <a href="index.html#ref10_128002"><b>AppelateCase</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseAugmentationPoint, (^appellate:CaseAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">appellate:CaseAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_180610"></a>
+<table><tr><td><div class="element">Relation <b>criminalAppellateCaseInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Additional information specific to criminal appellate cases.<br /></p><p>Declaration :</p><ul><li>Uml : + criminalAppellateCaseInformation : <a href="class184322.html#ref4_184322"><b>CriminalAppellateCaseInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation/appellate:AppellateCriminalCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseAugmentationPoint, (^j:CaseAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:CaseAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_180354"></a>
+<table><tr><td><div class="element">Relation <b>addedParty (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Party added to the appeal that was not  a party in the original case.  For instance, the attorney in the original case may appeal sanctions against the attorney by the court.<br /></p><p>Declaration :</p><ul><li>Uml : + addedParty : <a href="class184066.html#ref4_184066"><b>AddedParty</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation//appellate:AddedParty</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">appellate:AppellateCaseAddedParty</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">appellate:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/appellate:AppellateCaseAddedParty</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">appellate:AppellateCaseAddedPartyType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_214274"></a>
+<table><tr><td><div class="element">Attribute <b>appellantInCustodyIndicator</b></div></td></tr></table>
+<p>Indicator that the appellant is currently in custody.<br /></p><p>Declaration :</p><ul><li>Uml : + appellantInCustodyIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation/appellate:AppellantInCustodyIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">appellate:AppellantInCustodyIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">appellate:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/appellate:AppellantInCustodyIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_214658"></a>
+<table><tr><td><div class="element">Attribute <b>caseAppealIssueText</b></div></td></tr></table>
+<p>The issue(s) on which the case in the lower court is being appealled.<br /></p><p>Declaration :</p><ul><li>Uml : + caseAppealIssueText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/j:AppellateCaseNotice/j:AppellateCaseNoticeReasonText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:AppellateCaseNoticeReasonText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:AppellateCaseNoticeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/j:AppellateCase/j:AppellateCaseNotice/j:AppellateCaseNoticeReasonText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_213890"></a>
+<table><tr><td><div class="element">Attribute <b>caseDispositionDate</b></div></td></tr></table>
+<p>If the case has been terminated in the lower court, the date on which the case was disposed or dismissed.  In a criminal decision, this is the date of Judgment and Sentence.  In a civil decision, this is typically the date of the final Judgment determining all issues as to all parties.<br /></p><p>Declaration :</p><ul><li>Uml : + caseDispositionDate : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/j:AppellateCaseOriginalCase/appellate:CaseDisposition/nc:CaseDispositionFinalDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseDispositionFinalDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseDispositionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/j:AppellateCase/j:AppellateCaseOriginalCase/nc:CaseDisposition/nc:CaseDispositionFinalDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_214018"></a>
+<table><tr><td><div class="element">Attribute <b>caseMannerOfDisposition</b></div></td></tr></table>
+<p>If the charge has been disposed in lower court, the manner in which the charge was disposed.  e.g. dismissed by the court, dismissed by the state, withdrawn, decided, transferred,  guilty plea, guilty verdict, acquittal, finding of violation of probation, etc.  The court will define the available values in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + caseMannerOfDisposition : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/j:AppellateCaseOriginalCase/appellate:CaseDisposition/nc:CaseDispositionDecision</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DispositionCategoryAbstract, (nc:DispositionCategoryText)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DispositionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/j:AppellateCase/j:AppellateCaseOriginalCase/nc:CaseDisposition/nc:DispositionCategoryText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_214530"></a>
+<table><tr><td><div class="element">Attribute <b>caseSettlementRequestText</b></div></td></tr></table>
+<p>A request for diversion to a settlement program in the appellate court.<br /></p><p>Declaration :</p><ul><li>Uml : + caseSettlementRequestText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation/appellate:AppellateCaseSettlementRequestText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">appellate:AppellateCaseSettlementRequestText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">appellate:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/appellate:AppellateCaseSettlementRequestText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_214146"></a>
+<table><tr><td><div class="element">Attribute <b>caseTrialType</b></div></td></tr></table>
+<p>The type of trial in the lower court (e.g. bench, jury).<br /></p><p>Declaration :</p><ul><li>Uml : + caseTrialType : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/j:CaseAugmentation/j:AppellateCaseOriginalCase/j:CaseCategoryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseCategoryCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/j:AppellateCase/j:AppellateCaseOriginalCase/ecf:CaseAugmentationType/ec:CaseCategoryCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_214402"></a>
+<table><tr><td><div class="element">Attribute <b>casejurisdictionBasisText</b></div></td></tr></table>
+<p>The basis for the jurisdiction of the appellate court in the case.<br /></p><p>Declaration :</p><ul><li>Uml : + casejurisdictionBasisText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation/appellate:AppellateCaseJurisdictionBasisText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">appellate:AppellateCaseJurisdictionBasisText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">appellate:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/appellate:AppellateCaseJurisdictionBasisText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_180226"></a>
+<table><tr><td><div class="element">Relation <b>civilAppellateCaseInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Additional information specific to civil appellate cases.<br /></p><p>Declaration :</p><ul><li>Uml : + civilAppellateCaseInformation : <a href="class183938.html#ref4_183938"><b>CivilAppellateCaseInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation/appellate:AppellateCivilCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">appellate:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_180098"></a>
+<table><tr><td><div class="element">Relation <b>courtRuleAppellateCaseInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Additional information specific to court rule appellate cases.<br /></p><p>Declaration :</p><ul><li>Uml : + courtRuleAppellateCaseInformation : <a href="class183810.html#ref4_183810"><b>CourtRuleAppellateCaseInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation/appellate:AppellateCourtRuleCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">appellate:AppellateCourtRuleCase</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">appellate:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/appellate:AppellateCourtRuleCase</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">appellate:AppellateCourtRuleCaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_213762"></a>
+<table><tr><td><div class="element">Attribute <b>noticeOfAppealDate</b></div></td></tr></table>
+<p>The date on which the Notice of Appeal was filed. This filing usually, but not always, happens in the lower court.  This date is sometimes used to calculate the date that the case records and transcripts are due to the appellate court.<br /></p><p>Declaration :</p><ul><li>Uml : + noticeOfAppealDate : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/j:AppellateCaseNotice/nc:DocumentFiledDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:AppellateCaseNotice</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:AppellateCaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/j:AppellateCase/j:AppellateCaseNotice/nc:DocumentFiledDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:AppellateCaseNoticeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_180482"></a>
+<table><tr><td><div class="element">Relation <b>removeParty (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Party to the original case that is not party to the appeal.<br /></p><p>Declaration :</p><ul><li>Uml : + removeParty : <a href="class184194.html#ref4_184194"><b>RemovedParty</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation/appellate:AppellateCaseRemovedParty</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">appellate:AppellateCaseRemovedParty</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">appellate:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/appellate:AppellateCaseRemovedParty</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">appellate:AppellateCaseRemovedPartyType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_5929346"></a>
+<table><tr><td><div class="element">Attribute <b>originalCase</b></div></td></tr></table>
+<p>The originating case being appealed, usually a trial court case.<br /></p><p>Declaration :</p><ul><li>Uml : + originalCase : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/j:AppellateCaseOriginalCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:AppellateCaseOriginalCase</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0.unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:AppellateCaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/j:AppellateCase/j:AppellateCaseOriginalCase</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9487618"></a>
+<table><tr><td><div class="element">Attribute <b>case</b></div></td></tr></table>
+<p>An appellate case.<br /></p><p>Declaration :</p><ul><li>Uml : + case : , multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:AppellateCase/appellate:AppellateCaseAugmentation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:AppellateCase</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">appellate:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/j:AppellateCase</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:AppellateCaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14428802"></a>
+<table><tr><td><div class="element">Attribute <b>caseDispositionDecision</b></div></td></tr></table>
+<p>A disposition decision of a case<br /></p><p>Declaration :</p><ul><li>Uml : + caseDispositionDecision : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DispositionCategoryAbstract, (nc:DispositionCategoryText)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DispositionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/j:AppellateCase/j:AppellateCaseOriginalCase/nc:CaseDisposition/nc:DispositionCategoryText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14428930"></a>
+<table><tr><td><div class="element">Attribute <b>caseDispositoin</b></div></td></tr></table>
+<p>The disposition of a case	<br /></p><p>Declaration :</p><ul><li>Uml : + caseDispositoin : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDisposition, (nc:CaseDisposition)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">appellate:CaseAugmentation/j:AppellateCase/j:AppellateCaseOriginalCase/nc:CaseDisposition</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CaseDispositionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

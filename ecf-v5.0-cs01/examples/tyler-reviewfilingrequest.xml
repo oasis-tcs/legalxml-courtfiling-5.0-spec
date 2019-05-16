@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+	Civil Complaint Filing
+	
+	This xml is an example of a Tyler implementation, it consists of an 'envelope' containing two filings.
+
+-->
+<wrapper:ReviewFilingRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<filing:FilingMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing ../schema/filing.xsd">
+
+		<!-- The nc:DocumentIdentification element below is a Message Identifier (see section 6.2.5), in this circumstance, assigned by the FAMDE. -->
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>0d58f2a0-fffe-42df-85ee-801d34c07c0d</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+			<!-- Per 6.2.4 the originating MDE for each identifier SHOULD be identified in nc:IdentificationSourceText (above) with a value from
+				 MajorDesignElementTypeCode.gc -->
+		</nc:DocumentIdentification>
+		<!-- The [ECF] Filing Identifier will be assigned by the FRMDE upon receipt of this ReviewFilingRequest (RvFR) -->
+		<!-- As specified in 6.2.5 each message MUST provide a message identifier (as above). However, a filing identifier (see 6.2.4) may, but need not be provided
+			 by the FAMDE in the ReviewFilingRequest. The [ECF] filing identifier, as described in 6.2.4, will be assigned by the FRMDE during FilingReview, This
+			 [ECF] filing identifier is provided to the FAMDE in the ReviewFilingResponse. Since the [ECF]
+			 filing identifier is assigned by the FRMDE, it does not appear in this message, as it has not yet been assigned. -->		
+		<ecf:SendingMDELocationID>
+			<!-- URL for Filing Assembly MDE -->
+			<nc:IdentificationID>http://example.com/efsp1</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<!-- content reference for a court organization -->
+				<nc:IdentificationID>harris:dc</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+		</j:CaseCourt>
+		<!-- nc:DocumentInformationCutOffDate is optional per schema.
+			 Schema definition: "The date after which contributions to the content of a document will no longer be accepted." 
+			 Clarification for the use of this element was added into section 6.1.4 in WD30, as "The date and time the filer
+			 authorized submission of the complete filing to the court MAY be provided with nc:DocumentInformationCutOffDate." -->
+			 
+		<!-- Also see nc:DocumentPostDate below. Unlike nc:DocumentPostDate which is required per schema, nc:DocumentInformationCutOffDate
+			 is optional. Additionally, the 'practical' difference between the two moments in time (e.g. moment that filer authorizes
+			 submission, and the moment the submission is posted) is expected to be marginal in most implementations. In light of these
+			 considerations, the ECF TC has identified nc:DocumentInformationCutOffDate is optional as a 'legacy' element, and its usage 
+			 has been deprecated (see 6.1.4). The elements below are shown for reference but are commented out as not used. -->
+		<!--
+		<nc:DocumentInformationCutOffDate>
+			<nc:DateTime>2008-07-06T13:47:40.0Z</nc:DateTime>
+		</nc:DocumentInformationCutOffDate>
+		-->
+		
+		<!-- nc:DocumentPostDate is required per schema. The schema definiton is: "a date a document is entered or posted 
+			 to an information system or network; used when the date of posting is different than the date on which the
+			 document was officially filed." -->
+		<!-- This element is only available for messages and is not available for documents. -->
+		<!-- At this moment in the e-filing submission process, the documents (e.g. FilingLeadDocument) in the submission are
+			 not yet 'officially filed' (this occurs in the Court Record MDE upon docketing). Essentially, this element is  
+			 understood to contain the date and time that filing:FilingMessage was created and saved. -->
+		<!-- It is not clear how the purpose of this element is different than that of nc:DocumentInformationCutOffDate above. 
+			 As a matter of practicality, these two moments may not be distinguishable. -->
+		<nc:DocumentPostDate>
+			<!-- Date and time the submission left the control of the FAMDE per 6.1.4.-->
+			<nc:DateTime>2008-07-06T13:47:42.0Z</nc:DateTime>
+		</nc:DocumentPostDate>
+		<ecf:ElectronicServiceInformation>
+			<ecf:ReceivingMDELocationID>
+				<nc:IdentificationID>http://example.com/efsp2</nc:IdentificationID>
+			</ecf:ReceivingMDELocationID>
+			<ecf:ReceivingMDEProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ReceivingMDEProfileCode>
+			<!-- ecf:ServiceRecipientID identifies who was served electronically. see section 6.2.10 -->
+			<!-- The ServiceRecipientID below corresponds to an entity belonging to a firm in the Tyler implementation -->
+			<ecf:ServiceRecipientID>
+				<nc:IdentificationID>20e0bab2-6f8f-401f-897b-56bfb97df2c4</nc:IdentificationID>		
+			</ecf:ServiceRecipientID>
+		</ecf:ElectronicServiceInformation>
+		
+		<filing:FilingConnectedDocument structures:id="Document2">
+			<!-- nc:DocumentEffectiveDate is the docketing date (see UML definition in niem-mapping.csv, copied below).  
+				 UML defintion: "the date and time of day on which an entry in the docket or register of action in the court 
+				 CMS was completed for a filing" -->
+				 
+			<!-- As such, and since this document has not yet been docketed, use of this element (i.e. nc:DocumentEffectiveDate) in
+				 this context (i.e. ReviewDocketingRequest) is not appropriate. 
+				 Element nc:DocumentEffectiveDate must not appear in ReviewFilingRequest. -->
+			<!--	<nc:DocumentEffectiveDate>	-->
+	
+			<!-- The defintion for nc:DocumentFileControlID is: "An identifier applied to a document to locate it within a file control system." -->
+			<!-- Bullet 2 in section 6.2.6 Document Identifiers states: 
+				 "nc:DocumentFileControlID is a reference to a unique document in the Court Record system and is assigned by the Court Record MDE.
+				 The values for this element MUST be unique within a court." --> 
+				 
+			<!-- After consideration by an ECF TC work group, it was concluded that the usage below in which nc:DocumentFileControlID contains a filename
+				 as file system document identifier by the submitter in the FAMDE is not appropriate. -->
+			<!--
+			<nc:DocumentFileControlID>Exhibits.docx</nc:DocumentFileControlID>
+			-->
+			<!-- The Document Identifier below is assigned by the FAMDE -->
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>1</nc:IdentificationID>
+				<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>
+			<ecf:DocumentAugmentation>
+				<ecf:DocumentRendition>
+					<nc:DocumentIdentification/>
+					<!--ecf:DocumentSignature>
+						<ecf:SignatureAugmentation>
+							<xmlsig:Signatures xmlns:xmlsig="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0" xsi:schemaLocation="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0 ../ecf-v3.0-xmlsig.xsd">
+								<xmlsig:Signature>
+									<xmlsig:SignerName>Jane Doe</xmlsig:SignerName>
+									<xmlsig:SignedDate>2008-07-07</xmlsig:SignedDate>
+									<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+										<ds:SignedInfo Id="foobar">
+											<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+											<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+											<ds:Reference>
+												<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+												<ds:DigestValue>j6lwx3rvEPO0vKtMup4NbeVu8nk=</ds:DigestValue>
+											</ds:Reference>
+										</ds:SignedInfo>
+										<ds:SignatureValue>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ds:SignatureValue>
+										<ds:KeyInfo>
+											<ds:X509Data>
+												<ds:X509SubjectName>CN=John Smith,O=ABC Inc.,ST=Seattle,C=WA</ds:X509SubjectName>
+												<ds:X509Certificate>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ds:X509Certificate>
+											</ds:X509Data>
+										</ds:KeyInfo>
+									</ds:Signature>
+								</xmlsig:Signature>
+							</xmlsig:Signatures>
+						</ecf:SignatureAugmentation>
+						<ecf:SignatureProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0</ecf:SignatureProfileCode>
+					</ecf:DocumentSignature-->
+					<nc:Attachment structures:id="Attachment2">
+						<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+						<!-- nc:BinaryDescriptionText (above) should be 'a description of a binary object'. -->
+						<!-- nc:BinaryFormatText (below) should contain the MIME type. See 5.2.2  values defined in BinaryFormatText.gc -->
+						<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+						<nc:BinaryURI>cid://Payload2</nc:BinaryURI>
+						<nc:BinarySizeValue>32000</nc:BinarySizeValue>
+					</nc:Attachment>
+				</ecf:DocumentRendition>
+				<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+				<ecf:SpecialHandlingInstructionsText>Please verify TCN</ecf:SpecialHandlingInstructionsText>
+
+				<!-- nc:DocumentAssociation identifies Filing1 (complaint) as this document's parent document -->
+				<nc:DocumentAssociation>
+					<nc:PrimaryDocument structures:ref="Filing1" xsi:nil="true"/>
+					<ecf:DocumentAssociationAugmentation>
+						<!-- ecf:DocumentRelatedCode value must come from DocumentRelatedCode.gc -->
+						<ecf:DocumentRelatedCode>parent</ecf:DocumentRelatedCode>
+					</ecf:DocumentAssociationAugmentation>
+				</nc:DocumentAssociation>
+			</ecf:DocumentAugmentation>
+		</filing:FilingConnectedDocument>
+		
+		<filing:FilingLeadDocument structures:id="Filing1">
+			<!-- nc:DocumentEffectiveDate is the docketing date (see UML definition in niem-mapping.csv, copied below). 
+				 UML defintion: "the date and time of day on which an entry in the docket or register of action in the court 
+				 CMS was completed for a filing" -->
+			<!-- As such, and since this document has not yet been docketed, use of this element (i.e. nc:DocumentEffectiveDate) in this context 
+				 (i.e. ReviewDocketingRequest) is not appropriate, i.e. Element nc:DocumentEffectiveDate must not appear in ReviewFilingRequest. -->
+			<!--	<nc:DocumentEffectiveDate>	-->
+
+			<!-- This is an external reference for the document assigned by the FAMDE. --> 
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>2</nc:IdentificationID>
+				<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>
+			
+			<nc:DocumentSequenceID>1</nc:DocumentSequenceID>
+			<nc:DocumentTitleText>This is a complaint</nc:DocumentTitleText>
+			<ecf:DocumentAugmentation>
+				<ecf:DocumentRendition>
+					<nc:DocumentIdentification/>
+					<nc:Attachment structures:id="Attachment1">
+						<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+						<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+						<nc:BinaryURI>cid://Payload3</nc:BinaryURI>
+						<nc:BinarySizeValue>32000</nc:BinarySizeValue>
+					</nc:Attachment>
+				</ecf:DocumentRendition>
+				<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+				<!-- ecf:RegisterActionDescriptionCode below contains the Filing code for 'Complaint' as provided by Court Policy. -->
+				<!-- The Tyler implementation only requires RegisterActionDescriptionCode in the FilingLeadDocument -->
+				<ecf:RegisterActionDescriptionCode>COMPLT</ecf:RegisterActionDescriptionCode>
+			</ecf:DocumentAugmentation>
+		</filing:FilingLeadDocument>
+		
+		<filing:FilingLeadDocument structures:id="Filing2">
+			<!-- The Document Identifier below is assigned by the FAMDE -->
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>3</nc:IdentificationID>
+				<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>
+			
+			<nc:DocumentSequenceID>2</nc:DocumentSequenceID>
+			<nc:DocumentTitleText>This is a summons</nc:DocumentTitleText>
+			<ecf:DocumentAugmentation>
+				<ecf:DocumentRendition>
+					<nc:DocumentIdentification/>
+					<nc:Attachment structures:id="Attachment3">
+						<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+						<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+						<nc:BinaryURI>cid://Payload3</nc:BinaryURI>
+						<nc:BinarySizeValue>32000</nc:BinarySizeValue>
+					</nc:Attachment>
+				</ecf:DocumentRendition>
+				<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+				<!-- ecf:RegisterActionDescriptionCode below contains the Filing code for 'Summons' as provided by Court Policy. -->
+				<!-- The Tyler implementation only requires RegisterActionDescriptionCode in the FilingLeadDocument -->
+				<ecf:RegisterActionDescriptionCode>SUM</ecf:RegisterActionDescriptionCode>
+			</ecf:DocumentAugmentation>
+		</filing:FilingLeadDocument>	
+		
+		<nc:Case xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil ../schema/civil.xsd">
+			<!-- It appears that nc:CaseShortTitleText should generally be used instead of nc:CaseTitleText for a short title. -->
+			<!-- However, the element definition for ecf:CaseShortTitleText states: "No title exists when the message is intiating a new case." -->
+			<!-- Therefore, the short title is placed into nc:CaseTitleText -->
+			<nc:CaseTitleText>John Doe vs. Jane Smith</nc:CaseTitleText>
+			
+			<j:CaseAugmentation>
+			<j:CaseCourt>
+				<nc:OrganizationIdentification>
+					<nc:IdentificationID>harris:dc</nc:IdentificationID>
+				</nc:OrganizationIdentification>
+			</j:CaseCourt>
+			<j:CaseOfficial>
+				<nc:RoleOfPerson structures:id="Attorney1">
+					<!-- TylerTech: No name is necessary since we are providing the Tyler identifier for the attorney -->
+					<ecf:PersonAugmentation>
+						<!-- TylerTech: This is the attorney id in the EFM -->
+						<ecf:ParticipantID>
+							<nc:IdentificationID>59395710-70B5-4C52-9DF3-F8C6A59A710B</nc:IdentificationID>
+						</ecf:ParticipantID>
+					</ecf:PersonAugmentation>
+				</nc:RoleOfPerson>
+				<j:JudicialOfficialBarMembership>
+					<j:JudicialOfficialBarIdentification>
+						<!-- TylerTech: This is the attorney bar number -->
+						<nc:IdentificationID>10020034</nc:IdentificationID>
+					</j:JudicialOfficialBarIdentification>
+				</j:JudicialOfficialBarMembership>
+				<ecf:CaseOfficialAugmentation>
+					<!-- TylerTech: This attorney is representing 'Person1' and CaseRepresentedParty is not nillable -->
+					<ecf:CaseRepresentedParty structures:ref="Person1" />
+				</ecf:CaseOfficialAugmentation>
+			</j:CaseOfficial>
+		</j:CaseAugmentation>
+		<ecf:CaseAugmentation>
+			<ecf:CaseCategoryCode>CC</ecf:CaseCategoryCode>
+			<ecf:CaseNewIndicator>true</ecf:CaseNewIndicator>
+			<ecf:CaseParty>
+				<nc:EntityPerson structures:id="Person1">
+					<nc:PersonName>
+						<nc:PersonGivenName>John</nc:PersonGivenName>
+						<nc:PersonMiddleName>W.</nc:PersonMiddleName>
+						<nc:PersonSurName>Doe</nc:PersonSurName>
+					</nc:PersonName>
+					<ecf:PersonAugmentation>
+						<!-- TylerTech: ecf:RegisterActionDescriptionCode below contains the Party code for 'Plaintiff' as provided by Court Policy. -->
+						<ecf:CaseParticipantRoleCode>P</ecf:CaseParticipantRoleCode>
+						<!-- TylerTech: ecf:ParticipantID below is a required ECF element but not used for a new party. -->
+						<ecf:ParticipantID/>
+						<nc:ContactInformation>
+							<nc:ContactMailingAddress>
+								<nc:LocationStreet>
+									<nc:StreetFullText>123 Main St.</nc:StreetFullText>
+								</nc:LocationStreet>
+								<nc:LocationCityName>Anytown</nc:LocationCityName>
+								<nc:LocationState>
+									<nc:LocationStateName>IN</nc:LocationStateName>
+								</nc:LocationState>
+								<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+							</nc:ContactMailingAddress>
+						</nc:ContactInformation>
+					</ecf:PersonAugmentation>
+				</nc:EntityPerson>
+			</ecf:CaseParty>
+			<ecf:CaseParty>
+				<nc:EntityPerson structures:id="Person2">
+					<nc:PersonName>
+						<nc:PersonGivenName>Jane</nc:PersonGivenName>
+						<nc:PersonMiddleName>Q</nc:PersonMiddleName>
+						<nc:PersonSurName>Smith</nc:PersonSurName>
+						<nc:PersonMaidenName>Roberts</nc:PersonMaidenName>
+					</nc:PersonName>
+					<ecf:PersonAugmentation>
+					<!-- TylerTech: ecf:RegisterActionDescriptionCode below contains the Party code for 'Defendant' as provided by Court Policy. -->
+						<ecf:CaseParticipantRoleCode>D</ecf:CaseParticipantRoleCode>
+						<ecf:CasePartySelfRepresentationIndicator>true</ecf:CasePartySelfRepresentationIndicator>
+						<ecf:ParticipantID/>
+						<nc:ContactInformation>
+							<nc:ContactMailingAddress>
+								<nc:LocationStreet>
+									<nc:StreetFullText>456 South St.</nc:StreetFullText>
+								</nc:LocationStreet>
+								<nc:LocationCityName>Anytown</nc:LocationCityName>
+								<nc:LocationState>
+									<nc:LocationStateName>IN</nc:LocationStateName>
+								</nc:LocationState>
+								<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+							</nc:ContactMailingAddress>
+						</nc:ContactInformation>
+					</ecf:PersonAugmentation>
+				</nc:EntityPerson>
+			</ecf:CaseParty>
+			<ecf:CaseTypeCode>CV</ecf:CaseTypeCode>			
+		</ecf:CaseAugmentation>
+		
+			<civil:CaseAugmentation>
+				<civil:AmountInControversy>
+					<nc:Amount>100</nc:Amount>
+				</civil:AmountInControversy>
+				<civil:CivilClassActionIndicator>false</civil:CivilClassActionIndicator>				
+				<civil:JuryDemandIndicator>false</civil:JuryDemandIndicator>
+				<!-- TylerTech: ReliefTypeCode is required by the schema but unused -->
+				<civil:ReliefTypeCode/>
+				<!-- TylerTech: CauseOfActionCode is required by the schema but unused -->
+				<ecf:CauseOfActionCode/>
+			</civil:CaseAugmentation>
+		</nc:Case>
+	</filing:FilingMessage>
+
+	<payment:PaymentMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment ../schema/payment.xsd">
+		<cac:Address>
+			<cbc:CityName>Springfield</cbc:CityName>
+			<cbc:PostalZone>99999</cbc:PostalZone>
+			<cbc:CountrySubentityCode>IL</cbc:CountrySubentityCode>
+			<cac:AddressLine>
+				<cbc:Line>100 Main st.</cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>US</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:Address>
+		<cac:AllowanceCharge>
+			<cbc:ID>1</cbc:ID>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReasonCode>fee</cbc:AllowanceChargeReasonCode>
+			<cbc:AllowanceChargeReason>court fee</cbc:AllowanceChargeReason>
+			<cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
+			<cbc:PrepaidIndicator>false</cbc:PrepaidIndicator>
+			<cbc:SequenceNumeric>1</cbc:SequenceNumeric>
+			<cbc:Amount currencyID="USD">100.00</cbc:Amount>
+			<cbc:BaseAmount currencyID="USD">100.00</cbc:BaseAmount>
+			<cbc:PerUnitAmount currencyID="USD">100.00</cbc:PerUnitAmount>
+			<cac:PaymentMeans>
+				<cbc:ID>1</cbc:ID>
+				<cbc:PaymentMeansCode>credit</cbc:PaymentMeansCode>
+				<cbc:PaymentDueDate>2017-07-06</cbc:PaymentDueDate>
+				<cbc:PaymentID>1</cbc:PaymentID>
+				<cac:CardAccount>
+					<cbc:PrimaryAccountNumberID>5555-555-5555</cbc:PrimaryAccountNumberID>
+					<cbc:NetworkID>55555</cbc:NetworkID>
+					<cbc:CardTypeCode>visa</cbc:CardTypeCode>
+					<cbc:ValidityStartDate>2016-08-13</cbc:ValidityStartDate>
+					<cbc:ExpiryDate>2018-08-13</cbc:ExpiryDate>
+					<cbc:CV2ID>5555</cbc:CV2ID>
+					<cbc:CardChipCode>555555</cbc:CardChipCode>
+					<cbc:ChipApplicationID>55555</cbc:ChipApplicationID>
+					<cbc:HolderName>John Doe</cbc:HolderName>
+				</cac:CardAccount>
+			</cac:PaymentMeans>
+		</cac:AllowanceCharge>
+		<cac:Payment>
+			<cbc:ID>1</cbc:ID>
+			<cbc:PaidAmount currencyID="USD">100.00</cbc:PaidAmount>
+			<!-- FilingMessage/DocumentPostDate = 2008-07-07T13:47:42.0Z -->
+			<cbc:ReceivedDate>2017-07-06</cbc:ReceivedDate>
+			<cbc:PaidDate>2017-07-06</cbc:PaidDate>
+			<cbc:PaidTime>13:47:42.0Z</cbc:PaidTime>
+			<cbc:InstructionID>5555</cbc:InstructionID>
+		</cac:Payment>
+		<ecf:FeeExceptionReasonCode>String</ecf:FeeExceptionReasonCode>
+		<ecf:FeeExceptionSupportingText>String</ecf:FeeExceptionSupportingText>
+		<payment:CorrectedPaymentIndicator>false</payment:CorrectedPaymentIndicator>
+		<payment:Payer structures:ref="Person1"/>			<!-- Plaintiff John W. Doe	-->
+	</payment:PaymentMessage>
+</wrapper:ReviewFilingRequest>

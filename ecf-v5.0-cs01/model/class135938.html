@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class PaymentMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class PaymentMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_135938"></a>
+<p>The payment submitted with a filing.  The payment may consist of a fee for filing of the document(s) submitted, or for a fine or other payment due to the court.<br /></p>
+<p> Constraint :</p><ul>See PaymentMessage</ul><p>Diagram : <a href="index.html#ref10_137346"><b>PaymentMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">payment:PaymentMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_142722"></a>
+<table><tr><td><div class="element">Attribute <b>accountOwnerAddress</b></div></td></tr></table>
+<p>The address of the owner of a financial account.<br /></p><p>Declaration :</p><ul><li>Uml : + accountOwnerAddress : <a href="class163330.html#ref4_163330"><b>address</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:Address</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cac:Address</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">payment:PaymentMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:Address</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cac:AddressType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_171010"></a>
+<table><tr><td><div class="element">Relation <b>allowanceCharge (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>An authorization by the filer allowing the court to take money from the filer, for the purpose of this filing, by a particular means.<br /></p><p>Declaration :</p><ul><li>Uml : + allowanceCharge : <a href="class130946.html#ref4_130946"><b>AllowanceCharge</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cac:AllowanceCharge</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">payment:PaymentMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cac:AllowanceChargeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_142466"></a>
+<table><tr><td><div class="element">Attribute <b>feeExemptionReasonCode</b></div></td></tr></table>
+<p>A code for the reason why a filer does not have to pay an otherwise applicable payment.  Allowable values set forth in Court Policy. Examples are in forma pauperis status granted or a fee waiver application submitted with the filing..<br /></p><p>Declaration :</p><ul><li>Uml : + feeExemptionReasonCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list FeeExceptioneasonCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/payment:feeExceptionReasonCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:FeeExceptionReasonCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">payment:PaymentMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/ecf:feeExceptionReasonCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_142594"></a>
+<table><tr><td><div class="element">Attribute <b>feeExemptionSupportingText</b></div></td></tr></table>
+<p>Any text needed to support the exemption assertion (reference to a court order, etc.)<br /></p><p>Declaration :</p><ul><li>Uml : + feeExemptionSupportingText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/payment:feeExceptionSupportingText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:FeeExceptionSupportingText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">payment:PaymentMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/ecf:feeExceptionSupportingText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_232834"></a>
+<table><tr><td><div class="element">Attribute <b>payerID</b></div></td></tr></table>
+<p>A court-issued identifer for the filer that paid the FilingPayment<br /></p><p>Declaration :</p><ul><li>Uml : + payerID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/nc:Person/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_142338"></a>
+<table><tr><td><div class="element">Attribute <b>payerName</b></div></td></tr></table>
+<p>Name of the payer of the FilingPayment.<br /></p><p>Declaration :</p><ul><li>Uml : + payerName : <a href="class163458.html#ref4_163458"><b>name</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/PayerName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">payment:Payer</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">payment:PaymentMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/payment:Payer</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9082754"></a>
+<table><tr><td><div class="element">Attribute <b>payment</b></div></td></tr></table>
+<p>A payment.<br /></p><p>Declaration :</p><ul><li>Uml : + payment : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cac:Payment</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">payment:PaymentMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cac:PaymentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_15561474"></a>
+<table><tr><td><div class="element">Attribute <b>maximumPayment</b></div></td></tr></table>
+<p>The maximum payment associated with a transaction	<br /></p><p>Declaration :</p><ul><li>Uml : + maximumPayment : <a href="class177154.html#ref4_177154"><b>amount</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cac:PaymentMandate</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">payment:PaymentMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:PaymentMandate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cac:PaymentMandateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

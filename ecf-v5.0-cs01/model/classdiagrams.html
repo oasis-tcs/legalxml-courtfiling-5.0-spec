@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Diagram Index</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Diagram Index</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<table>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_244610" target = "projectFrame"><b>Address</b></a></td><td></td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_178306" target = "projectFrame"><b>AllocateCourtDateMessage</b></a></td><td></td><td>A request to allocate a court date on the schedule.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_128002" target = "projectFrame"><b>AppelateCase</b></a></td><td></td><td>Additional information specific to appellate cases.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_134530" target = "projectFrame"><b>BankruptcyCase</b></a></td><td></td><td>Additional information specific to bankruptcy cases.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_238082" target = "projectFrame"><b>Base Messages</b></a></td><td></td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_192258" target = "projectFrame"><b>CancelFilingMessage</b></a></td><td></td><td>This is a request from the filer to the reviewer to cancel a previously submitted filing.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_164994" target = "projectFrame"><b>Case</b></a></td><td></td><td>The relationship between two organizations in this case.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_134658" target = "projectFrame"><b>CitationCase</b></a></td><td></td><td>Additional information specific to citation cases.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_134786" target = "projectFrame"><b>CivilCase</b></a></td><td></td><td>Information required to initiate a new civil case in a court.  "Civil" includes conservatorships, guardianships, mental health and probate.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_245122" target = "projectFrame"><b>ContactInformation</b></a></td><td></td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_135810" target = "projectFrame"><b>CoreFilingMessage</b></a></td><td></td><td>The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_134914" target = "projectFrame"><b>CriminalCase</b></a></td><td></td><td>Information required to initiate a new criminal case in a court.  "Criminal" includes felonies and misdemeanors.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_218498" target = "projectFrame"><b>DocumentStampInformationMessage</b></a></td><td></td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_135042" target = "projectFrame"><b>DomesticCase</b></a></td><td></td><td>Information required to initiate a new domestic case in a court.  "Domestic" includes divorces, legal separations, annulment, child custody and visitation, paternity, child support, and domestic violence cases.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_135298" target = "projectFrame"><b>GetCaseListRequestMessage</b></a></td><td></td><td>This is a query for a list of cases that match a set of criteria including case participants, case classification, case status, and date of the case was initiated.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_135426" target = "projectFrame"><b>GetCaseListResponseMessage</b></a></td><td></td><td>A synchronous response to a GetCaseListQueryMessage.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_135554" target = "projectFrame"><b>GetCaseRequestMessage</b></a></td><td></td><td>A message requesting a case from a court case management information system conforming to the parameter or parameters identified in the message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_135682" target = "projectFrame"><b>GetCaseResponseMessage</b></a></td><td></td><td>The response to a GetCaseInformationQuery.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_178818" target = "projectFrame"><b>GetCourtScheduleRequestMessage</b></a></td><td></td><td>A request for the schedule of upcoming events in a court</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_178946" target = "projectFrame"><b>GetCourtScheduleResponseMessage</b></a></td><td></td><td>The schedule of upcoming events in a court</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_136194" target = "projectFrame"><b>GetDocumentRequestMessage</b></a></td><td></td><td>The base information contained in any query message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_136322" target = "projectFrame"><b>GetDocumentResponseMessage</b></a></td><td></td><td>The court response to a request for an electronic document in the court official record.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_136450" target = "projectFrame"><b>GetFeesCalculationRequestMessage</b></a></td><td></td><td>This query is a request for the total amount of court fees required for filing of one or more documents in a case.<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_136578" target = "projectFrame"><b>GetFeesCalculationResponseMessage</b></a></td><td></td><td>The response to a CalculatedFeesQueryMessage, which may either be 0 indicating no fee is due, a currency amount indicating the fee due upon filing, or unknown indicating that the court case management information system is unable to calculate the fee for the proposed filing.<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_136706" target = "projectFrame"><b>GetFilingListRequestMessage</b></a></td><td></td><td>This is query to get a list of filings by Filer Identification, Case Identifier, or time period.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_171522" target = "projectFrame"><b>GetFilingListResponseMessage</b></a></td><td></td><td>A court response to a FilingListQueryMessage.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_136962" target = "projectFrame"><b>GetFilingStatusRequestMessage</b></a></td><td></td><td>This is query to get a filing status by Filing Number.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_137090" target = "projectFrame"><b>GetFilingStatusResponseMessage</b></a></td><td></td><td>A court response to a FilingStatusQueryMessage.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_135938" target = "projectFrame"><b>GetPolicyRequestMessage</b></a></td><td></td><td>A request for a court's Court Policy.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_136066" target = "projectFrame"><b>GetPolicyResponseMessage</b></a></td><td></td><td>The response to a request for a court Court Policy.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_138498" target = "projectFrame"><b>GetServiceInformationRequestMessage</b></a></td><td></td><td>A message requesting information concerning the persons entitled to services of filings in a particular court case, together with the electronic addresses and message profiles of their Filing Assembly MDEs and their physical addresses if they are not currently using a Filing Assembly MDE.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_138626" target = "projectFrame"><b>GetServiceInformationResponseMessage</b></a></td><td></td><td>The response to a serviceInformationQueryMessage, setting forth the requested information.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_135170" target = "projectFrame"><b>JuvenileCase</b></a></td><td></td><td>A delinquency or dependency case.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_137218" target = "projectFrame"><b>MessageReceiptMessage</b></a></td><td></td><td>A message returned synchronously to indicate receipt by an MDE of another message.  The name "MessageReceipt" suggested by S. Durham June 30 2005, and adopted by consensus on a TC call that day. The intent is that this will serve as the synchronous reply to all MDE operations that have an additional, asynchronous callback.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_231554" target = "projectFrame"><b>NotifyCourtDateMessage</b></a></td><td></td><td>The message returned when the a court date is scheduled, generally in response to a ReserveCourtDateRequest.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_138114" target = "projectFrame"><b>NotifyDocketingCompleteMessage</b></a></td><td></td><td>The message returned from the Court Record MDE to the Filing Review MDE when the functions of entering information onto the docket or register of actions and commiting a filed document(s) to the official court record have been completed, conveying the results of those functions.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_225026" target = "projectFrame"><b>NotifyDocumentStampInformationMessage</b></a></td><td></td><td>A response to a request for document stamping information.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_138370" target = "projectFrame"><b>NotifyFilingReviewCompleteMessage</b></a></td><td></td><td>The asynchronous message from the Filing Review MDE to the Filing Assembly MDE conveying information concerning the court actions on the documents submitted for filing in a ReviewFilingMessage.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_137346" target = "projectFrame"><b>PaymentMessage</b></a></td><td></td><td>The payment submitted with a filing.  The payment may consist of a fee for filing of the document(s) submitted, or for a fine or other payment due to the court.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_244866" target = "projectFrame"><b>Person</b></a></td><td></td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_244994" target = "projectFrame"><b>Person Organization Relationships</b></a></td><td></td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_138242" target = "projectFrame"><b>RecordDocketingMessage</b></a></td><td></td><td>Message resulting from clerk review and edit of a ReviewFilingMessage.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_251650" target = "projectFrame"><b>RequestCourtDateRequestMessage</b></a></td><td></td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_251778" target = "projectFrame"><b>RequestCourtDateResponseMessage</b></a></td><td></td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_178562" target = "projectFrame"><b>ReserveCourtDateMessage</b></a></td><td></td><td>A request to allocate a court date on the schedule.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_178050" target = "projectFrame"><b>ServeProcessMessage</b></a></td><td></td><td>A message to deliver a filing to a process server.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_138754" target = "projectFrame"><b>ServiceReceiptMessage</b></a></td><td></td><td>A synchronous response by a Filing Assembly MDE acknowledging receipt of a service message for one of its clients.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref10_244738" target = "projectFrame"><b>TelephoneNumber</b></a></td><td></td><td></td></tr>
+</table>
+</body>
+</html>

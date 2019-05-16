@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DevelopmentPolicyParameters</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DevelopmentPolicyParameters</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_137602"></a>
+<p>Within Court Policy, the policies that are accessed by a person or organization developing an applications or configuring an application to interact with a court for the purpose of structuring the interactions with that court.  This information is needed once and is not accessed dynamically while interacting with the court.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Reference nc:Metadata with policyresponse:DevelopmentPolicy/&#64;structures:metadata</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_146690"></a>
+<table><tr><td><div class="element">Attribute <b>acceptConfidentialFilings</b></div></td></tr></table>
+<p>Whether the court will accept electronic filing of documents for which the filer requests confidential or sealed treatment by the court.<br /></p><p>Declaration :</p><ul><li>Uml : + acceptConfidentialFilings : bool, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:AcceptConfidentialFilingsIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:AcceptConfidentialFilingsIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:AcceptConfidentialFilingsIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_146562"></a>
+<table><tr><td><div class="element">Attribute <b>acceptDocumentsRequiringFees</b></div></td></tr></table>
+<p>Whether the court will accept electronic filing of documents requiring filing fees.<br /></p><p>Declaration :</p><ul><li>Uml : + acceptDocumentsRequiringFees : bool, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:AcceptDocumentsRequiringFeesIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:AcceptDocumentsRequiringFeesIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:AcceptDocumentsRequiringFeesIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_146818"></a>
+<table><tr><td><div class="element">Attribute <b>acceptMultipleLeadDocuments</b></div></td></tr></table>
+<p>Does court accept placing multiple lead documents in a single message<br /></p><p>Declaration :</p><ul><li>Uml : + acceptMultipleLeadDocuments : bool, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:AcceptMultipleLeadDocumentsIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:AcceptMultipleLeadDocumentsIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:AcceptMultipleLeadDocumentsIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_156930"></a>
+<table><tr><td><div class="element">Relation <b>courtExtension (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A structure representing the court-specific extensions for this court<br /></p><p>Declaration :</p><ul><li>Uml : + courtExtension : <a href="class137858.html#ref4_137858"><b>CourtExtension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:CourtExtension</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:SchemaExtension</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">policyresponse:SchemaExtensionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_147202"></a>
+<table><tr><td><div class="element">Attribute <b>filingFeesMayBeApplicableIndicator</b></div></td></tr></table>
+<p>Indicates whether fees may be required for some filings.<br /></p><p>Declaration :</p><ul><li>Uml : + filingFeesMayBeApplicableIndicator : bool, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:FilingFeesMayBeApplicableIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:FilingFeesMayBeApplicableIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:FilingFeesMayBeApplicableIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_146946"></a>
+<table><tr><td><div class="element">Attribute <b>maximumAllowedAttachmentSize</b></div></td></tr></table>
+<p>The maximum allowed attachment size, in bytes.  Does not appear if there is no maximum.<br /></p><p>Declaration :</p><ul><li>Uml : + maximumAllowedAttachmentSize : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:MaximumAllowedAttachmentSize</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:MaximumAllowedAttachmentSize</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MaximumAllowedAttachmentSize</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:MeasureType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_147074"></a>
+<table><tr><td><div class="element">Attribute <b>maximumAllowedMessageSize</b></div></td></tr></table>
+<p>Maximum allowed size of the Court Filing Message Stream, in bytes.  Does not appear if there is no maximum.<br /></p><p>Declaration :</p><ul><li>Uml : + maximumAllowedMessageSize : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:MaximumAllowedAttachmentSize</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:MaximumAllowedMessageSize</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MaximumAllowedAttachmentSize</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:MeasureType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_157570"></a>
+<table><tr><td><div class="element">Relation <b>supportedCaseTypes (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A structure containing indicators that signal support by the e-filing system for each ECF case type.<br /></p><p>Declaration :</p><ul><li>Uml : + supportedCaseTypes : <a href="class170626.html#ref4_170626"><b>SupportedCaseTypes</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedCaseType</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:SupportedCaseCategories</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SupportedCaseCategories</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">policyresponse:SupportedCaseCategoriesType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_157314"></a>
+<table><tr><td><div class="element">Relation <b>supportedSignatureProfile (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A signature profile approved for use with ECF by the OASIS LegalXML Member Section Electronic Court Filing Technical Committee that is supported by this court.<br /></p><p>Declaration :</p><ul><li>Uml : + supportedSignatureProfile : <a href="class170370.html#ref4_170370"><b>SupportedSignatureProfile</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedSignaturesProfile</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:SupportedSignaturesProfiles</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SupportedSignaturesProfiles</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">policyresponse:SupportedSignatureProfilesType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_146434"></a>
+<table><tr><td><div class="element">Attribute <b>urlAttachmentSupported</b></div></td></tr></table>
+<p>Whether court allows attachments via remote URLs.<br /></p><p>Declaration :</p><ul><li>Uml : + urlAttachmentSupported : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:URLAttachmentSupportedIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:URLAttachmentSupportedIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:URLAttachmentSupportedIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_4585346"></a>
+<table><tr><td><div class="element">Relation <b>majorDesignElement (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>An ECF major design element (MDE)<br /></p><p>Declaration :</p><ul><li>Uml : + majorDesignElement : <a href="class6073218.html#ref4_6073218"><b>MajorDesignElements</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:MajorDesignElement</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">policyresponse:MajorDesignElementType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14429186"></a>
+<table><tr><td><div class="element">Attribute <b>maximumAllowedAttachmentPages</b></div></td></tr></table>
+<p>The maximum allowed number of pages in an attachment.<br /></p><p>Declaration :</p><ul><li>Uml : + maximumAllowedAttachmentPages : int, multiplicity : 0,1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:MaximumAllowedAttachmentPageQuantity</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MaximumAllowedAttachmentPageQuantity</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:NumericType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14429314"></a>
+<table><tr><td><div class="element">Attribute <b>filerPerformsServiceIndicator</b></div></td></tr></table>
+<p>Indicator whether the filer is required to serve<br /></p><p>Declaration :</p><ul><li>Uml : + filerPerformsServiceIndicator : bool, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:FilerRequiredToServeIndicator</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:DevelopmentPolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:FilerRequiredToServendicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

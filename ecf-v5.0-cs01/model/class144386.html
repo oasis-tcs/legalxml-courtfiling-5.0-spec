@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DrivingIncident</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DrivingIncident</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_144386"></a>
+<p>The incident from which a traffic ticket arose.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingIncidentAugmentationPoint, (citation:DrivingIncidentAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/citation:DrivingIncidentAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">citation:DrivingIncidentAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_169474"></a>
+<table><tr><td><div class="element">Attribute <b>accidentInvolvedIndicator</b></div></td></tr></table>
+<p>An indicator that the incident involved an accident.<br /></p><p>Declaration :</p><ul><li>Uml : + accidentInvolvedIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:IncidentAugmentation/j:IncidentTrafficAccidentInvolvedIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:IncidentTrafficAccidentInvolvedIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:IncidentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:IncidentAugmentation/j:IncidentTrafficAccidentInvolvedIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_169986"></a>
+<table><tr><td><div class="element">Attribute <b>fatalInjuryIndicator</b></div></td></tr></table>
+<p>Indicator of whether any person was fatally injured in the incident.<br /></p><p>Declaration :</p><ul><li>Uml : + fatalInjuryIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:DrivingAccidentSeverityCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingAccidentSeverityAbstract, (j:DrivingAccidentSeverityCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:DrivingAccidentSeverityCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">aamva_d20:AccidentSeverityCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_170114"></a>
+<table><tr><td><div class="element">Attribute <b>hazardousMaterialsIndicator</b></div></td></tr></table>
+<p>Indicator of whether hazardous materials were involved in the incident.<br /></p><p>Declaration :</p><ul><li>Uml : + hazardousMaterialsIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:DrivingIncidentHazMatCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingIncidentHazMatAbstract, (j:DrivingIncidentHazMatCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:DrivingIncidentHazMatCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">aamva_d20:HazMatCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_169858"></a>
+<table><tr><td><div class="element">Attribute <b>injuryIndicator</b></div></td></tr></table>
+<p>Indicator of whether any person was injured during the incident.<br /></p><p>Declaration :</p><ul><li>Uml : + injuryIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:DrivingAccidentSeverityCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingAccidentSeverityAbstract, (j:DrivingAccidentSeverityCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:DrivingAccidentSeverityCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">aamva_d20:AccidentSeverityCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_169090"></a>
+<table><tr><td><div class="element">Attribute <b>laserIndicator</b></div></td></tr></table>
+<p>an indicator that a laser gun was used to detect speed<br /></p><p>Declaration :</p><ul><li>Uml : + laserIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:DrivingIncidentLaserDetectionIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingIncidentLaserDetectionIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:DrivingIncidentLaserDetectionIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_169218"></a>
+<table><tr><td><div class="element">Attribute <b>numberOfPassengersInVehicle</b></div></td></tr></table>
+<p>The number of people in the car not including the driver.<br /></p><p>Declaration :</p><ul><li>Uml : + numberOfPassengersInVehicle : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:DrivingIncidentPassengerQuantityText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingIncidentPassengerQuantityText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:DrivingIncidentPassengerQuantityText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_183298"></a>
+<table><tr><td><div class="element">Relation <b>offenderSpeed (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Actual speed of the person alleged to have violated the speed limit.<br /></p><p>Declaration :</p><ul><li>Uml : + offenderSpeed : <a href="class146690.html#ref4_146690"><b>SpeedRate</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:DrivingIncidentRecordedSpeedRate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingIncidentRecordedSpeedRateMeasure</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:DrivingIncidentRecordedSpeedRateMeasure</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:MeasureType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_169730"></a>
+<table><tr><td><div class="element">Attribute <b>propertyDamageAmount</b></div></td></tr></table>
+<p>A monetary amount of property damage done during the incident.<br /></p><p>Declaration :</p><ul><li>Uml : + propertyDamageAmount : <a href="class177154.html#ref4_177154"><b>amount</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:Property/j:PropertyAugmentation/j:PropertyTotalDamageValue</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ItemTotalDamageValue</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:DrivingIncidentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/citation:DrivingIncidentAugmentation/j:PropertyTotalDamageValue</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ItemValueType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_169602"></a>
+<table><tr><td><div class="element">Attribute <b>propertyDamageIndicator</b></div></td></tr></table>
+<p>Indicator of whether property was damaged during the incident.<br /></p><p>Declaration :</p><ul><li>Uml : + propertyDamageIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:IncidentAugmentation/j:IncidentDamagedItem</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:IncidentDamagedItem</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:IncidentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:IncidentDamagedProperty</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_169346"></a>
+<table><tr><td><div class="element">Attribute <b>radarIndicator</b></div></td></tr></table>
+<p>An indicator that radar was used to detect speed.<br /></p><p>Declaration :</p><ul><li>Uml : + radarIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:DrivingIncidentRadarDetectionIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingIncidentRadarDetectionIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/citation:DrivingIncidentAugmentation/j:DrivingIncidentRadarDetectionIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_170242"></a>
+<table><tr><td><div class="element">Attribute <b>redLightCameraIndicator</b></div></td></tr></table>
+<p>An indicator that a automated camera was used to detect traffic signal violations.<br /></p><p>Declaration :</p><ul><li>Uml : + redLightCameraIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/citationRedLightCameraIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">citation:RedLightCameraIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:DrivingIncidentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/citation:DrivingIncidentAugmentation/citation:RedLightCameraIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_183170"></a>
+<table><tr><td><div class="element">Relation <b>speedLimit (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Maximum speed allowed by law.<br /></p><p>Declaration :</p><ul><li>Uml : + speedLimit : <a href="class146690.html#ref4_146690"><b>SpeedRate</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:DrivingIncidentLegalSpeedRate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingIncidentLegalSpeedRateMeasure</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:DrivingIncidentLegalSpeedRateMeasure</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:MeasureType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_183682"></a>
+<table><tr><td><div class="element">Relation <b>vehicle (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information describing the motor vehicle involved in an incident.<br /></p><p>Declaration :</p><ul><li>Uml : + vehicle : <a href="class144770.html#ref4_144770"><b>Vehicle</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/nc:IncidentVehicleAssociation/nc:ConveyanceReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Vehicle</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/nc:IncidentVehicleAssociation/nc:Conveyance</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:VehicleType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

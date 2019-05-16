@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Obligation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Obligation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_191874"></a>
+<p>A responsibility of a party in a case ordered by a court.<br /></p>
+<p>Directly inherited by : <a href="class191746.html#ref4_191746"><b>FinancialObligation</b></a> </p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_224258"></a>
+<table><tr><td><div class="element">Attribute <b>comment</b></div></td></tr></table>
+<p>Comments regarding an obligation.<br /></p><p>Declaration :</p><ul><li>Uml : + comment : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationRequirementDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationRequirementDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationRequirementDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_224002"></a>
+<table><tr><td><div class="element">Attribute <b>endDate</b></div></td></tr></table>
+<p>The end date of an obligation.<br /></p><p>Declaration :</p><ul><li>Uml : + endDate : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationRecurrence/nc:ObligationEndDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationDateRange</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationRecurrenceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationRecurrence/nc:ObligationDateRange/nc:EndDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateRangeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_224130"></a>
+<table><tr><td><div class="element">Attribute <b>frequency</b></div></td></tr></table>
+<p>The frequency of an obligation (e.g. Weekly, Bi-Weekly, Semi-Monthly, Monthly, Quarterly, Semi-Annually, Annually).<br /></p><p>Declaration :</p><ul><li>Uml : + frequency : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationRecurrence/nc:ObligationPeriodText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationPeriodText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationRecurrenceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationRecurrence/nc:ObligationPeriodText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_223746"></a>
+<table><tr><td><div class="element">Attribute <b>obligationType</b></div></td></tr></table>
+<p>A type of responsibility of a party in a case ordered by a court..  e.x. financial obligation.<br /></p><p>Declaration :</p><ul><li>Uml : + obligationType : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationCategoryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationCategoryText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationCategoryText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_223874"></a>
+<table><tr><td><div class="element">Attribute <b>startDate</b></div></td></tr></table>
+<p>The start date of an obligation.<br /></p><p>Declaration :</p><ul><li>Uml : + startDate : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationRecurrence/nc:ObligationStartDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationDateRange</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationRecurrenceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationRecurrence/nc:ObligationDateRange/nc:StartDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateRangeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_224386"></a>
+<table><tr><td><div class="element">Attribute <b>unreimbursedPercent</b></div></td></tr></table>
+<p>A percentage of an expense not to be reimbursed.<br /></p><p>Declaration :</p><ul><li>Uml : + unreimbursedPercent : float</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationExemption/nc:FinancialObligationExemptionAmount/nc:CurrencyText, nc:CurrencyCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:FinancialObligationExemptionAmount</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationExemptionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationExemption/nc:FinancialObligationExemptionAmount/nc:CurrencyText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AmountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_224514"></a>
+<table><tr><td><div class="element">Attribute <b>unreimbursedType</b></div></td></tr></table>
+<p>The type of unreimbursed percentage (e.g. medical, tuition).<br /></p><p>Declaration :</p><ul><li>Uml : + unreimbursedType : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationExemption/nc:ObligationExemptionDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationExemptionDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationExemptionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationExemption/nc:ObligationExemptionDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6361986"></a>
+<table><tr><td><div class="element">Attribute <b>recurrence</b></div></td></tr></table>
+<p>The recurrence of an obligation.<br /></p><p>Declaration :</p><ul><li>Uml : + recurrence : string, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationRecurrence</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationRecurrence</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationRecurrence</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ObligationRecurrenceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6362114"></a>
+<table><tr><td><div class="element">Attribute <b>exemption</b></div></td></tr></table>
+<p>An exemption to an obligation.<br /></p><p>Declaration :</p><ul><li>Uml : + exemption : string, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationExemption</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationExemption</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationExemption</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ObligationExemptionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

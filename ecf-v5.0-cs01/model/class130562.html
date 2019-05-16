@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class GetPolicyRequestMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class GetPolicyRequestMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_130562"></a>
+<p>A request for a court's Court Policy.<br /></p>
+<p>Diagram : <a href="index.html#ref10_135938"><b>GetPolicyRequestMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyrequest:CourtPolicyQueryMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyrequest:GetPolicyRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyrequest:GetPolicyRequestMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:RequestMessageType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_1546114"></a>
+<table><tr><td><div class="element">Attribute <b>messageExtension</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + messageExtension : <a href="class2113794.html#ref4_2113794"><b>extension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyrequest:GetPolicyRequestMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyrequest:GetPolicyRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyrequest:GetPolicyRequestMessage/policyrequest:GetPolicyRequestMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14429058"></a>
+<table><tr><td><div class="element">Attribute <b>caseTypeCode</b></div></td></tr></table>
+<p>A case type<br /></p><p>Declaration :</p><ul><li>Uml : + caseTypeCode : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseTypeCode</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyrequest:PolicyQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyrequest:GetPolicyRequestMessage/policyrequest:PolicyQueryCriteria/ecf:CaseTypeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_12126594"></a>
+<table><tr><td><div class="element">Relation <b>policyQueryCriteria (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Criteria limiting the policy information to be returned.<br /></p><p>Declaration :</p><ul><li>Uml : + policyQueryCriteria : <a href="class13000578.html#ref4_13000578"><b>PolicyQueryCriteria</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyrequest:PolicyQueryCriteria</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyrequest:GetPolicyRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyrequest:GetPolicyRequestMessage/policyrequest:PolicyQueryCriteria</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">policyrequest:PolicyQueryCriteriaType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

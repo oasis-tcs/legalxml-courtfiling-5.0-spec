@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class GetFeesCalculationResponseMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class GetFeesCalculationResponseMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_134530"></a>
+<p>The response to a CalculatedFeesQueryMessage, which may either be 0 indicating no fee is due, a currency amount indicating the fee due upon filing, or unknown indicating that the court case management information system is unable to calculate the fee for the proposed filing.<br /><br /></p>
+<p>Diagram : <a href="index.html#ref10_136578"><b>GetFeesCalculationResponseMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">feesresponse:FeesCalculationResponseMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">feesresponse:GetFeesCalculationResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">feesresponse:GetFeesCalculationResponseMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:ResponseMessageType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_141186"></a>
+<table><tr><td><div class="element">Attribute <b>filingFee</b></div></td></tr></table>
+<p>A fee or price required to submit a document.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + filingFee : <a href="class177154.html#ref4_177154"><b>amount</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">feesresponse:FeesCalculationResponseMessage/cac:AllowanceCharge</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cac:AllowanceCharge</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">feesresponse:GetFeesCalculationResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">feesresponse:GetFeesCalculationResponseMessage/cac:AllowanceCharge</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cac:AllowanceChargeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_239362"></a>
+<table><tr><td><div class="element">Attribute <b>totalFees</b></div></td></tr></table>
+<p>A total of all fees required to submit a document.<br /></p><p>Declaration :</p><ul><li>Uml : + totalFees : <a href="class177154.html#ref4_177154"><b>amount</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">feesresponse:FeesCalculationResponseMessage/feesresponse:FeesCalculationAmount</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">feesresponse:FeesCalculationAmount</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">feesresponse:GetFeesCalculationResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">feesresponse:GetFeesCalculationResponseMessage/feesresponse:FeesCalculationAmount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AmountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_1547010"></a>
+<table><tr><td><div class="element">Attribute <b>messageExtension</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + messageExtension : <a href="class2113794.html#ref4_2113794"><b>extension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">feesresponse:GetFeesCalculationResponseMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">feesresponse:GetFeesCalculationResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">feesresponse:GetFeesCalculationResponseMessage/feesresponse:GetFeesCalculationResponseMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

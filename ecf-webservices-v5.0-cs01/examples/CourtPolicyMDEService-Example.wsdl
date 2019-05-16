@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Web Services Service Interaction Profile Version 5.0
+     Committee Specification 01
+     24 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf-webservices/v5.0/cs01/examples/
+     Latest version of narrative specification: https://docs.oasis-open.org/legalxml-courtfiling/ecf-webservices/v5.0/ecf-webservices-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!-- 
+This WSDL document is a sample of how to import the main OASIS LegalXML Electronic Court Filing v5.0 Web Services Profile Definitions to define implementing physical services for one or more Major Design Elements. 
+-->
+<definitions targetNamespace="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/WebServices-ImplementationExample" xmlns:wsmp="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/WSDL/CourtPolicyMDE" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+	<import namespace="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/WSDL/CourtPolicyMDE" location="../schema/CourtPolicyMDE.wsdl"/>
+	<service name="CourtPolicyMDEService">
+		<port name="CourtPolicyMDE" binding="wsmp:CourtPolicyMDESoap">
+			<soap:address location="https://localhost/..."/>
+		</port>
+	</service>
+</definitions>

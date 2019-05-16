@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Organization</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Organization</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_131970"></a>
+<p>A structure that describes a unit which conducts some sort of business or operations.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Organization/j:OrganizationAugmentation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationAugmentationPoint, (ecf:OrganizationAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Organization/ecf:OrganizationAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:OrganizationAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_145026"></a>
+<table><tr><td><div class="element">Relation <b>contactInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information useable to contact this organization, such as address, telephone number(s), and email address.<br /></p><p>Declaration :</p><ul><li>Uml : + contactInformation : <a href="class134914.html#ref4_134914"><b>ContactInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Organization/nc:OrganizationPrimaryContactInformation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:OrganizationPrimaryContactInformation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Organization/nc:OrganizationPrimaryContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_178946"></a>
+<table><tr><td><div class="element">Relation <b>electronicServiceInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information needed by the filing assembly MDE to electronically serve this organization with a copy of a filing.<br /></p><p>Declaration :</p><ul><li>Uml : + electronicServiceInformation : <a href="class142466.html#ref4_142466"><b>ElectronicServiceInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Organization/ecf:OrganizationAugmentation/ecf:ElectronicServiceInformation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ElectronicServiceInformation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:OrganizationAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Organization/ecf:OrganizationAugmentation/ecf:ElectronicServiceInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:ElectronicServiceInformationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_134530"></a>
+<table><tr><td><div class="element">Attribute <b>name</b></div></td></tr></table>
+<p>The name of a person or organization.<br /></p><p>Declaration :</p><ul><li>Uml : + name : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Organization/nc:OrganizationName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Organization/nc:OrganizationName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_134402"></a>
+<table><tr><td><div class="element">Attribute <b>organizationID</b></div></td></tr></table>
+<p>The unique identifier assigned by the court at the time the organization is first associated with the case.  If the court has not yet assigned an identifier in this case, then the filing assembly MDE will leave this blank.<br /></p><p>Declaration :</p><ul><li>Uml : + organizationID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Organization/nc:OrganizationIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Organization/nc:OrganizationIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_3997442"></a>
+<table><tr><td><div class="element">Relation <b>organizationLocation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The location of an organization<br /></p><p>Declaration :</p><ul><li>Uml : + organizationLocation : <a href="class5365890.html#ref4_5365890"><b>Location</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9584002"></a>
+<table><tr><td><div class="element">Attribute <b>taxIdentification</b></div></td></tr></table>
+<p>A federal identifier for an organization.<br /></p><p>Declaration :</p><ul><li>Uml : + taxIdentification : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Organization/nc:OrganizationTaxIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationTaxIdentification</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Organization/nc:OrganizationTaxIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

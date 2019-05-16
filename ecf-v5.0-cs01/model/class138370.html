@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CivilCaseInformation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CivilCaseInformation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_138370"></a>
+<p>Information required to initiate a new civil case in a court.  "Civil" includes conservatorships, guardianships, mental health and probate.<br /></p>
+<p>Diagram : <a href="index.html#ref10_134786"><b>CivilCase</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseAugmentationPoint, (^civil:CaseAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">civil:CaseAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_149122"></a>
+<table><tr><td><div class="element">Attribute <b>causeOfActionCode</b></div></td></tr></table>
+<p>The legal ground on which the request for relief is based.  Allowed values set forth in court policy. Example: the basis(es) for relief in a civil case; the grounds for divorce in a state that does not recognize no-fault divorce; grounds for entry of an order of protection in a domestic violence case.<br /></p><p>Declaration :</p><ul><li>Uml : + causeOfActionCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list CauseOfActionCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/ecf:CauseOfActionCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CauseOfActionCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">civil:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">civil:CaseAugmentation/ecf:CauseOfActionCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_148610"></a>
+<table><tr><td><div class="element">Attribute <b>amountInControversy</b></div></td></tr></table>
+<p>The amount set forth in an ad damnum clause in a complaint, counter claim, or cross complaint.<br /></p><p>Declaration :</p><ul><li>Uml : + amountInControversy : <a href="class177154.html#ref4_177154"><b>amount</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/civil:AmountInControversy</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">civil:AmountInControversy</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">civil:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">civil:CaseAugmentation/civil:AmountInControversy</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AmountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_148994"></a>
+<table><tr><td><div class="element">Attribute <b>classActionIndicator</b></div></td></tr></table>
+<p>Whether the filer is requesting that this case proceed as a class action.<br /></p><p>Declaration :</p><ul><li>Uml : + classActionIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/civil:ClassActionIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">civil:CivilClassActionIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">civil:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">civil:CaseAugmentation/civil:ClassActionIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_184578"></a>
+<table><tr><td><div class="element">Relation <b>decedentEstateCaseInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information about a case administering and distributing the assets of a testate or intestate decedent.<br /></p><p>Declaration :</p><ul><li>Uml : + decedentEstateCaseInformation : <a href="class139906.html#ref4_139906"><b>DecedentEstateCaseInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/civil:DecendentEstateCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">civil:DecedentEstateCase</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">civil:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">civil:CaseAugmentation/civil:DecedentEstateCase</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">civil:DecedentEstateCaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_184322"></a>
+<table><tr><td><div class="element">Relation <b>fiduciaryCaseInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>InfInformation about a guardianship, conservatorship, trust, or mental health case.<br /></p><p>Declaration :</p><ul><li>Uml : + fiduciaryCaseInformation : <a href="class139010.html#ref4_139010"><b>FiduciaryCaseInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/civil:FiduciaryCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">civil:FiduciaryCaseAssociation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">civil:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">civil:CaseAugmentation/civil:FiduciaryCase</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">civil:FiduciaryCaseAssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_149250"></a>
+<table><tr><td><div class="element">Attribute <b>initiatingPartyCitizenshipTypeCode</b></div></td></tr></table>
+<p>Used for Federal court purposes: a code designating the state or country of citizenship for purposes of applying Federal diversity of citizenship jurisdictional rules. Allowable values set forth in court policy.<br /></p><p>Declaration :</p><ul><li>Uml : + initiatingPartyCitizenshipTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/j:CaseAugmentation/j:CaseInitiatingParty/nc:EntityPerson/nc:PersonCitizenship</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonCitizenshipAbstract, (nc:PersonCitizenshipISO3166Alpha2Code)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseInitiatingParty/nc:PersonCitizenship</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">fips_10-4:CountryCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_148738"></a>
+<table><tr><td><div class="element">Attribute <b>jurisdictionalGroundsCode</b></div></td></tr></table>
+<p>The grounds for invoking the jurisdiction of a limited jurisdiction court.  Allowed values set forth in Court policy. Not used in general jurisdiction courts.<br /></p><p>Declaration :</p><ul><li>Uml : + jurisdictionalGroundsCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list JurisdictionGroundsCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/civil:JurisdictionalGroundsCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">civil:JurisdictionalGroundsCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">civil:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">civil:CaseAugmentation/civil:JurisdictionalGroundsCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_148866"></a>
+<table><tr><td><div class="element">Attribute <b>juryDemandIndicator</b></div></td></tr></table>
+<p>Whether filer invokes the right to trial by jury.<br /></p><p>Declaration :</p><ul><li>Uml : + juryDemandIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/civil:JuryDemandIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">civil:JuryDemandIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">civil:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">civil:CaseAugmentation/civil:JuryDemandIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_148482"></a>
+<table><tr><td><div class="element">Attribute <b>reliefTypeCode</b></div></td></tr></table>
+<p>Indicator of the type of relief requested in the case, e.g., damages, equitable relief (injunction).  Allowable values defined in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + reliefTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list ReliefTypeCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/civil:ReliefTypeCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">civil:ReliefTypeCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">civil:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">civil:CaseAugmentation/civil:ReliefTypeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_149378"></a>
+<table><tr><td><div class="element">Attribute <b>respondingPartyCitizenshipTypeCode</b></div></td></tr></table>
+<p>Used for Federal court purposes: a code designating the state or country of citizenship for purposes of applying Federal diversity of citizenship jurisdictional rules.  Allowable values set forth in court policy.<br /></p><p>Declaration :</p><ul><li>Uml : + respondingPartyCitizenshipTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">civil:CivilCase/j:CaseAugmentation/j:CaseRespondingParty/nc:EntityPerson/nc:PersonCitizenship</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonCitizenshipAbstract, (nc:PersonCitizenshipISO3166Alpha2Code)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseRespondingParty/nc:PersonCitizenship</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">fips_10-4:CountryCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

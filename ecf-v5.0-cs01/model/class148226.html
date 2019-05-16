@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DocumentSignature</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DocumentSignature</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_148226"></a>
+<p>Information describing or constituting the signature on a document submitted to a court for filing.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentSignature</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentSignatureType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentSignature</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_181762"></a>
+<table><tr><td><div class="element">Attribute <b>signature</b></div></td></tr></table>
+<p>The data or information representing this signature.  It must be valid according to the profile identified by the associated signatureProfileIdentifier.<br /></p><p>Declaration :</p><ul><li>Uml : + signature : <a href="class162818.html#ref4_162818"><b>binary</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentSignature/ecf:Signature</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:SignatureAugmentation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentSignatureType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentSignature/ecf:SignatureAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:SignatureAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_181634"></a>
+<table><tr><td><div class="element">Attribute <b>signatureProfileID</b></div></td></tr></table>
+<p>An identifier from the Court Filing specification that indicates the Signature Profile governing the structure of this signature.<br /></p><p>Declaration :</p><ul><li>Uml : + signatureProfileID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentSignature/ecf:SignatureProfileID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:SignatureProfileCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentSignatureType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentSignature/ecf:SignatureProfileCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_11389954"></a>
+<table><tr><td><div class="element">Attribute <b>signatureContent</b></div></td></tr></table>
+<p>The content of a signature<br /></p><p>Declaration :</p><ul><li>Uml : + signatureContent : , multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentSignature/ecf:Signature</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:SignatureAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentSignature/ecf:SignatureAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:AugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_11390082"></a>
+<table><tr><td><div class="element">Attribute <b>signatureKey</b></div></td></tr></table>
+<p>A digital signature key<br /></p><p>Declaration :</p><ul><li>Uml : + signatureKey : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentSignature/ecf:Signature</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">xs:any</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:SignatureAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/ecf:DocumentSignature/ecf:SignatureAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

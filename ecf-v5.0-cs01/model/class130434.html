@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ServiceMDE</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ServiceMDE</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_130434"></a>
+<p>The list of operations supported by the Service MDE.<br /></p>
+<p>Declaration :</p><ul>
+<li>Java : protected interface ServiceMDE </li><li>Php : interface ServiceMDE </li></ul><p>Component(s) : <a href="index.html#ref6_128386"><b>Service</b></a></p>
+<p>Stereotype: interface</p>
+<div class="sub">
+<a name="ref2_129794"></a>
+<table><tr><td><div class="element">Operation <b>ServeFiling</b></div></td></tr></table><p>An operation to serve/deliver a filing to a service recipient.<br /></p><p>Declaration :</p><ul><li>Uml : + ServeFiling(in body : <a href="class130690.html#ref4_130690"><b>CoreFilingMessage</b></a> [1..*], in body : <a href="class135938.html#ref4_135938"><b>PaymentMessage</b></a> [0..1], in path: serviceRecipientID : string [1]) : <a href="class142082.html#ref4_142082"><b>ServiceReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">POST</div></li>
+</ul>
+<a name="ref2_142850"></a>
+<table><tr><td><div class="element">Operation <b>ServeProcess</b></div></td></tr></table><p>An operation to serve/deliver a filing to a process server or registered agent.<br /></p><p>Declaration :</p><ul><li>Uml : + ServeProcess(in body : <a href="class130690.html#ref4_130690"><b>CoreFilingMessage</b></a> [1..*], in body : <a href="class135938.html#ref4_135938"><b>PaymentMessage</b></a> [0..1], in path: serviceRecipientID : string [1]) : <a href="class142082.html#ref4_142082"><b>ServiceReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">POST</div></li>
+</ul>
+</div>
+<p>All public operations : <a href="class130434.html#ref2_129794"><b>ServeFiling</b></a>, <a href="class130434.html#ref2_142850"><b>ServeProcess</b></a></p>
+</body>
+</html>

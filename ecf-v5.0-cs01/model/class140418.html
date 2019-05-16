@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CaseAttorneyRole</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CaseAttorneyRole</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_140418"></a>
+<p>The role played by an attorney in this case.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOfficial</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseOfficialAugmentationPoint, (ecf:CaseOfficialAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CaseOfficialType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOfficial/ecf:CaseOfficialAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:CaseOfficialAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_209154"></a>
+<table><tr><td><div class="element">Relation <b>attorney (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The person playing a role of a arty in a case represented by this attorney.<br /></p><p>Declaration :</p><ul><li>Uml : + attorney : <a href="class163074.html#ref4_163074"><b>Attorney</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOfficial/nc:RoleOfPersonReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:RoleOfPerson</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:JudicialOfficialType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOfficial/nc:RoleOfPerson</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_154242"></a>
+<table><tr><td><div class="element">Attribute <b>roleCode</b></div></td></tr></table>
+<p>A code that describes the role played by a person or organization in a case.  Allowed values are set forth in Court Policy. Examples: Lead attorney, guardian ad litem, friend of court, court appointed special advocate (CASA), caseworker, probation officer, bail bondsman, interested person, interested party, intervenor, heir, trustee or beneficiary (e.g., of a trust).<br /></p><p>Declaration :</p><ul><li>Uml : + roleCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOfficial/j:CaseOfficialRoleText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseParticipantRoleCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOfficial/nc:RoleOfPerson/ecf:PersonAugmentation/ecf:CaseParticipantRoleCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9488002"></a>
+<table><tr><td><div class="element">Attribute <b>representedParty</b></div></td></tr></table>
+<p>A party represented by an attorney	<br /></p><p>Declaration :</p><ul><li>Uml : + representedParty : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/ecf:CaseOfficial/ecf:CaseRepresentedPartyReference</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseRepresentedParty</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseOfficialAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOfficial/ecf:CaseOfficialAugmentation/ecf:CaseRepresentedParty</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14986370"></a>
+<table><tr><td><div class="element">Attribute <b>attorneyID</b></div></td></tr></table>
+<p>A unique identifier for an entity participating in a case.<br /></p><p>Declaration :</p><ul><li>Uml : + attorneyID : <a href="class156162.html#ref4_156162"><b>id</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ParticipantID</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOfficial/nc:RoleOfPerson/ecf:PersonAugmentation/ecf:ParticipantID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

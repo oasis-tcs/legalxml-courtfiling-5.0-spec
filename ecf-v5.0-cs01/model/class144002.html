@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Citation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Citation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_144002"></a>
+<p>A charge issued by a law enforcement officer for a "violation" requiring the person charged to plead guilty to the charge or to appear in court to contest the charge.  A citation is issued in lieu of an arrest and booking.  "Violations" are a subset of "charges" for which a law enforcement officer is authorized to issue a citation in lieu of arrest and booking.  Examples:  traffic ticket, parking ticket or ticket issued for some other ordinance violation such as barking dog or illegal dumping.<br /><br /></p>
+<p> Constraint :</p><ul>See CitationCase</ul><p>Diagram : <a href="index.html#ref10_134914"><b>CriminalCase</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationAugmentation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseAugmentationPoint, (^citation:CaseAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">citation:CaseAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_184066"></a>
+<table><tr><td><div class="element">Relation <b>citationAgency (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The law enforcement agency employing the law enforcement officer who issued this citation.<br /></p><p>Declaration :</p><ul><li>Uml : + citationAgency : <a href="class144130.html#ref4_144130"><b>CitationAgency</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationAgency</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:CitationAgency</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CitationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationAgency</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_182530"></a>
+<table><tr><td><div class="element">Relation <b>citationCourtAppearance (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Representation of when the offender is required to appear in court on this citation.<br /></p><p>Declaration :</p><ul><li>Uml : + citationCourtAppearance : <a href="class145538.html#ref4_145538"><b>CitationCourtAppearance</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:CourtAppearance</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CourtAppearance</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:CourtAppearance</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:CourtAppearanceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_182786"></a>
+<table><tr><td><div class="element">Relation <b>citationIssuringOfficial (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The law enforcement official issuing a citation.<br /></p><p>Declaration :</p><ul><li>Uml : + citationIssuringOfficial : <a href="class144258.html#ref4_144258"><b>CitationIssuingOfficial</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationIssuingOfficial</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CitationIssuingOfficial</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CitationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationIssuingOfficial</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:EnforcementOfficialType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_167042"></a>
+<table><tr><td><div class="element">Attribute <b>citationNumber</b></div></td></tr></table>
+<p> A sequential number preprinted on the citation form which serves as the ticket number<br /></p><p>Declaration :</p><ul><li>Uml : + citationNumber : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/nc:ActivityIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/nc:ActivityIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_167810"></a>
+<table><tr><td><div class="element">Attribute <b>correctableOffenseIndicator</b></div></td></tr></table>
+<p>True if a citation can be dismissed if certain conditions are met; false otherwise.<br /></p><p>Declaration :</p><ul><li>Uml : + correctableOffenseIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationDismissalConditionIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CitationDismissalConditionIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CitationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationDismissalConditionIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_167938"></a>
+<table><tr><td><div class="element">Attribute <b>correctableOffenseText</b></div></td></tr></table>
+<p>A condition to be met that can make a citation eligible for dismissal.<br /></p><p>Declaration :</p><ul><li>Uml : + correctableOffenseText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationDismissalConditionIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CitationDismissalConditionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CitationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationDismissalConditionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_167426"></a>
+<table><tr><td><div class="element">Attribute <b>dateOfCitationIssue</b></div></td></tr></table>
+<p>date citation was issued<br /></p><p>Declaration :</p><ul><li>Uml : + dateOfCitationIssue : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/nc:ActivityDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/nc:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_183042"></a>
+<table><tr><td><div class="element">Relation <b>drivingIncident (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The incident from which this traffic ticket arose.<br /></p><p>Declaration :</p><ul><li>Uml : + drivingIncident : <a href="class144386.html#ref4_144386"><b>DrivingIncident</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:DrivingIncident</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:DrivingIncidentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_167682"></a>
+<table><tr><td><div class="element">Attribute <b>narrativeSummaryOfViolation</b></div></td></tr></table>
+<p>A narrative description of the facts and circumstances for which a citation was issued<br /></p><p>Declaration :</p><ul><li>Uml : + narrativeSummaryOfViolation : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationViolation/nc:ActivityDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/nc:ActivityDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_182146"></a>
+<table><tr><td><div class="element">Relation <b>offender (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A person named in a citation alleged to have violated a statute or ordinance.<br /></p><p>Declaration :</p><ul><li>Uml : + offender : <a href="class144898.html#ref4_144898"><b>Offender</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationSubject</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CitationSubject</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CitationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationSubject</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:SubjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_167554"></a>
+<table><tr><td><div class="element">Attribute <b>officialPresentForIncidentIndicator</b></div></td></tr></table>
+<p>A yes/no indicator that the issuing officer did or did not personally witness the act for which the citation is issued.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + officialPresentForIncidentIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:DrivingIncident/j:IncidentAugmentation/j:IncidentOfficialPresentIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:IncidentOfficialPresentIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:IncidentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:IncidentAugmentation/j:IncidentOfficialPresentIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_183426"></a>
+<table><tr><td><div class="element">Relation <b>parkingViolationInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information about a parking violation.<br /></p><p>Declaration :</p><ul><li>Uml : + parkingViolationInformation : <a href="class184834.html#ref4_184834"><b>ParkingViolationInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:ParkingViolationInformation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">citation:ParkingViolation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/citation:ParkingViolation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">citation:ParkingViolationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_167170"></a>
+<table><tr><td><div class="element">Attribute <b>timeOfViolation</b></div></td></tr></table>
+<p>Date and time of day that a violation occurred.  <br /></p><p>Declaration :</p><ul><li>Uml : + timeOfViolation : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationViolation/j:ActivityDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:DrivingIncident/j:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_182658"></a>
+<table><tr><td><div class="element">Relation <b>violatedStatute (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Details about a statute that has been violated and associated information.<br /></p><p>Declaration :</p><ul><li>Uml : + violatedStatute : <a href="class144642.html#ref4_144642"><b>ViolatedStatute</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:IncidentViolatedStatuteAssociation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:ViolatedStatuteAssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_168066"></a>
+<table><tr><td><div class="element">Attribute <b>violationLocation</b></div></td></tr></table>
+<p>The place where an alleged violation occurred.<br /></p><p>Declaration :</p><ul><li>Uml : + violationLocation : <a href="class163330.html#ref4_163330"><b>address</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationIssuedLocation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:IncidentLocation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:IncidentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationViolation/nc:IncidentLocation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:LocationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9487874"></a>
+<table><tr><td><div class="element">Attribute <b>charge</b></div></td></tr></table>
+<p>A charge association with a citation.<br /></p><p>Declaration :</p><ul><li>Uml : + charge : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationAugmentation/j:CaseCharge</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:CaseCharge</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_11476994"></a>
+<table><tr><td><div class="element">Attribute <b>citation</b></div></td></tr></table>
+<p>A citation.<br /></p><p>Declaration :</p><ul><li>Uml : + citation : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationAugmentation/j:Citation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:Citation</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:CitationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

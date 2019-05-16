@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Booking</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Booking</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_143106"></a>
+<p>Details about an administrative step taken after an arrested subject is brought to a police station or detention facility, which involves entry of the subject name and other relevant facts on the police blotter, and which may also include photographing, fingerprinting, and the like.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:Booking</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:Booking</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_160770"></a>
+<table><tr><td><div class="element">Attribute <b>bookingAgencyID</b></div></td></tr></table>
+<p>An alpha numeric identifier issued by the FBI to identify a specific criminal justice agency. In this instance the Law Enforcement Agency which booked the suspect into jail. (Ex.  AZ0071300, etc.)<br /><br /></p><p>Declaration :</p><ul><li>Uml : + bookingAgencyID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:Booking/j:BookingAgency/nc:OrganizationIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_160898"></a>
+<table><tr><td><div class="element">Attribute <b>bookingAgencyName</b></div></td></tr></table>
+<p>The name of the law enforcement agency that booked the suspect into jail.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + bookingAgencyName : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:Booking/j:BookingAgency/nc:OrganizationName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_160642"></a>
+<table><tr><td><div class="element">Attribute <b>bookingNumber</b></div></td></tr></table>
+<p>Number issued by booking agency at time of the entry of the subject into jail and maintained until release on all charges and sentences.  New number issued for each subsequent jail stay.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + bookingNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:Booking/j:BookingAgencyRecordIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:BookingAgencyRecordIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:BookingType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:Booking/j:BookingAgencyRecordIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_161154"></a>
+<table><tr><td><div class="element">Attribute <b>bookingTime</b></div></td></tr></table>
+<p>The date and time at which a booking commences, recorded on the basis of "military time" in which the hours are numbered from 0 to 23.  Example: 10:00 pm is recorded as 22:00.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + bookingTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:Booking/nc:ActivityDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:Booking/nc:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6173570"></a>
+<table><tr><td><div class="element">Attribute <b>bookingAgency</b></div></td></tr></table>
+<p>The law enforcement agency that performed a booking.<br /></p><p>Declaration :</p><ul><li>Uml : + bookingAgency : string, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:BookingAgency</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:BookingType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:Booking/j:BookingAgency</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

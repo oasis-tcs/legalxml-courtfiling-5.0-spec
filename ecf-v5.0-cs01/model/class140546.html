@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class JuvenileCase</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class JuvenileCase</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_140546"></a>
+<p>A delinquency or dependency case.<br /></p>
+<p>Diagram : <a href="index.html#ref10_135170"><b>JuvenileCase</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseAugmentationPoint, (^juvenile:CaseAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">juvenile:CaseAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_195714"></a>
+<table><tr><td><div class="element">Relation <b>act (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>An action or behavior of a juvenile that makes the juvenile potentially subject to adjudication by the juvenile court as a delinquent.<br /></p><p>Declaration :</p><ul><li>Uml : + act : <a href="class141442.html#ref4_141442"><b>Act</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:DelinquentAct, juvenile:JuvenileCase/juvenile:StatusOffenseAct</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:DelinquentAct</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">juvenile:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:DelinquentAct</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IncidentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_195330"></a>
+<table><tr><td><div class="element">Relation <b>arrest (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Arrest of a minor for commission of an act subjecting the minor to adjudication as a delinquent<br /></p><p>Declaration :</p><ul><li>Uml : + arrest : <a href="class141570.html#ref4_141570"><b>Arrest</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:CaseArrest</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:Arrest</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">juvenile:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/j:Arrest</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_195202"></a>
+<table><tr><td><div class="element">Relation <b>dependencyAllegation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The grounds for declaring a minor child to be a ward of the state because of the neglect or abuse of the  parents or guardians of the minor child.<br /></p><p>Declaration :</p><ul><li>Uml : + dependencyAllegation : <a href="class142978.html#ref4_142978"><b>DependencyAllegation</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:DependencyAllegation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:DependencyPetition</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">juvenile:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:DependencyPetition</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">hs:DependencyPetitionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_194562"></a>
+<table><tr><td><div class="element">Relation <b>juvenile (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Additional information about a person.<br /></p><p>Declaration :</p><ul><li>Uml : + juvenile : <a href="class140674.html#ref4_140674"><b>Juvenile</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenile</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:Juvenile</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:JuvenileCaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">hs:JuvenileType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_154370"></a>
+<table><tr><td><div class="element">Attribute <b>prosecutingAgencyCaseTrackingNumber</b></div></td></tr></table>
+<p>An identifier assigned to a case by the prosecutor office.<br /></p><p>Declaration :</p><ul><li>Uml : + prosecutingAgencyCaseTrackingNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/j:CaseAugmentation/j:CaseProsecutionAttorney/j:CaseOfficialCaseIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseOfficial</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOfficial/j:CaseOfficialCaseIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:CaseOfficialType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

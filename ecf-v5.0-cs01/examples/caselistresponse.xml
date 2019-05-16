@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!-- Modifications:
+	
+		Added nc:IdentificationCategoryDescriptionText and nc:IdentificationSourceText for messageID.
+		Added second instance of nc:DocumentIdentification for Request MessageID.
+
+-->
+<caselistresponse:GetCaseListResponseMessage xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:caselistresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caselistresponse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caselistresponse ../schema/caselistresponse.xsd">
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>10</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>CourtRecord</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>123456ABC</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<ecf:DocumentAugmentation>
+		<ecf:DocumentFiler>
+			<nc:EntityPerson>
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</ecf:DocumentFiler>
+	</ecf:DocumentAugmentation>
+	<ecf:SendingMDELocationID>
+		<nc:IdentificationID>https://efilingmanager.com:8000</nc:IdentificationID>
+	</ecf:SendingMDELocationID>
+	<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+	<j:CaseCourt>
+		<nc:OrganizationIdentification>
+			<nc:IdentificationID>01</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<j:CourtName>King County Superior Court</j:CourtName>
+	</j:CaseCourt>
+	<nc:DocumentPostDate>
+		<nc:DateTime>2007-06-06T14:20:47.0Z</nc:DateTime>
+	</nc:DocumentPostDate>
+	<nc:Case xmlns:criminal="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/criminal" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/criminal ../schema/criminal.xsd">
+		<nc:CaseTitleText>Jane Doe vs. John Doe </nc:CaseTitleText>
+		<ecf:CaseAugmentation>
+			<ecf:CaseCategoryCode>Estate</ecf:CaseCategoryCode>
+			<ecf:CaseTrackingID>
+				<nc:IdentificationID>123456ABC</nc:IdentificationID>
+			</ecf:CaseTrackingID>
+			<j:CaseNumberText>123456ABC</j:CaseNumberText>
+			<nc:Metadata structures:id="Metadata1">
+				<nc:SensitivityText>public</nc:SensitivityText>
+				<nc:LanguageCode>eng</nc:LanguageCode>
+			</nc:Metadata>
+		</ecf:CaseAugmentation>
+		<civil:CaseAugmentation xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil ../schema/civil.xsd">
+			<civil:AmountInControversy>
+				<nc:Amount>100</nc:Amount>
+			</civil:AmountInControversy>
+			<civil:ReliefTypeCode>Monetary</civil:ReliefTypeCode>
+			<ecf:CauseOfActionCode>100</ecf:CauseOfActionCode>
+		</civil:CaseAugmentation>
+	</nc:Case>
+</caselistresponse:GetCaseListResponseMessage>

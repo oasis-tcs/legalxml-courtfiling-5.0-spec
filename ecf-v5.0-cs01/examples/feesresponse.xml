@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!-- Modifications:
+	
+		Added nc:IdentificationCategoryDescriptionText and nc:IdentificationSourceText for messageID.
+		Added message Id from the request message (e.g. GetFeesCalculationRequestMessage).
+
+-->
+<feesresponse:GetFeesCalculationResponseMessage xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:feesresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/feesresponse" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/feesresponse ../schema/feesresponse.xsd">
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>10</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>100</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<ecf:DocumentAugmentation>
+		<ecf:DocumentFiler>
+			<nc:EntityPerson>
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</ecf:DocumentFiler>
+	</ecf:DocumentAugmentation>
+	<ecf:SendingMDELocationID>
+		<nc:IdentificationID>https://efilingmanager.com:8000</nc:IdentificationID>
+	</ecf:SendingMDELocationID>
+	<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+	<j:CaseCourt>
+		<nc:OrganizationIdentification>
+			<nc:IdentificationID>01</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<j:CourtName>King County Superior Court</j:CourtName>
+	</j:CaseCourt>
+	<nc:DocumentPostDate>
+		<nc:DateTime>2007-06-06T14:20:47.0Z</nc:DateTime>
+	</nc:DocumentPostDate>
+	<cac:AllowanceCharge>
+		<cbc:ID>1</cbc:ID>
+		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+		<cbc:AllowanceChargeReasonCode>efsp</cbc:AllowanceChargeReasonCode>
+		<cbc:AllowanceChargeReason>EFSP fee</cbc:AllowanceChargeReason>
+		<cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
+		<cbc:PrepaidIndicator>false</cbc:PrepaidIndicator>
+		<cbc:SequenceNumeric>1</cbc:SequenceNumeric>
+		<cbc:Amount currencyID="USD">5</cbc:Amount>
+	</cac:AllowanceCharge>
+	<cac:AllowanceCharge>
+		<cbc:ID>2</cbc:ID>
+		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+		<cbc:AllowanceChargeReasonCode>court</cbc:AllowanceChargeReasonCode>
+		<cbc:AllowanceChargeReason>Court filing fee</cbc:AllowanceChargeReason>
+		<cbc:MultiplierFactorNumeric>2</cbc:MultiplierFactorNumeric>
+		<cbc:PrepaidIndicator>false</cbc:PrepaidIndicator>
+		<cbc:SequenceNumeric>1</cbc:SequenceNumeric>
+		<cbc:Amount currencyID="USD">100</cbc:Amount>
+	</cac:AllowanceCharge>
+	<feesresponse:FeesCalculationAmount>
+		<nc:Amount>105</nc:Amount>
+	</feesresponse:FeesCalculationAmount>
+</feesresponse:GetFeesCalculationResponseMessage>

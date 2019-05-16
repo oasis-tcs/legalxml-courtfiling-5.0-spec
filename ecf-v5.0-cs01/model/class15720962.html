@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class AllowanceChargeType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class AllowanceChargeType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15720962"></a>
+<p>An authorization by the filer allowing the court to take money from the filer, for a particular purpose, and by a particular means.  Only for case-related activities.  This may only be included with the ReviewFiling message sent to the court - it must not be included with the ReviewFiling message served to other parties in the case.<br /></p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,AllowanceChargeType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34377218"></a>
+<table><tr><td><div class="element">Attribute <b>cbc:Amount</b></div></td></tr></table>
+<p>An amount of money that the filer is paying to the court.<br /></p><p>Declaration :</p><ul><li>Uml : + cbc:Amount : <a href="class15752578.html#ref4_15752578"><b>AmountType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2,Amount</div></li>
+</ul>
+<a name="ref1_34377474"></a>
+<table><tr><td><div class="element">Attribute <b>cac:PaymentMeans</b></div></td></tr></table>
+<p>The payment method employed to complete the transaction.<br /></p><p>Declaration :</p><ul><li>Uml : + cac:PaymentMeans : <a href="class15752706.html#ref4_15752706"><b>PaymenMeansType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,PaymentMeans</div></li>
+</ul>
+<a name="ref1_34377730"></a>
+<table><tr><td><div class="element">Attribute <b>cbc:AllowanceChargeReason</b></div></td></tr></table>
+<p>Purpose or reason for the filer making the payment; this would be a code valid according to and described by Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + cbc:AllowanceChargeReason : <a href="class15752962.html#ref4_15752962"><b>AllowanceChargeReasonType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2,AllowanceChargeReason</div></li>
+</ul>
+</div>
+</body>
+</html>

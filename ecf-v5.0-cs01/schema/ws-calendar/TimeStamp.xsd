@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     WS-Calendar Version 1.0
+     Committee Specification 01
+     30 July 2011
+     Source: http://docs.oasis-open.org/ws-calendar/ws-calendar-spec/v1.0/cs01/xsd/
+     Copyright (c) OASIS Open 2010-2011. All Rights Reserved. -->
+
+<!-- iCalendar timestamp event forensics schema is
+     intended to work in conjunction with conformant
+     implementations of IETF RFC 5545
+     ( http://www.rfc-editor.org/rfc/rfc5545.txt ),
+     the normative specification of iCalendar. -->
+
+<!-- timestamp is an ancilary object to ws-calendar describing the elements needed to support event forensics. -->
+<xs:schema xmlns:ts="http://docs.oasis-open.org/ns/ws-calendar/timestamp/201106" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0" targetNamespace="http://docs.oasis-open.org/ns/ws-calendar/timestamp/201106" elementFormDefault="qualified">
+	<xs:import namespace="urn:ietf:params:xml:ns:icalendar-2.0" schemaLocation="iCalendar.xsd"/>
+	<!-- 5.0 Time Stamps  -->
+	<xs:element name="timeStamp" type="ts:TimeStampType"/>
+	<xs:complexType name="TimeStampType">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="xcal:dtstamp" minOccurs="1"/>
+			<xs:element name="accuracy" type="xcal:DurationValueType" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Identifies whether an interval of a particular duration (resp. starting at a particular time) is indeed an interval of the mentioned duration plus or minus some number of milliseconds, seconds and minutes (resp. an interval starting at the mentioned time plus or minus some number of milliseconds, seconds and minutes.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="timeStampRealm" type="xcal:UriType">
+				<xs:annotation>
+					<xs:documentation>A set of points originating from the same realm are reasonably synchronized. Within a realm, one can assume that time-stamped objects sorted by time are in the order of their occurrence. Between realms, this assumption is rebuttable. A system border is crossed in an interaction when the 2 communication partners are not synchronized based on the same time source.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="leapSecondsKnown" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Indicates that the time source of the sending device support leap seconds adjustments.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="clockNotSynchronized" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Indicates that the time source of the sending device is not synchronized with the external UTC time source. The timestamp should be ignored except for sequencing.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="clockFailure" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>Indicates that the time source of the sending device is unreliable. The timestamp should be ignored.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="timeSourceAccuracy" type="xcal:DurationValueType">
+				<xs:annotation>
+					<xs:documentation>Represents the time accuracy class of the time source of the sending device relative to the external UTC time source.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CalendarEvent</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CalendarEvent</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_149122"></a>
+<p>Details about an event on the court calendar.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CourtEventType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_183170"></a>
+<table><tr><td><div class="element">Attribute <b>eventFromTime</b></div></td></tr></table>
+<p>The scheduled start time of an event on the court calendar.<br /></p><p>Declaration :</p><ul><li>Uml : + eventFromTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/j:ScheduleDayStartTime</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ScheduleDayStartTime</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ScheduleDayType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/j:ScheduleDayStartTime</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:time</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_183554"></a>
+<table><tr><td><div class="element">Attribute <b>eventLocationCode</b></div></td></tr></table>
+<p>A code referring to the location in a court of the calendar event.<br /></p><p>Declaration :</p><ul><li>Uml : + eventLocationCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list CourtLocationCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/ecf:CourtEventLocationCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CourtLocationCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CourtEventAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtLocationCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_183682"></a>
+<table><tr><td><div class="element">Attribute <b>eventLocationText</b></div></td></tr></table>
+<p>A textual description of the location in a court of the calendar event.<br /></p><p>Declaration :</p><ul><li>Uml : + eventLocationText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/ecf:CourtEventLocationText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CourtEventLocationText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CourtEventAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtLocationText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_183298"></a>
+<table><tr><td><div class="element">Attribute <b>eventText</b></div></td></tr></table>
+<p>General description of the event.<br /></p><p>Declaration :</p><ul><li>Uml : + eventText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleActivityText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ScheduleActivityText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ScheduleDayType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleActivityText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_183426"></a>
+<table><tr><td><div class="element">Attribute <b>eventToTime</b></div></td></tr></table>
+<p>The scheduled ending time of an event on the court calendar.<br /></p><p>Declaration :</p><ul><li>Uml : + eventToTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleDayEndTime</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ScheduleDayEndTime</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ScheduleDayType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleDayEndTime</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:time</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_4252674"></a>
+<table><tr><td><div class="element">Attribute <b>eventSchedule</b></div></td></tr></table>
+<p>The schedule associated with a court event.<br /></p><p>Declaration :</p><ul><li>Uml : + eventSchedule : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/ecf:CaseCourtEventj:CourtEventSchedule</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CourtEventSchedule</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CourtEventType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ScheduleType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

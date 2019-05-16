@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class GetServiceInformationResponseMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class GetServiceInformationResponseMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_142338"></a>
+<p>The response to a serviceInformationQueryMessage, setting forth the requested information.<br /></p>
+<p>Diagram : <a href="index.html#ref10_138626"><b>GetServiceInformationResponseMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">serviceresponse:ServiceInformationResponseMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">serviceinformationresponse:GetServiceInformationResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">serviceinformationresponse:GetServiceInformationResponseMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:ResponseMessageType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_178690"></a>
+<table><tr><td><div class="element">Relation <b>organization (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The entity to be served in this case.<br /></p><p>Declaration :</p><ul><li>Uml : + organization : <a href="class131970.html#ref4_131970"><b>Organization</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">serviceresponse:ServiceInformationResponseMessage/serviceresponse:ServiceRecipient/nc:EntityOrganization</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">serviceinformationresponse:ServiceRecipient</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">serviceinformationresponse:GetServiceInformationResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">serviceinformationresponse:GetServiceInformationResponseMessage/serviiceinformationresponse:ServiceRecipient/nc:Organization</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_178562"></a>
+<table><tr><td><div class="element">Relation <b>person (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The person to be served in this case.<br /></p><p>Declaration :</p><ul><li>Uml : + person : <a href="class131842.html#ref4_131842"><b>Person</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">serviceresponse:ServiceInformationResponseMessage/serviceresponse:ServiceRecipient/nc:EntityPerson</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">serviceinformationresponse:ServiceRecipient</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">serviceinformationresponse:GetServiceInformationResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">serviceinformationresponse:GetServiceInformationResponseMessage/serviceinformationresponse:ServiceRecipient/nc:Person</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_1548546"></a>
+<table><tr><td><div class="element">Attribute <b>messageExtension</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + messageExtension : <a href="class2113794.html#ref4_2113794"><b>extension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">serviceinformationresponse:GetServiceInformationResponseMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">serviceinformationresponse:GetServiceInformationResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">serviceinformationresponse:GetServiceInformationResponseMessage/serviceinformationresponse:GetServiceInformationResponseMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

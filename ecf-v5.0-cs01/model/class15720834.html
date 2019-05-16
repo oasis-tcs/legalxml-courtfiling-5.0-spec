@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CaseFilingType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CaseFilingType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15720834"></a>
+<p>The core information contained in an ECF 5.0 message.<br /></p>
+<p>Directly inherited by : <a href="class15720706.html#ref4_15720706"><b>AllocateCourtDateMessageType</b></a> <a href="class15729026.html#ref4_15729026"><b>CallbackMessageType</b></a> <a href="class15728258.html#ref4_15728258"><b>DocumentStampInformationMessageType</b></a> <a href="class15728130.html#ref4_15728130"><b>FilingMessageType</b></a> <a href="class15726466.html#ref4_15726466"><b>NotifyCourtDateMessageType</b></a> <a href="class15729154.html#ref4_15729154"><b>RecordDocketingMessageType</b></a> <a href="class15726978.html#ref4_15726978"><b>RequestMessageType</b></a> <a href="class15729410.html#ref4_15729410"><b>ReserveCourtDateMessageType</b></a> <a href="class15741570.html#ref4_15741570"><b>ResponseMessageType</b></a> </p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseFilingType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34335490"></a>
+<table><tr><td><div class="element">Attribute <b>j:CaseCourt</b></div></td></tr></table>
+<p>A court of law in which the case is being tried.<br /></p><p>Declaration :</p><ul><li>Uml : + j:CaseCourt : <a href="class15735426.html#ref4_15735426"><b>CourtType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/jxdm/6.1/,CaseCourt</div></li>
+</ul>
+<a name="ref1_34353282"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentInformationCutOffDate</b></div></td></tr></table>
+<p>A date after which contributions to the content of a document will no longer be accepted.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentInformationCutOffDate : <a href="class15719298.html#ref4_15719298"><b>DateType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentInformationCutOffDate</div></li>
+</ul>
+<a name="ref1_34387458"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:SendingMDELocationID</b></div></td></tr></table>
+<p>Location for the MDE to which asynchronous and service messages can be sent. This unique location is self-assigned by the MDE.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:SendingMDELocationID : <a href="class15719170.html#ref4_15719170"><b>IdentificationType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,SendingMDELocationID</div></li>
+</ul>
+<a name="ref1_34387586"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:ServiceInteractionProfileCode</b></div></td></tr></table>
+<p>An identifier, from a list of allowed values defined in the Court Filing specification, of a message profile supported by this court.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:ServiceInteractionProfileCode : <a href="class15724546.html#ref4_15724546"><b>normalizedString</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,ServiceInteractionProfileCode</div></li>
+</ul>
+<a name="ref1_34393218"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentPostDate</b></div></td></tr></table>
+<p>A date a document is entered or posted to an information system or network; used when the date of posting is different from the date on which a document was officially filed.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentPostDate : <a href="class15719298.html#ref4_15719298"><b>DateType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentPostDate</div></li>
+</ul>
+</div>
+</body>
+</html>

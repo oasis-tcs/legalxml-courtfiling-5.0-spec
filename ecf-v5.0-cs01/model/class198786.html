@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CourtSchedulingMDE</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CourtSchedulingMDE</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_198786"></a>
+<p>The Court Scheduling MDE is to provide the capability for the filer to submit a request a hearing or calendar date (CourtScheduletQueryMessage) along with the electronic document filing.  This is because many court document filings are made specifically to schedule hearings or conference meetings. The MDE provides the ability for the court to respond to the request (allocateCourtDate).  And it also allows for the participant to query the court calendar for a specific date and/or time (CourtScheduletQueryMessage).<br /></p>
+<p>Declaration :</p><ul>
+<li>Java : protected interface CourtSchedulingMDE </li><li>Php : interface CourtSchedulingMDE </li></ul><p>Component(s) : <a href="index.html#ref6_128514"><b>CourtScheduling</b></a></p>
+<p>Stereotype: interface</p>
+<div class="sub">
+<a name="ref2_149378"></a>
+<table><tr><td><div class="element">Operation <b>GetCourtSchedule</b></div></td></tr></table><p>An operation to query for a schedule of upcoming court events<br /></p><p>Declaration :</p><ul><li>Uml : + GetCourtSchedule(in body : <a href="class199426.html#ref4_199426"><b>GetCourtScheduleRequestMessage</b></a> [1], in path: courtID : string [1]) : <a href="class199554.html#ref4_199554"><b>GetCourtScheduleResponseMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">GET, POST</div></li>
+</ul>
+<a name="ref2_156162"></a>
+<table><tr><td><div class="element">Operation <b>NotifyCourtDate</b></div></td></tr></table><p>An operaiton to notify a court date has been confirmed.<br /></p><p>Declaration :</p><ul><li>Uml : + NotifyCourtDate(in body : <a href="class5257730.html#ref4_5257730"><b>NotifyCourtDateMessage</b></a> [1], in path: courtID : string [1], in path: caseTrackingID : string [1], in path: dateRequestID : string [0..1]) : <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">POST, PUT</div></li>
+</ul>
+<a name="ref2_149506"></a>
+<table><tr><td><div class="element">Operation <b>ReserveCourtDate</b></div></td></tr></table><p>An operation to reserve a court date.<br /></p><p>Declaration :</p><ul><li>Uml : + ReserveCourtDate(in body : <a href="class199170.html#ref4_199170"><b>ReserveCourtDateMessage</b></a> [1], in path: courtID : string [1], in path: caseTrackingID : string [0..1]) : <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">POST, PUT</div></li>
+</ul>
+<a name="ref2_176130"></a>
+<table><tr><td><div class="element">Operation <b>RequestCourtDate</b></div></td></tr></table><p>An operation to request a list of available court dates.<br /></p><p>Declaration :</p><ul><li>Uml : + RequestCourtDate(in body : <a href="class13742466.html#ref4_13742466"><b>RequestCourtDateRequestMessage</b></a> [1], in path: courtID : string [1], in path: caseTrackingID : string [0..1]) : <a href="class13742594.html#ref4_13742594"><b>RequestCourtDateResponseMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">GET</div></li>
+</ul>
+</div>
+<p>All public operations : <a href="class198786.html#ref2_149378"><b>GetCourtSchedule</b></a>, <a href="class198786.html#ref2_156162"><b>NotifyCourtDate</b></a>, <a href="class198786.html#ref2_176130"><b>RequestCourtDate</b></a>, <a href="class198786.html#ref2_149506"><b>ReserveCourtDate</b></a></p>
+</body>
+</html>

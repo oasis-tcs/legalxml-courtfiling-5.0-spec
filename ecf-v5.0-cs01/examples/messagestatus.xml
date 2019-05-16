@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!-- Modifications:
+	
+		Added nc:IdentificationCategoryDescriptionText and nc:IdentificationSourceText for messageID.
+		Added messageId for the requesting message.
+		Added [ECF] Filing Identifier.
+
+		Corrected schemalocation namespace for cbrn replacing 4.1 for 4.0
+-->
+<cbrn:MessageStatus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.1/" xsi:schemaLocation="http://release.niem.gov/niem/domains/cbrn/4.1/ ../schema/niem/domains/cbrn/4.1/cbrn.xsd http://release.niem.gov/niem/niem-core/4.0/ ../schema/niem/niem-core/4.0/niem-core.xsd https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf ../schema/ecf.xsd" cbrn:systemSimulatedIndicator="false">
+	<cbrn:SystemEventDateTime>2017-01-07T13:47:42.0Z</cbrn:SystemEventDateTime>
+	<cbrn:SystemOperatingModeCode>Ops</cbrn:SystemOperatingModeCode>
+	<cbrn:CredentialsAuthenticatedCode>Authenticated</cbrn:CredentialsAuthenticatedCode>
+	<cbrn:MessageStatusCode>DataError</cbrn:MessageStatusCode>
+	<cbrn:MessageContentError>
+		<cbrn:ErrorNodeName>filing:FilingMessage</cbrn:ErrorNodeName>
+		<cbrn:ErrorDescription>
+			<cbrn:ErrorCodeText>1</cbrn:ErrorCodeText>
+		</cbrn:ErrorDescription>
+	</cbrn:MessageContentError>
+	<cbrn:MessageHandlingError>
+		<cbrn:ErrorCodeText>1</cbrn:ErrorCodeText>
+	</cbrn:MessageHandlingError>
+	<cbrn:ResendRequestIndicator>false</cbrn:ResendRequestIndicator>
+	<ecf:MessageStatusAugmentation>
+		<ecf:ServiceRecipientID>
+			<nc:IdentificationID>1</nc:IdentificationID>
+		</ecf:ServiceRecipientID>
+		<!-- Below is the Message ID for this response message. -->
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>1</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>CourtRecord</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		<nc:DocumentIdentification>
+			<!-- Returning Message Identifier from the requesting message (e.g. RecordDocketingMessage) --> 
+			<nc:IdentificationID>1065XYZ9786</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>	
+		<nc:DocumentIdentification>
+			<!-- Returning the [ECF] Filing Identifier assigned by FRMDE per 6.2.4 "MUST be included in all subsequent request and 
+				 response messages in the e-filing transaction". --> 
+			<nc:IdentificationID>123456ABC</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>filingID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+	</ecf:MessageStatusAugmentation>
+</cbrn:MessageStatus>

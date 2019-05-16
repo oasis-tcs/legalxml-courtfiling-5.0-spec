@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class MessageStatusAugmentationType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class MessageStatusAugmentationType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15744002"></a>
+<p>Properties:</p><ul>
+<li>Notes:<br /><div class="sub">Genericode code list ServiceStatusCode.gc</div></li>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,MessageStatusAugmentationType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34354178"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentIdentification</b></div></td></tr></table>
+<p>An identification that references a document.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentIdentification : <a href="class15719170.html#ref4_15719170"><b>IdentificationType</b></a>, multiplicity : 1,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentIdentification</div></li>
+</ul>
+<a name="ref1_34388482"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:ServiceRecipientID</b></div></td></tr></table>
+<p>A value assigned to a person, organization or item entity for the purpose of uniquely specifying the entity within a legal service context with respect to e-filing. The service recipient identifier value must be known and understood by both the service provider and the service requester.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:ServiceRecipientID : <a href="class15719170.html#ref4_15719170"><b>IdentificationType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,ServiceRecipientID</div></li>
+</ul>
+<a name="ref1_34391042"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:ServiceStatusCode</b></div></td></tr></table>
+<p>Enumerated values: unrecognized - filerID is not recognized, received - filing received by MDE, sent - filing sent by MDE to service recipient  Future versions may add additional values, such as: delivered - filing delivered to service recipient. (i.e. under the control of the recipient) opened - filing opened by service recipient<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:ServiceStatusCode : <a href="class15724546.html#ref4_15724546"><b>normalizedString</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,ServiceStatusCode</div></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+	civil-complaint-004-GetFilingStatusResponse-04.xml
+
+	This xml example is a 'minimalist' illustration of a case initiation e-filing submission modeled on Barabara Holmes' Test Case # 300 (Case 
+	Initiation Civil Complaint). In this use case, a self represented plaintiff is initiating a civil tort motor vehicle case (subcategory 'Property
+	Damage') by filing a civil complaint.
+
+	This message is a response to a prior GetFilingStatusRequest (i.e. civil-complaint-003-GetFilingStatusRequest-04.xml). Document binary content
+	is not returned in the response.
+
+	05-8-2018	Updated for WD30.
+	05-21-2018	Updated for WD31.
+	08-03-2018	Updated for WD35 as version 03.
+	09-12-2018	Updated for WD36 as version 04.
+
+-->
+<wrapper:GetFilingStatusResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<filingstatusresponse:GetFilingStatusResponseMessage xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:filingstatusresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusresponse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusresponse ../schema/filingstatusresponse.xsd">
+		<!-- This is the Message ID for this response message. -->
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>0j8G5fTT3sf6-09nh-21</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		
+		<nc:DocumentIdentification>
+			<!-- This is a message identifier assigned by the FilingAssembly MDE to the GetFilingStatusRequest. -->
+			<!-- Per 6.2.5, the request message identifier must be returned on the response message. -->
+			<nc:IdentificationID>87574RY7846</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		<!-- This is the person who made the Filing Status request. It is not the person providing the response. -->
+		<nc:DocumentSubmitter>
+			<nc:EntityPerson structures:id="Requester1">
+				<nc:PersonName>
+					<nc:PersonGivenName>John</nc:PersonGivenName>
+					<nc:PersonMiddleName>W.</nc:PersonMiddleName>
+					<nc:PersonSurName>Doe</nc:PersonSurName>
+					<nc:PersonFullName>John W. Doe</nc:PersonFullName>
+				</nc:PersonName>			
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</nc:DocumentSubmitter>
+
+		<ecf:SendingMDELocationID>
+			<nc:IdentificationID>http://example.com/efm1</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>10</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+			<j:CourtName>Civil Court</j:CourtName>
+		</j:CaseCourt>
+		<nc:DocumentPostDate>
+			<nc:DateTime>2008-07-06T13:57:11.0Z</nc:DateTime>
+		</nc:DocumentPostDate>
+		
+		<!-- Since the processing result for the request is success, no need to include cbrn:MessageStatus. 
+		<cbrn:MessageStatus xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.1/" xsi:schemaLocation="http://release.niem.gov/niem/domains/cbrn/4.1/ ../schema/niem/domains/cbrn/4.1/cbrn.xsd"/>
+		-->
+
+		<!-- At most, a single Matching Filing can be returned in a single response. If the request criteria results in multiple qualifying 
+			 filings, then multiple GetFilingStatusResponse message will need to be returned. -->
+		<ecf:MatchingFiling structures:id="Filing1">			
+		
+			<!-- The [ECF] Filing Identifier is assigned by the FRMDE upon receipt of this ReviewFilingRequest (RvFR) as described in 6.2.4 -->
+			<nc:DocumentIdentification>
+				<!-- Returning the [ECF] Filing Identifier assigned by FRMDE --> 
+				<nc:IdentificationID>123456ABC</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>filingID</nc:IdentificationCategoryDescriptionText>
+				<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>
+			<nc:DocumentSubmitter>
+			<!-- In this example, the Filing Submitter is the same person as the Filer. -->
+				<nc:EntityPerson structures:ref="Person1" xsi:nil="true"/>
+			</nc:DocumentSubmitter>
+			<ecf:DocumentAugmentation>
+				<ecf:DocumentFiler>
+					<!-- The filer is John W Doe (Person1) identified as the Plaintiff -->
+					<nc:EntityPerson structures:ref="Person1" xsi:nil="true"/>
+				</ecf:DocumentFiler>
+			</ecf:DocumentAugmentation>	
+			
+			<!-- ecf:SendingMDELocationID and ecf:ServiceInteractionProfileCode are mandatory elements within ecf:MatchingFiling. These elements
+				 do not appear to provide any value. The values shown below are the values provided in the ReviewFilingRequest. These elements
+				 are messaging metadata and are not properties of the filing. These elements should be removed fro ecf:MatchingFiling. -->
+			<ecf:SendingMDELocationID>
+				<!-- URL for Filing Assembly MDE -->
+				<nc:IdentificationID>http://example.com/efsp1</nc:IdentificationID>
+			</ecf:SendingMDELocationID>
+			<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+			
+			<j:CaseCourt>
+				<nc:OrganizationIdentification>
+					<!-- content reference for a court organization -->
+					<nc:IdentificationID>10</nc:IdentificationID>
+				</nc:OrganizationIdentification>
+				<nc:OrganizationUnitName>Civil Court</nc:OrganizationUnitName>
+			</j:CaseCourt>
+			
+			<!-- nc:DocumentPostDate is required per schema. The schema definiton is: "a date a document is entered or posted 
+				 to an information system or network; used when the date of posting is different than the date on which the
+				 document was officially filed." -->
+			<!-- This element is only available for messages and is not available for documents. -->
+			<!-- At this moment in the e-filing submission process, the documents (e.g. FilingLeadDocument) in the submission are
+				 not yet 'officially filed' (this occurs in the Court Record MDE upon docketing). Essentially, this element is  
+				 understood to contain the date and time that filing:FilingMessage was created and saved. -->
+				 
+			<!-- Consider removing nc:DocumentPostDate from ecf:MatchingFiling. -->
+			
+			<nc:DocumentPostDate>
+				<!-- Date and time the submission left the control of the FAMDE per 6.1.4.-->
+				<!-- It is not clear whether this information should be provided in a Filing Status Response. 
+					 Should this information be private to the filing submitter? -->
+				<nc:DateTime>2008-07-06T13:47:42.0Z</nc:DateTime>
+			</nc:DocumentPostDate>		
+		
+			<ecf:ConnectedDocumentReview structures:id="Document2Review">				<!-- Exhibit -->
+				
+				<ecf:DocumentReviewDisposition>
+					<!-- The ecf:Document element MUST NOT be used in the GetFilingStatusResponse. It is only used in the 
+						 RecordDocketingRequest to identify, by reference, the document from the filing:FilingMessage that has 
+						 been reviewed. -->				
+						
+					<ecf:DocumentReviewStatus>
+						<!-- Since this submission is still pending in clerk review, there is no clerk review disposition for this document.
+							 Values from DocumentReviewStatusCode.gc which provides: 'accepted', 'received', 'rejected', 'issued'. 
+							 Although not yet dispositioned, the current status is 'received'. -->
+						<nc:StatusText>received</nc:StatusText>
+						<nc:StatusDescriptionText>Pending in Clerk Review</nc:StatusDescriptionText>
+					</ecf:DocumentReviewStatus>
+					
+					<!-- Since not yet reviewed by a clerk, there is no clerk reviewer. -->
+					<ecf:DocumentReviewer/>
+				</ecf:DocumentReviewDisposition>
+				<!-- As an alternative to the above, instead of providing empty ecf:DocumentReviewStatus and ecf:DocumentReviewer
+					 elements, the mandatory ecf:DocumentReviewDisposition element could have been provided as an empty element. 
+					 ecf:DocumentReviewDisposition should be nillable. -->
+				
+				<ecf:ReviewedDocument structures:id="Document2" structures:metadata="Document2Metadata">		<!-- Exhibit -->
+				
+					<nc:DocumentCategoryText>Exhibit</nc:DocumentCategoryText>
+					<nc:DocumentSoftwareName>Microsoft Word</nc:DocumentSoftwareName>
+					<nc:DocumentDescriptionText>Exhibit</nc:DocumentDescriptionText>
+					
+					<!-- nc:DocumentEffectiveDate is the docketing date (see UML definition in niem-mapping.csv, copied below):
+						 UML defintion: "the date and time of day on which an entry in the docket or register of action in the court 
+						 CMS was completed for a filing" -->
+					<!-- As such, since docketing has not yet occurred, this element is not provided. -->
+					<!--
+					<nc:DocumentEffectiveDate> -->
+		
+					<!-- The nc:DocumentFileControlID element is optional and may be absent. However when used, nc:DocumentFileControlID 
+						 should not be used at the document level (here), but should be used at the DocumentRendition level (below).  -->
+					<!--
+					<nc:DocumentFileControlID/>
+					-->
+					
+					<nc:DocumentIdentification>
+						<!-- This element is an external content reference from the original FilingConnectedDocument in the RvFR -->
+						<nc:IdentificationID>1</nc:IdentificationID>
+						<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+					</nc:DocumentIdentification>
+					
+					<nc:DocumentSequenceID>2</nc:DocumentSequenceID>
+					
+					<nc:DocumentSubmitter>
+						<!-- The Exhibit document submitter is John W Doe (Person1) identified as the Plaintiff -->
+						<nc:EntityPerson structures:ref="Person1" xsi:nil="true"/>
+					</nc:DocumentSubmitter>
+				
+					<ecf:DocumentAugmentation>
+						<ecf:DocumentFiler>
+							<!-- The Exhibit document filer is John W Doe (Person1) identified as the Plaintiff -->
+							<nc:EntityPerson structures:ref="Person1" xsi:nil="true"/>
+						</ecf:DocumentFiler>
+						
+						<!-- Minimal ecf:DocumentRenditoin information is returned. Document binaries are not returned. -->
+						<ecf:DocumentRendition>
+							<!-- The nc:DocumentFileControlID contains the CRMDE assigned unique identifier for the document rendition -->
+							<!--
+								Per 6.2.5, nc:DocumentFileControlID is a reference to a unique document in the Court Record system and is assigned
+								by the Court Record MDE with values unique to the court.
+							-->
+							<!-- Since docketing has not yet occurred, no DocumentFileControlID has been assigned yet. -->
+							<!--
+							<nc:DocumentFileControlID/>
+							-->
+							<!--
+								nc:DocumentIdentification is a required element but is left as an empty element. There is no need to replicate the
+								value from nc:DocumentFileControlID into nc:DocumentIdentification, nor is this recommended.
+							-->					
+							<nc:DocumentIdentification/>				
+		
+							<!-- In this example, the Hash is provided by the CRMDE and therefore is not available at this point in the process. -->
+							<!--
+							<ecf:DocumentRenditionHash/>
+							-->
+							<!-- nc:Attachment is a mandatory element.  -->
+							<nc:Attachment structures:id="Attachment2">
+								<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+								<!-- nc:BinaryDescriptionText (above) should be 'a description of a binary object'. -->
+								<!-- nc:BinaryFormatText (below) should contain the MIME type. -->
+								<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+								<!-- Since document binary is not returned in this response, nc:BinaryURI and nc:BinarySizeValue are absent. -->
+								<!--
+								<nc:BinaryURI/>
+								<nc:BinarySizeValue/>
+								-->
+							</nc:Attachment>
+						</ecf:DocumentRendition>
+						
+						<!-- At this point in this use case, the filing is queued awaiting clerk review. The document status is 'received'. -->
+						<!-- Note that this is the status of the exhbit document and not the status of the filing (although they could be the same). -->
+						<ecf:DocumentStatus>
+							<nc:StatusText>Exhibit Status</nc:StatusText>
+							<nc:StatusDescriptionText>Pending in Clerk Review</nc:StatusDescriptionText>
+							<nc:StatusDate>
+								<nc:Date>2008-07-07</nc:Date>
+							</nc:StatusDate>
+							<!-- This document has not yet been docketed. -->
+							<!--
+							<ecf:DocumentDocketingStatusCode/>
+							-->
+							<!-- This document has not yet been clerk reviewed. -->
+							<!-- Values from DocumentReviewStatusCode.gc -->
+							<ecf:DocumentReviewStatusCode>received</ecf:DocumentReviewStatusCode>
+						</ecf:DocumentStatus>
+						
+						<!-- New in WD36; identifies the type of document. -->
+						<ecf:DocumentTypeCode>XYZ</ecf:DocumentTypeCode>
+						
+						<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+
+						<!-- Since docketing has not yet occurred, ecf:RegisterActionDescriptionCode is absent. -->
+						<!--
+						<ecf:RegisterActionDescriptionCode/>
+						-->
+						
+						<ecf:SpecialHandlingInstructionsText>Please verify TCN</ecf:SpecialHandlingInstructionsText>
+						<nc:DocumentAssociation>
+							<nc:PrimaryDocument structures:ref="Document1" xsi:nil="true"/>		<!-- Complaint is parent/primary -->
+							<ecf:DocumentAssociationAugmentation>
+								<ecf:DocumentRelatedCode>parent</ecf:DocumentRelatedCode>
+							</ecf:DocumentAssociationAugmentation>
+						</nc:DocumentAssociation>	
+						<nc:Metadata structures:id="Document2Metadata">
+							<nc:SensitivityText>public</nc:SensitivityText>
+							<nc:LanguageCode>eng</nc:LanguageCode>
+						</nc:Metadata>				
+					</ecf:DocumentAugmentation>			
+					<ecf:ReviewedDocumentAugmentation>
+						<!-- Since the exhibit document is not yet docketed since this filing is in clerk review, there is no Docket ID assigned yet. -->
+						<nc:CaseDocketID/>
+					</ecf:ReviewedDocumentAugmentation>
+				</ecf:ReviewedDocument>
+			</ecf:ConnectedDocumentReview>
+			
+			<!--
+			<ecf:FilingCompletionDate>
+				<nc:Date></nc:Date>
+			</ecf:FilingCompletionDate>
+			-->
+			
+			<!-- ecf:FilingStatus is the overall status of the filing (e.g. submission) and not the status of individual documents within the filing. -->
+			<ecf:FilingStatus>
+				<nc:StatusText>Received-Pending</nc:StatusText>
+				<nc:StatusDescriptionText>Pending in Clerk Review</nc:StatusDescriptionText>
+				<nc:StatusDate>
+					<nc:Date>2008-07-07</nc:Date>
+				</nc:StatusDate>
+				<!-- Values from FilingReviewStatusCode.gc which provides: accepted, cancelled, partially-accepted, received, rejected, issued -->
+				<ecf:FilingReviewStatusCode>received</ecf:FilingReviewStatusCode>
+			</ecf:FilingStatus>
+			
+			<ecf:LeadDocumentReview>								<!-- Complaint -->
+				<ecf:DocumentReviewDisposition>
+					<!-- The ecf:Document element MUST NOT be used in the GetFilingStatusResponse. It is only used in the 
+						 RecordDocketingRequest to identify, by reference, the document from the filing:FilingMessage that has 
+						 been reviewed. -->				
+				
+					<ecf:DocumentReviewStatus>
+						<!-- Since this submission is still pending in clerk review, there is no clerk review disposition for this document yet.
+							 Values from DocumentReviewStatusCode.gc which provides: 'accepted', 'received', 'rejected', 'issued'. 
+							 Although not yet dispositioned, the current status is 'received'. -->
+						<nc:StatusText>received</nc:StatusText>
+						<nc:StatusDescriptionText>Pending in Clerk Review</nc:StatusDescriptionText>
+					</ecf:DocumentReviewStatus>
+					
+					<!-- Since not yet reviewed by a clerk, there is no clerk reviewer. -->
+					<ecf:DocumentReviewer/>				
+				</ecf:DocumentReviewDisposition>
+				<!-- As an alternative to the above, instead of providing empty ecf:DocumentReviewStatus and ecf:DocumentReviewer
+					 elements, the mandatory ecf:DocumentReviewDisposition element could have been provided as an empty element. 
+					 ecf:DocumentReviewDisposition should be nillable. -->
+					 				
+				<ecf:ReviewedDocument structures:id="Document1">
+					<nc:DocumentCategoryText>Complaint</nc:DocumentCategoryText>
+					<nc:DocumentSoftwareName>Adobe Acrobat</nc:DocumentSoftwareName>
+					<nc:DocumentDescriptionText>Complaint</nc:DocumentDescriptionText>
+
+					<!-- nc:DocumentEffectiveDate is the docketing date (see UML definition in niem-mapping.csv, copied below):
+						 UML defintion: "the date and time of day on which an entry in the docket or register of action in the court 
+						 CMS was completed for a filing" -->
+					<!-- As such, since docketing has not yet occurred, this element is not provided. -->
+					<!--
+					<nc:DocumentEffectiveDate> -->
+		
+					<!-- The nc:DocumentFileControlID element is optional and may be absent. However when used, nc:DocumentFileControlID 
+						 should not be used at the document level (here), but should be used at the DocumentRendition level (below).  -->
+					<!--
+					<nc:DocumentFileControlID/>
+					-->
+				
+					<nc:DocumentIdentification>
+						<!-- This element is an external content reference from the original FilingLeadDocument in the RvFR. -->
+						<!-- Given that the original filing submission is currently queued for clerk review at this point in this use case 
+							 when this GetFilingStatusRequest/Response occurs, the external FAMDE document identifier is still accessible from
+							 within the filing:FilingMessage. This external FAMDE document reference number/value may not be able to be
+							 returned on a GetFilingStatusResponse for a request that arrives when the original filing (e.g. filing:FilingMessage)
+							 is at a further point in the e-filing cycle. -->
+						<nc:IdentificationID>2</nc:IdentificationID>
+						<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+					</nc:DocumentIdentification>
+					
+					<nc:DocumentSequenceID>1</nc:DocumentSequenceID>
+					
+					<!-- Recall that in this use case, the submitter did not provide a document title for the complaint upon submittal. A title is added
+						 during docketing. However, since this GetFilingRequest occurs prior to docketing, there is no title to return yet. -->
+					<!--
+					<nc:DocumentTitleText/>
+					-->
+								
+					<ecf:DocumentAugmentation>
+						<ecf:DocumentFiler>
+							<!-- The document filer for the complaint is John W Doe (Person1), plaintiff.-->
+							<nc:EntityPerson structures:ref="Person1"/>
+						</ecf:DocumentFiler>
+						
+						<!-- Minimal ecf:DocumentRendition information is returned in the response. Document binary is not returned. -->
+						<ecf:DocumentRendition>
+							<!-- The nc:DocumentFileControlID contains the CRMDE assigned unique identifier for the document rendition -->
+							<!--
+								Per 6.2.5, nc:DocumentFileControlID is a reference to a unique document in the Court Record system and is assigned
+								by the Court Record MDE with values unique to the court.
+							-->
+							<!-- Since docketing has not yet occurred, no DocumentFileControlID has been assigned yet. -->
+							<!--
+							<nc:DocumentFileControlID/>
+							-->
+							<!--
+								nc:DocumentIdentification is a required element but is left as an empty element. There is no need to replicate the
+								value from nc:DocumentFileControlID into nc:DocumentIdentification, nor is this recommended.
+							-->					
+							<nc:DocumentIdentification/>				
+		
+							<!-- In this example, the Hash is provided by the CRMDE and therefore is not available at this point in the process. -->
+							<!--
+							<ecf:DocumentRenditionHash/>
+							-->
+							<!-- nc:Attachment is a mandatory element.  -->
+							<nc:Attachment structures:id="Attachment1">
+								<nc:BinaryDescriptionText>Microsoft Word</nc:BinaryDescriptionText>
+								<!-- nc:BinaryDescriptionText (above) should be 'a description of a binary object'. -->
+								<!-- nc:BinaryFormatText (below) should contain the MIME type. -->
+								<!-- MIME type for Microsoft Word .docx -->
+								<nc:BinaryFormatText>application/vnd.openxmlformats-officedocument.wordprocessingml.document</nc:BinaryFormatText>						
+								<!-- Since document binary is not returned in this response, nc:BinaryURI and nc:BinarySizeValue are absent. -->
+								<!--
+								<nc:BinaryURI/>
+								<nc:BinarySizeValue/>
+								-->
+							</nc:Attachment>
+						</ecf:DocumentRendition>						
+						
+						<!-- At this point in this use case, the filing is queued awaiting clerk review. The document status is 'received'. -->
+						<!-- Note that this is the status of the complaint document and not the status of the filing (although they could be the same). -->
+						<ecf:DocumentStatus>
+							<nc:StatusText>Complaint Status</nc:StatusText>
+							<nc:StatusDescriptionText>Pending in Clerk Review</nc:StatusDescriptionText>
+							<nc:StatusDate>
+								<nc:Date>2008-07-07</nc:Date>
+							</nc:StatusDate>
+							<!-- This document has not yet been docketed. -->
+							<!--
+							<ecf:DocumentDocketingStatusCode/>
+							-->
+							<!-- This document has not yet been clerk reviewed. -->
+							<!-- Values from DocumentReviewStatusCode.gc -->
+							<ecf:DocumentReviewStatusCode>received</ecf:DocumentReviewStatusCode>
+						</ecf:DocumentStatus>
+						
+						<!-- New in WD36; identifies the type of document. -->
+						<ecf:DocumentTypeCode>ABC</ecf:DocumentTypeCode>
+						
+						<!-- Since docketing has not yet occurred, ecf:RegisterActionDescriptionCode is absent. -->
+						<!--
+						<ecf:RegisterActionDescriptionCode/> 
+						-->
+						
+						<ecf:SpecialHandlingInstructionsText>Please verify TCN</ecf:SpecialHandlingInstructionsText>						
+						<nc:Metadata structures:id="RenditionMetaData1">
+							<nc:SensitivityText>private</nc:SensitivityText>
+							<nc:LanguageCode>eng</nc:LanguageCode>
+						</nc:Metadata>			
+					</ecf:DocumentAugmentation>
+
+				</ecf:ReviewedDocument>
+			</ecf:LeadDocumentReview>
+	
+			<!-- There is one additional lead document in the filing - a summons document. However, it is the policy of the court to
+				 not provide any information in a GetFilingStatus request for summons documents.
+			-->
+
+			
+			<!-- Implementers are free to choose how much or how little case information they will return in a GetFilingStatusResponse.
+				 In this example, abundant case information is returned. However, since at this point in this use case example the filing
+				 is still awaiting clerk review, there is the possibility that the filing will be fully or partially rejected or even
+				 cancelled. If the GetFilingStatus requester is not the same as the RecordFilingReview requester, then it may be 
+				 inappropriate to disclose abundant case information prior to accepting and docketing the filing and assigning a
+				 case number. -->
+				 
+			<nc:Case structures:id="Case1" xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/criminal ../schema/criminal.xsd">
+				<!-- It appears that nc:CaseShortTitleText should generally be used instead of nc:CaseTitleText for a short title. -->
+				<nc:CaseTitleText>John Doe vs. Jane Smith</nc:CaseTitleText>
+				<j:CaseAugmentation>
+					<j:CaseCourt>
+						<nc:OrganizationIdentification>
+							<nc:IdentificationID>10</nc:IdentificationID>
+						</nc:OrganizationIdentification>
+						<j:CourtName>Civil Court</j:CourtName>
+					</j:CaseCourt>
+				</j:CaseAugmentation>
+				<ecf:CaseAugmentation>
+					<ecf:CaseCategoryCode>Tort Motor Vehicle</ecf:CaseCategoryCode>
+					<ecf:CaseParty>
+						<nc:EntityPerson structures:id="Person1">
+							<!--j:PersonAugmentation></j:PersonAugmentation-->
+							<nc:PersonBirthDate>
+								<nc:Date>1963-01-01</nc:Date>
+							</nc:PersonBirthDate>
+							<nc:PersonName>
+								<nc:PersonGivenName>John</nc:PersonGivenName>
+								<nc:PersonMiddleName>W.</nc:PersonMiddleName>
+								<nc:PersonSurName>Doe</nc:PersonSurName>
+							</nc:PersonName>
+							<nc:PersonOtherIdentification>
+								<nc:IdentificationID structures:id="Person1ID">1234-56-789</nc:IdentificationID>
+								<ecf:PersonIdentificationCategoryCode>DriverLicense</ecf:PersonIdentificationCategoryCode>
+								<nc:IdentificationSourceText>State Department of Motor Vehicles</nc:IdentificationSourceText>
+							</nc:PersonOtherIdentification>
+							<nc:PersonRaceText>W</nc:PersonRaceText>
+							<j:PersonSexCode>M</j:PersonSexCode>
+							<nc:PersonTaxIdentification>
+								<nc:IdentificationID>123-45-67890</nc:IdentificationID>
+							</nc:PersonTaxIdentification>
+							<ecf:PersonAugmentation>
+								<ecf:CaseParticipantRoleCode>Plaintiff</ecf:CaseParticipantRoleCode>
+								<ecf:CasePartySelfRepresentationIndicator>true</ecf:CasePartySelfRepresentationIndicator>
+								<ecf:ParticipantID>
+									<nc:IdentificationID>10</nc:IdentificationID>
+								</ecf:ParticipantID>
+								<nc:ContactInformation>
+									<nc:ContactMailingAddress>
+										<nc:LocationStreet>
+											<nc:StreetFullText>123 Main St.</nc:StreetFullText>
+										</nc:LocationStreet>
+										<nc:LocationCityName>Anytown</nc:LocationCityName>
+										<nc:LocationState>
+											<nc:LocationStateName>IN</nc:LocationStateName>
+										</nc:LocationState>
+										<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+									</nc:ContactMailingAddress>
+								</nc:ContactInformation>
+							</ecf:PersonAugmentation>
+						</nc:EntityPerson>
+					</ecf:CaseParty>
+					<ecf:CaseParty>
+						<nc:EntityPerson structures:id="Person2">
+							<nc:PersonBirthDate>
+								<nc:Date>1969-10-10</nc:Date>
+							</nc:PersonBirthDate>
+							<nc:PersonName>
+								<nc:PersonGivenName>Jane</nc:PersonGivenName>
+								<nc:PersonMiddleName>Q</nc:PersonMiddleName>
+								<nc:PersonSurName>Smith</nc:PersonSurName>
+								<nc:PersonMaidenName>Roberts</nc:PersonMaidenName>
+							</nc:PersonName>
+							<nc:PersonOtherIdentification>
+								<nc:IdentificationID>1234-56-789</nc:IdentificationID>
+								<ecf:PersonIdentificationCategoryCode>DriverLicense</ecf:PersonIdentificationCategoryCode>
+								<nc:IdentificationSourceText>State Department of Motor Vehicles</nc:IdentificationSourceText>
+							</nc:PersonOtherIdentification>
+							<j:PersonSexCode>F</j:PersonSexCode>
+							<nc:PersonTaxIdentification>
+								<nc:IdentificationID>123-45-67890</nc:IdentificationID>
+							</nc:PersonTaxIdentification>
+							<ecf:PersonAugmentation>
+								<ecf:CaseParticipantRoleCode>Defendant</ecf:CaseParticipantRoleCode>
+								<ecf:ParticipantID>
+									<nc:IdentificationID>20</nc:IdentificationID>
+								</ecf:ParticipantID>
+								<nc:ContactInformation>
+									<nc:ContactMailingAddress>
+										<nc:LocationStreet>
+											<nc:StreetFullText>456 South St.</nc:StreetFullText>
+										</nc:LocationStreet>
+										<nc:LocationCityName>Anytown</nc:LocationCityName>
+										<nc:LocationState>
+											<nc:LocationStateName>IN</nc:LocationStateName>
+										</nc:LocationState>
+										<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+									</nc:ContactMailingAddress>
+								</nc:ContactInformation>
+							</ecf:PersonAugmentation>
+						</nc:EntityPerson>
+					</ecf:CaseParty>
+					<!-- Since at this point in the filing cycle this filing is awaiting clerk review and has not yet been docketed, and
+						 because this is a case initiation submission, no case number or case tracking ID have yet been assigned. -->
+					<ecf:CaseTrackingID/>
+					<ecf:CaseTypeCode>Civil</ecf:CaseTypeCode>
+					<j:CaseNumberText/>
+				</ecf:CaseAugmentation>
+				<civil:CaseAugmentation xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil ../schema/civil.xsd">
+					<civil:AmountInControversy>
+						<nc:Amount>100</nc:Amount>
+					</civil:AmountInControversy>
+					<civil:CivilClassActionIndicator>false</civil:CivilClassActionIndicator>
+					<civil:JurisdictionalGroundsCode>Statewide</civil:JurisdictionalGroundsCode>
+					<civil:JuryDemandIndicator>false</civil:JuryDemandIndicator>
+					<civil:ReliefTypeCode>Monetary</civil:ReliefTypeCode>
+					<ecf:CauseOfActionCode>100</ecf:CauseOfActionCode>
+				</civil:CaseAugmentation>
+			</nc:Case>			
+			
+		</ecf:MatchingFiling>
+		
+	</filingstatusresponse:GetFilingStatusResponseMessage>
+
+</wrapper:GetFilingStatusResponse>

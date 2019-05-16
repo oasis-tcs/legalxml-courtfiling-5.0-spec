@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+	civil-complaint-003-GetFilingStatusRequest-04.xml
+
+	Civil Complaint Filing
+	
+	This xml example is from a series of examples that illustrate a full life cycle sequence use case for a minimalist illustration of  
+	Barabara Holmes' Test Case # 300 (Case Initiation Civil Complaint).
+
+	This Filing Status Request occurs in this Use Case after the ReviewFilingRequest, and prior to the completion of clerk review 
+	and the RecordDocketingRequest. Section 3.2.1 provides that the GetFilingStatus operation may be invoked at any point during or
+	after the ReviewFiling operation e.g. clerk review). In this use case, the filing status request occurs while the submission is
+	pending in clerk review.
+
+	Elements contained within this request message are either (1) message metatdata, or (2) request query parameters.
+
+	Message metadata is information that pertains to the message but has no relevance on what is being requested. For example, the message identifier,
+	the message requester, and the date and time the the request message was posted are message metadata.
+
+	Request query parameters are elements that contain information that defines or constrains the information which is being requested. Examples
+	are the filing identifier, and case number. 
+
+	It would be better if message metatdata elements were clearly separated from request query parameter elements in the message design.
+
+	05-8-2018	Updated for WD30.
+	05-21-2018	Updated for WD31.
+	08-03-2018	Updated for WD35 as version 03.
+	09-12-2018	Updated for WD36 as version 04.
+
+-->
+<wrapper:GetFilingStatusRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<filingstatusrequest:GetFilingStatusRequestMessage xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:filingstatusrequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusrequest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusrequest ../schema/filingstatusrequest.xsd">
+		<nc:DocumentIdentification>
+			<!-- This is a message identifier assigned by the FilingAssembly MDE per 6.2.5 -->
+			<!-- This is message metadata. -->
+			<nc:IdentificationID>87574RY7846</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		<!-- Document Submitter is the entity who is making the GetFilingStatusRequest and is message metadata. -->
+		<nc:DocumentSubmitter>
+			<nc:EntityPerson structures:id="Person1">
+				<nc:PersonName>
+					<nc:PersonGivenName>John</nc:PersonGivenName>
+					<nc:PersonMiddleName>W.</nc:PersonMiddleName>
+					<nc:PersonSurName>Doe</nc:PersonSurName>
+					<nc:PersonFullName>John W. Doe</nc:PersonFullName>
+				</nc:PersonName>			
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</nc:DocumentSubmitter>
+		<!-- DocumentFiler should not be used to identify the entity making the GetFilingStatusRequest - use nc:DocumentSubmitter. -->
+		<!-- If ecf:DocumentFiler is provided, then it should be understood as a request parameter; e.g. only return filings submitted by filer 10. -->
+		<!--
+		<ecf:DocumentAugmentation>
+			<ecf:DocumentFiler>
+				<nc:EntityPerson>
+					<ecf:PersonAugmentation>
+						<ecf:ParticipantID>
+							<nc:IdentificationID>10</nc:IdentificationID>
+						</ecf:ParticipantID>
+					</ecf:PersonAugmentation>
+				</nc:EntityPerson>
+			</ecf:DocumentFiler>
+		</ecf:DocumentAugmentation>
+		-->
+		<!-- SendingMDELocationID and ServiceInteractionProfileCode are message metadata. -->
+		<ecf:SendingMDELocationID>
+			<!-- URL of the requesting MDE; i.e. FAMDE -->
+			<nc:IdentificationID>http://example.com/efsp1</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<!-- CaseCourt is a request query parameter but is not contained within FilingStatusQueryCriteria. -->
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>10</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+			<nc:OrganizationUnitName>Civil Court</nc:OrganizationUnitName>
+		</j:CaseCourt>
+		<!-- DocumentPostDate is message metadata. -->
+		<nc:DocumentPostDate>
+			<!-- The date and time of the request -->
+			<nc:DateTime>2008-07-06T13:57:04.0Z</nc:DateTime>
+		</nc:DocumentPostDate>
+		<filingstatusrequest:FilingStatusQueryCriteria>
+			<!-- Since the filing for which status is being requested was a case initiation filing, neither the case number nor any
+				 CaseTrackingID is known to the Filing status requester. So both elements are absent or empty. -->
+			<ecf:CaseTrackingID/>
+			<j:CaseNumberText/>
+			<nc:DocumentIdentification>
+				<!-- This is the Filing Identifier assigned by the Filing Review MDE upon receipt of the ReviewFilingRequest. -->
+				<!-- This element is a request query parameter used to specify the Filing for which the Status is being requested. -->
+				<nc:IdentificationID>123456ABC</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>filingID</nc:IdentificationCategoryDescriptionText>
+				<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>
+		</filingstatusrequest:FilingStatusQueryCriteria>
+	</filingstatusrequest:GetFilingStatusRequestMessage>
+
+</wrapper:GetFilingStatusRequest>

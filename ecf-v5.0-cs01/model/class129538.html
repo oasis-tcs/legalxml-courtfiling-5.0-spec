@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CourtRecordMDE</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CourtRecordMDE</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_129538"></a>
+<p>The list of operations supported by the Court Record MDE.<br /></p>
+<p>Declaration :</p><ul>
+<li>Java : protected interface CourtRecordMDE </li><li>Php : interface CourtRecordMDE </li></ul><p>Component(s) : <a href="index.html#ref6_128258"><b>CourtRecord</b></a></p>
+<p>Stereotype: interface</p>
+<div class="sub">
+<a name="ref2_149634"></a>
+<table><tr><td><div class="element">Operation <b>AllocateCourtDate</b></div></td></tr></table><p>An operation to request a court date.<br /></p><p>Declaration :</p><ul><li>Uml : + AllocateCourtDate(in body : <a href="class198914.html#ref4_198914"><b>AllocateCourtDateMessage</b></a> [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">POST</div></li>
+</ul>
+<a name="ref2_169474"></a>
+<table><tr><td><div class="element">Operation <b>DocumentStampInformation</b></div></td></tr></table><p>An operation that is a query for the information to be included on document stamps.  This operation is implemented by the system responsible for providing the document stamp information.  The operation is invoked by the system responsible for performing the stamping.<br /></p><p>Declaration :</p><ul><li>Uml : + DocumentStampInformation(in body : <a href="class2107138.html#ref4_2107138"><b>DocumentStampInformationMessage</b></a> [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">GET</div></li>
+</ul>
+<a name="ref2_129282"></a>
+<table><tr><td><div class="element">Operation <b>GetCase</b></div></td></tr></table><p>An operation to query information on a case.<br /></p><p>Declaration :</p><ul><li>Uml : + GetCase(in body : <a href="class145154.html#ref4_145154"><b>GetCaseRequestMessage</b></a> [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : <a href="class145282.html#ref4_145282"><b>GetCaseResponseMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">GET, POST</div></li>
+</ul>
+<a name="ref2_129154"></a>
+<table><tr><td><div class="element">Operation <b>GetCaseList</b></div></td></tr></table><p>An operation to query a list of cases that match a set of criteria.<br /></p><p>Declaration :</p><ul><li>Uml : + GetCaseList(in body : <a href="class133762.html#ref4_133762"><b>GetCaseListRequestMessage</b></a> [1]) : <a href="class133890.html#ref4_133890"><b>GetCaseListResponseMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">GET, POST</div></li>
+</ul>
+<a name="ref2_129410"></a>
+<table><tr><td><div class="element">Operation <b>GetDocument</b></div></td></tr></table><p>An peration to query for a document.<br /></p><p>Declaration :</p><ul><li>Uml : + GetDocument(in body : <a href="class134146.html#ref4_134146"><b>GetDocumentRequestMessage</b></a> [1], in path: courtID : string [1], in path: caseTrackingID : string [1], in path: documentID : string [1]) : <a href="class134274.html#ref4_134274"><b>GetDocumentResponseMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">GET, POST</div></li>
+</ul>
+<a name="ref2_129666"></a>
+<table><tr><td><div class="element">Operation <b>GetServiceInformation</b></div></td></tr></table><p>An operation to query for contact information required to serve a document.<br /></p><p>Declaration :</p><ul><li>Uml : + GetServiceInformation(in body : <a href="class142210.html#ref4_142210"><b>GetServiceInformationRequestMessage</b></a> [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : <a href="class142338.html#ref4_142338"><b>GetServiceInformationResponseMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">GET</div></li>
+</ul>
+<a name="ref2_129026"></a>
+<table><tr><td><div class="element">Operation <b>RecordDocketing</b></div></td></tr></table><p>An operation to record and docket a court filing in a court record system.<br /></p><p>Declaration :</p><ul><li>Uml : + RecordDocketing(in body : <a href="class145794.html#ref4_145794"><b>RecordDocketingMessage</b></a> [1..*], in body : <a href="class135938.html#ref4_135938"><b>PaymentMessage</b></a> [0..2], in path: courtID : string [1]) : <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">POST</div></li>
+</ul>
+</div>
+<p>All public operations : <a href="class129538.html#ref2_149634"><b>AllocateCourtDate</b></a>, <a href="class129538.html#ref2_169474"><b>DocumentStampInformation</b></a>, <a href="class129538.html#ref2_129282"><b>GetCase</b></a>, <a href="class129538.html#ref2_129154"><b>GetCaseList</b></a>, <a href="class129538.html#ref2_129410"><b>GetDocument</b></a>, <a href="class129538.html#ref2_129666"><b>GetServiceInformation</b></a>, <a href="class129538.html#ref2_129026"><b>RecordDocketing</b></a></p>
+</body>
+</html>

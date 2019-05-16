@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ContactInformation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ContactInformation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_134914"></a>
+<p>The preferred contact for a person or organization, such as address, telephone number, or email address.<br /></p>
+<p>Diagram : <a href="index.html#ref10_245122"><b>ContactInformation</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:ContactInformation/nc:ContactMeans</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:ContactInformation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_4253442"></a>
+<table><tr><td><div class="element">Attribute <b>emailAddress</b></div></td></tr></table>
+<p>An email address.<br /></p><p>Declaration :</p><ul><li>Uml : + emailAddress : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:ContactInformation/nc:ContactEmailID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ContactMeansAbstract, (nc:ContactEmailID)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformationAssociation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:string</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_4526338"></a>
+<table><tr><td><div class="element">Relation <b>mailingAddress (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A mailing address.<br /></p><p>Declaration :</p><ul><li>Uml : + mailingAddress : <a href="class5366146.html#ref4_5366146"><b>PostalAddress</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:ContactInformation/nc:ContactMailingAddress</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ContactMeansAbstract, (nc:ContactMailingAddress)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformationAssociation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_4526466"></a>
+<table><tr><td><div class="element">Relation <b>telephoneNumber (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A telephone number.<br /></p><p>Declaration :</p><ul><li>Uml : + telephoneNumber : <a href="class5359362.html#ref4_5359362"><b>TelephoneNumber</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:ContactInformation/nc:ContactTelephoneNumber</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ContactMeansAbstract, (nc:ContactTelephoneNumber)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformationAssociation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TelephoneNumberType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_4260226"></a>
+<table><tr><td><div class="element">Attribute <b>contactDescription</b></div></td></tr></table>
+<p>A description of a contact.<br /></p><p>Declaration :</p><ul><li>Uml : + contactDescription : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:ContactInformation/nc:ContactEntityDescriptionText, nc:ContactInformationDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ContactEntityDescriptionText, nc:ContactInformationDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9577474"></a>
+<table><tr><td><div class="element">Attribute <b>organizationContactUse</b></div></td></tr></table>
+<p>How the contact information should be used (e.g. primary, only for emergency, only during day/evening/night)<br /></p><p>Declaration :</p><ul><li>Uml : + organizationContactUse : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Organization/ecf:OrganizationAugmentation/nc:OrganizationContactInformationAssociation/nc:ContactInformationIsPrimaryIndicator, nc:ContactInformationIsEmergencyIndicator, nc:ContactInformationIsDayIndicator, nc:ContactInformationIsEveningIndicator, nc:ContactInformationIsNightInidcator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ContactInformationAvailabilityAbstract, (nc:ContactInformationAvailabilityCode)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">core_misc:ContactInformationAvailabilityCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9576578"></a>
+<table><tr><td><div class="element">Attribute <b>personContactUse</b></div></td></tr></table>
+<p>How the contact information should be used (e.g. home, work, only for emergency, only during day/evening/night)<br /></p><p>Declaration :</p><ul><li>Uml : + personContactUse : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:PersonContactInformationAssociation/nc:ContactInformationIsPrimaryIndicator, nc:ContactInformationIsHomeIndicator, nc:ContactInformationIsWorkIndicator, nc:ContactInformationIsEmergencyIndicator, nc:ContactInformationIsDayIndicator, nc:ContactInformationIsEveningIndicator, nc:ContactInformationIsNightInidcator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ContactEntity</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_4260354"></a>
+<table><tr><td><div class="element">Attribute <b>responder</b></div></td></tr></table>
+<p>A person who responds to calls on behalf of the contact.<br /></p><p>Declaration :</p><ul><li>Uml : + responder : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:ContactInformation/nc:ContactResponder</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:ContactResponder</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformationAssociation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_3997058"></a>
+<table><tr><td><div class="element">Relation <b>organization (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>An organization associated with the contact information.<br /></p><p>Declaration :</p><ul><li>Uml : + organization : <a href="class131970.html#ref4_131970"><b>Organization</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Organization/ecf:OrganizationAugmentation/nc:OrganizationContactInformationAssociation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ContactInformation</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:OrganizationAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Organization/ecf:OrganizationAugmentation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_3997186"></a>
+<table><tr><td><div class="element">Relation <b>person (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>An organization associated with the contact information.<br /></p><p>Declaration :</p><ul><li>Uml : + person : <a href="class131842.html#ref4_131842"><b>Person</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:PersonContactInformationAssociation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ContactInformation</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

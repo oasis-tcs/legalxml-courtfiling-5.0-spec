@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CaseInformation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CaseInformation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_146306"></a>
+<p>Information about a court case.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_154498"></a>
+<table><tr><td><div class="element">Relation <b>caseDocketEntry (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>An entry in the docket or register of actions for this case.<br /></p><p>Declaration :</p><ul><li>Uml : + caseDocketEntry : <a href="class148354.html#ref4_148354"><b>CaseDocketEntry</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseCourtEvent</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCourtEvent</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:CourtEventType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_175618"></a>
+<table><tr><td><div class="element">Attribute <b>caseInitiationDate</b></div></td></tr></table>
+<p>The date on which a case is initiated.<br /></p><p>Declaration :</p><ul><li>Uml : + caseInitiationDate : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/nc:ActivityDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/nc:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_154114"></a>
+<table><tr><td><div class="element">Relation <b>caseParticipant (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Structure containing information about a participant in this case.<br /></p><p>Declaration :</p><ul><li>Uml : + caseParticipant : <a href="class149506.html#ref4_149506"><b>CaseParticipant</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/ecf:CaseParticipant</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseOtherEntity, j:CaseOfficial</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseOtherEntity</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_154370"></a>
+<table><tr><td><div class="element">Relation <b>caseStatus (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Current disposition of this case.<br /></p><p>Declaration :</p><ul><li>Uml : + caseStatus : <a href="class170242.html#ref4_170242"><b>CaseStatus</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/nc:ActivityStatus</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityStatus</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/nc:ActivityStatus</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_175490"></a>
+<table><tr><td><div class="element">Attribute <b>caseStyle</b></div></td></tr></table>
+<p>Formal header for a pleading or opinion. E.g. Court, Party vs. Party, Case #.<br /></p><p>Declaration :</p><ul><li>Uml : + caseStyle : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/nc:CaseTitleText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseTitleText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/nc:CaseTitleText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_175746"></a>
+<table><tr><td><div class="element">Attribute <b>caseTrackingIdentifier</b></div></td></tr></table>
+<p>Court case number.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTrackingIdentifier : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/nc:CaseTrackingID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseNumberText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/j:CaseNumberText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_175874"></a>
+<table><tr><td><div class="element">Attribute <b>caseTypeCode</b></div></td></tr></table>
+<p>The classification used by a court to denote the type of case for purposes of statistical categorization, court record keeping, or case assignment.  Allowable values set forth in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/nc:CaseCategoryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseTypeCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/ecf:CaseTypeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_154242"></a>
+<table><tr><td><div class="element">Relation <b>judicialOfficer (&lt;directional aggregation&gt;)</b></div></td></tr></table><p> A judicial officer assigned to this case.<br /></p><p>Declaration :</p><ul><li>Uml : + judicialOfficer : <a href="class149378.html#ref4_149378"><b>JudicialOfficer</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseJudge</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseJudge</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseJudge</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:JudicialOfficialType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

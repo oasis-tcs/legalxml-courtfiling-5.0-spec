@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CallbackMessageType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CallbackMessageType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15729026"></a>
+<p>The base message for an asynchronous response to a message.<br /></p>
+<p>Directly inherited by : <a href="class15739010.html#ref4_15739010"><b>MatchingFilingType</b></a> <a href="class15750274.html#ref4_15750274"><b>NotifyDocketingCompleteMessageType</b></a> <a href="class15750402.html#ref4_15750402"><b>NotifyDocumentStampInformationMessageType</b></a> <a href="class15750530.html#ref4_15750530"><b>NotifyFilingReviewCompleteMessageType</b></a> </p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CallbackMessageType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34322690"></a>
+<table><tr><td><div class="element">Attribute <b>nc:Case</b></div></td></tr></table>
+<p>An aggregation of information about a set of related activities and events.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:Case : <a href="class15722114.html#ref4_15722114"><b>CaseType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,Case</div></li>
+</ul>
+<a name="ref1_34353410"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:FilingCompletionDate</b></div></td></tr></table>
+<p>the date and time at which the Court Record MDE filing process was completed following the acceptance by the Filing Review MDE<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:FilingCompletionDate : <a href="class15719298.html#ref4_15719298"><b>DateType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,FilingCompletionDate</div></li>
+</ul>
+<a name="ref1_34354690"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:FilingStatus</b></div></td></tr></table>
+<p>The status of a filing<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:FilingStatus : <a href="class15743746.html#ref4_15743746"><b>FilingStatusType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,FilingStatus</div></li>
+</ul>
+<a name="ref1_34385410"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:ConnectedDocumentReview</b></div></td></tr></table>
+<p>The review process for a connected document<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:ConnectedDocumentReview : <a href="class15734402.html#ref4_15734402"><b>DocumentReviewType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,ConnectedDocumentReview</div></li>
+</ul>
+<a name="ref1_34385794"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:LeadDocumentReview</b></div></td></tr></table>
+<p>A review process for a lead document.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:LeadDocumentReview : <a href="class15734402.html#ref4_15734402"><b>DocumentReviewType</b></a>, multiplicity : 1,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,LeadDocumentReview</div></li>
+</ul>
+</div>
+</body>
+</html>

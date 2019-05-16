@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class RuntimePolicyParameters</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class RuntimePolicyParameters</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_136962"></a>
+<p>Within Court Policy, the policies that are accessed dynamically by applications interacting with a court.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Reference nc:Metadata with policyresponse:RuntimePolicy/&#64;structures:metadata</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:RuntimePolicyParameters</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:RuntimePolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:RuntimePolicy</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_156674"></a>
+<table><tr><td><div class="element">Relation <b>CoreCodelist (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The list of data elements and corresponding lists of valid codes for those elements used in this court.<br /></p><p>Declaration :</p><ul><li>Uml : + CoreCodelist : <a href="class137218.html#ref4_137218"><b>CoreCodelist</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:RuntimePolicyParameters/policyresponse:CoreCodelist</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:CodeListExtension</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:RuntimePolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:RuntimePolicy/policyresponse:CodeListExtension</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">policyresponse:CodeListExtensionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_156546"></a>
+<table><tr><td><div class="element">Relation <b>publicKeyInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Symmetric or asymmetric codes used by this court to encrypt and decrypt a message or document.<br /></p><p>Declaration :</p><ul><li>Uml : + publicKeyInformation : <a href="class137090.html#ref4_137090"><b>PublicKeyInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:PublicKeyInformation/ds:KeyInfo</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ds:KeyInfo</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:RuntimePolicyType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:RuntimePolicy/ds:KeyInfo</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ds:KeyInfoType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ParentRelationship</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ParentRelationship</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_139650"></a>
+<p>Information relating to a parent.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/nc:ImmediateFamilyAssociation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:ParentChildAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:ParentChildAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_193666"></a>
+<table><tr><td><div class="element">Relation <b>parent (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information about the person(s) involved as a parent in a current or previous domestic legal relationship.<br /></p><p>Declaration :</p><ul><li>Uml : + parent : <a href="class139394.html#ref4_139394"><b>DomesticCasePersonInformation</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/nc:ImmediateFamilyAssociation/nc:PersonParentReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^hs:Parent</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:ParentChildAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:ParentChildAssociation/hs:Parent</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_3990530"></a>
+<table><tr><td><div class="element">Relation <b>child (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information about the person(s) involved as a child in a current or previous domestic legal relationship.<br /></p><p>Declaration :</p><ul><li>Uml : + child : <a href="class139394.html#ref4_139394"><b>DomesticCasePersonInformation</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/nc:ImmediateFamilyAssociation/cyfs:Child</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:Child</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:ParentChildAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:ParentChildAssociation/hs:Child</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">hs:ChildType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_152578"></a>
+<table><tr><td><div class="element">Attribute <b>parentRelationshipReason</b></div></td></tr></table>
+<p>Justification for a claim of parentage.  Details including but not limited to date of conception, place of conception, and DNA.<br /></p><p>Declaration :</p><ul><li>Uml : + parentRelationshipReason : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/nc:ImmediateFamilyAssociation/nc:FamilyKinshipCategoryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:BiologicalParentDeterminationDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:ParentChildAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:ParentChildAssociation/hs:BiologicalParentDeterminationDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_152450"></a>
+<table><tr><td><div class="element">Attribute <b>parentTypeCode</b></div></td></tr></table>
+<p>Type of parent.  Allowed values set forth in Court Policy.  Examples: natural, adoptive, surrogate, undetermined.<br /></p><p>Declaration :</p><ul><li>Uml : + parentTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/nc:ImmediateFamilyAssociation/nc:FamilyKinshipCategoryCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:ParentChildKinshipCategoryAbstract, (hs:ParentChildKinshipCategoryCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:ParentChildAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:ParentChildAssociation/hs:ParentChildKinshipCategoryCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">hs:ParentChildKinshipCategoryCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9754242"></a>
+<table><tr><td><div class="element">Attribute <b>childReference</b></div></td></tr></table>
+<p>A reference to a child in a parent relationship.<br /></p><p>Declaration :</p><ul><li>Uml : + childReference : , multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/nc:ImmediateFamilyAssociation/cyfs:Child</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:RoleOfPerson</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:ChildType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:ParentChildAssociation/hs:Child/nc:RoleOfPerson</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

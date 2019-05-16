@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class LeadDocument</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class LeadDocument</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_148482"></a>
+<p>The pleading, motion or order that is the main document in a Filing. A Document may have Attachments.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_155010"></a>
+<table><tr><td><div class="element">Relation <b>connectedDocument (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A document included in a Filing that supports the lead Document. This document is not separately entered on the docket or register of actions.<br /></p><p>Declaration :</p><ul><li>Uml : + connectedDocument : <a href="class148610.html#ref4_148610"><b>ConnectedDocument</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/ecf:DocumentAttachment</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^filing:FilingConnectedDocument</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filing:FilingMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filing:FilingMessage/filing:FilingConnectedDocument</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_182530"></a>
+<table><tr><td><div class="element">Attribute <b>docketDocumentID</b></div></td></tr></table>
+<p>Identifier that uniquely identifies the document in the court record (e.g. the court DMS). Assumed to be unique within a particular case and particular court.<br /></p><p>Declaration :</p><ul><li>Uml : + docketDocumentID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

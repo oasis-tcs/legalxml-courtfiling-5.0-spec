@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Custody</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Custody</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_140930"></a>
+<p>Information concerning the custody of the defendant.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestSubject/j:SubjectSupervision</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:SupervisionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/j:SubjectSupervision</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_156162"></a>
+<table><tr><td><div class="element">Attribute <b>custodyStatusCode</b></div></td></tr></table>
+<p>A code indicating whether or not a defendant or juvenile is held in a jail, prison, lock up or other facility.<br /></p><p>Declaration :</p><ul><li>Uml : + custodyStatusCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:StatusAbstract, (nc:StatusText)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/j:SubjectSupervision/nc:SupervisionPersonStatus/nc:StatusText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_156290"></a>
+<table><tr><td><div class="element">Attribute <b>detentionCenterID</b></div></td></tr></table>
+<p>The identifier for the facility in which the defendant or juvenile is detained.  Allowable values are set forth in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + detentionCenterID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestSubject/j:SubjectSupervision/nc:SupervisionFacility/nc:FacilityIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:FacilityIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:FacilityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/j:SubjectSupervision/nc:SupervisionFacility/nc:FacilityIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6362242"></a>
+<table><tr><td><div class="element">Attribute <b>detentionCenter</b></div></td></tr></table>
+<p>A juvenile detention center.<br /></p><p>Declaration :</p><ul><li>Uml : + detentionCenter : , multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestSubject/j:SubjectSupervision/nc:SupervisionFacility</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:SupervisionFacility</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:SupervisionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/j:SubjectSupervision/nc:SupervisionFacility</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:FacilityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+
+	civil-Complaint-012-GetCaseResponse-04.xml
+
+	This xml example is from a series of examples that illustrate a full life cycle sequence use case for a minimalist illustration of  
+	Barabara Holmes' Test Case # 300 (Case Initiation Civil Complaint).
+
+	This 'exchange' is in response to a GetCaseRequest (i.e. civil-complaint-011-GetCaseRequest-04.xml).
+
+	The Get Case Request indicated that participant and docket information should be returned in the response. Calendar information
+	was not selected.
+
+	The docket information includes external references to the docket event associated documents (i.e. the complaint and exhibit).
+
+	Participant information includes local Court Record MDE identifiers for participants (e.g. Participant matching).
+
+	05-21-2018	Updated for WD31.
+	08-03-2018	Updated for WD35 as version 03.
+	09-13-2018	Updated for Wd36 as version 04.
+
+-->
+<wrapper:GetCaseResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<caseresponse:GetCaseResponseMessage xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:caseresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caseresponse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.1/" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caseresponse ../schema/caseresponse.xsd http://release.niem.gov/niem/domains/cbrn/4.1/ ../schema/niem/domains/cbrn/4.1/cbrn.xsd">
+		<!-- This is the Message ID for the reposnse. -->
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>75698645341-Q</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>CourtRecord</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+	
+		<nc:DocumentIdentification>
+			<!-- Message ID from GetCaseRequest -->
+			<nc:IdentificationID>109904567-001</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		<nc:DocumentSubmitter>
+		<!-- Person submitting the request -->
+			<nc:EntityPerson>
+				<nc:PersonName>
+					<nc:PersonGivenName>Bill</nc:PersonGivenName>
+					<nc:PersonMiddleName>K.</nc:PersonMiddleName>
+					<nc:PersonSurName>Racquet</nc:PersonSurName>
+					<nc:PersonFullName>Bill K. Racquet</nc:PersonFullName>
+				</nc:PersonName>	
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>240</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>		
+		</nc:DocumentSubmitter>
+		<ecf:SendingMDELocationID>
+			<!-- URL for Court Record MDE -->
+			<nc:IdentificationID>https://example.com/court</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>10</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+			<j:CourtName>Civil Court</j:CourtName>
+		</j:CaseCourt>
+		<nc:DocumentPostDate>
+			<nc:DateTime>2007-07-08T14:21:03.0Z</nc:DateTime>
+		</nc:DocumentPostDate>
+		
+		<!-- cbrn:MessageStatus is optionally allowed. 
+
+			MessageStatus is only used when there is an error, and is therefore optional.
+		
+		<cbrn:MessageStatus cbrn:systemSimulatedIndicator="">
+			<cbrn:SystemEventDateTime></cbrn:SystemEventDateTime>
+			<cbrn:SystemOperatingModeCode></cbrn:SystemOperatingModeCode>
+			<cbrn:CredentialsAuthenticatedCode></cbrn:CredentialsAuthenticatedCode>
+			<cbrn:MessageStatusCode></cbrn:MessageStatusCode>
+			<cbrn:MessageHandlingError>
+				<cbrn:ErrorCodeText></cbrn:ErrorCodeText>
+			</cbrn:MessageHandlingError>
+			<cbrn:ResendRequestIndicator></cbrn:ResendRequestIndicator>
+		</cbrn:MessageStatus>
+		-->
+
+		<nc:Case xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/criminal ../schema/criminal.xsd">
+			<!-- It appears that nc:CaseShortTitleText should generally be used instead of nc:CaseTitleText for a short title. -->
+			<nc:CaseTitleText>John Doe vs. Jane Smith</nc:CaseTitleText>
+			<j:CaseAugmentation>
+				<j:CaseCourt>
+					<nc:OrganizationIdentification>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</nc:OrganizationIdentification>
+					<j:CourtName>Civil Court</j:CourtName>
+				</j:CaseCourt>
+				
+				<!-- The caserequest:IncludeDocketEntryIndicator was set to 'true' in the GetCaseRequest (i.e., civil-complaint-011-GetCaseRequest-04.xml) 
+					 so all the public viewable events docketed on the case should be returned. Since this case has only just been initiated, in this example
+					 there is only the complaint filing event. -->
+				<j:CaseCourtEvent>
+					<!-- nc:ActivityIdentification is intended to be used for a citation number (see citationNumber in niem-mapping.csv), which 
+						 is not applicable in this example. For an event identifier, see nc:CaseDocketID below. -->
+					<nc:ActivityIdentification/>
+					<nc:ActivityDescriptionText>Civil Complaint Filed</nc:ActivityDescriptionText>
+					<nc:ActivityDate>
+						<!-- This is the date of this event/register of action entry. -->
+						<nc:Date>2008-07-06</nc:Date>
+					</nc:ActivityDate>
+					<ecf:CourtEventAugmentation>
+						<!-- The name of the element below (i.e. ecf:ConnectedDocument) is unfortunate. the 'word' connected, in this context, means 
+							 that the document is connected (as in associated) with the court event. This should not be confused with either
+							 filing:FilingConnectedDocument or ecf:ReviewedConnectedDocument (in which it means connected to a lead document).  -->
+						<ecf:ConnectedDocument structures:id="Lead01">		<!-- Complaint -->
+							<nc:DocumentCategoryText>Complaint</nc:DocumentCategoryText>
+							<nc:DocumentSoftwareName>Adobe Acrobat</nc:DocumentSoftwareName>
+							<nc:DocumentDescriptionText>Complaint</nc:DocumentDescriptionText>
+							<nc:DocumentFiledDate>
+							<!-- Docket date - This is the date the document is considered to be officially filed in the court. 
+								 This is not the date upon which the docketing occurred. -->
+								<nc:Date>2008-07-06</nc:Date>
+							</nc:DocumentFiledDate>
+							<nc:DocumentIdentification/>
+							<nc:DocumentSequenceID>1</nc:DocumentSequenceID>
+
+							<nc:DocumentTitleText>Plaintiff's Complaint</nc:DocumentTitleText>
+							<ecf:DocumentAugmentation>
+								<ecf:DocumentFiler>
+									<!-- The Complaint document filer is John W Doe (Person1) identified as the Plaintiff -->
+									<nc:EntityPerson structures:ref="Person1" xsi:nil="true"/>
+								</ecf:DocumentFiler>
+								<!-- This is the file stamped rendition of the complaint. -->
+								<ecf:DocumentRendition structures:metadata="RenditionMetaData1">
+									<!-- Per 6.2.6 nc:DocumentFileControlID is a reference to a unique document in the Court Record system and is assigned
+										 by the Court Record MDE with values unique to the court.
+						
+										 In this example, the nc:DocumentFileControlID value is the document storage index number for the document rendition
+										 within the Court's electronic document managment system (EDMS). -->
+									<nc:DocumentFileControlID>1234567889</nc:DocumentFileControlID>
+									<!-- nc:DocumentIdentification is a required element but is left as an empty element. There is no need to replicate 
+										 the value from nc:DocumentFileControlID into nc:DocumentIdentification, nor is this recommended. -->		
+									<nc:DocumentIdentification/>
+									<!-- Hash for the file stamped rendition of the complaint document. -->
+									<ecf:DocumentRenditionHash>mnd8vnrgdhna743ed42gspf9fmnao</ecf:DocumentRenditionHash>
+									<!-- Even though binary document rendition content is not returned in the GetCaseResponse in this example
+										 (a seperate GetDocumentRequest is required for binary content), the nc:Attachment element is nevertheless
+										 included so that binary size and content type information can be provided. -->
+									<nc:Attachment>
+										<!-- Note that the original complaint document was Microsoft Word, but the file stamped rendition is Adobe Acrobat --> 
+										<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+										<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+										<!-- Since in this example the binary content is not returned in the GetCaseResponse, the nc:BinaryURI element
+											 is absent or empty. If the document rendition binary is needed, then a seperate GetDocumentRequest must be provided. -->
+										<!--
+										<nc:BinaryURI/> -->
+										<nc:BinarySizeValue>35000</nc:BinarySizeValue>
+									</nc:Attachment>
+								</ecf:DocumentRendition>
+
+								<ecf:DocumentStatus>
+									<nc:StatusText>Docketed</nc:StatusText>		<!-- Complaint was successfully docketed. -->
+									<nc:StatusDescriptionText>Complaint docketed.</nc:StatusDescriptionText>
+									<nc:StatusDate>
+										<!-- The date of this status (i.e. the get case response date). -->
+										<nc:Date>2008-07-08</nc:Date>
+										<!-- The official filing date is provided in nc:DocumentFiledDate and nc:ActivityDate above. --> 
+									</nc:StatusDate>	
+									<!-- DocumentDocketingStatusCode should be valid in DocumentDocketingStatusCode.gc -->
+									<ecf:DocumentDocketingStatusCode>successful</ecf:DocumentDocketingStatusCode>
+									<!-- DocumentReviewStatusCode should be valid in DocumentReviewStatusCode.gc -->
+									<ecf:DocumentReviewStatusCode>accepted</ecf:DocumentReviewStatusCode>
+								</ecf:DocumentStatus>
+								
+								<!-- The document type code for 'Complaint'. -->
+								<ecf:DocumentTypeCode>ABC</ecf:DocumentTypeCode>
+				
+								<!-- The Docket Code that was applied to the event during docketing. Also see ecf:CourtEventTypeCode below. -->
+								<ecf:RegisterActionDescriptionCode>ABCF</ecf:RegisterActionDescriptionCode>
+								<nc:Metadata structures:id="RenditionMetaData1">
+									<nc:SensitivityText>private</nc:SensitivityText>
+									<nc:LanguageCode>eng</nc:LanguageCode>
+								</nc:Metadata>
+							</ecf:DocumentAugmentation>
+						</ecf:ConnectedDocument>
+					
+						<!-- Due to a 'quirk' in the allowed element content for ecf:DocumentRelatedCode, the child document
+							 (i.e. the exhibit) must also be a ecf:ConnectedDocument which is then associated with the parent
+							 Complaint document through nc:DocumentAssociation (below). -->
+						<ecf:ConnectedDocument>		<!-- Exhibit -->
+							<nc:DocumentCategoryText>Exhibit</nc:DocumentCategoryText>
+							<nc:DocumentSoftwareName>Microsoft Word</nc:DocumentSoftwareName>
+							<nc:DocumentDescriptionText>Exhibit</nc:DocumentDescriptionText>
+							<nc:DocumentIdentification/>
+
+							<nc:DocumentSequenceID>2</nc:DocumentSequenceID>
+							<nc:DocumentTitleText>Plaintiff's Exhibit</nc:DocumentTitleText>
+							<ecf:DocumentAugmentation>
+								<ecf:DocumentRendition>
+									<!-- Per 6.2.6 nc:DocumentFileControlID is a reference to a unique document in the Court Record system and is assigned
+										 by the Court Record MDE with values unique to the court.
+						
+										 In this example, the nc:DocumentFileControlID value is the document storage index number for the document rendition
+										 within the Court's electronic document managment system (EDMS). -->
+									<nc:DocumentFileControlID>8690056387761</nc:DocumentFileControlID>
+									<!-- nc:DocumentIdentification is a required element but is left as an empty element. There is no need to replicate the
+										value from nc:DocumentFileControlID into nc:DocumentIdentification, nor is this recommended. -->		
+									<nc:DocumentIdentification/>
+									<!-- Hash for the exhibit document. -->
+									<ecf:DocumentRenditionHash>8gt5snc9fjrpojbdwytcd78z</ecf:DocumentRenditionHash>									
+									<!-- Even though binary document rendition content is not returned in the GetCaseResponse in this example
+										 (a seperate GetDocumentRequest is required for binary content), the nc:Attachment element is nevertheless
+										 included so that binary size and content type information can be provided. -->
+									<nc:Attachment>
+										<!-- Since there is no file stamped rendition, the orginal rendition information is returned -->
+										<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+										<!-- nc:BinaryDescriptionText (above) should be 'a description of a binary object'. nc:BinaryFormatText below
+											 contains the MIME type. -->
+										<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+										<!-- Since in this example the binary content is not returned in the GetCaseResponse, the nc:BinaryURI element
+											 is absent or empty. If the document rendition binary is needed, then a seperate GetDocumentRequest must be provided. -->
+										<nc:BinaryURI/>
+										<nc:BinarySizeValue>32000</nc:BinarySizeValue>
+									</nc:Attachment>
+								</ecf:DocumentRendition>
+													
+								<!-- Docketing status should be able to be communicated in addition to the document's clerk review status. -->		
+								<!-- Docketing status for this document. -->
+								<ecf:DocumentStatus>
+									<nc:StatusText>Docketed</nc:StatusText>		<!-- exhibit was successfully docketed. -->
+									<nc:StatusDescriptionText>Exhibit docketed.</nc:StatusDescriptionText>
+									<nc:StatusDate>
+										<!-- The date of this status (i.e. the get case response date). -->
+										<nc:Date>2008-07-08</nc:Date>
+										<!-- The official filing date is provided in nc:DocumentFiledDate and nc:ActivityDate above. --> 
+									</nc:StatusDate>	
+									<!-- DocumentDocketingStatusCode should be valid in DocumentDocketingStatusCode.gc -->
+									<ecf:DocumentDocketingStatusCode>successful</ecf:DocumentDocketingStatusCode>
+									<!-- DocumentReviewStatusCode should be valid in DocumentReviewStatusCode.gc -->
+									<ecf:DocumentReviewStatusCode>accepted</ecf:DocumentReviewStatusCode>
+								</ecf:DocumentStatus>
+								
+								<!-- 'XYZ' is the document type code for 'Exhibit'. -->
+								<ecf:DocumentTypeCode>XYZ</ecf:DocumentTypeCode>										
+										
+								<nc:DocumentAssociation>
+									<nc:PrimaryDocument structures:ref="Lead01" xsi:nil="true"/>		<!-- parent Complaint document -->
+									<ecf:DocumentAssociationAugmentation>
+										<!-- Value must be from DocumentRelatedCode.gc -->
+										<ecf:DocumentRelatedCode>parent</ecf:DocumentRelatedCode>
+									</ecf:DocumentAssociationAugmentation>
+								</nc:DocumentAssociation>
+							</ecf:DocumentAugmentation>
+						</ecf:ConnectedDocument>
+					
+						<ecf:CourtEventActor>
+							<nc:RoleOfPerson structures:ref="Person1"/>		<!-- John W. Doe, Plaintiff -->
+						</ecf:CourtEventActor>
+						
+						<ecf:CourtEventEnteredOnDocketDate>
+							<!-- ecf:CourtEventEnteredOnDocketDate - "Date and time of entry into the court record." This element is mandatory. -->
+							<!-- This is understood to be equivalent to nc:DocumentEffectiveDate. This is not understood to be the date recorded
+								 on the court record (e.g. date officially filed); see nc:ActivityDate and nc:DocumentFiledDate above. -->
+							<!-- nc:DocumentEffectiveDate is the docketing date (see UML definition in niem-mapping.csv, copied below).  -->
+							<!-- UML defintion: "the date and time of day on which an entry in the docket or register of action in the court 
+								 CMS was completed for a filing" -->
+							<nc:Date>2008-07-07</nc:Date>
+						</ecf:CourtEventEnteredOnDocketDate>
+						<ecf:CourtEventTypeCode>ABCF</ecf:CourtEventTypeCode> <!-- Also see ecf:RegisterActionDescriptionCode above. -->
+						<!-- NIEM definition of nc:CaseDocketID: "An identifier used to reference a case docket." -->
+						<nc:CaseDocketID>98762345</nc:CaseDocketID>
+					</ecf:CourtEventAugmentation>
+					
+				</j:CaseCourtEvent>
+				
+			</j:CaseAugmentation>
+			<ecf:CaseAugmentation>
+				<ecf:CaseCategoryCode>Tort Motor Vehicle</ecf:CaseCategoryCode>
+				<ecf:CaseParty>
+					<nc:EntityPerson structures:id="Person1">
+						<!--j:PersonAugmentation></j:PersonAugmentation-->
+						<nc:PersonBirthDate>
+							<nc:Date>1963-01-01</nc:Date>
+						</nc:PersonBirthDate>
+						<nc:PersonName>
+							<nc:PersonGivenName>John</nc:PersonGivenName>
+							<nc:PersonMiddleName>W.</nc:PersonMiddleName>
+							<nc:PersonSurName>Doe</nc:PersonSurName>
+						</nc:PersonName>
+						<nc:PersonOtherIdentification>
+							<nc:IdentificationID structures:id="Person1ID">1234-56-789</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>DriverLicense</ecf:PersonIdentificationCategoryCode>
+							<nc:IdentificationSourceText>State Department of Motor Vehicles</nc:IdentificationSourceText>
+						</nc:PersonOtherIdentification>
+						<!-- Particpant Matching -->
+						<!-- Participant Matching is an Arizona Admin. Office of the Courts adaptation of ECF for the purpose of 
+							 exchanging Court Record MDE local entity identifiers. In Arizona, many different Case Management Systems
+							 are used statewide. Each CMS has a different internal architecture for the representation and storage of
+							 participating entities. This Participant Matching adaptation of ECF permits an exchange of internal
+							 entity identifiers that accomodates all variations by all case management systems (CMS). 
+
+							 1. nc:IdentificationID contains the local CMS unique identifier value for the entity.
+
+							 2. ecf:PersonIdentificationCategoryCode must contain 'SourceParticipantID' This element value identifies
+							    the nc:PersonOtherIdentiifcation element set for use in Participant Matching, distinguishing it from 
+								other uses, such as 'DriversLicense' above.
+
+							 3. nc:IdentiifcationSourceText is a value defined by the local CRMDE which designates the type of entity identifier
+								within its local taxonomy. This value need only be meaningful to the originating CRMDE. For example, if the
+								entity is a case party, then the value 'PartyID' may be used. If the entity is a Judge, then the value 'JudgeID' 
+								could be used, etc. If all person participants, regardless of role, are retained in a single common source, then  
+								the value might be 'PersonID'.
+
+								Typically this element value is used to identify the source (e.g. database table) in which the value in 
+								nc:IdentiifcationID is a unique (i.e. key) value.
+
+							  By providing local CRMDE relevant Participant Matching IDs in the Get Case Request, then the FRMDE can return
+							  the appropriate Participant Matching ID in the ReviewFilingRequest. This facilitates participant processing by
+							  CRMDEs when new submissions are received.
+						-->
+						<nc:PersonOtherIdentification>
+							<nc:IdentificationID>147699</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>SourceParticipantID</ecf:PersonIdentificationCategoryCode>
+							<nc:IdentificationSourceText>PartyID</nc:IdentificationSourceText>
+						</nc:PersonOtherIdentification>
+						<nc:PersonRaceText>W</nc:PersonRaceText>
+						<j:PersonSexCode>M</j:PersonSexCode>
+						<nc:PersonTaxIdentification>
+							<nc:IdentificationID>123-45-67890</nc:IdentificationID>
+						</nc:PersonTaxIdentification>
+						<ecf:PersonAugmentation>
+							<ecf:CaseParticipantRoleCode>Plaintiff</ecf:CaseParticipantRoleCode>
+							<ecf:CasePartySelfRepresentationIndicator>true</ecf:CasePartySelfRepresentationIndicator>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>10</nc:IdentificationID>
+							</ecf:ParticipantID>
+							<nc:ContactInformation>
+								<nc:ContactMailingAddress>
+									<nc:LocationStreet>
+										<nc:StreetFullText>123 Main St.</nc:StreetFullText>
+									</nc:LocationStreet>
+									<nc:LocationCityName>Anytown</nc:LocationCityName>
+									<nc:LocationState>
+										<nc:LocationStateName>IN</nc:LocationStateName>
+									</nc:LocationState>
+									<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+								</nc:ContactMailingAddress>
+							</nc:ContactInformation>
+						</ecf:PersonAugmentation>
+					</nc:EntityPerson>
+				</ecf:CaseParty>
+				<ecf:CaseParty>
+					<nc:EntityPerson structures:id="Person2">
+						<nc:PersonBirthDate>
+							<nc:Date>1969-10-10</nc:Date>
+						</nc:PersonBirthDate>
+						<nc:PersonName>
+							<nc:PersonGivenName>Jane</nc:PersonGivenName>
+							<nc:PersonMiddleName>Q</nc:PersonMiddleName>
+							<nc:PersonSurName>Smith</nc:PersonSurName>
+							<nc:PersonMaidenName>Roberts</nc:PersonMaidenName>
+						</nc:PersonName>
+						<nc:PersonOtherIdentification>
+							<nc:IdentificationID>1234-56-789</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>DriverLicense</ecf:PersonIdentificationCategoryCode>
+							<nc:IdentificationSourceText>State Department of Motor Vehicles</nc:IdentificationSourceText>
+						</nc:PersonOtherIdentification>
+						<!-- Particpant Matching -->
+						<nc:PersonOtherIdentification>
+							<nc:IdentificationID>147700</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>SourceParticipantID</ecf:PersonIdentificationCategoryCode>
+							<nc:IdentificationSourceText>PartyID</nc:IdentificationSourceText>
+						</nc:PersonOtherIdentification>
+						<j:PersonSexCode>F</j:PersonSexCode>
+						<nc:PersonTaxIdentification>
+							<nc:IdentificationID>123-45-67890</nc:IdentificationID>
+						</nc:PersonTaxIdentification>
+						<ecf:PersonAugmentation>
+							<ecf:CaseParticipantRoleCode>Defendant</ecf:CaseParticipantRoleCode>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>20</nc:IdentificationID>
+							</ecf:ParticipantID>
+							<nc:ContactInformation>
+								<nc:ContactMailingAddress>
+									<nc:LocationStreet>
+										<nc:StreetFullText>456 South St.</nc:StreetFullText>
+									</nc:LocationStreet>
+									<nc:LocationCityName>Anytown</nc:LocationCityName>
+									<nc:LocationState>
+										<nc:LocationStateName>IN</nc:LocationStateName>
+									</nc:LocationState>
+									<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+								</nc:ContactMailingAddress>
+							</nc:ContactInformation>
+						</ecf:PersonAugmentation>
+					</nc:EntityPerson>
+				</ecf:CaseParty>
+				<ecf:CaseShortTitleText>Doe v Smith</ecf:CaseShortTitleText>
+				<ecf:CaseTrackingID>
+					<nc:IdentificationID>7876934321007</nc:IdentificationID>
+					<!-- In section 6.2.2, it provides that nc:IdentificationCategoryDescriptionText SHOULD be used, 
+						 when multiple ecf:CaseTrackingID elements are provided, to identify "the type of MDE" that issued the identifier. -->					
+					<nc:IdentificationCategoryDescriptionText>ACME Case Management System</nc:IdentificationCategoryDescriptionText> 
+					<!-- Also from 6.2.2, "the name of the  MDE that issued the identifier SHOULD be indicated" in the element below. -->
+					<nc:IdentificationSourceText>CourtRecord</nc:IdentificationSourceText>
+				</ecf:CaseTrackingID>
+				<ecf:CaseTypeCode>Civil</ecf:CaseTypeCode>
+				<j:CaseNumberText>CV-2017-010110</j:CaseNumberText>
+			</ecf:CaseAugmentation>
+			<civil:CaseAugmentation xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil ../schema/civil.xsd">
+				<civil:AmountInControversy>
+					<nc:Amount>100</nc:Amount>
+				</civil:AmountInControversy>
+				<civil:CivilClassActionIndicator>false</civil:CivilClassActionIndicator>
+				<civil:JurisdictionalGroundsCode>Statewide</civil:JurisdictionalGroundsCode>
+				<civil:JuryDemandIndicator>false</civil:JuryDemandIndicator>
+				<civil:ReliefTypeCode>Monetary</civil:ReliefTypeCode>
+				<ecf:CauseOfActionCode>100</ecf:CauseOfActionCode>
+			</civil:CaseAugmentation>
+		</nc:Case>
+	</caseresponse:GetCaseResponseMessage>
+</wrapper:GetCaseResponse>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class PaymentMessageType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class PaymentMessageType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15716738"></a>
+<p>The payment submitted with a filing.  The payment may consist of a fee for filing of the document(s) submitted, or for a fine or other payment due to the court.<br /></p>
+<p>Properties:</p><ul>
+<li>Notes:<br /><div class="sub">Genericode code list FeeExceptioneasonCode.gc</div></li>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment,PaymentMessageType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34310914"></a>
+<table><tr><td><div class="element">Attribute <b>cac:Address</b></div></td></tr></table>
+<p>The address of the owner of a financial account.<br /></p><p>Declaration :</p><ul><li>Uml : + cac:Address : <a href="class15716610.html#ref4_15716610"><b>AddressType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,Address</div></li>
+</ul>
+<a name="ref1_34313730"></a>
+<table><tr><td><div class="element">Attribute <b>cac:AllowanceCharge</b></div></td></tr></table>
+<p>An authorization by the filer allowing the court to take money from the filer, for the purpose of this filing, by a particular means.<br /></p><p>Declaration :</p><ul><li>Uml : + cac:AllowanceCharge : <a href="class15720962.html#ref4_15720962"><b>AllowanceChargeType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,AllowanceCharge</div></li>
+</ul>
+<a name="ref1_34335106"></a>
+<table><tr><td><div class="element">Attribute <b>payment:CorrectedPaymentIndicator</b></div></td></tr></table>
+<p>Indicates whether the payment has been corrected in the Filing Review MDE<br /></p><p>Declaration :</p><ul><li>Uml : + payment:CorrectedPaymentIndicator : <a href="class15715586.html#ref4_15715586"><b>boolean</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment,CorrectedPaymentIndicator</div></li>
+</ul>
+<a name="ref1_34352130"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:FeeExceptionReasonCode</b></div></td></tr></table>
+<p>A code for the reason why a filer does not have to pay an otherwise applicable payment.  Allowable values set forth in Court Policy. Examples are in forma pauperis status granted or a fee waiver application submitted with the filing..<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:FeeExceptionReasonCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,FeeExceptionReasonCode</div></li>
+</ul>
+<a name="ref1_34352258"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:FeeExceptionSupportingText</b></div></td></tr></table>
+<p>Any text needed to support the exemption assertion (reference to a court order, etc.)<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:FeeExceptionSupportingText : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,FeeExceptionSupportingText</div></li>
+</ul>
+<a name="ref1_34364418"></a>
+<table><tr><td><div class="element">Attribute <b>cac:PaymentMandate</b></div></td></tr></table>
+<p>The maximum payment associated with a transaction<br /></p><p>Declaration :</p><ul><li>Uml : + cac:PaymentMandate : <a href="class15749378.html#ref4_15749378"><b>PaymentMandateType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,PaymentMandate</div></li>
+</ul>
+<a name="ref1_34376834"></a>
+<table><tr><td><div class="element">Attribute <b>payment:Payer</b></div></td></tr></table>
+<p>Name of the payer of the FilingPayment.<br /></p><p>Declaration :</p><ul><li>Uml : + payment:Payer : <a href="class15719938.html#ref4_15719938"><b>EntityType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment,Payer</div></li>
+</ul>
+<a name="ref1_34377090"></a>
+<table><tr><td><div class="element">Attribute <b>cac:Payment</b></div></td></tr></table>
+<p>A payment.<br /></p><p>Declaration :</p><ul><li>Uml : + cac:Payment : <a href="class15752450.html#ref4_15752450"><b>PaymentType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,Payment</div></li>
+</ul>
+</div>
+</body>
+</html>

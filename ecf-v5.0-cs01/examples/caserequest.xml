@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!-- Modifications:
+	
+		Added nc:IdentificationCategoryDescriptionText and nc:IdentificationSourceText for messageID.
+
+-->
+<caserequest:GetCaseRequestMessage xmlns:caserequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caserequest" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caserequest ../schema/caserequest.xsd">
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>10</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<ecf:DocumentAugmentation>
+		<ecf:DocumentFiler>
+			<nc:EntityPerson>
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</ecf:DocumentFiler>
+	</ecf:DocumentAugmentation>
+	<ecf:SendingMDELocationID>
+		<nc:IdentificationID>https://efilingmanager.com:8000</nc:IdentificationID>
+	</ecf:SendingMDELocationID>
+	<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+	<j:CaseCourt>
+		<nc:OrganizationIdentification>
+			<nc:IdentificationID>01</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<j:CourtName>King County Superior Court</j:CourtName>
+	</j:CaseCourt>
+	<nc:DocumentPostDate>
+		<nc:DateTime>2007-06-06T14:20:47.0Z</nc:DateTime>
+	</nc:DocumentPostDate>
+	<caserequest:CaseQueryCriteria>
+		<caserequest:DocketEntryTypeCodeFilterText>document1</caserequest:DocketEntryTypeCodeFilterText>
+		<caserequest:IncludeCalendarEventIndicator>true</caserequest:IncludeCalendarEventIndicator>
+		<caserequest:IncludeDocketEntryIndicator>true</caserequest:IncludeDocketEntryIndicator>
+		<caserequest:IncludeParticipantsIndicator>true</caserequest:IncludeParticipantsIndicator>
+		<ecf:CaseTrackingID>
+			<nc:IdentificationID>123456ABC</nc:IdentificationID>
+		</ecf:CaseTrackingID>
+		<ecf:CourtEventTypeCode>motion</ecf:CourtEventTypeCode>
+		<j:CaseNumberText>123456ABC</j:CaseNumberText>
+	</caserequest:CaseQueryCriteria>
+</caserequest:GetCaseRequestMessage>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/schema/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php
+-->
+<c:Catalog xmlns:cancel="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/cancel" xmlns:dea="http://release.niem.gov/niem/codes/dea_ctlsub/4.0/" xmlns:dod_jcs-pub2.0="http://release.niem.gov/niem/codes/dod_jcs-pub2.0/4.0/" xmlns:filingstatusrequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusrequest" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:hs="http://release.niem.gov/niem/domains/humanServices/4.1/" xmlns:cbrncl="http://release.niem.gov/niem/codes/cbrncl/4.0/" xmlns:scheduleresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/scheduleresponse" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xCard="http://release.niem.gov/niem/codes/xCard/4.0/" xmlns:docketcallback="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docketcallback" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:hazmat="http://release.niem.gov/niem/codes/dot_hazmat/4.0/" xmlns:usps="http://release.niem.gov/niem/codes/usps_states/4.0/" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xmlns:iso_4217="http://release.niem.gov/niem/codes/iso_4217/4.0/" xmlns:allocatedate="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/allocatedate" xmlns:cli="http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-instance/" xmlns:scr="http://release.niem.gov/niem/domains/screening/4.1/" xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3" xmlns:fips_5-2="http://release.niem.gov/niem/codes/fips_5-2/4.0/" xmlns:im="http://release.niem.gov/niem/domains/immigration/4.1/" xmlns:ag="http://release.niem.gov/niem/domains/agriculture/4.0/" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:ip="http://release.niem.gov/niem/domains/infrastructureProtection/4.0/" xmlns:it="http://release.niem.gov/niem/domains/internationalTrade/4.1/" xmlns:serveprocess="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/serveprocess" xmlns:filingstatusresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusresponse" xmlns:intel="http://release.niem.gov/niem/domains/intelligence/4.1/" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xmlns:policyrequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/policyrequest" xmlns:census="http://release.niem.gov/niem/codes/census_uscounty/4.0/" xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3" xmlns:juvenile="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/juvenile" xmlns:serviceinformationresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/serviceinformationresponse" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dol="http://release.niem.gov/niem/codes/dol_soc/4.0/" xmlns:commodity="http://release.niem.gov/niem/codes/census_commodity/4.0/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:biom="http://release.niem.gov/niem/domains/biometrics/4.1/" xmlns:edxl-cap="http://release.niem.gov/niem/adapters/edxl-cap/4.0/" xmlns:bankruptcy="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/bankruptcy" xmlns:local="local" xmlns:geo="http://release.niem.gov/niem/adapters/geospatial/4.0/" xmlns:requestdateresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/requestdateresponse" xmlns:urnoasisnamestcciqct3="urn:oasis:names:tc:ciq:ct:3" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:have-codes="http://release.niem.gov/niem/codes/edxl_have/4.0/" xmlns:filinglistresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filinglistresponse" xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xmlns:have="urn:oasis:names:tc:emergency:EDXL:HAVE:1.0" xmlns:clsa="http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-schema-appinfo/" xmlns:caselistresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caselistresponse" xmlns:serviceinformationrequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/serviceinformationrequest" xmlns:stampinformation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/stampinformation" xmlns:edxl_rm="http://release.niem.gov/niem/codes/edxl_rm/4.0/" xmlns:st="http://release.niem.gov/niem/domains/surfaceTransportation/4.1/" xmlns:nlets="http://release.niem.gov/niem/codes/nlets/4.0/" xmlns:structures="http://release.niem.gov/niem/structures/3.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:reservedate="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/reservedate" xmlns:m="http://release.niem.gov/niem/domains/maritime/4.1/" xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0" xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/" xmlns:occs="http://release.niem.gov/niem/codes/occs_facility/4.0/" xmlns:caserequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caserequest" xmlns:fips_10-4="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/fips_10-4" xmlns:ag_codes="http://release.niem.gov/niem/codes/ag_codes/4.0/" xmlns:policyresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/policyresponse" xmlns:caseresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caseresponse" xmlns:de="urn:oasis:names:tc:emergency:EDXL:DE:1.0" xmlns:oasis="urn:oasis:names:tc:emergency:EDXL:HAVE:1.0:geo-oasis" xmlns:caselistrequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caselistrequest" xmlns:appellate="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/appellate" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:schedulerequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/schedulerequest" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:domestic="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/domestic" xmlns:atf="http://release.niem.gov/niem/codes/atf/4.0/" xmlns:xnal="urn:oasis:names:tc:ciq:xnal:3" xmlns:stampinformationcallback="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/stampinformationcallback" xmlns:criminal="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/criminal" xmlns:iso_3166="http://release.niem.gov/niem/codes/iso_3166-1/4.0/" xmlns:jp3-52="http://release.niem.gov/niem/codes/jp3-52/4.0/" xmlns:feesresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/feesresponse" xmlns:mo="http://release.niem.gov/niem/domains/militaryOperations/4.1/" xmlns:xal="urn:oasis:names:tc:ciq:xal:3" xmlns:ucr="http://release.niem.gov/niem/codes/fbi_ucr/4.1/" xmlns:nc-4.0.1="http://publication.niem.gov/niem/niem-core/4.0/1/" xmlns:em="http://release.niem.gov/niem/domains/emergencyManagement/4.1/" xmlns:iso_639-3="http://release.niem.gov/niem/codes/iso_639-3/4.0/" xmlns:hl7="http://release.niem.gov/niem/codes/hl7/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/" xmlns:documentresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/documentresponse" xmlns:nibrs="http://release.niem.gov/niem/codes/fbi_nibrs/4.1/" xmlns:reviewfilingcallback="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/reviewfilingcallback" xmlns:ncic="http://release.niem.gov/niem/codes/fbi_ncic/4.0/" xmlns:aamva_d20="http://release.niem.gov/niem/codes/aamva_d20/4.0/" xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:documentrequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/documentrequest" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:mmucc="http://release.niem.gov/niem/codes/mmucc/4.1/" xmlns:nga="http://release.niem.gov/niem/codes/nga_datum/4.0/" xmlns:feesrequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/feesrequest" xmlns:docket="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:can="http://release.niem.gov/niem/codes/canada_post/4.0/" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.1" xmlns:ansi_d20="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ansi_d20" xmlns:filinglistrequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filinglistrequest" xmlns:ndex="http://release.niem.gov/niem/codes/fbi_ndex/4.1/" xmlns:itcodes="http://release.niem.gov/niem/codes/it_codes/4.0/" xmlns:requestdaterequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/requestdaterequest" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:sar="http://release.niem.gov/niem/codes/pmise_sar/4.0/" xmlns:citation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/citation" xmlns:unece="http://release.niem.gov/niem/codes/unece_rec20/4.0/" xmlns:core_misc="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/core_misc" xmlns:usda_fsa="http://release.niem.gov/niem/codes/usda_fsa/4.0/" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.1/" xmlns:edxl-have="http://release.niem.gov/niem/adapters/edxl-have/4.0/" xmlns:apco="http://release.niem.gov/niem/codes/apco_event/4.0/" xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/" xmlns:jc3iedm="http://release.niem.gov/niem/codes/jc3iedm/4.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:datecallback="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/datecallback" xmlns:edxl-de="http://release.niem.gov/niem/adapters/edxl-de/4.0/" xmlns:xls="http://release.niem.gov/niem/external/ogc/xls/1.1.0/dhs-gmo/2.1.0" xmlns:cjis="http://release.niem.gov/niem/codes/fbi_cjis/4.0/" xmlns:c="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/" xsi:schemaLocation="http://reference.niem.gov/niem/resource/mpd/catalog/3.0/ https://tools.niem.gov/IEPD/mpd-catalog-3.0.xsd">
+	<c:MPD c:mpdURI="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/" c:mpdClassURIList="http://reference.niem.gov/niem/specification/model-package-description/3.0/#MPD http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD" c:mpdName="LegalXML Electronic Court Filing Core Specification" c:mpdVersionID="5.0">
+		<c:MPDInformation>
+			<c:AuthoritativeSource>
+				<nc:EntityOrganization>
+					<nc:OrganizationName>OASIS LegalXML Electronic Court Filing Technical Committee</nc:OrganizationName>
+					<nc:OrganizationPrimaryContactInformation>
+						<nc:ContactEmailID>legalxml-courtfiling-comment@lists.oasis-open.org</nc:ContactEmailID>
+						<nc:ContactWebsiteURI>https://www.oasis-open.org/committees/legalxml-courtfiling</nc:ContactWebsiteURI>
+					</nc:OrganizationPrimaryContactInformation>
+				</nc:EntityOrganization>
+			</c:AuthoritativeSource>
+			<c:CreationDate>2018-12-18</c:CreationDate>
+			<c:StatusText>Working Draft</c:StatusText>
+		</c:MPDInformation>
+		<c:IEPConformanceTarget structures:id="AllocateCourtDateMessage">
+			<nc:DescriptionText>A request to allocate a court date on the schedule.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="allocatedate:AllocateCourtDateMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\AllocateCourtDateMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="CancelFilingMessage">
+			<nc:DescriptionText>This is a request from the filer to the reviewer to cancel a previously submitted filing.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="cancel:CancelFilingMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\CancelFilingMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetCaseListRequestMessage">
+			<nc:DescriptionText>This is a query for a list of cases that match a set of criteria including case participants, case classification, case status, and date of the case was initiated.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="caselistrequest:GetCaseListRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetCaseListRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetCaseListResponseMessage">
+			<nc:DescriptionText>A synchronous response to a GetCaseListQueryMessage.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="caselistresponse:GetCaseListResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetCaseListResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetCaseRequestMessage">
+			<nc:DescriptionText>A message requesting a case from a court case management information system conforming to the parameter or parameters identified in the message.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="caserequest:GetCaseRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetCaseRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetCaseResponseMessage">
+			<nc:DescriptionText>The response to a GetCaseInformationQuery.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="caseresponse:GetCaseResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetCaseResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="MessageStatus">
+			<nc:DescriptionText>A status of the message.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="cbrn:MessageStatus"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\MessageStatus.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="NotifyCourtDateMessage">
+			<nc:DescriptionText>The message returned when the a court date is scheduled, generally in response to a ReserveCourtDateRequest.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="datecallback:NotifyCourtDateMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\NotifyCourtDateMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="RecordDocketingMessage">
+			<nc:DescriptionText>Message resulting from clerk review and edit of a ReviewFilingMessage.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="docket:RecordDocketingMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\RecordDocketingMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="NotifyDocketingCompleteMessage">
+			<nc:DescriptionText>The message returned from the Court Record MDE to the Filing Review MDE when the functions of entering information onto the docket or register of actions and commiting a filed document(s) to the official court record have been completed, conveying the results of those functions.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="docketcallback:NotifyDocketingCompleteMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\NotifyDocketingCompleteMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetDocumentRequestMessage">
+			<nc:DescriptionText>The base information contained in any query message.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="documentrequest:GetDocumentRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetDocumentRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetDocumentResponseMessage">
+			<nc:DescriptionText>The court response to a request for an electronic document in the court official record.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="documentresponse:GetDocumentResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetDocumentResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetFeesCalculationRequestMessage">
+			<nc:DescriptionText>This query is a request for the total amount of court fees required for filing of one or more documents in a case.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="feesrequest:GetFeesCalculationRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetFeesCalculationRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetFeesCalculationResponseMessage">
+			<nc:DescriptionText>The response to a CalculatedFeesQueryMessage, which may either be 0 indicating no fee is due, a currency amount indicating the fee due upon filing, or unknown indicating that the court case management information system is unable to calculate the fee for the proposed filing.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="feesresponse:GetFeesCalculationResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetFeesCalculationResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="FilingMessage">
+			<nc:DescriptionText>The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="filing:FilingMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\FilingMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetFilingListRequestMessage">
+			<nc:DescriptionText>This is query to get a list of filings by Filer Identification, Case Identifier, or time period.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="filinglistrequest:GetFilingListRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetFilingListRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetFilingListResponseMessage">
+			<nc:DescriptionText>This is a response to a query for a list of filings by Filer Identification, Case Identifier, or time period.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="filinglistresponse:GetFilingListResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetFilingListResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetFilingStatusRequestMessage">
+			<nc:DescriptionText>This is query to get a filing status by Filing Number.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="filingstatusrequest:GetFilingStatusRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetFilingStatusRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetFilingStatusResponseMessage">
+			<nc:DescriptionText>A court response to a FilingStatusQueryMessage.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="filingstatusresponse:GetFilingStatusResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetFilingStatusResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="PaymentMessage">
+			<nc:DescriptionText>The payment submitted with a filing.  The payment may consist of a fee for filing of the document(s) submitted, or for a fine or other payment due to the court.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="payment:PaymentMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\PaymentMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetPolicyRequestMessage">
+			<nc:DescriptionText>A request for a court's Court Policy.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="policyrequest:GetPolicyRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetPolicyRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetPolicyResponseMessage">
+			<nc:DescriptionText>The response to a request for a court Court Policy.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="policyresponse:GetPolicyResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetPolicyResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="RequestCourtDateRequestMessage">
+			<nc:DescriptionText>The message requesting a list of available court dates.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="requestdaterequest:RequestCourtDateRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\RequestCourtDateRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="RequestCourtDateResponseMessage">
+			<nc:DescriptionText>The message returned with a list of available court dates, generally in response to a RequestCourtDateRequest.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="requestdateresponse:RequestCourtDateResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\RequestCourtDateResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="ReserveCourtDateMessage">
+			<nc:DescriptionText>A request to allocate a court date on the schedule.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="reservedate:ReserveCourtDateMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\ReserveCourtDateMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="NotifyFilingReviewCompleteMessage">
+			<nc:DescriptionText>The asynchronous message from the Filing Review MDE to the Filing Assembly MDE conveying information concerning the court actions on the documents submitted for filing in a ReviewFilingMessage.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="reviewfilingcallback:NotifyFilingReviewCompleteMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\NotifyFilingReviewCompleteMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetCourtScheduleRequestMessage">
+			<nc:DescriptionText>A request for the schedule of upcoming events in a court</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="schedulerequest:GetCourtScheduleRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetCourtScheduleRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetCourtScheduleResponseMessage">
+			<nc:DescriptionText>The schedule of upcoming events in a court</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="scheduleresponse:GetCourtScheduleResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetCourtScheduleResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetServiceInformationRequestMessage">
+			<nc:DescriptionText>A message requesting information concerning the persons entitled to services of filings in a particular court case, together with the electronic addresses and message profiles of their Filing Assembly MDEs and their physical addresses if they are not currently using a Filing Assembly MDE.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="serviceinformationrequest:GetServiceInformationRequestMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetServiceInformationRequestMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="GetServiceInformationResponseMessage">
+			<nc:DescriptionText>The response to a serviceInformationQueryMessage, setting forth the requested information.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="serviceinformationresponse:GetServiceInformationResponseMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\GetServiceInformationResponseMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="DocumentStampInformationMessage">
+			<nc:DescriptionText>A request to get document stamping information.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="stampinformation:DocumentStampInformationMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\DocumentStampInformationMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:IEPConformanceTarget structures:id="NotifyDocumentStampInformationMessage">
+			<nc:DescriptionText>A response to a request for document stamping information.</nc:DescriptionText>
+			<c:HasDocumentElement c:qualifiedNameList="stampinformationcallback:NotifyDocumentStampInformationMessage"/>
+			<c:XMLSchemaValid>
+				<c:XMLCatalog c:pathURI="xml-catalog.xml"/>
+			</c:XMLSchemaValid>
+			<c:IEPSampleXMLDocument c:pathURI="..\examples\NotifyDocumentStampInformationMessage.xml"/>
+		</c:IEPConformanceTarget>
+		<c:ReadMe c:pathURI="..\ecf-v5.0-wd26.docx"/>
+		<c:MPDChangeLog c:pathURI="..\Change Log.doc"/>
+		<c:Wantlist c:pathURI="niem\wantlist.xml"/>
+		<c:ConformanceAssertion c:pathURI="conformance-assertion.pdf "/>
+		<c:ExtensionSchemaDocument c:pathURI="cancel.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="filingstatusrequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="scheduleresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="docketcallback.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="payment.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="allocatedate.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="serveprocess.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="filingstatusresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="filing.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="policyrequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="juvenile.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="serviceinformationresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="bankruptcy.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="requestdateresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="filinglistresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="civil.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="caselistresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="serviceinformationrequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="stampinformation.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="reservedate.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="xcal.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="caserequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="fips_10-4.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="policyresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="caseresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="caselistrequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="appellate.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="ecf.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="schedulerequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="ds.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="domestic.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="stampinformationcallback.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="criminal.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="feesresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="documentresponse.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="reviewfilingcallback.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="documentrequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="cac.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="feesrequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="docket.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="ansi_d20.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="filinglistrequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="requestdaterequest.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="cbc.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="citation.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="core_misc.xsd"/>
+		<c:ExtensionSchemaDocument c:pathURI="datecallback.xsd"/>
+		<c:BusinessRulesArtifact c:pathURI="VehicleStyleCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="JurisdictionalGroundsCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="FilingReviewStatusCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="FeeExceptionReasonCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="MultimediaDataMIMEKindText.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="PersonIdentificationCategoryCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="IncidentLevelCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="IdentificationCategoryDescriptionText.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="VehicleMakeCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="CaseTypeCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="ChargeSpecialAllegationText.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="CauseOfActionCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="LocationCountryName.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="EntityAssociationTypeCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="ChargeDegreeText.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="DocumentDocketingStatusCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="DocumentTypeCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="BinaryFormatText.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="FilingDocketingStatusCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="RegisterActionDescriptionCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="PhysicalFeatureCategoryCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="DocumentReviewStatusCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="ReliefTypeCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="CourtEventTypeCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="CourtLocationCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="VehicleModelCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="FiduciaryTypeCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="SensitivityText.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="DocumentRelatedCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="DelinquentActCategoryCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="ServiceInteractionProfileCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="ErrorCodeText.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="CaseCategoryCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="OperationNameCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="ChargeEnhancingFactorText.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="RelatedCaseAssociationTypeCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="ServiceStatusCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="MajorDesignElementTypeCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="ConveyanceColorPrimaryCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="CaseParticipantRoleCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="SignatureProfileCode.gc"/>
+		<c:BusinessRulesArtifact c:pathURI="AbuseNeglectAllegationCategoryText.gc"/>
+		<c:ReadMe c:pathURI="C:\Users\JamesECabral\OneDrive\xml\ecf5\ecf-v5.0-wd26.docx"/>
+		<c:MPDChangeLog c:pathURI="C:\Users\JamesECabral\OneDrive\xml\ecf5\Change Log.doc"/>
+	</c:MPD>
+</c:Catalog>

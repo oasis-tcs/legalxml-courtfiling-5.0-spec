@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+	appellate-NOA-003-RecordDocketingRequest-00.xml
+
+	This xml example is from a series of examples that illustrate a full life cycle sequence use case for a illustration of  
+	Barabara Holmes' Test Case # 1300 (Case Initiation, Court of Appeal, Appeal of an Agency determination). In this use case, 
+	an attorney for the appellant is appealing a decision from an executive branch agency (i.e. the Corporation Commission) to 
+	an intermediary appellate court. 
+
+
+	10-4-2018		Updated for WD37.
+					Revised payment:Payer to be an organization (i.e. nc:EnityOrganization).
+					Revised comments regarding ecf:ParticipantID and commented out the ecf:ParticipantID elements which are
+					now optional.
+					Included j:AppellateCaseNotice referencing the Notice of Appeal in filing:FilingLeadDocument.
+
+	Gary Graham
+	Arizona Supreme Court
+	September 27, 2018. 
+
+
+-->
+<wrapper:RecordDocketingRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:docket="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<docket:RecordDocketingMessage xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:docket="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket ../schema/docket.xsd">
+	
+		<nc:DocumentIdentification>
+			<!-- Message ID for RecordDocketingMessage assigned by the Filing Review MDE-->
+			<nc:IdentificationID>90K7678-I07</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<!-- Spec. section 6.2.4 states that the issuer of the above IdentificationID should be identified within the element below; 
+				 the element value must be contained within MajorDesignElementTypeCode.gc -->
+			<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		
+		<!-- The nc:DocumentIdentification element below is a [ECF] Filing Identifier (see section 6.2.4) 
+			 The value (e.g. 897065001) is assigned by the FRMDE. This ID must be carried in all messages within the e-filing transaction. --> 
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>897065001</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>filingID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+			<!-- Section 6.2.4 identifies the FilingReview MDE as the assigner of the [ECF] filing identifier. -->
+		</nc:DocumentIdentification>
+		<!-- The nc:DocumentIdentification element below is the Message Identifier, assigned by the FAMDE, to the filing:FilingMessage in the RecordFilingRequest. -->
+		<!-- Since the message identifier on a request message MUST be provided on any response messages to the request message (both synchronous and asynchronous 
+			 responses) and since reviewfilingcallback:NotifyFilingReviewCompleteMessage is an asynchronous response to filing:FilingMessage, then 
+			 NotifyFilingReviewCompleteMessage must contain the FilingMessage message identifier. The FilingMessage message identifier is being forwarded to the
+			 Court Record MDE in this example so that this MDE can provide it on the NotifyDocketingCompleteMessage so that the FRMDE is not required to persist
+			 the filing:FilingMessage message identifier. -->
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>KJ9098U67T</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		
+		<nc:DocumentSubmitter>
+			<!-- This is the reviewing clerk Mary Smith. -->
+			<nc:EntityPerson structures:ref="ReviewingClerk1"/>
+		</nc:DocumentSubmitter>
+
+		<ecf:SendingMDELocationID>
+			<!-- URL for court's Filing Review MDE -->
+			<nc:IdentificationID>http://example.com/efm1</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<!-- j:CaseCourt below identifies the court to which the RecordDocketingMessage is to be sent. -->
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<!-- content reference for a court organization -->
+				<nc:IdentificationID>002</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+			<nc:OrganizationLocation>
+				<nc:LocationName>Court of Appeals Division 1, 1501 West Washington, Phoenix AZ 85007</nc:LocationName>
+			</nc:OrganizationLocation>
+			<nc:OrganizationName>State of Arizona</nc:OrganizationName>
+			<j:CourtName>Court of Appeals Division One</j:CourtName>
+		</j:CaseCourt>
+		
+		<!-- Although section 6.1.4. provides guidance for the use of nc:DocumentInformationCutOffDate within a ReviewFilingRequest, 
+			 there is no guidance for its use in RecordDocketingMessage -->
+		<!-- Schema definition: "The date after which contributions to the content of a document will no longer be accepted." -->
+		<nc:DocumentInformationCutOffDate>
+			<nc:Date>2017-03-13</nc:Date>
+		</nc:DocumentInformationCutOffDate>
+		
+		<nc:DocumentPostDate>
+		<!-- Date and time for the conclusion of Clerk Review - this should be later than when originally submitted from the FAMDE. -->
+			<nc:DateTime>2017-03-13T16:57:49.000-07:00</nc:DateTime>
+		</nc:DocumentPostDate>
+		
+		<!-- In this use case example, the Clerk Review component is provided by a separate software provider than that of the Court Record MDE or 
+			 the Filing Assmebly MDE. The Case Number is assigned in Clerk Review. -->
+			 
+		<!-- See 6.4.3 docket:RecordDocketingMessage:
+
+			 "If the clerk made any modifications to the original filing information, then the modified information SHOULD be included in the docket:CorrectedCase, 
+			 ecf:LeadDocumentReview/ecf:ReviewedDocument, ecf:ConnectedDocumentReview/ecf:ReviewedDocument, and corrected payment:PaymentMessage elements which, if 
+			 used, then MUST include all information in the nc:Case, ecf:FilingLeadDocument, ecf:FilingConnectedDocument and original payment:PaymentMessage elements, 
+			 respectively, with appropriate revisions, additions and deletions applied.  If docket:CorrectedCase is not provided, then any modifications to case 
+			 information by the clerk MUST be reflected in nc:Case." -->
+			 
+		<docket:CorrectedCase xmlns:appellate="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/appellate" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/appellate ../schema/appellate.xsd">
+		
+			<!-- In this use case, the case number is added in clerk review. A point of debate is whether it is only necessary to add an 
+				 ecf:CaseAugmentation element within CorrecetdCase to capture the Case Number provided in the Clerk Review system, or if
+				 by adding additional information, the whole original case information must be replicated within docket:CorrectedCase.
+
+				 Section 6.4.3 docket:RecordDocketingMessage provides:
+
+				 If the clerk made any modifications to the original filing information, then the modified information SHOULD be included in the 
+				 docket:CorrectedCase, ecf:LeadDocumentReview/ecf:ReviewedDocument, ecf:ConnectedDocumentReview/ecf:ReviewedDocument, and corrected 
+				 payment:PaymentMessage elements which, if used, then MUST include all information in the nc:Case, ecf:FilingLeadDocument, 
+				 ecf:FilingConnectedDocument and original payment:PaymentMessage elements, respectively, with appropriate revisions, additions and 
+				 deletions applied.  If docket:CorrectedCase is not provided, then any modifications to case information by the clerk MUST be reflected 
+				 in nc:Case.
+		
+				 The above suggests that all of the case information from nc:Case within filing:FilingMessage would need to be repeated in docket:CorrectedCase.
+
+				 But this interpretation may turn on the understanding of what it means to "make any modification to the original filing information."
+				 One may reasonably argue that adding a Case Number in clerk review had no effect on the original case filing information, hence no
+				 need to replicate nc:Case information from filing:FilingMessage.
+
+				This example presumes that all original case information must be replicated here. However, the use of structures:ref has been 
+				employed to minimize the need for verbose information copy, keeping this message more compact.
+			-->
+			
+			<!-- original CaseTitleText unmodified; replicated. -->
+			<nc:CaseTitleText>Sunspot Industries, LLC vs. Arizona Corporation Commission</nc:CaseTitleText>
+			<!-- reference to unmodified original j:CaseAugmentation. -->
+			<j:CaseAugmentation structures:ref="OriginaljCaseAugmentation" xsi:nil="true"/>
+			<!-- reference to unmodified original ecf:CaseAugmentation. -->
+			<ecf:CaseAugmentation structures:ref="OriginalecfCaseAugmentation" xsi:nil="true" />			
+			
+			<!-- New ecf:CaseAugmentation element added for CaseNumberText assigned during clerk review. -->
+			<ecf:CaseAugmentation>
+				<j:CaseNumberText>CC-17-0001</j:CaseNumberText>
+			</ecf:CaseAugmentation>
+			
+			<!-- Since there has not been any changes to the information within the original appellate:CaseAugmentation, we can use concise representation. -->		
+			<appellate:CaseAugmentation structures:ref="OriginalappellateCaseAugmentation" xsi:nil="true"/>
+			
+		</docket:CorrectedCase>
+		
+		<ecf:ConnectedDocumentReview structures:id="Document2Review">				<!-- Certificate of Service -->
+		
+		<!-- The ecf:Document element identifies the document within filing:FilingMessage document that has been reviewed. -->
+			<ecf:Document structures:ref="Document2" xsi:nil="true"/>				<!-- Certificate of Service in filing:FilingMessage-->
+			
+			<ecf:DocumentReviewDisposition structures:id="Document2Disposition">
+				<ecf:DocumentReviewStatus>
+					<!-- nc:StatusText should be valid in DocumentReviewStatusCode.gc -->
+					<nc:StatusText>accepted</nc:StatusText>
+					<nc:StatusDate>
+						<!-- Date and Time that the acceptance disposition was applied to this document - should be earlier or
+							 same as nc:DocumentPostDate above. -->
+						<nc:DateTime>2017-03-13T16:57:21.000-07:00</nc:DateTime>
+					</nc:StatusDate>
+				</ecf:DocumentReviewStatus>
+				<ecf:DocumentReviewer>
+				<!-- The clerk who reviewed this document and applied the disposition above. -->
+					<nc:EntityPerson structures:id="ReviewingClerk1">
+						<nc:PersonName>
+							<nc:PersonGivenName>Mary</nc:PersonGivenName>
+							<nc:PersonSurName>Smith</nc:PersonSurName>
+						</nc:PersonName>
+					</nc:EntityPerson>
+				</ecf:DocumentReviewer>
+			</ecf:DocumentReviewDisposition>
+			<!-- There were no changes to the Certifiate of Service document as a result of clerk review -->
+			<!-- The ecf:ReviewedDocument element below expresses this by indicating that its content is the content
+				 of "Document2" within the filing:FilingMessage. -->
+			<ecf:ReviewedDocument structures:id="ReviewedDocument2" structures:ref="Document2" xsi:nil="true"/>
+		</ecf:ConnectedDocumentReview>
+		
+		<ecf:LeadDocumentReview structures:id="Document1Review">					<!-- Notice of Appeal -->
+		
+			<!-- The ecf:Document element identifies the document in filing:FilingMessage that has been reviewed. -->
+			<ecf:Document structures:ref="Document1" xsi:nil="true"/>		<!-- filing:FilingMessage Notice of Appeal -->
+			
+			<ecf:DocumentReviewDisposition structures:id="Document1Disposition">
+				<ecf:DocumentReviewStatus>
+					<!-- nc:StatusText should be valid in DocumentReviewStatusCode.gc -->
+					<nc:StatusText>accepted</nc:StatusText>
+					<nc:StatusDate>
+						<!-- Date and Time that acceptance disposition was applied to this document - should be earlier
+							 or same as nc:DocumentPostDate above. -->
+						<nc:DateTime>2017-03-13T16:57:17.000-07:00</nc:DateTime>
+					</nc:StatusDate>
+				</ecf:DocumentReviewStatus>
+				<!-- The clerk who reviewed this document and applied the disposition above. -->
+				<ecf:DocumentReviewer structures:ref="ReviewingClerk1"/>			
+			</ecf:DocumentReviewDisposition>
+
+			<!-- Unlike the use of ecf:ReviewedDocument above for the Certificate of Service, here the content has been 
+				 revised during Clerk Review. As a result, document information from the filing:FilingMessage must be 
+				 replicated in this element along with any new or revised document information (per 6.4.3). -->
+
+			<!-- In this RecordDocketingMessage the original Notice of Appeal FilingLeadDocument information is replicated
+				 in ecf:ReviewedDocument, because of the addition of a file stamped rendition (per 6.4.3). 
+
+				 As with CorrectedCase above, not all FilingLeadDocument sub-elements are repeated verbatim; many
+				 are referenced using a structures:ref for a concise refernence. When a container element, such as
+				 ecf:CaseAugmentation is referenced using structures:ref from within ecf:ReviewedDocument, then it
+				 must be understood that this has the same meaning as if all the elements within the referenced 
+				 container element were repated verbatim.
+
+				 The elements below, from nc:DocumentCategoryText down to nc:DocumentSubmitter are repeated from the 
+				 FilingLeadDocument since there is no container element to use for concise representation referencing.
+
+				 However, there are complications when repeating rendition information (e.g. the availability of,  
+				 or the need to add, structures:id attributes to referenced elements).
+
+				 Also observe that when repeating information, it may be necessary to also repeat structures:metadata 
+				 to indicate that the orignal metadata still applies unrevised.
+
+			-->				 
+			<ecf:ReviewedDocument structures:id="ReviewedDocument1">
+				<!-- Since there is no container element for the first several document elements, these elements and
+					 their element values must be repeated here: -->
+				<nc:DocumentCategoryText>Notice of Appeal</nc:DocumentCategoryText>
+				<nc:DocumentSoftwareName>Adobe Acrobat</nc:DocumentSoftwareName>
+				<nc:DocumentDescriptionText>Notice of Appeal</nc:DocumentDescriptionText>
+
+				<!-- nc:DocumentEffectiveDate is the docketing date (see UML definition in niem-mapping.csv, provided below).  -->
+					
+				<!-- UML defintion: "the date and time of day on which an entry in the docket or register of action in 
+					 the court CMS was completed for a filing" -->
+					 
+				<!-- As such, and since this document has not yet been docketed, use of this element (i.e. 
+					 nc:DocumentEffectiveDate) in this context (i.e. ReviewDocketingRequest) is not appropriate. -->
+					 
+				<!-- Element nc:DocumentEffectiveDate must not appear in ReviewFilingRequest. -->
+				<!--	<nc:DocumentEffectiveDate>	-->				
+			
+				<!-- This DocumentIdentification is an external reference for the document assigned by the FAMDE. --> 
+				<nc:DocumentIdentification>
+					<nc:IdentificationID>f69ac3ef-cdd9-40ae-a5fd-35088ba07eff</nc:IdentificationID>
+					<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+				</nc:DocumentIdentification>
+			
+				<nc:DocumentSequenceID>1</nc:DocumentSequenceID>
+				<nc:DocumentTitleText>Notice of Appeal</nc:DocumentTitleText>
+				
+				<nc:DocumentSubmitter>
+					<!-- The document submitter is the Attorney for the Appellant. -->
+					<nc:EntityPerson structures:ref="AppellantAttorney1" xsi:nil="true"/>
+				</nc:DocumentSubmitter>
+			
+				<!-- There are two ecf:DocumentAugmentation elements below. The first indicates that all information contained 
+					 in the referenced ecf:DocumentAugmentation within filing:FilingMessage remains unaltered and applicable. 
+					 The second ecf:DocumentAugmentation is included to contain the newly added file stamped document rendition 
+					 added in clerk review.
+	
+					 By employing a separate ecf:DocumentAugmentation for the new stamped rendition, a separate set of additional
+					 augmentation elements (e.g. ecf:DocumentFiler, ecf:RedactionRequiredIndicator, ecf:RegisterActionDescriptionCode,
+					 ecf:SpecialHandlingInstructionsText, etc.) are available to the new rendition. This permits the new rendition
+					 to have different values for these additional elements; e.g. the RegisterActionDescriptionCode for the stamped 
+					 rendition can have a different value than that of the original rendition.
+
+					 However, values for these additional elements from the original rendition that are also valid for and 
+					 applicable to the stamped rendition, must be repeated in the augmentation element for the stamped rendition.
+					 For example, if the handling instructions for the original rendition also apply to the stamped rendition, 
+					 then the ecf:SpecialHandlingInstructionsText element and content from the orginal rendition must be
+					 replicated or referenced for the stamped rendition.
+
+					 Consider the ecf:DocumentFiler element for illustration. If ecf:DocumentFiler is provided for the original  
+					 rendition, then there are three possible scenarios for the stamped rendition:
+
+						1. the stamped rendition has the same filer as the original rendition.
+						2. the stamped rendition has a different filer than the original rendition.
+						3. the stamped rendition does not have any filer.
+
+					 Scenario 1 (same filer) may be addressed using assuming the the filer for the original rendition is "Person1":
+
+						<ecf:DocumentFiler>
+							<nc:EntityPerson structures:ref="Person1" xsi:nil="true"/>
+						</ecf:DocumentFiler>
+
+					 Scenario 2 (different filer) may be:
+
+						<ecf:DocumentFiler>
+							<nc:EntityPerson>
+								<nc:PersonName>
+									<nc:PersonFullName>Jack R. Jones</nc:PersonFullName>
+								</nc:PersonName>
+							</nc:EntityPerson>
+						</ecf:DocumentFiler>
+
+					 Scenario 3 (no filer) would be provided by either the absence of the ecf:DocumentFiler element, or its inclusion as an empty element:
+
+						<ecf:DocumentFiler/>
+
+						Simply not including the element (i.e. absence) is preferred.
+
+				-->
+				<!-- The original rendition of the Notice of Appeal document is referenced using structures:ref on ecf:DocumentAugmentation.
+					 This element contains ecf:DocumentRendition (as well as other elements). To accomodate the new file-stamped rendition, 
+					 a new, second ecf:DocumentAugmentation is added. 
+
+					 If the original unstamped NOA rendition is not also forwarded to the CRMDE, then the first ecf:DocumentAugmentation 
+					 referencing the original FilingMessage rendition (immediately below) would	be absent. In this circumstance 
+					 however, the additional elements (e.g. ecf:DocumentFiler, ecf:DocumentTypeCode, ecf:RedactionRequiredIndicator, 
+					 ecf:RegisterActionDescriptionCode, ecf:SpecialHandlingInstructionsText, etc.) would also need to be included in the new  
+					 file stamped rendition's ecf:DocumentAugmentation element. 	
+					 
+					 As suggested above, when the original nc:DocumentRendition from FilingLeadDocument is not replicated (e.g. repeated) in 
+					 ecf:ReviewedDocument, then that should be understood as no change to the rendition information. E.g., this indicates 
+					 that the original rendition is no longer applicable (e.g. is not forwarded to the CRMDE). This means original rendition 
+					 is no longer included in the submission.
+
+					 If instead, the original FilingLeadDocument rendition information is repeated in ReviewedDocument, then that should be 
+					 understood to mean that the original rendition is still included and the rendition information is not revised. -->
+				
+				<!-- The element below provides a reference to the unmodified original ecf:DocumentAugmentation; would like to have xsi:nil attribute 
+					 available on this element. This provides that all the information in ecf:DocumentAugmentation with
+					 the structures:id attribute of "SubmittedNOAAugmentation" is still valid and unrevised. -->			
+				<ecf:DocumentAugmentation structures:ref="SubmittedNOAAugmentation"/>
+
+				<!-- The element below is an additional ecf:DocumentAugmentation element added for the file stamped rendition added during
+					 clerk review. -->
+				<ecf:DocumentAugmentation>
+					<ecf:DocumentFiler>
+						<!-- The stamped rendition of the Notice of Appeal is considered to be filed by the same entity as the original 
+							 rendition of the Notice of Appeal. In order for the filer of the orginal NOA rendition to also be applicable
+							 to the stamped rendition, the filer must be expressed here. A reference element is preferred so as to be  
+							 clear that the filer is exactly the same entity (i.e. person). -->
+							 
+						<!-- Document level association of the filer is allowed per section 6.2.6 -->
+						<!-- The document submitter is Rich Wealth (AppellantAttorney1) identified as an attorney for the appellant. -->
+						<nc:EntityPerson structures:ref="AppellantAttorney1" xsi:nil="true"/>
+					</ecf:DocumentFiler>
+
+					<ecf:DocumentRendition structures:id="FileStampedNoticeOfAppeal">
+						<!-- A new 'file stamped' rendition has been added in clerk review. -->
+						<!-- Note: the original rendition from the ReviewFilingRequest is still being provided to the CRMDE in
+							 this message (see the rendition referenced through first ecf:DocumentAugmentation immediately above). -->
+						<nc:DocumentIdentification/>
+						<nc:Attachment structures:id="Attachment1-2">
+							<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+							<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+							<!-- Payload4 holds the file stamped rendition of the Notice of Appeal. -->
+							<nc:BinaryURI>cid://Payload4</nc:BinaryURI>
+							<nc:BinarySizeValue>507</nc:BinarySizeValue>
+						</nc:Attachment>
+					</ecf:DocumentRendition>
+					<!-- Even if the original unstamped rendition is also forwarded to the CRMDE, then these additional elements
+						 (e.g. ecf:DocumentTypeCode, ecf:RedactionRequiredIndicator, ecf:RegisterActionDescriptionCode, ecf:SpecialHandlingInstructionsText, 
+						 etc.) may need to be provided here. If not provided, then it must be understood that any absent element is 
+						 not applicable to the stamped rendition. -->
+					<!-- The document type code for 'Notice of Appeal'. -->
+					<ecf:DocumentTypeCode>NOT02d</ecf:DocumentTypeCode>
+					<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+				</ecf:DocumentAugmentation>
+				<ecf:ReviewedDocumentAugmentation>
+					<ecf:SealDocumentIndicator>false</ecf:SealDocumentIndicator>
+				</ecf:ReviewedDocumentAugmentation>
+			</ecf:ReviewedDocument>
+		</ecf:LeadDocumentReview>
+
+		<filing:FilingMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing ../schema/filing.xsd">
+	
+			<!-- The nc:DocumentIdentification element below is a Message Identifier (see section 6.2.5), in this circumstance, assigned by the FAMDE. 
+				 For this fling the FAMDE is the predecessor trial court from which the appeal emanates. -->
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>8438345</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+				<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+				<!-- Per 6.2.4 the originating MDE for each identifier SHOULD be identified in nc:IdentificationSourceText (above) with a value from
+					 MajorDesignElementTypeCode.gc -->
+			</nc:DocumentIdentification>
+			<!-- The [ECF] Filing Identifier will be assigned by the FRMDE upon receipt of this ReviewFilingRequest (RvFR) -->
+			<!-- As specified in 6.2.5 each message MUST provide a message identifier (as above). However, a filing identifier (see 6.2.4) may, but need not be provided
+				 by the FAMDE in the ReviewFilingRequest. The [ECF] filing identifier, as described in 6.2.4, will be assigned by the FRMDE during FilingReview, This
+				 [ECF] filing identifier is provided to the FAMDE in the ReviewFilingResponse (see appellate-NOA-002-ReviewFilingResponse-00.xml). Since the [ECF]
+				 filing identifier is assigned by the FRMDE, it does not appear in this message, as it has not yet been assigned. -->
+				 
+			<!-- Below is a filing identifer assigned by the Filing Assembly MDE.- -->
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>2122052</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>filingID</nc:IdentificationCategoryDescriptionText>
+				<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>
+			
+			<nc:DocumentSubmitter>
+			<!-- In this example, the Document Submitter is the attorney for the petitioner (e.g. the appellant). -->
+				<nc:EntityPerson structures:ref="AppellantAttorney1" xsi:nil="true"/>
+			</nc:DocumentSubmitter>
+			<ecf:SendingMDELocationID>
+				<!-- URL for Filing Assembly MDE -->
+				<nc:IdentificationID>http://example.com/efsp1</nc:IdentificationID>
+			</ecf:SendingMDELocationID>
+			<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+			<j:CaseCourt>
+				<nc:OrganizationIdentification>
+					<!-- content reference for a court organization -->
+					<nc:IdentificationID>002</nc:IdentificationID>
+				</nc:OrganizationIdentification>
+				<nc:OrganizationName>State of Arizona</nc:OrganizationName>
+				<j:CourtName>Court of Appeals Division One</j:CourtName>
+			</j:CaseCourt>
+			<!-- nc:DocumentPostDate is required per schema. The schema definiton is: "a date a document is entered or posted 
+				 to an information system or network; used when the date of posting is different than the date on which the
+				 document was officially filed." -->
+			<!-- At this moment in the e-filing submission process, the documents (e.g. FilingLeadDocument) in the submission are
+				 not yet 'officially filed' (this occurs in the Court Record MDE upon docketing). Essentially, this element is  
+				 understood to contain the date and time that filing:FilingMessage was created and saved. -->
+			<nc:DocumentPostDate>
+				<!-- Date and time the submission left the control of the FAMDE per 6.1.4.-->
+				<nc:DateTime>2017-03-10T14:21:29.000-08:00</nc:DateTime>
+			</nc:DocumentPostDate>
+			<ecf:ElectronicServiceInformation>
+				<ecf:ReceivingMDELocationID>
+					<nc:IdentificationID>http://example.com/efsp1</nc:IdentificationID>
+				</ecf:ReceivingMDELocationID>
+				<ecf:ReceivingMDEProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ReceivingMDEProfileCode>
+				<!-- ecf:ServiceRecipientID identifies who was served electronically. see section 6.2.10 -->
+				<!-- This element is mandatory; since it is not applicable, it is left empty. -->
+				<ecf:ServiceRecipientID/>
+			</ecf:ElectronicServiceInformation>
+			
+			<filing:FilingConnectedDocument structures:id="Document2">		<!-- Certificate of Service -->
+				<!-- nc:DocumentCategoryText is "a kind of document; a nature or genre of the content".-->
+				<!-- Currently there is not any code list associated with thie element. Implementers may wish to
+					 define a code list and specify the code list in Court Policy. -->
+				<nc:DocumentCategoryText>Certificate of Service</nc:DocumentCategoryText>
+				<nc:DocumentSoftwareName>Adobe Acrobat</nc:DocumentSoftwareName>
+				<nc:DocumentDescriptionText>Certificate of Service</nc:DocumentDescriptionText>
+	
+				<nc:DocumentFileControlID>COS.pdf</nc:DocumentFileControlID>
+				<!-- The Document Identifier below is assigned by the FAMDE -->
+				<nc:DocumentIdentification>
+					<nc:IdentificationID>de09d854-262f-452b-afd2-df646e1f9ab5</nc:IdentificationID>
+					<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+				</nc:DocumentIdentification>
+				
+				<nc:DocumentSequenceID>2</nc:DocumentSequenceID>
+				<nc:DocumentTitleText>Certificate of Service of Notice of Appeal</nc:DocumentTitleText>
+				
+				<nc:DocumentSubmitter>
+					<!-- The document submitter is the Attorney for the Appellant. -->
+					<nc:EntityPerson structures:ref="AppellantAttorney1" xsi:nil="true"/>
+				</nc:DocumentSubmitter>
+				
+				<ecf:DocumentAugmentation>
+					<ecf:DocumentFiler>
+						<!-- Document level association of the filer is allowed per section 6.2.6 -->
+						<!-- The document filer is the attorney for the appellant. -->
+						<nc:EntityPerson structures:ref="AppellantAttorney1" xsi:nil="true"/>
+					</ecf:DocumentFiler>
+					<ecf:DocumentRendition structures:id="Document2Rendition1">
+						<nc:DocumentIdentification/>
+						<!--ecf:DocumentSignature>
+						</ecf:DocumentSignature-->
+						<nc:Attachment structures:id="Attachment2">
+							<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+							<!-- nc:BinaryDescriptionText (above) should be 'a description of a binary object'. -->
+							<!-- nc:BinaryFormatText (below) should contain the MIME type. See 5.2.2  values defined in BinaryFormatText.gc -->
+							<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+							<nc:BinaryURI>cid://Payload2</nc:BinaryURI>		<!-- use as replacement for ECF 4.01 <ecf:AttachmentSequenceID> -->
+							<nc:BinarySizeValue>1306</nc:BinarySizeValue>
+						</nc:Attachment>
+					</ecf:DocumentRendition>
+					<ecf:DocumentTypeCode>AF08</ecf:DocumentTypeCode>
+					<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+					<!-- nc:DocumentAssociation identifies Document1 (Index of Record) as this document's parent document. -->
+					<nc:DocumentAssociation>
+						<nc:PrimaryDocument structures:ref="Document1" xsi:nil="true"/>
+						<ecf:DocumentAssociationAugmentation>
+							<!-- ecf:DocumentRelatedCode value must come from DocumentRelatedCode.gc -->
+							<ecf:DocumentRelatedCode>parent</ecf:DocumentRelatedCode>
+						</ecf:DocumentAssociationAugmentation>
+					</nc:DocumentAssociation>
+				</ecf:DocumentAugmentation>
+			</filing:FilingConnectedDocument>
+			
+			<filing:FilingLeadDocument structures:id="Document1">					<!-- Notice of Appeal -->
+				<nc:DocumentCategoryText>Notice of Appeal</nc:DocumentCategoryText>
+				<nc:DocumentSoftwareName>Adobe Acrobat</nc:DocumentSoftwareName>
+				<nc:DocumentDescriptionText>Notice of Appeal</nc:DocumentDescriptionText>
+				
+				<nc:DocumentFileControlID>Notice of Appeal.pdf</nc:DocumentFileControlID>
+				<!-- This is an external reference for the document assigned by the FAMDE. --> 
+				<nc:DocumentIdentification>
+					<nc:IdentificationID>f69ac3ef-cdd9-40ae-a5fd-35088ba07eff</nc:IdentificationID>
+					<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+				</nc:DocumentIdentification>
+				
+				<nc:DocumentSequenceID>1</nc:DocumentSequenceID>
+				<nc:DocumentTitleText>Notice of Appeal</nc:DocumentTitleText>
+				
+				<nc:DocumentSubmitter>
+					<!-- The document submitter is the Attorney for the Appellant. -->
+					<nc:EntityPerson structures:ref="AppellantAttorney1" xsi:nil="true"/>
+				</nc:DocumentSubmitter>
+					
+				<ecf:DocumentAugmentation structures:id="SubmittedNOAAugmentation">		<!-- structures:id added in RDR. -->
+					<ecf:DocumentFiler>
+						<!-- Document level association of the filer is allowed per section 6.2.6 -->
+						<!-- The document filer is the Attorney for the Appellant. -->
+						<nc:EntityPerson structures:ref="AppellantAttorney1" xsi:nil="true"/>
+					</ecf:DocumentFiler>
+					<ecf:DocumentFiler>
+						<!-- Document level association of the filer is allowed per section 6.2.6 -->
+						<!-- The document filer is the Attorney for the Appellant. -->
+						<nc:EntityPerson structures:ref="AppellantAttorney2" xsi:nil="true"/>
+					</ecf:DocumentFiler>
+					<ecf:DocumentFiler>
+						<!-- Document level association of the filer is allowed per section 6.2.6 -->
+						<!-- The document filer is the Attorney for the Appellant. -->
+						<nc:EntityPerson structures:ref="AppellantAttorney3" xsi:nil="true"/>
+					</ecf:DocumentFiler>
+					<ecf:DocumentFiler>
+						<!-- Document level association of the filer is allowed per section 6.2.6 -->
+						<!-- The document filer is the Attorney for the Appellant. -->
+						<nc:EntityPerson structures:ref="AppellantAttorney4" xsi:nil="true"/>
+					</ecf:DocumentFiler>
+					
+					<ecf:DocumentRendition structures:id="Document1Rendition1">
+						<nc:DocumentIdentification/>
+						<nc:Attachment structures:id="Attachment1">
+							<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+							<!-- MIME type for Adobe Acrobat PDF -->
+							<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>						
+							<nc:BinaryURI>cid://Payload1</nc:BinaryURI>			<!-- use as replacement for ECF 4.01 <ecf:AttachmentSequenceID> -->
+							<nc:BinarySizeValue>459</nc:BinarySizeValue>
+						</nc:Attachment>
+					</ecf:DocumentRendition>
+					<ecf:DocumentTypeCode>NOT02d</ecf:DocumentTypeCode>
+					<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+				</ecf:DocumentAugmentation>
+			</filing:FilingLeadDocument>
+					
+			<nc:Case xmlns:appellate="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/appellate" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/appellate ../schema/appellate.xsd">
+				<!-- It appears that nc:CaseShortTitleText should generally be used instead of nc:CaseTitleText for a short title. -->
+				<!-- However, the element definition for ecf:CaseShortTitleText states: "No title exists when the message is intiating a new case." -->
+				<!-- Therefore, the short title is placed into nc:CaseTitleText -->
+				<nc:CaseTitleText>Sunspot Industries, LLC vs. Arizona Corporation Commission</nc:CaseTitleText>
+				
+				<j:CaseAugmentation structures:id="OriginaljCaseAugmentation">		<!-- structures:id added in RDR. -->
+					<j:CaseCourt>
+						<nc:OrganizationIdentification>
+							<!-- content reference for a court organization -->
+							<nc:IdentificationID>002</nc:IdentificationID>
+						</nc:OrganizationIdentification>
+						<nc:OrganizationLocation>
+							<nc:LocationName>Court of Appeals Division 1, 1501 West Washington, Phoenix AZ 85007</nc:LocationName>
+						</nc:OrganizationLocation>
+						<nc:OrganizationName>State of Arizona</nc:OrganizationName>
+						<j:CourtName>Court of Appeals Division One</j:CourtName>
+					</j:CaseCourt>
+					
+					<!-- Information about the predecessor lineage case from the agency tribunal. -->
+					<j:CaseLineageCase structures:ref="PredecessorCase1" xsi:nil="true"/>
+					<!-- End lineage case information. -->
+	
+					<j:CaseOfficial>
+						<nc:RoleOfPerson structures:id="AppellantAttorney1">
+							<nc:PersonName>
+								<nc:PersonNamePrefixText>Mr</nc:PersonNamePrefixText>
+								<nc:PersonGivenName>Rich</nc:PersonGivenName>
+								<nc:PersonSurName>Wealth</nc:PersonSurName>
+								<nc:PersonFullName>Mr Rich Wealth</nc:PersonFullName>
+							</nc:PersonName>
+							<ecf:PersonAugmentation>
+								<ecf:CaseParticipantRoleCode>Attorney</ecf:CaseParticipantRoleCode>
+								<!-- As of WD37 ecf:ParticipantID is no longer mandatory. The specification does not provide any guidance as to which 
+									 MDE assigns these ID values. Section 6.2.9 does require that they are unique within an e-filing system. -->
+								<!--
+								<ecf:ParticipantID/>
+								-->
+								<nc:ContactInformation>
+									<nc:ContactEmailID>rwealth@crownlawgroup.com</nc:ContactEmailID>
+								</nc:ContactInformation>
+							</ecf:PersonAugmentation>
+						</nc:RoleOfPerson>
+						<j:JudicialOfficialBarMembership>
+							<j:JudicialOfficialBarIdentification>
+								<!-- Attorney's State Bar Number -->
+								<nc:IdentificationID>021290</nc:IdentificationID>
+								<nc:IdentificationJurisdiction>
+									<j:JurisdictionANSID20AuthorityCode>AZ</j:JurisdictionANSID20AuthorityCode>
+								</nc:IdentificationJurisdiction>
+								<nc:IdentificationSourceText>State Bar of Arizona</nc:IdentificationSourceText>
+							</j:JudicialOfficialBarIdentification>
+						</j:JudicialOfficialBarMembership>
+						<ecf:CaseOfficialAugmentation>
+							<ecf:CaseRepresentedParty>
+								<nc:EntityOrganization structures:ref="Appellant1"/>
+							</ecf:CaseRepresentedParty>
+						</ecf:CaseOfficialAugmentation>
+					</j:CaseOfficial>
+					
+					<j:CaseOfficial>
+						<nc:RoleOfPerson structures:id="AppellantAttorney2">
+							<nc:PersonName>
+								<nc:PersonNamePrefixText>Mr</nc:PersonNamePrefixText>
+								<nc:PersonGivenName>Lance</nc:PersonGivenName>
+								<nc:PersonSurName>Uchre</nc:PersonSurName>
+								<nc:PersonFullName>Mr Lance Uchre</nc:PersonFullName>
+							</nc:PersonName>
+							<ecf:PersonAugmentation>
+								<ecf:CaseParticipantRoleCode>Attorney</ecf:CaseParticipantRoleCode>
+								<!-- As of WD37 ecf:ParticipantID is no longer mandatory. The specification does not provide any guidance as to which 
+									 MDE assigns these ID values. Section 6.2.9 does require that they are unique within an e-filing system. -->
+								<!--
+								<ecf:ParticipantID/>
+								-->
+							</ecf:PersonAugmentation>
+						</nc:RoleOfPerson>
+						<j:JudicialOfficialBarMembership>
+							<j:JudicialOfficialBarIdentification>
+								<!-- Attorney's State Bar Number -->
+								<nc:IdentificationID>027101</nc:IdentificationID>
+								<nc:IdentificationJurisdiction>
+									<j:JurisdictionANSID20AuthorityCode>AZ</j:JurisdictionANSID20AuthorityCode>
+								</nc:IdentificationJurisdiction>
+								<nc:IdentificationSourceText>State Bar of Arizona</nc:IdentificationSourceText>
+							</j:JudicialOfficialBarIdentification>
+						</j:JudicialOfficialBarMembership>
+						<ecf:CaseOfficialAugmentation>
+							<ecf:CaseRepresentedParty>
+								<nc:EntityOrganization structures:ref="Appellant1"/>
+							</ecf:CaseRepresentedParty>
+						</ecf:CaseOfficialAugmentation>
+					</j:CaseOfficial>				
+					
+					<j:CaseOfficial>
+						<nc:RoleOfPerson structures:id="AppellantAttorney3">
+							<nc:PersonName>
+								<nc:PersonNamePrefixText>Mr</nc:PersonNamePrefixText>
+								<nc:PersonGivenName>Everest</nc:PersonGivenName>
+								<nc:PersonSurName>Hillary</nc:PersonSurName>
+								<nc:PersonFullName>Mr Everest Hillary</nc:PersonFullName>
+							</nc:PersonName>
+							<ecf:PersonAugmentation>
+								<ecf:CaseParticipantRoleCode>Attorney</ecf:CaseParticipantRoleCode>
+								<!-- As of WD37 ecf:ParticipantID is no longer mandatory. The specification does not provide any guidance as to which 
+									 MDE assigns these ID values. Section 6.2.9 does require that they are unique within an e-filing system. -->
+								<!--
+								<ecf:ParticipantID/>
+								-->
+								<nc:ContactInformation>
+									<nc:ContactEmailID>ehillary@crownlawgroup.com</nc:ContactEmailID>
+								</nc:ContactInformation>
+							</ecf:PersonAugmentation>
+						</nc:RoleOfPerson>
+						<j:JudicialOfficialBarMembership>
+							<j:JudicialOfficialBarIdentification>
+								<!-- Attorney's State Bar Number -->
+								<nc:IdentificationID>028509</nc:IdentificationID>
+								<nc:IdentificationJurisdiction>
+									<j:JurisdictionANSID20AuthorityCode>AZ</j:JurisdictionANSID20AuthorityCode>
+								</nc:IdentificationJurisdiction>
+								<nc:IdentificationSourceText>State Bar of Arizona</nc:IdentificationSourceText>
+							</j:JudicialOfficialBarIdentification>
+						</j:JudicialOfficialBarMembership>
+						<ecf:CaseOfficialAugmentation>
+							<ecf:CaseRepresentedParty>
+								<nc:EntityOrganization structures:ref="Appellant1"/>
+							</ecf:CaseRepresentedParty>
+						</ecf:CaseOfficialAugmentation>
+					</j:CaseOfficial>
+					
+					<j:CaseOfficial>
+						<nc:RoleOfPerson structures:id="AppellantAttorney4">
+							<nc:PersonName>
+								<nc:PersonNamePrefixText>Mr</nc:PersonNamePrefixText>
+								<nc:PersonGivenName>Saul</nc:PersonGivenName>
+								<nc:PersonSurName>Donald</nc:PersonSurName>
+								<nc:PersonFullName>Mr Saul Donald</nc:PersonFullName>
+							</nc:PersonName>
+							<ecf:PersonAugmentation>
+								<ecf:CaseParticipantRoleCode>Attorney</ecf:CaseParticipantRoleCode>
+								<!-- As of WD37 ecf:ParticipantID is no longer mandatory. The specification does not provide any guidance as to which 
+									 MDE assigns these ID values. Section 6.2.9 does require that they are unique within an e-filing system. -->
+								<!--
+								<ecf:ParticipantID/>
+								-->
+							</ecf:PersonAugmentation>
+						</nc:RoleOfPerson>
+						<j:JudicialOfficialBarMembership>
+							<j:JudicialOfficialBarIdentification>
+								<!-- Attorney's State Bar Number -->
+								<nc:IdentificationID>028541</nc:IdentificationID>
+								<nc:IdentificationJurisdiction>
+									<j:JurisdictionANSID20AuthorityCode>AZ</j:JurisdictionANSID20AuthorityCode>
+								</nc:IdentificationJurisdiction>
+								<nc:IdentificationSourceText>State Bar of Arizona</nc:IdentificationSourceText>
+							</j:JudicialOfficialBarIdentification>
+						</j:JudicialOfficialBarMembership>
+						<ecf:CaseOfficialAugmentation>
+							<ecf:CaseRepresentedParty>
+								<nc:EntityOrganization structures:ref="Appellant1"/>
+							</ecf:CaseRepresentedParty>
+						</ecf:CaseOfficialAugmentation>
+					</j:CaseOfficial>				
+									
+					<j:CaseOtherEntity>
+						<nc:EntityOrganization structures:id="LawFirm1">
+							<nc:OrganizationIdentification>
+								<nc:IdentificationID>29459691</nc:IdentificationID>
+								<nc:IdentificationCategoryDescriptionText>TCID</nc:IdentificationCategoryDescriptionText>
+							</nc:OrganizationIdentification>
+							<nc:OrganizationName>Crown Law Group</nc:OrganizationName>
+							<ecf:OrganizationAugmentation>
+								<!-- Note: the value 'LawFirm' below is not contained in CaseParticipantRoleCode.gc - the best fit from this 
+										   gc file is 'Other'. -->
+								<ecf:CaseParticipantRoleCode>LawFirm</ecf:CaseParticipantRoleCode>
+								<nc:ContactInformation>
+									<nc:ContactEmailID>docket@crownlawgroup.com</nc:ContactEmailID>
+									<nc:ContactMailingAddress>
+											<nc:LocationStreet>
+												<nc:StreetFullText>7144 East Stetson Drive #300</nc:StreetFullText>
+											</nc:LocationStreet>
+											<nc:LocationCityName>Scottsdale</nc:LocationCityName>
+											<nc:LocationState>
+												<nc:LocationStateUSPostalServiceCode>AZ</nc:LocationStateUSPostalServiceCode>
+											</nc:LocationState>
+											<nc:LocationCountry>
+												<nc:LocationCountryName>USA</nc:LocationCountryName>
+											</nc:LocationCountry>
+											<nc:LocationPostalCode>85251</nc:LocationPostalCode>
+									</nc:ContactMailingAddress>
+									<nc:ContactTelephoneNumber>
+										<nc:FullTelephoneNumber>
+											<nc:TelephoneNumberFullID>4805059363</nc:TelephoneNumberFullID>
+										</nc:FullTelephoneNumber>
+									</nc:ContactTelephoneNumber>
+								</nc:ContactInformation>
+							</ecf:OrganizationAugmentation>					
+						</nc:EntityOrganization>
+					</j:CaseOtherEntity>
+	
+				</j:CaseAugmentation>
+				
+				<!-- Note: j:CaseAugmentation must appear before ecf:CaseAugmentation (see 4.2 Case Augmentations). -->
+				
+				<ecf:CaseAugmentation structures:id="OriginalecfCaseAugmentation">		<!-- structures:id added in RFR. -->
+				
+					<!-- See 4.2 Case Augmentations: "The case type and category associated with a filing SHOULD be indicated with the 
+						 ecf:CaseTypeCode and ecf:CaseCategoryCode elements. -->			
+					<ecf:CaseCategoryCode>CC</ecf:CaseCategoryCode>
+					<!-- Since this is a case initiation filing, then 'true'. -->
+					<ecf:CaseNewIndicator>true</ecf:CaseNewIndicator>
+					<ecf:CaseParty>
+						<nc:EntityOrganization structures:id="Appellant1">
+							<nc:OrganizationName>Sunspot Industries, LLC</nc:OrganizationName>
+							<ecf:OrganizationAugmentation>
+								<ecf:CaseParticipantRoleCode>Appellant</ecf:CaseParticipantRoleCode>
+								<nc:ContactInformation>
+									<nc:ContactMailingAddress>
+											<nc:LocationStreet>
+												<nc:StreetFullText>7144 East Stetson Drive #300</nc:StreetFullText>
+											</nc:LocationStreet>
+											<nc:LocationCityName>Scottsdale</nc:LocationCityName>
+											<nc:LocationState>
+												<nc:LocationStateUSPostalServiceCode>AZ</nc:LocationStateUSPostalServiceCode>
+											</nc:LocationState>
+											<nc:LocationCountry>
+												<nc:LocationCountryName>USA</nc:LocationCountryName>
+											</nc:LocationCountry>
+											<nc:LocationPostalCode>85251</nc:LocationPostalCode>
+									</nc:ContactMailingAddress>
+								</nc:ContactInformation>
+							</ecf:OrganizationAugmentation>
+						</nc:EntityOrganization>
+					</ecf:CaseParty>
+					<ecf:CaseParty>
+						<nc:EntityOrganization structures:id="Appellee1">
+							<nc:OrganizationName>Arizona Corporation Commission</nc:OrganizationName>
+							<ecf:OrganizationAugmentation>
+								<ecf:CaseParticipantRoleCode>Appellee</ecf:CaseParticipantRoleCode>
+								<nc:ContactInformation>
+									<nc:ContactMailingAddress>
+											<nc:LocationStreet>
+												<nc:StreetFullText>1200 W. Washington</nc:StreetFullText>
+											</nc:LocationStreet>
+											<nc:LocationCityName>Phoenix</nc:LocationCityName>
+											<nc:LocationState>
+												<nc:LocationStateUSPostalServiceCode>AZ</nc:LocationStateUSPostalServiceCode>
+											</nc:LocationState>
+											<nc:LocationCountry>
+												<nc:LocationCountryName>USA</nc:LocationCountryName>
+											</nc:LocationCountry>
+											<nc:LocationPostalCode>85007</nc:LocationPostalCode>
+									</nc:ContactMailingAddress>							
+								</nc:ContactInformation>
+							</ecf:OrganizationAugmentation>
+						</nc:EntityOrganization>
+					</ecf:CaseParty>
+					
+					<!-- See 4.2 Case Augmentations: "The case type and category associated with a filing SHOULD be indicated with the 
+						 ecf:CaseTypeCode and ecf:CaseCategoryCode elements. -->
+					<ecf:CaseTypeCode>Civil</ecf:CaseTypeCode>
+					<!-- Since this is a case initiation filing, the court has not yet issued the Case Number. -->
+					<!-- Section 6.6, bullet #9 specifies that j:CaseNumberText must be absent for a case initiation filing. -->
+					<!-- The j:CaseNumberText element is optional. When not needed, it is more typical to not include the element rather
+						 than to include the element as an empty element, as shown in this example. -->
+					<j:CaseNumberText/>
+	
+					<nc:PersonOrganizationAssociation>
+						<nc:AssociationDescriptionText>AttorneyLawFirm</nc:AssociationDescriptionText>
+						<nc:Person structures:ref="AppellantAttorney1"/>
+						<nc:Person structures:ref="AppellantAttorney2"/>
+						<nc:Person structures:ref="AppellantAttorney3"/>
+						<nc:Person structures:ref="AppellantAttorney4"/>
+						<nc:Organization structures:ref="LawFirm1"/>
+					</nc:PersonOrganizationAssociation>
+	
+				</ecf:CaseAugmentation>
+				
+				<appellate:CaseAugmentation structures:id="OriginalappellateCaseAugmentation">		<!-- structures_id added in RFR. -->
+					<j:AppellateCase>
+						<!-- Why is j:CaseAugmentation mandatory for j:AppellateCase? -->
+						<j:CaseAugmentation xsi:nil="true"/>
+						<!-- The element below (j:AppellateCaseNotice) is defined as: "A request filed with an appellate court to start
+							 an appellate case." In this example, this case initiating document is the Notice of Appeal (elaborated in
+							 filing:FilingLeadDocument as Document1). j:AppellateCaseNotice uses structures:ref to reference this Notice
+							 of Appeal document in filing:FilingLeadDocument. -->
+						<!-- As of WD37, j:AppellateCaseNotice is nillable. -->
+						<j:AppellateCaseNotice structures:ref="Document1" xsi:nil="true"/>
+						<j:AppellateCaseOriginalCase structures:id="PredecessorCase1">
+							<nc:CaseTitleText>Sunspot Industries, LLC vs. Arizona Corporation Commission</nc:CaseTitleText>
+							<j:CaseAugmentation>
+								<j:CaseCourt>
+									<nc:OrganizationIdentification structures:id="Agency1">
+										<nc:IdentificationID>ACC</nc:IdentificationID>
+									</nc:OrganizationIdentification>
+									<nc:OrganizationName>Arizona Corporation Commission</nc:OrganizationName>
+								</j:CaseCourt>
+							</j:CaseAugmentation>
+							<ecf:CaseAugmentation>
+								<ecf:CaseTypeCode>Appellate</ecf:CaseTypeCode>
+								<j:CaseNumberText>E-00000J-14-0023</j:CaseNumberText>
+							</ecf:CaseAugmentation>
+						</j:AppellateCaseOriginalCase>
+						
+					</j:AppellateCase>
+				</appellate:CaseAugmentation>
+	
+			</nc:Case>
+		</filing:FilingMessage>
+
+	</docket:RecordDocketingMessage>
+
+	<payment:PaymentMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment ../schema/payment.xsd">
+		<cac:Address>
+			<cbc:CityName>Scottsdale</cbc:CityName>
+			<cbc:PostalZone>85251</cbc:PostalZone>
+			<cbc:CountrySubentityCode>AZ</cbc:CountrySubentityCode>
+			<cac:AddressLine>
+				<cbc:Line>7144 East Stetson Drive #300</cbc:Line>
+			</cac:AddressLine>
+		</cac:Address>
+		<cac:AllowanceCharge>
+			<cbc:ID>p1-820424341396767672</cbc:ID>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReasonCode>APLNT</cbc:AllowanceChargeReasonCode>
+			<cbc:AllowanceChargeReason>Appellant's Filing Fee</cbc:AllowanceChargeReason>
+			<cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
+			<cbc:PrepaidIndicator>false</cbc:PrepaidIndicator>
+			<cbc:SequenceNumeric>1</cbc:SequenceNumeric>
+			<cbc:Amount currencyID="USD">280.00</cbc:Amount>
+			<cbc:BaseAmount currencyID="USD">280.00</cbc:BaseAmount>
+		</cac:AllowanceCharge>
+		<cac:AllowanceCharge>
+			<cbc:ID>p2-820424341396767672</cbc:ID>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReasonCode>SERVICE_FEE</cbc:AllowanceChargeReasonCode>
+			<cbc:AllowanceChargeReason>Service Fee</cbc:AllowanceChargeReason>
+			<cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
+			<cbc:PrepaidIndicator>false</cbc:PrepaidIndicator>
+			<cbc:SequenceNumeric>2</cbc:SequenceNumeric>
+			<cbc:Amount currencyID="USD">6.50</cbc:Amount>
+			<cbc:BaseAmount currencyID="USD">6.50</cbc:BaseAmount>
+		</cac:AllowanceCharge>
+		<cac:AllowanceCharge>
+			<cbc:ID>p3-820424341396767672</cbc:ID>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReasonCode>SERVICE_FEE</cbc:AllowanceChargeReasonCode>
+			<cbc:AllowanceChargeReason>Payment Fee</cbc:AllowanceChargeReason>
+			<cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
+			<cbc:PrepaidIndicator>false</cbc:PrepaidIndicator>
+			<cbc:SequenceNumeric>3</cbc:SequenceNumeric>
+			<cbc:Amount currencyID="USD">8.60</cbc:Amount>
+			<cbc:BaseAmount currencyID="USD">8.60</cbc:BaseAmount>
+		</cac:AllowanceCharge>		
+		<cac:Payment>
+			<cbc:ID>820424341396767672</cbc:ID>
+			<cbc:PaidAmount currencyID="USD">295.10</cbc:PaidAmount>
+			<cbc:PaidDate>2017-03-10-08:00</cbc:PaidDate>
+			<cbc:PaidTime>14:21:29.000-08:00</cbc:PaidTime>
+			<cbc:InstructionID>AZ - Appellate Courts Filing - Court of Appeals Division 1</cbc:InstructionID>
+		</cac:Payment>		
+		<payment:CorrectedPaymentIndicator>false</payment:CorrectedPaymentIndicator>
+		<payment:Payer>
+			 <nc:EntityOrganization structures:ref="LawFirm1"/>
+		</payment:Payer>
+	</payment:PaymentMessage>
+</wrapper:RecordDocketingRequest>

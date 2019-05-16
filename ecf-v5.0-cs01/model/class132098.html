@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Property</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Property</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_132098"></a>
+<p>An inanimate object that is named as a party in a case.  Examples include an automobile, airplane, gun, or cash sought to be forfeited to the state as an instrumentality of a crime or a vessel against which a warrant issues in an admiralty case.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Item</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Item</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_15179650"></a>
+<table><tr><td><div class="element">Attribute <b>propertyAugmentation</b></div></td></tr></table>
+<p>An augmentation to a property entity<br /></p><p>Declaration :</p><ul><li>Uml : + propertyAugmentation : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemAugmentationPoint, (ecf:ItemAugmentation)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Entity/nc:EntityItem/ecf:ItemAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:ItemAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_134786"></a>
+<table><tr><td><div class="element">Attribute <b>description</b></div></td></tr></table>
+<p>A description of a property item.<br /></p><p>Declaration :</p><ul><li>Uml : + description : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Item/nc:ItemDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Item/nc:ItemDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_134658"></a>
+<table><tr><td><div class="element">Attribute <b>propertyID</b></div></td></tr></table>
+<p>The unique identifier assigned by the court at the time the property is first associated with the case. If the court has not yet assigned an identifier in this case, then the filing assembly MDE will leave this blank.<br /></p><p>Declaration :</p><ul><li>Uml : + propertyID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Item/nc:ItemIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Item/nc:ItemOtherIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9585922"></a>
+<table><tr><td><div class="element">Attribute <b>modelYear</b></div></td></tr></table>
+<p>A model year associated with an item.<br /></p><p>Declaration :</p><ul><li>Uml : + modelYear : short, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Item/nc:ItemModelYearDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemModelYearDate</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Item/nc:ItemModelYearDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9586050"></a>
+<table><tr><td><div class="element">Attribute <b>style</b></div></td></tr></table>
+<p>The style/type of an item.<br /></p><p>Declaration :</p><ul><li>Uml : + style : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Item/nc:ItemStyle</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemStyleAbstract, (nc:ItemStyleText)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Item/nc:ItemStyle</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9586178"></a>
+<table><tr><td><div class="element">Attribute <b>color</b></div></td></tr></table>
+<p>The color of an item.<br /></p><p>Declaration :</p><ul><li>Uml : + color : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Item/nc:ItemColor</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemColorAbstract, (nc:ItemColorDescriptionText)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Item/nc:ItemColor</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9754882"></a>
+<table><tr><td><div class="element">Attribute <b>value</b></div></td></tr></table>
+<p>The value of an item.<br /></p><p>Declaration :</p><ul><li>Uml : + value : short, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Item/nc:ItemValue</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemValue</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Item/nc:ItemValue</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ItemValueType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14800770"></a>
+<table><tr><td><div class="element">Attribute <b>valueAmount</b></div></td></tr></table>
+<p>The amount an item is worth.<br /></p><p>Declaration :</p><ul><li>Uml : + valueAmount : string, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Item/nc:ItemValue</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemValueAmount</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemValueType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Item/nc:ItemValue/nc:ItemValueAmount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AmountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

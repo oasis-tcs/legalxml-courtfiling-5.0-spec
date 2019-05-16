@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class FilingMessageType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class FilingMessageType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15728130"></a>
+<p>The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record.<br /></p>
+<p>Directly inherited by : <a href="class15755522.html#ref4_15755522"><b>ServeProcessMessageType</b></a> </p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing,FilingMessageType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34321538"></a>
+<table><tr><td><div class="element">Attribute <b>nc:Case</b></div></td></tr></table>
+<p>An aggregation of information about a set of related activities and events.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:Case : <a href="class15722114.html#ref4_15722114"><b>CaseType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,Case</div></li>
+</ul>
+<a name="ref1_34333442"></a>
+<table><tr><td><div class="element">Attribute <b>filing:FilingConnectedDocument</b></div></td></tr></table>
+<p>A document included in a Filing that supports the Document.  This document is not separately entered on the docket or register of actions.<br /></p><p>Declaration :</p><ul><li>Uml : + filing:FilingConnectedDocument : <a href="class15719682.html#ref4_15719682"><b>DocumentType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing,FilingConnectedDocument</div></li>
+</ul>
+<a name="ref1_34347394"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:ElectronicServiceInformation</b></div></td></tr></table>
+<p>Information provided by the filing assembly MDE to the court identifying the persons being served electronically with a copy of this document.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:ElectronicServiceInformation : <a href="class15740802.html#ref4_15740802"><b>ElectronicServiceInformationType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,ElectronicServiceInformation</div></li>
+</ul>
+<a name="ref1_34362114"></a>
+<table><tr><td><div class="element">Attribute <b>filing:FilingLeadDocument</b></div></td></tr></table>
+<p>The pleading, motion or order that is the main document in a Filing. A Document may have Attachments.<br /></p><p>Declaration :</p><ul><li>Uml : + filing:FilingLeadDocument : <a href="class15719682.html#ref4_15719682"><b>DocumentType</b></a>, multiplicity : 1,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing,FilingLeadDocument</div></li>
+</ul>
+<a name="ref1_34365186"></a>
+<table><tr><td><div class="element">Attribute <b>filing:FilingMessageAugmentationPoint</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + filing:FilingMessageAugmentationPoint : <a href="class15714434.html#ref4_15714434"><b>abstract</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing,FilingMessageAugmentationPoint</div></li>
+</ul>
+</div>
+</body>
+</html>

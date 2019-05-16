@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class MessageStatusType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class MessageStatusType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15734786"></a>
+<p>A data type to provide success or error feedback on a message that has been received.<br /></p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/cbrn/4.1/,MessageStatusType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34334466"></a>
+<table><tr><td><div class="element">Attribute <b>cbrn:MessageContentError</b></div></td></tr></table>
+<p>A set of information about the point in the xml payload content of a message where an error occurred in processing the message.<br /></p><p>Declaration :</p><ul><li>Uml : + cbrn:MessageContentError : <a href="class15734658.html#ref4_15734658"><b>MessageContentErrorType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/cbrn/4.1/,MessageContentError</div></li>
+</ul>
+<a name="ref1_34348930"></a>
+<table><tr><td><div class="element">Attribute <b>cbrn:MessageStatusCode</b></div></td></tr></table>
+<p>A code for the receiving status of a message.<br /></p><p>Declaration :</p><ul><li>Uml : + cbrn:MessageStatusCode : <a href="class15741826.html#ref4_15741826"><b>MessageStatusCodeType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/cbrn/4.1/,MessageStatusCode</div></li>
+</ul>
+<a name="ref1_34349058"></a>
+<table><tr><td><div class="element">Attribute <b>cbrn:MessageHandlingError</b></div></td></tr></table>
+<p>A description of a  message error encountered by an infrastructure component in the process of message handling and transmission.<br /></p><p>Declaration :</p><ul><li>Uml : + cbrn:MessageHandlingError : <a href="class15741698.html#ref4_15741698"><b>MessageErrorType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/cbrn/4.1/,MessageHandlingError</div></li>
+</ul>
+<a name="ref1_34349186"></a>
+<table><tr><td><div class="element">Attribute <b>cbrn:CredentialsAuthenticatedCode</b></div></td></tr></table>
+<p>A verfication of the authenticating credentials.<br /></p><p>Declaration :</p><ul><li>Uml : + cbrn:CredentialsAuthenticatedCode : <a href="class15760642.html#ref4_15760642"><b>CredentialsAuthenticatedCodeType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/cbrn/4.1/,CredentialsAuthenticatedCode</div></li>
+</ul>
+<a name="ref1_34349314"></a>
+<table><tr><td><div class="element">Attribute <b>cbrn:ResendRequestIndicator</b></div></td></tr></table>
+<p>True if the message should be resent; false otherwise.<br /></p><p>Declaration :</p><ul><li>Uml : + cbrn:ResendRequestIndicator : <a href="class15715586.html#ref4_15715586"><b>boolean</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/cbrn/4.1/,ResendRequestIndicator</div></li>
+</ul>
+<a name="ref1_34388610"></a>
+<table><tr><td><div class="element">Attribute <b>cbrn:MessageStatusAugmentationPoint</b></div></td></tr></table>
+<p>An augmentation point for cbrn:MessageStatusType.<br /></p><p>Declaration :</p><ul><li>Uml : + cbrn:MessageStatusAugmentationPoint : <a href="class15714434.html#ref4_15714434"><b>abstract</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/cbrn/4.1/,MessageStatusAugmentationPoint</div></li>
+</ul>
+</div>
+</body>
+</html>

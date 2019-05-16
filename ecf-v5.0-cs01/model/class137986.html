@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ExtensionReference</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ExtensionReference</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_137986"></a>
+<p>A structure representing a court-specific data structure passed to a particular operation on a particular MDE.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:ExtensionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_147714"></a>
+<table><tr><td><div class="element">Attribute <b>argumentSchema</b></div></td></tr></table>
+<p>An XML Schema document that defines the allowable structure of the court-specific argument to this MDE operation.<br /></p><p>Declaration :</p><ul><li>Uml : + argumentSchema : <a href="class162818.html#ref4_162818"><b>binary</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:CourtExtension/policyresponse:CourtExtensionURI</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:ExtensionLocationURI</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:ExtensionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension/nc:LocationURI</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:anyURI</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_147842"></a>
+<table><tr><td><div class="element">Attribute <b>effectiveTime</b></div></td></tr></table>
+<p>The date and time on which this value became or will become allowed.<br /></p><p>Declaration :</p><ul><li>Uml : + effectiveTime : </li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Reference nc:Metadata with policyresponse:SchemaExtension/&#64;structures:metadata</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:EffectiveDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Metadata</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:GetPolicyResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/nc:Metadata/nc:Metadata/nc:EffectiveDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:MetadataType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_147970"></a>
+<table><tr><td><div class="element">Attribute <b>expirationTime</b></div></td></tr></table>
+<p>The date and time on which the value was or will be terminated.<br /></p><p>Declaration :</p><ul><li>Uml : + expirationTime : </li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:ExpirationDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ExpirationDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:MetadataType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/nc:Metadata/nc:Metadata/nc:ExpirationDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_147458"></a>
+<table><tr><td><div class="element">Attribute <b>mdeName</b></div></td></tr></table>
+<p>Name of a major design element.<br /></p><p>Declaration :</p><ul><li>Uml : + mdeName : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list MajorDesignElementTypeCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:MajorDesignElementTypeCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:SchemaExtensionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension/policyresponse:MajorDesignElementTypeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">CourtRecord=CourtRecord MDE; CourtPolicy=Court Policy MDE; CourtScheduling=CourtScheduling MDE; FilingAssembly=FilingAssembly MDE; FilingReview=FilingReview MDE; Service=Service MDE</div></li>
+</ul>
+<a name="ref1_147586"></a>
+<table><tr><td><div class="element">Attribute <b>operationName</b></div></td></tr></table>
+<p>Name of an MDE operation.<br /></p><p>Declaration :</p><ul><li>Uml : + operationName : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedOperation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:OperationNameCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:SchemaExtensionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension/policyresponse:OperationNameCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_4261890"></a>
+<table><tr><td><div class="element">Attribute <b>courtExtension</b></div></td></tr></table>
+<p>A court extension to ECF.<br /></p><p>Declaration :</p><ul><li>Uml : + courtExtension : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:CourtExtension</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:ExtensionCanonicalURI</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:ExtensionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension/policyresponse:CanonicalURI</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:anyURI</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9403138"></a>
+<table><tr><td><div class="element">Attribute <b>extensionElement</b></div></td></tr></table>
+<p>The element(s) in the extension schema that are are the root of the extension and substitute for an extension (augmentation) point.<br /></p><p>Declaration :</p><ul><li>Uml : + extensionElement : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">policyresponse:ExtensionElementName</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">policyresponse:SchemaExtensionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension/policyresponse:OperationNameCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:anyURI</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

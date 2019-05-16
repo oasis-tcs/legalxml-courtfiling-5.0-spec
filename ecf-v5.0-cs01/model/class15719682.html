@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DocumentType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DocumentType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15719682"></a>
+<p>A data type for a paper or electronic document.<br /></p>
+<p>Directly inherited by : <a href="class15729538.html#ref4_15729538"><b>AppellateCaseNoticeType</b></a> <a href="class15720834.html#ref4_15720834"><b>CaseFilingType</b></a> <a href="class15737986.html#ref4_15737986"><b>DependencyPetitionType</b></a> <a href="class15723906.html#ref4_15723906"><b>DocumentRenditionType</b></a> <a href="class15755394.html#ref4_15755394"><b>ReviewedDocumentType</b></a> </p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34333826"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentSequenceID</b></div></td></tr></table>
+<p>An identifier that determines the document order in a set of related documents.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentSequenceID : <a href="class15717890.html#ref4_15717890"><b>string</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentSequenceID</div></li>
+</ul>
+<a name="ref1_34341378"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentFileControlID</b></div></td></tr></table>
+<p>An identifier assigned to a document to locate it within a file control system.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentFileControlID : <a href="class15717890.html#ref4_15717890"><b>string</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentFileControlID</div></li>
+</ul>
+<a name="ref1_34341506"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentIdentification</b></div></td></tr></table>
+<p>An identification that references a document.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentIdentification : <a href="class15719170.html#ref4_15719170"><b>IdentificationType</b></a>, multiplicity : 1,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentIdentification</div></li>
+</ul>
+<a name="ref1_34342274"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentAugmentationPoint</b></div></td></tr></table>
+<p>An augmentation point for DocumentType.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentAugmentationPoint : <a href="class15714434.html#ref4_15714434"><b>abstract</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentAugmentationPoint</div></li>
+</ul>
+<a name="ref1_34343554"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentCategoryAbstract</b></div></td></tr></table>
+<p>A data concept for a kind of document.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentCategoryAbstract : <a href="class15714434.html#ref4_15714434"><b>abstract</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentCategoryAbstract</div></li>
+</ul>
+<a name="ref1_34343810"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentDescriptionText</b></div></td></tr></table>
+<p>A description of the content of a document.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentDescriptionText : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentDescriptionText</div></li>
+</ul>
+<a name="ref1_34344322"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentSoftwareName</b></div></td></tr></table>
+<p>A name of a computer application used to process a document.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentSoftwareName : <a href="class15739906.html#ref4_15739906"><b>SoftwareNameType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentSoftwareName</div></li>
+</ul>
+<a name="ref1_34345858"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentTitleText</b></div></td></tr></table>
+<p>A name given to a document.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentTitleText : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentTitleText</div></li>
+</ul>
+<a name="ref1_34353666"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentEffectiveDate</b></div></td></tr></table>
+<p>A date in which the content or action becomes enforceable, active, or effective.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentEffectiveDate : <a href="class15719298.html#ref4_15719298"><b>DateType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentEffectiveDate</div></li>
+</ul>
+<a name="ref1_34354434"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentFiledDate</b></div></td></tr></table>
+<p>A date a document was officially filed with an organization or agency.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentFiledDate : <a href="class15719298.html#ref4_15719298"><b>DateType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentFiledDate</div></li>
+</ul>
+<a name="ref1_34361090"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentLanguageAbstract</b></div></td></tr></table>
+<p>A data concept for the language of the content of the resource.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentLanguageAbstract : <a href="class15714434.html#ref4_15714434"><b>abstract</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentLanguageAbstract</div></li>
+</ul>
+<a name="ref1_34382466"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentReceivedDate</b></div></td></tr></table>
+<p>A date a transmitted document was received.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentReceivedDate : <a href="class15719298.html#ref4_15719298"><b>DateType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentReceivedDate</div></li>
+</ul>
+<a name="ref1_34393346"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentSubmitter</b></div></td></tr></table>
+<p>An entity responsible for making the resource available.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentSubmitter : <a href="class15719938.html#ref4_15719938"><b>EntityType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentSubmitter</div></li>
+</ul>
+</div>
+</body>
+</html>

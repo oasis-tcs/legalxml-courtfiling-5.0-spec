@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Identification</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Identification</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_3381890"></a>
+<p>An identifier<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Identification/nc:IdentificationID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:IdentificationID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Identification/nc:IdentificationID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:string</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_9576450"></a>
+<table><tr><td><div class="element">Attribute <b>identficationSource</b></div></td></tr></table>
+<p>The source of an identifier.<br /></p><p>Declaration :</p><ul><li>Uml : + identficationSource : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list MajorDesignElementTypeCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Identification/nc:IdentificationSourceText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:IdentificationSourceText</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Identification/nc:IdentificationSourceText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_11563906"></a>
+<table><tr><td><div class="element">Attribute <b>jurisdiction</b></div></td></tr></table>
+<p>The jurisdiction that issued an identifier.<br /></p><p>Declaration :</p><ul><li>Uml : + jurisdiction : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:IdentificationJurisdiction</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:JurisdictionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_11564034"></a>
+<table><tr><td><div class="element">Attribute <b>jurisdictionCode</b></div></td></tr></table>
+<p>A code for the jurisdiction that issued an identifier.<br /></p><p>Declaration :</p><ul><li>Uml : + jurisdictionCode : <a href="class156162.html#ref4_156162"><b>id</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:JurisdictionAbstract,  (j:JurisdictionANSID20AuthorityCode), (nc:JurisdictionText)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:JurisdictionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction/j:JurisdictionANSID20AuthorityCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">aamva_d20:JurisdictionAuthorityCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_26307970"></a>
+<table><tr><td><div class="element">Attribute <b>identificationCategory</b></div></td></tr></table>
+<p>The category of an identifier.<br /></p><p>Declaration :</p><ul><li>Uml : + identificationCategory : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list IdentificationCategoryName.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:IdentificationCategoryName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:IdentificationCategoryDescriptionText</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Identification/nc:IdentificationCategoryDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">filingID=filing identifier; messageID=message identifier</div></li>
+</ul>
+</div>
+</body>
+</html>

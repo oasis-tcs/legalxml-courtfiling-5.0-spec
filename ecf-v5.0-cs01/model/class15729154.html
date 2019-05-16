@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class RecordDocketingMessageType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class RecordDocketingMessageType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15729154"></a>
+<p>Message resulting from clerk review and edit of a ReviewFilingMessage.<br /></p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket,RecordDocketingMessageType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34322946"></a>
+<table><tr><td><div class="element">Attribute <b>docket:CorrectedCase</b></div></td></tr></table>
+<p>The court case in which the filing is being docketed.<br /></p><p>Declaration :</p><ul><li>Uml : + docket:CorrectedCase : <a href="class15722114.html#ref4_15722114"><b>CaseType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket,CorrectedCase</div></li>
+</ul>
+<a name="ref1_34333698"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:ConnectedDocumentReview</b></div></td></tr></table>
+<p>The review process for a connected document<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:ConnectedDocumentReview : <a href="class15734402.html#ref4_15734402"><b>DocumentReviewType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,ConnectedDocumentReview</div></li>
+</ul>
+<a name="ref1_34362242"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:LeadDocumentReview</b></div></td></tr></table>
+<p>A review process for a lead document.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:LeadDocumentReview : <a href="class15734402.html#ref4_15734402"><b>DocumentReviewType</b></a>, multiplicity : 1,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,LeadDocumentReview</div></li>
+</ul>
+<a name="ref1_34368258"></a>
+<table><tr><td><div class="element">Attribute <b>docket:RecordDocketingMessageAugmentationPoint</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + docket:RecordDocketingMessageAugmentationPoint : <a href="class15714434.html#ref4_15714434"><b>abstract</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket,RecordDocketingMessageAugmentationPoint</div></li>
+</ul>
+<a name="ref1_34374402"></a>
+<table><tr><td><div class="element">Attribute <b>filing:FilingMessage</b></div></td></tr></table>
+<p>The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record.<br /></p><p>Declaration :</p><ul><li>Uml : + filing:FilingMessage : <a href="class15728130.html#ref4_15728130"><b>FilingMessageType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing,FilingMessage</div></li>
+</ul>
+<a name="ref1_34385282"></a>
+<table><tr><td><div class="element">Attribute <b>docket:FilingReviewCommentsText</b></div></td></tr></table>
+<p>Comments provided by the clerk to the court record system during review.<br /></p><p>Declaration :</p><ul><li>Uml : + docket:FilingReviewCommentsText : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket,FilingReviewCommentsText</div></li>
+</ul>
+<a name="ref1_34386818"></a>
+<table><tr><td><div class="element">Attribute <b>docket:SealCaseIndicator</b></div></td></tr></table>
+<p>Instruction from the clerk to the court record to represent this case as "sealed."<br /></p><p>Declaration :</p><ul><li>Uml : + docket:SealCaseIndicator : <a href="class15715586.html#ref4_15715586"><b>boolean</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket,SealCaseIndicator</div></li>
+</ul>
+</div>
+</body>
+</html>

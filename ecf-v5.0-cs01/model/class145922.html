@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ElectronicFilingCallbackMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ElectronicFilingCallbackMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_145922"></a>
+<p>The base message for an asynchronous response to a message.<br /></p>
+<p>Directly inherited by : <a href="class5257730.html#ref4_5257730"><b>NotifyCourtDateMessage</b></a> <a href="class132610.html#ref4_132610"><b>NotifyDocketingCompleteMessage</b></a> <a href="class132738.html#ref4_132738"><b>NotifyFilingReviewCompleteMessage</b></a> </p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CallbackMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_179842"></a>
+<table><tr><td><div class="element">Relation <b>docketedCase (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>This association will always be present, except in the situation where the filing was a case initiation filing and was rejected (therefore, no case was initiated in the court record system.)<br /></p><p>Declaration :</p><ul><li>Uml : + docketedCase : <a href="class146050.html#ref4_146050"><b>DocketedCase</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/nc:Case</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CallbackMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/nc:Case</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_174978"></a>
+<table><tr><td><div class="element">Attribute <b>filingCompletionTime</b></div></td></tr></table>
+<p>the date and time at which the Court Record MDE filing process was completed following the acceptance by the Filing Review MDE<br /></p><p>Declaration :</p><ul><li>Uml : + filingCompletionTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:FilingCompletionDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:FilingCompletionDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CallbackMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:FilingCompletionDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_175234"></a>
+<table><tr><td><div class="element">Attribute <b>filingEnteredOnDocketTime</b></div></td></tr></table>
+<p>the date and time of day on which an entry in the docket or register of action in the court CMS was completed for a filing<br /></p><p>Declaration :</p><ul><li>Uml : + filingEnteredOnDocketTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/nc:DocumentEffectiveDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentEffectiveDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/nc:DocumentEffectiveDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_174338"></a>
+<table><tr><td><div class="element">Attribute <b>filingID</b></div></td></tr></table>
+<p>An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. "Transaction" means the sequence of messages from initial filing review through receipt of the asynchronous review callback.<br /></p><p>Declaration :</p><ul><li>Uml : + filingID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_174722"></a>
+<table><tr><td><div class="element">Attribute <b>filingOfficialDate</b></div></td></tr></table>
+<p>the date of filing of a document recognized by the court in its docket entry upon acceptance of the document for entry into the court official records.  Note:  This date may be, but need to be, affixed to the document with an electronic filestamp.  There is no corresponding official hour of the filing.  The court may subsequently change the officialFilingDate by judicial order.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + filingOfficialDate : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/nc:DocumentFiledDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentFiledDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/nc:DocumentFiledDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_174466"></a>
+<table><tr><td><div class="element">Attribute <b>filingStatusCode</b></div></td></tr></table>
+<p>Status of the filing as determined by the system sending the callback. Values: accepted, partially accepted (e.g., some documents but not others), rejected.<br /></p><p>Declaration :</p><ul><li>Uml : + filingStatusCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list FilingReviewStatusCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:FilingStatus/ecf:FilingReviewStatusCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:FilingReviewStatusCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:FilingStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:FilingStatus/ecf:FilingReviewStatusCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">accepted=filing was received and accepted;  cancelled=filing was cancelled at filer's request; partially-accepted=filing was received, some documents were accepted, and some documents were rejected; received=filing has been received but not yet accepted; rejected=filing was received and completely rejected; issued=document has been issued;</div></li>
+</ul>
+<a name="ref1_174594"></a>
+<table><tr><td><div class="element">Attribute <b>filingStatusReasonDescription</b></div></td></tr></table>
+<p>A textual description of the reason for the setting of the status in the filingStatusCode.<br /></p><p>Declaration :</p><ul><li>Uml : + filingStatusReasonDescription : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/nc:DocumentStatus/nc:StatusDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:FilingStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:FilingStatus/nc:StatusDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_215682"></a>
+<table><tr><td><div class="element">Relation <b>reviewedConnectedDocument (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>This element will be present for every connected document that is reviewed by clerk review. The filing connected document must be referenced using nc:DocumentAssociation. The clerk review results must be recorded using ecf:DocumentReviewStatus, and ecf:DocumentReviewer (optional).<br /></p><p>Declaration :</p><ul><li>Uml : + reviewedConnectedDocument : <a href="class132482.html#ref4_132482"><b>ReviewedDocument</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:ReviewedConnectedDocument</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ConnectedDocumentReview</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CallbackMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:ReviewedConnectedDocument</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:ReviewedDocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_11303042"></a>
+<table><tr><td><div class="element">Attribute <b>filingStatus</b></div></td></tr></table>
+<p>The status of a filing<br /></p><p>Declaration :</p><ul><li>Uml : + filingStatus : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:FilingStatus</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CallbackMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:FilingStatus</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:FilingStatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_5326850"></a>
+<table><tr><td><div class="element">Relation <b>reviewedLeadDocument (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>This element will be present for every lead document that is reviewed by clerk review. The filing lead document must be referenced using nc:DocumentAssociation. The clerk review results must be recorded using ecf:DocumentReviewStatus, and ecf:DocumentReviewer (optional).<br /></p><p>Declaration :</p><ul><li>Uml : + reviewedLeadDocument : <a href="class132482.html#ref4_132482"><b>ReviewedDocument</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:ReviewedLeadDocument</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:LeadDocumentReview</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CallbackMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:ReviewedLeadDocument</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:ReviewedDocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_30403458"></a>
+<table><tr><td><div class="element">Attribute <b>filingDocketingStatusCode</b></div></td></tr></table>
+<p>The docketing status of the filing or document	<br /></p><p>Declaration :</p><ul><li>Uml : + filingDocketingStatusCode : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list FilingDocketingStatusCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:FilingDocketingStatusCode</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:FilingStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:FilingStatus/ecf:FilingDocketingStatusCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">successful=filing was docketed; unsuccessful=docketing of the filing was not successful; not applicable=filing is not appropriate for docketing<br /></div></li>
+</ul>
+</div>
+</body>
+</html>

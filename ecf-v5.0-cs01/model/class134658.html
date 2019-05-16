@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class AttachmentMetadata</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class AttachmentMetadata</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_134658"></a>
+<p>Information describing an attachment included within a message.  An attachment can be a binary file representing the document to be filed, an XML document, a digital signature, or other MIME file.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/ecf:DocumentAttachment</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:Attachment</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_141314"></a>
+<table><tr><td><div class="element">Attribute <b>attachmentID</b></div></td></tr></table>
+<p>A unique identifier (such as a URI) for the attachment in the message stream.  (For the Web Services profile, this will be the value of the MIME Content-Id header.) Can contain a URL if the attachment is remote, if allowed by court policy.<br /></p><p>Declaration :</p><ul><li>Uml : + attachmentID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/ecf:DocumentAttachment/nc:BinaryLocationURI</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:BinaryURI</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:Attachment/nc:BinaryURI</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:anyURI</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_141442"></a>
+<table><tr><td><div class="element">Attribute <b>attachmentSequenceNumber</b></div></td></tr></table>
+<p>A numeric sequence number used for splitting documents across multiple parts.<br /></p><p>Declaration :</p><ul><li>Uml : + attachmentSequenceNumber : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/ecf:DocumentAttachment/nc:AttachmentSequenceID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:BinaryID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:BinaryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:Attachment/nc:BinaryID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:string</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

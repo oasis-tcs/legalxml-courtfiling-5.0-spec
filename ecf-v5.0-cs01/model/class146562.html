@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Error</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Error</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_146562"></a>
+<p>Representation of an error that occured when synchronously processing the message.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">messagereceipt:MessageReceiptMessage/ecf:Error</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:MessageStatus</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:ResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:ResponseMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbrn:MessageStatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_176002"></a>
+<table><tr><td><div class="element">Attribute <b>errorCode</b></div></td></tr></table>
+<p>A code that uniquely identifies an error.  Allowable values set forth in court policy.<br /></p><p>Declaration :</p><ul><li>Uml : + errorCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">messagereceipt:MessageReceiptMessage/ecf:Error/ecf:ErrorCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:MessageStatusCode, cbrn:MessageHandlingError, cbrn:CredentialsAuthenticatedCode, cbrn:ResendRequestIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:MessageStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/cbrn:MessageStatusCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbrncl:MessageStatusCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_176130"></a>
+<table><tr><td><div class="element">Attribute <b>errorDescription</b></div></td></tr></table>
+<p>A more "user friendly" description of the error.<br /></p><p>Declaration :</p><ul><li>Uml : + errorDescription : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">messagereceipt:MessageReceiptMessage/ecf:Error/ecf:ErrorDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:ErrorDescription, cbrn:ErrorNodeName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:MessageContentErrorType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/cbrn:MessageContentError/cbrn:ErrorDescription/cbrn:ErrorCodeDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbrn:MessageErrorType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_5929090"></a>
+<table><tr><td><div class="element">Attribute <b>contentError</b></div></td></tr></table>
+<p>A content error message.<br /></p><p>Declaration :</p><ul><li>Uml : + contentError : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">messagereceipt:MessageReceiptMessage/ecf:Error</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:MessageContentError</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:MessageStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/cbrn:MessageContentError</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbrn:MessageContentErrorType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_13037186"></a>
+<table><tr><td><div class="element">Attribute <b>errorText</b></div></td></tr></table>
+<p>A code that uniquely identifies an error.  Allowable values set forth in court policy.<br /></p><p>Declaration :</p><ul><li>Uml : + errorText : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list ErrorCodeText.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">messagereceipt:MessageReceiptMessage/ecf:Error</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:ErrorCodeText</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:MessageErrorType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/cbrn:MessageContentError/cbrn:ErrorDescription/cbrn:ErrorCodeDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">0=No error; 1=Invalid per schema or code list; 2=Invalid per ECF specification; 3=Invalid per service interaction profile; 4=Invalid per policy</div></li>
+</ul>
+<a name="ref1_13130370"></a>
+<table><tr><td><div class="element">Attribute <b>systemEnvironment</b></div></td></tr></table>
+<p>The system environment (e.g. production, test, development) in which the error occured.<br /></p><p>Declaration :</p><ul><li>Uml : + systemEnvironment : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:SystemOperatingModeAbstract, (cbrn:SystemOperatingModeCode)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:SystemEventType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/cbrn:SystemOperatingModeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbrncl:SystemOperatingModeCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

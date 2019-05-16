@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class MatchingFiling</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class MatchingFiling</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_133634"></a>
+<p>A filing matching the parameters submitted with a FilingListQueryMessage.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistresponse:MatchingFiling</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:MatchingFilingType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:MatchingFiling</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:CallbackMessageType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_138882"></a>
+<table><tr><td><div class="element">Attribute <b>caseShortTitle</b></div></td></tr></table>
+<p>An abbreviated official name of a Case, usually shortened to contain only the last name of the first listed party on each side of the case.  Examples: Smith v. Jones, et al.; State v. Alexander. No title exists when the message is initiating a new case.<br /></p><p>Declaration :</p><ul><li>Uml : + caseShortTitle : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseShortTitleText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:MatchingFiling/nc:Case/ecf:CaseAugmentation/ecf:CaseShortTitleText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_138754"></a>
+<table><tr><td><div class="element">Attribute <b>caseTitle</b></div></td></tr></table>
+<p>An official name of a Case. The name of the case includes all of the parties to the case. No title exists when the message is initiating a new case.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTitle : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseTitleText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:MatchingFiling/nc:Case/nc:CaseTitleText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_138626"></a>
+<table><tr><td><div class="element">Attribute <b>caseTrackingID</b></div></td></tr></table>
+<p>Court case number.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTrackingID : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistresponse:MatchingFiling/nc:CaseTrackingID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:MatchingFiling/nc:Case/ecf:CaseAugmentation/ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_139010"></a>
+<table><tr><td><div class="element">Attribute <b>filingID</b></div></td></tr></table>
+<p>A number assigned by the court for a filing.<br /></p><p>Declaration :</p><ul><li>Uml : + filingID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistresponse:MatchingFiling/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:MatchingFiling/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_139266"></a>
+<table><tr><td><div class="element">Attribute <b>filingStatus</b></div></td></tr></table>
+<p>Details about the status of a court processing of a ReviewFilingMessage submitted to it, and of its processing of the documents contained within that message.<br /></p><p>Declaration :</p><ul><li>Uml : + filingStatus : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistresponse:MatchingFiling/ecf:FilingStatus</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:FilingStatus</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CallbackMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filingstatusresponse:GetFilingStatusResponseMessage/ecf:MatchingFiling/ecf:FilingStatus/ecf:FilingReviewStatusCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:FilingStatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_139522"></a>
+<table><tr><td><div class="element">Attribute <b>receivedTime</b></div></td></tr></table>
+<p>The data and time an MDE received a Message, on the clock of the MDE.<br /></p><p>Declaration :</p><ul><li>Uml : + receivedTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistresponse:MatchingFiling/nc:DocumentReceivedDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentReceivedDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:MatchingFiling/nc:DocumentReceivedDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_139138"></a>
+<table><tr><td><div class="element">Attribute <b>submitterID</b></div></td></tr></table>
+<p>A unique identifier for a person or organization which submits a Review Filing Message. This may refer to any combination of the assembler, authorizer, or the represented party in the filing.<br /></p><p>Declaration :</p><ul><li>Uml : + submitterID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistresponse:MatchingFiling/nc:DocumentSubmitter/nc:EntityOrganization/nc:OrganizationID, filinglistreponse:MatchingFiling/nc:DocumentSubmitter/nc:EntityPerson/nc:PersonID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentSubmitter</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:MatchingFiling/nc:DocumentSubmitter/nc:EntityPerson/ecf:PersonAugmentation/ecf:FilingPartyID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_3360514"></a>
+<table><tr><td><div class="element">Relation <b>case (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A case associated with a document.<br /></p><p>Declaration :</p><ul><li>Uml : + case : <a href="class131586.html#ref4_131586"><b>Case</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistresponse:FilingListResponseMessage/nc:CaseTrackingID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CallbackMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:MatchingFiling/nc:Case</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6363138"></a>
+<table><tr><td><div class="element">Attribute <b>submitter</b></div></td></tr></table>
+<p>The submitter of a document<br /></p><p>Declaration :</p><ul><li>Uml : + submitter : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistresponse:FilingListResponseMessage/nc:DocumentSubmitter</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentSubmitter</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:MatchingFiling/nc:DocumentSubmitter</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

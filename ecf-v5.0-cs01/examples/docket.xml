@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--	
+		Docket.xml
+
+		This example illustrates the use of docket:CorrectedCase and other clerk review modifications to reviewed documents.
+
+		This example was created by modifying the wd14 docket.xml example.
+
+		In addition to the clerk review modifications indicative of this use case, the docket.xml was modified to 
+		use nc:DocumentAssociation to relate reviewed documents to filing documents. Clerk Review information was
+		also added using DocumentReviewer and DocumentReviewStatus.
+
+		This example illustrates the following corrections made in Clerk Review:
+
+		1. case title corrected
+		2. case number and case tracking ID added 
+		3. correction of Driver's License number for the Case Initiating Party (e.g. plaintiff) John W Doe (Person1).
+
+			This was done by copying all of nc:EntityPerson from nc:Case/j:CaseAugmentation/ecf:CaseParty and
+			pasting into docket:CorrectedCase, then changing the value for the structures:id attribute to 'Person4' from 'Person1' to avoid
+			a XML validation error due to non-unique structures:id value.
+
+			Also, the structures:ref attribute value in ecf:CaseAugmentation/nc:PersonAssociation was revised for 'Person1' to 'Person4'
+
+		4. document description text correction for filing lead document and filing connected document.
+		5. added document title to reviewed lead document and filing connected document.
+		6. added new file stamped rendition to reviewed lead document and reviewed conncected document.
+
+
+		Gary Graham, May 26, 2017
+
+		Changes made as of WD 20:
+		1. structures:id attribute added to civil:Decedent
+		2. In CorrectedCase, for civil:Decedent, modified to use structures:ref to reference decendent in FilngMessage. Removed all 
+		   sub-elements for CorrectedCase civil:Decedent. 
+
+		Changes made as of WD 30:
+		1. For Reviewed Lead and Connected documents, discontinued use of ecf:DocumentAugmentation/nc:DocumentAssociation and instead, now
+		   using ecf:ReviewedDocumentAugmentation/nc:DocumentAssociation (e.g. moved nc:DocumentAssociation from within ecf:DocumentAugmentation
+		   into ecf:ReviewedDocumentAugmentation).
+
+		2. Included multiple additional elements from FilingLeadDocument into ReviewedLeadDocument. At the Salt Lake City f2f meeting, it was
+		   agreed that a total replication method should be used (see 6.4.3). Since the scenario illustrated in this example includes
+		   modifications to document information for the filing lead document (i.e. modification to nc:DocumentDescriptionText, and the addition 
+		   of nc:DocumentTitleText) and the inclusion of a new 'file stamped' rendition, complete replication of the orginal filing document
+		   information is required. Specifically added nc:DocumentCategoryText, nc:DocumentSoftwareName, nc:DocumentEffectiveDate, 
+		   nc:DocumentSequenceID, nc:DocumentSubmitter, ecf:DocumentRendition (for the original rendition), ecf:RedactionRequiredIndicator, 
+		   ecf:RegisterActionDescriptionCode, ecf:SpecialHandlingInstructionsText, and ecf:DocumentAugmentation/nc:DocumentAssociation. 
+
+		3. Added a new/second ecf:DocumentAugmentation element which contains the ecf:DocumentRendition element for the newly added file
+		   stamped document rendition.
+
+		4. Added structures:ref="AppearanceAugmentation1" to ecf:DocumentAugmentation for the Appearance lead document in filing:FilingMessage. 
+		   Modified the first ecf:DocumentAugmentation element within ecf:ReviewedLeadDocument to include structures:ref directed at 
+		   AppearanceAugmentation1.
+
+
+		Gary Graham, October 2, 2018
+
+		Changes made as of WD36
+		1. docket:CorrectedCase/j:CaseAugmentation - modified to reference the original j:CaseAugmentation in nc:Case using structures:ref.
+
+		2. docket:CorrectedCase/civil:CaseAugmentation - modified to reference the original civil:CaseAugmentation using structures:ref.
+
+		3. ecf:ConnectedDocumentReview\ecf:ReviewedDocument\ecf:DocumentAugmentation - Added elements: ecf:DocumentFiler, ecf:RedactionRequiredIndicator, 
+		   ecf:RegisterActionDescriptionCode, ecf:SpecialHandlingInstructions and nc:DocumentAssociation. With these elements absent, the understanding 
+		   must be that the information is no longer applicable following clerk review.
+
+		4. ecf:LeadDocumentReview\ecf:ReviewedDocument\ecf:DocumentAugmentation - Added elements: ecf:DocumentFiler, ecf:RedactionRequiredIndicator, and 
+		   ecf:RegisterActionDescriptionCode. With these elements absent, the understanding must be that the information is no longer applicable following 
+		   clerk review.
+
+		Changes made for WD37 (Oct. 4, 2018)
+		1. For John W. Doe in CorrectedCase, reference the original ecf:PersonAugmentaion using structures:ref.
+		2. Revised nc:DocumentAssociation for the ecf:ReviewedDocument to use structures:ref to reference the original nc:DocumentAssociation in
+		   filing:FilingConnectedDocument.
+
+		Modifications for WD39
+
+		Added nc:IdentificationCategoryDescriptionText and nc:IdentificationSourceText for messageID.
+
+-->
+<docket:RecordDocketingMessage xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:docket="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket ../schema/docket.xsd">
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>10</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<ecf:DocumentAugmentation>
+		<ecf:DocumentFiler>
+			<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+		</ecf:DocumentFiler>
+	</ecf:DocumentAugmentation>
+	<ecf:SendingMDELocationID>
+		<nc:IdentificationID>http://example.com/court</nc:IdentificationID>
+	</ecf:SendingMDELocationID>
+	<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+	<j:CaseCourt>
+		<nc:OrganizationIdentification>
+			<nc:IdentificationID>10</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<nc:OrganizationUnitName>King County Circuit Court</nc:OrganizationUnitName>
+	</j:CaseCourt>
+	<nc:DocumentPostDate>
+		<nc:DateTime>2008-07-07T13:47:42.0Z</nc:DateTime>
+	</nc:DocumentPostDate>
+	<docket:CorrectedCase>
+		<!-- Case Title has been corrected in Clerk Review. -->
+		<nc:CaseTitleText>Jane Q. Doe vs. John W. Doe </nc:CaseTitleText>
+		<!-- using concise representation to specify that there has not been any revision to j:CaseAugmentation. -->
+		<j:CaseAugmentation structures:ref="OriginaljCaseAugmentation"/>
+		<ecf:CaseAugmentation>
+			<ecf:CaseCategoryCode>Estate</ecf:CaseCategoryCode>
+			<ecf:CaseParty>
+				<nc:EntityPerson structures:id="Person4">
+					<!-- changed from 'Person1' to 'Person4' (above) in clerk review to avoid id conflict -->
+					<!--j:PersonAugmentation></j:PersonAugmentation-->
+					<nc:PersonBirthDate>
+						<nc:Date>1983-01-01</nc:Date>
+					</nc:PersonBirthDate>
+					<nc:PersonName>
+						<nc:PersonGivenName>John</nc:PersonGivenName>
+						<nc:PersonMiddleName>W.</nc:PersonMiddleName>
+						<nc:PersonSurName>Doe</nc:PersonSurName>
+					</nc:PersonName>
+					<nc:PersonOtherIdentification>
+						<nc:IdentificationID>1234-56-789-Corrected</nc:IdentificationID>
+						<!-- Corrected license number in clerk review -->
+						<ecf:PersonIdentificationCategoryCode>DriverLicense</ecf:PersonIdentificationCategoryCode>
+						<nc:IdentificationSourceText>source</nc:IdentificationSourceText>
+					</nc:PersonOtherIdentification>
+					<nc:PersonRaceText>W</nc:PersonRaceText>
+					<j:PersonSexCode>M</j:PersonSexCode>
+					<nc:PersonTaxIdentification>
+						<nc:IdentificationID>123-45-67890</nc:IdentificationID>
+					</nc:PersonTaxIdentification>
+					<!-- referencing original person augmentation. -->
+					<ecf:PersonAugmentation structures:ref="Person1ecfPersonAugmentation"/>
+				</nc:EntityPerson>
+			</ecf:CaseParty>
+			<ecf:CaseParty>
+				<!-- Using concise representation to reference Person2 information in nc:Case. -->
+				<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+			</ecf:CaseParty>
+			<!-- Added Case Tracking ID in clerk review. -->
+			<ecf:CaseTrackingID>
+				<nc:IdentificationID>123456ABC</nc:IdentificationID>
+			</ecf:CaseTrackingID>
+			<ecf:CaseTypeCode>civil</ecf:CaseTypeCode>
+			<!-- Added Case Number in clerk review. -->
+			<j:CaseNumberText>123456ABC</j:CaseNumberText>
+			<nc:PersonAssociation>
+				<nc:Person structures:ref="Person4" xsi:nil="true"/>
+				<!-- above changed from 'Person1' to 'Person4' in clerk review -->
+				<nc:Person structures:ref="Person2" xsi:nil="true"/>
+				<ecf:PersonAssociationAugmentation>
+					<ecf:EntityAssociationTypeCode>spouse</ecf:EntityAssociationTypeCode>
+				</ecf:PersonAssociationAugmentation>
+			</nc:PersonAssociation>
+		</ecf:CaseAugmentation>
+		<!-- using concise representation to provide original unrevised civil:CaseAugmentation. -->
+		<civil:CaseAugmentation xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil ../schema/civil.xsd" structures:ref="OriginalcivilCaseAugmentation" xsi:nil="true"/>
+	</docket:CorrectedCase>
+	<ecf:ConnectedDocumentReview>
+		<ecf:Document structures:ref="Document2" xsi:nil="true"/>
+		<ecf:DocumentReviewDisposition>
+			<ecf:DocumentReviewStatus>
+				<nc:StatusText>accepted</nc:StatusText>
+				<nc:StatusDate>
+					<nc:DateTime>2008-07-07T13:47:42.0Z</nc:DateTime>
+				</nc:StatusDate>
+			</ecf:DocumentReviewStatus>
+			<ecf:DocumentReviewer structures:ref="Clerk1"/>
+		</ecf:DocumentReviewDisposition>
+		<ecf:ReviewedDocument>
+			<nc:DocumentCategoryText>Petition</nc:DocumentCategoryText>
+			<nc:DocumentSoftwareName>Microsoft Word</nc:DocumentSoftwareName>
+			<nc:DocumentDescriptionText>Peitition-Corrected</nc:DocumentDescriptionText>
+			<!-- DocumentDescriptionText corrected in clerk review-->
+			<nc:DocumentEffectiveDate>
+				<nc:Date>2008-07-07</nc:Date>
+			</nc:DocumentEffectiveDate>
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>2</nc:IdentificationID>
+			</nc:DocumentIdentification>
+			<nc:DocumentSequenceID>2</nc:DocumentSequenceID>
+			<!-- DocumentTitleText added in clerk review-->
+			<nc:DocumentTitleText>Notice of Appearance</nc:DocumentTitleText>
+			<nc:DocumentSubmitter>
+				<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+			</nc:DocumentSubmitter>
+			<!-- If the original unstamped document rendition is also provided to the CRMDE then the original 
+				 ecf:DocumentAugmentation element must also be included; e.g as shown below: -->
+			<!--
+			<ecf:DocumentAugmentation structures:ref="OriginalPetitionecfDocumentAugmentation"/>
+			-->
+			<!-- New ecf:DocumentAugmentation element for stamped rendition. -->
+			<ecf:DocumentAugmentation structures:id="PetitionAugmentation1">
+				<ecf:DocumentFiler>
+					<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+				</ecf:DocumentFiler>
+				<ecf:DocumentRendition>
+					<!-- added new 'file stamped' rendition in clerk review -->
+					<nc:DocumentIdentification/>
+					<nc:Attachment structures:id="Attachment4">
+						<nc:BinaryDescriptionText>Appearance</nc:BinaryDescriptionText>
+						<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+						<nc:BinaryURI>cid://Payload3</nc:BinaryURI>
+						<nc:BinarySizeValue>35000</nc:BinarySizeValue>
+					</nc:Attachment>
+				</ecf:DocumentRendition>
+				<!-- ecf:RedactionRequiredIndicator, ecf:RegisterActionDescriptionCode, and ecf:SpecialHandlingInstructionsText must be included to be applicable. -->
+				<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+				<ecf:RegisterActionDescriptionCode>Information</ecf:RegisterActionDescriptionCode>
+				<ecf:SpecialHandlingInstructionsText>Please verify TCN</ecf:SpecialHandlingInstructionsText>				
+				<!-- nc:DocumentAssociation must be provided for the parent association to still be applicable. -->
+				<!-- Using strutures:ref to refer to the orginal nc:DocumentAssociation must be understood as this information
+					 is applicable and unrevised from filing:FilingConnectedDocument. -->
+				<nc:DocumentAssociation structures:ref="Document2Association" xsi:nil="true"/>
+			</ecf:DocumentAugmentation>
+			<ecf:ReviewedDocumentAugmentation>
+				<ecf:SealDocumentIndicator>true</ecf:SealDocumentIndicator>
+			</ecf:ReviewedDocumentAugmentation>
+		</ecf:ReviewedDocument>
+	</ecf:ConnectedDocumentReview>
+	<ecf:LeadDocumentReview>
+		<ecf:Document structures:ref="Document1" xsi:nil="true"/>
+		<ecf:DocumentReviewDisposition>
+			<ecf:DocumentReviewStatus>
+				<nc:StatusText>accepted</nc:StatusText>
+				<nc:StatusDate>
+					<nc:DateTime>2008-07-07T13:47:42.0Z</nc:DateTime>
+				</nc:StatusDate>
+			</ecf:DocumentReviewStatus>
+			<ecf:DocumentReviewer structures:id="Clerk1">
+				<nc:EntityPerson>
+					<nc:PersonName>
+						<nc:PersonFullName>Clerk Jane Smith</nc:PersonFullName>
+					</nc:PersonName>
+				</nc:EntityPerson>
+			</ecf:DocumentReviewer>
+		</ecf:DocumentReviewDisposition>
+		<ecf:ReviewedDocument structures:metadata="Document1Metadata">
+			<!-- Since the FilingLeadDocument provides the strutures:metadata attribute, if left off on ecf:ReviewedDocument then
+				 this must be understood that the metadata is not applicable. Therefore, if still applicable to the reviewed
+				 document, make sure to include the structures:metadata element referencing the original nc:Metadata element. -->
+			<nc:DocumentCategoryText>Apperance</nc:DocumentCategoryText>
+			<nc:DocumentSoftwareName>Microsoft Word</nc:DocumentSoftwareName>
+			<nc:DocumentDescriptionText>Appearance-Corrected</nc:DocumentDescriptionText>
+			<!-- DocumentDescriptionText corrected in clerk review-->
+			<nc:DocumentEffectiveDate>
+				<nc:Date>2008-07-07</nc:Date>
+			</nc:DocumentEffectiveDate>
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>2</nc:IdentificationID>
+			</nc:DocumentIdentification>
+			<nc:DocumentSequenceID>2</nc:DocumentSequenceID>
+			<!-- DocumentTitleText added in clerk review-->
+			<nc:DocumentTitleText>Notice of Appearance</nc:DocumentTitleText>
+			<nc:DocumentSubmitter>
+				<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+			</nc:DocumentSubmitter>
+			<!-- If the original unstamped document rendition is also provided to the CRMDE then the original 
+				 ecf:DocumentAugmentation element must also be included; e.g as shown below: -->
+			<!--
+			<ecf:DocumentAugmentation structures:ref="OriginalPetitionecfDocumentAugmentation"/>
+			-->
+			<!-- New ecf:DocumentAugmentation for the newly added file stamped rendition. -->
+			<ecf:DocumentAugmentation structures:ref="AppearanceAugmentation1">
+				<ecf:DocumentFiler>
+					<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+				</ecf:DocumentFiler>
+				<ecf:DocumentRendition>
+					<!-- added new 'file stamped' rendition in clerk review -->
+					<nc:DocumentIdentification/>
+					<nc:Attachment structures:id="Attachment3">
+						<nc:BinaryDescriptionText>Appearance</nc:BinaryDescriptionText>
+						<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+						<nc:BinaryURI>cid://Payload3</nc:BinaryURI>
+						<nc:BinarySizeValue>35000</nc:BinarySizeValue>
+					</nc:Attachment>
+				</ecf:DocumentRendition>
+				<!-- ecf:RedactionRequiredIndicator and ecf:RegisterActionDescriptionCode must be included to be applicable. -->
+				<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+				<ecf:RegisterActionDescriptionCode>Appearance</ecf:RegisterActionDescriptionCode>
+			</ecf:DocumentAugmentation>
+			<ecf:ReviewedDocumentAugmentation/>
+		</ecf:ReviewedDocument>
+	</ecf:LeadDocumentReview>
+	<filing:FilingMessage>
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>123456ABC</nc:IdentificationID>
+		</nc:DocumentIdentification>
+		<ecf:DocumentAugmentation>
+			<ecf:DocumentFiler>
+				<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+			</ecf:DocumentFiler>
+		</ecf:DocumentAugmentation>
+		<ecf:SendingMDELocationID>
+			<nc:IdentificationID>http://example.com/efsp1</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>10</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+			<nc:OrganizationUnitName>King County Circuit Court</nc:OrganizationUnitName>
+		</j:CaseCourt>
+		<nc:DocumentInformationCutOffDate>
+			<nc:DateTime>2008-07-07T13:47:42.0Z</nc:DateTime>
+		</nc:DocumentInformationCutOffDate>
+		<nc:DocumentPostDate>
+			<nc:DateTime>2008-07-07T13:47:42.0Z</nc:DateTime>
+		</nc:DocumentPostDate>
+		<ecf:ElectronicServiceInformation>
+			<ecf:ReceivingMDELocationID>
+				<nc:IdentificationID>http://example.com/efsp2</nc:IdentificationID>
+			</ecf:ReceivingMDELocationID>
+			<ecf:ReceivingMDEProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ReceivingMDEProfileCode>
+			<ecf:ServiceRecipientID>
+				<nc:IdentificationID>11</nc:IdentificationID>
+			</ecf:ServiceRecipientID>
+		</ecf:ElectronicServiceInformation>
+		<filing:FilingConnectedDocument structures:id="Document2" structures:metadata="Document1Metadata">
+			<nc:DocumentCategoryText>Information</nc:DocumentCategoryText>
+			<nc:DocumentSoftwareName>Microsoft Word</nc:DocumentSoftwareName>
+			<nc:DocumentDescriptionText>Petition</nc:DocumentDescriptionText>
+			<nc:DocumentEffectiveDate>
+				<nc:Date>2008-07-07</nc:Date>
+			</nc:DocumentEffectiveDate>
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>1</nc:IdentificationID>
+			</nc:DocumentIdentification>
+			<nc:DocumentSequenceID>1</nc:DocumentSequenceID>
+			<nc:DocumentSubmitter>
+				<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+			</nc:DocumentSubmitter>
+			<ecf:DocumentAugmentation structures:id="OriginalPetitionecfDocumentAugmentation">
+				<ecf:DocumentFiler>
+					<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+				</ecf:DocumentFiler>
+				<ecf:DocumentRendition>
+					<nc:DocumentIdentification/>
+					<!--ecf:DocumentSignature>
+					<ecf:SignatureAugmentation>
+						<xmlsig:Signatures xmlns:xmlsig="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0" xsi:schemaLocation="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0 ../ecf-v3.0-xmlsig.xsd">
+							<xmlsig:Signature>
+								<xmlsig:SignerName>Jane Doe</xmlsig:SignerName>
+								<xmlsig:SignedDate>2008-07-07</xmlsig:SignedDate>
+								<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+									<ds:SignedInfo Id="foobar">
+										<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+										<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+										<ds:Reference>
+											<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+											<ds:DigestValue>j6lwx3rvEPO0vKtMup4NbeVu8nk=</ds:DigestValue>
+										</ds:Reference>
+									</ds:SignedInfo>
+									<ds:SignatureValue>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ds:SignatureValue>
+									<ds:KeyInfo>
+										<ds:X509Data>
+											<ds:X509SubjectName>CN=John Smith,O=ABC Inc.,ST=Seattle,C=WA</ds:X509SubjectName>
+											<ds:X509Certificate>UjBsR09EbGhjZ0dTQUxNQUFBUUNBRU1tQ1p0dU1GUXhEUzhi</ds:X509Certificate>
+										</ds:X509Data>
+									</ds:KeyInfo>
+								</ds:Signature>
+							</xmlsig:Signature>
+						</xmlsig:Signatures>
+					</ecf:SignatureAugmentation>
+					<ecf:SignatureProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0</ecf:SignatureProfileCode>
+				</ecf:DocumentSignature-->
+					<nc:Attachment structures:id="Attachment2">
+						<nc:BinaryDescriptionText>Information</nc:BinaryDescriptionText>
+						<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+						<nc:BinaryURI>cid://Payload2</nc:BinaryURI>
+						<nc:BinarySizeValue>32000</nc:BinarySizeValue>
+					</nc:Attachment>
+				</ecf:DocumentRendition>
+				<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+				<ecf:RegisterActionDescriptionCode>Information</ecf:RegisterActionDescriptionCode>
+				<ecf:SpecialHandlingInstructionsText>Please verify TCN</ecf:SpecialHandlingInstructionsText>
+				<nc:DocumentAssociation structures:id="Document2Association">
+					<nc:PrimaryDocument structures:ref="Document1" xsi:nil="true"/>
+					<ecf:DocumentAssociationAugmentation>
+						<ecf:DocumentRelatedCode>parent</ecf:DocumentRelatedCode>
+					</ecf:DocumentAssociationAugmentation>
+				</nc:DocumentAssociation>
+			</ecf:DocumentAugmentation>
+		</filing:FilingConnectedDocument>
+		<filing:FilingLeadDocument structures:id="Document1" structures:metadata="Document1Metadata">
+			<nc:DocumentCategoryText>Apperance</nc:DocumentCategoryText>
+			<nc:DocumentSoftwareName>Microsoft Word</nc:DocumentSoftwareName>
+			<nc:DocumentDescriptionText>Appearance</nc:DocumentDescriptionText>
+			<nc:DocumentEffectiveDate>
+				<nc:Date>2008-07-07</nc:Date>
+			</nc:DocumentEffectiveDate>
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>2</nc:IdentificationID>
+			</nc:DocumentIdentification>
+			<nc:DocumentSequenceID>2</nc:DocumentSequenceID>
+			<nc:DocumentSubmitter>
+				<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+			</nc:DocumentSubmitter>
+			<ecf:DocumentAugmentation structures:id="AppearanceAugmentation1">
+				<ecf:DocumentFiler>
+					<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+				</ecf:DocumentFiler>
+				<ecf:DocumentRendition structures:id="OriginalLeadRendition">
+					<nc:DocumentIdentification/>
+					<nc:Attachment structures:id="Attachment1">
+						<nc:BinaryDescriptionText>Appearance</nc:BinaryDescriptionText>
+						<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+						<nc:BinaryURI>cid://Payload1</nc:BinaryURI>
+						<nc:BinarySizeValue>32000</nc:BinarySizeValue>
+					</nc:Attachment>
+				</ecf:DocumentRendition>
+				<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+				<ecf:RegisterActionDescriptionCode>Appearance</ecf:RegisterActionDescriptionCode>
+				<nc:Metadata structures:id="Document1Metadata">
+					<nc:SensitivityText>public</nc:SensitivityText>
+					<nc:LanguageCode>eng</nc:LanguageCode>
+				</nc:Metadata>
+			</ecf:DocumentAugmentation>
+		</filing:FilingLeadDocument>
+		<nc:Case>
+			<nc:CaseTitleText>Jane Doe vs. John Doe </nc:CaseTitleText>
+			<j:CaseAugmentation structures:id="OriginaljCaseAugmentation">
+				<j:CaseCourt>
+					<nc:OrganizationIdentification>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</nc:OrganizationIdentification>
+					<j:CourtName>King County Circuit Court</j:CourtName>
+				</j:CaseCourt>
+				<j:CaseOfficial>
+					<nc:RoleOfPerson structures:id="Person3">
+						<nc:PersonName>
+							<nc:PersonFullName>Jane Doe, JD</nc:PersonFullName>
+						</nc:PersonName>
+						<ecf:PersonAugmentation>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>13</nc:IdentificationID>
+							</ecf:ParticipantID>
+						</ecf:PersonAugmentation>
+					</nc:RoleOfPerson>
+					<j:JudicialOfficialBarMembership>
+						<j:JudicialOfficialBarIdentification>
+							<nc:IdentificationID>100</nc:IdentificationID>
+						</j:JudicialOfficialBarIdentification>
+					</j:JudicialOfficialBarMembership>
+					<ecf:CaseOfficialAugmentation>
+						<ecf:CaseRepresentedParty>
+							<nc:EntityPerson structures:ref="Person1" xsi:nil="true"/>
+							<!-- John W. Doe -->
+						</ecf:CaseRepresentedParty>
+					</ecf:CaseOfficialAugmentation>
+				</j:CaseOfficial>
+			</j:CaseAugmentation>
+			<ecf:CaseAugmentation>
+				<ecf:CaseCategoryCode>Estate</ecf:CaseCategoryCode>
+				<ecf:CaseParty>
+					<nc:EntityPerson structures:id="Person1">
+						<!--j:PersonAugmentation></j:PersonAugmentation-->
+						<nc:PersonBirthDate>
+							<nc:Date>1983-01-01</nc:Date>
+						</nc:PersonBirthDate>
+						<nc:PersonName>
+							<nc:PersonGivenName>John</nc:PersonGivenName>
+							<nc:PersonMiddleName>W.</nc:PersonMiddleName>
+							<nc:PersonSurName>Doe</nc:PersonSurName>
+						</nc:PersonName>
+						<nc:PersonOtherIdentification>
+							<nc:IdentificationID>1234-56-789</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>DriverLicense</ecf:PersonIdentificationCategoryCode>
+							<nc:IdentificationSourceText>source</nc:IdentificationSourceText>
+						</nc:PersonOtherIdentification>
+						<nc:PersonRaceText>W</nc:PersonRaceText>
+						<j:PersonSexCode>M</j:PersonSexCode>
+						<nc:PersonTaxIdentification>
+							<nc:IdentificationID>123-45-67890</nc:IdentificationID>
+						</nc:PersonTaxIdentification>
+						<ecf:PersonAugmentation structures:id="Person1ecfPersonAugmentation">
+							<ecf:CaseParticipantRoleCode>Plaintiff</ecf:CaseParticipantRoleCode>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>10</nc:IdentificationID>
+							</ecf:ParticipantID>
+							<nc:ContactInformation>
+								<nc:ContactMailingAddress>
+									<nc:LocationStreet>
+										<nc:StreetFullText>123 Main St.</nc:StreetFullText>
+									</nc:LocationStreet>
+									<nc:LocationCityName>Anytown</nc:LocationCityName>
+									<nc:LocationState>
+										<nc:LocationStateName>IN</nc:LocationStateName>
+									</nc:LocationState>
+									<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+								</nc:ContactMailingAddress>
+							</nc:ContactInformation>
+						</ecf:PersonAugmentation>
+					</nc:EntityPerson>
+				</ecf:CaseParty>
+				<ecf:CaseParty>
+					<nc:EntityPerson structures:id="Person2">
+						<nc:PersonBirthDate>
+							<nc:Date>1983-01-01</nc:Date>
+						</nc:PersonBirthDate>
+						<nc:PersonName>
+							<nc:PersonGivenName>Jane</nc:PersonGivenName>
+							<nc:PersonMiddleName>Q</nc:PersonMiddleName>
+							<nc:PersonSurName>Doe</nc:PersonSurName>
+							<nc:PersonMaidenName>Smith</nc:PersonMaidenName>
+						</nc:PersonName>
+						<nc:PersonOtherIdentification>
+							<nc:IdentificationID>1234-56-789</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>DriverLicense</ecf:PersonIdentificationCategoryCode>
+							<nc:IdentificationSourceText>source</nc:IdentificationSourceText>
+						</nc:PersonOtherIdentification>
+						<j:PersonSexCode>M</j:PersonSexCode>
+						<nc:PersonTaxIdentification>
+							<nc:IdentificationID>123-45-67890</nc:IdentificationID>
+						</nc:PersonTaxIdentification>
+						<ecf:PersonAugmentation>
+							<ecf:CaseParticipantRoleCode>Defendant</ecf:CaseParticipantRoleCode>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>16</nc:IdentificationID>
+							</ecf:ParticipantID>
+							<nc:ContactInformation>
+								<nc:ContactMailingAddress>
+									<nc:LocationStreet>
+										<nc:StreetFullText>123 Main St.</nc:StreetFullText>
+									</nc:LocationStreet>
+									<nc:LocationCityName>Anytown</nc:LocationCityName>
+									<nc:LocationState>
+										<nc:LocationStateName>IN</nc:LocationStateName>
+									</nc:LocationState>
+									<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+								</nc:ContactMailingAddress>
+							</nc:ContactInformation>
+						</ecf:PersonAugmentation>
+					</nc:EntityPerson>
+				</ecf:CaseParty>
+				<ecf:CaseTypeCode>civil</ecf:CaseTypeCode>
+				<nc:Metadata structures:id="Metadata1">
+					<nc:SensitivityText>public</nc:SensitivityText>
+					<nc:LanguageCode>eng</nc:LanguageCode>
+				</nc:Metadata>
+				<nc:PersonAssociation>
+					<nc:Person structures:ref="Person1" xsi:nil="true"/>
+					<!-- John W. Doe -->
+					<nc:Person structures:ref="Person2" xsi:nil="true"/>
+					<!-- Jane Q. Doe -->
+					<ecf:PersonAssociationAugmentation>
+						<ecf:EntityAssociationTypeCode>spouse</ecf:EntityAssociationTypeCode>
+					</ecf:PersonAssociationAugmentation>
+				</nc:PersonAssociation>
+			</ecf:CaseAugmentation>
+			<civil:CaseAugmentation xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil ../schema/civil.xsd" structures:id="OriginalcivilCaseAugmentation">
+				<civil:AmountInControversy>
+					<nc:Amount>100</nc:Amount>
+				</civil:AmountInControversy>
+				<civil:CivilClassActionIndicator>false</civil:CivilClassActionIndicator>
+				<civil:DecedentEstateCase>
+					<civil:Decedent structures:id="decedent1">
+						<nc:PersonBirthDate>
+							<nc:Date>1900-01-01</nc:Date>
+						</nc:PersonBirthDate>
+						<nc:PersonName>
+							<nc:PersonGivenName>Janice</nc:PersonGivenName>
+							<nc:PersonMiddleName>H</nc:PersonMiddleName>
+							<nc:PersonFullName>Doe</nc:PersonFullName>
+						</nc:PersonName>
+					</civil:Decedent>
+					<nc:PersonDeathDate>
+						<nc:Date>2017-01-01</nc:Date>
+					</nc:PersonDeathDate>
+				</civil:DecedentEstateCase>
+				<civil:JurisdictionalGroundsCode>Statewide</civil:JurisdictionalGroundsCode>
+				<civil:JuryDemandIndicator>false</civil:JuryDemandIndicator>
+				<civil:ReliefTypeCode>Monetary</civil:ReliefTypeCode>
+				<ecf:CauseOfActionCode>100</ecf:CauseOfActionCode>
+			</civil:CaseAugmentation>
+		</nc:Case>
+	</filing:FilingMessage>
+</docket:RecordDocketingMessage>

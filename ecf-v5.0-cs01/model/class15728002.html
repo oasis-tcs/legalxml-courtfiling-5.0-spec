@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CaseAugmentationType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CaseAugmentationType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15728002"></a>
+<p>Properties:</p><ul>
+<li>Notes:<br /><div class="sub">Genericode code list CaseCategoryCode.gc</div></li>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseAugmentationType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34324738"></a>
+<table><tr><td><div class="element">Attribute <b>nc:Metadata</b></div></td></tr></table>
+<p>Information that further qualifies primary data; data about data.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:Metadata : <a href="class15730562.html#ref4_15730562"><b>MetadataType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,Metadata</div></li>
+</ul>
+<a name="ref1_34325506"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CaseShortTitleText</b></div></td></tr></table>
+<p>An abbreviated official name of a Case, usually shortened to contain only the last name of the first listed party on each side of the case.  Examples: Smith v. Jones, et al.; State v. Alexander. No title exists when the message is initiating a new case.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CaseShortTitleText : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseShortTitleText</div></li>
+</ul>
+<a name="ref1_34326146"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CaseTrackingID</b></div></td></tr></table>
+<p>Court case number.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CaseTrackingID : <a href="class15719170.html#ref4_15719170"><b>IdentificationType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseTrackingID</div></li>
+</ul>
+<a name="ref1_34327170"></a>
+<table><tr><td><div class="element">Attribute <b>j:CaseNumberText</b></div></td></tr></table>
+<p>An identifying number for a case that this activity is a part of, where the case number belongs to the agency that owns the activity information.<br /></p><p>Declaration :</p><ul><li>Uml : + j:CaseNumberText : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/domains/jxdm/6.1/,CaseNumberText</div></li>
+</ul>
+<a name="ref1_34327298"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CaseCategoryCode</b></div></td></tr></table>
+<p>The type of trial in the lower court (e.g. bench, jury).<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CaseCategoryCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseCategoryCode</div></li>
+</ul>
+<a name="ref1_34327554"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CaseTypeCode</b></div></td></tr></table>
+<p>Indicates whether the e-filing system supports electronic filing of a certain case type.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CaseTypeCode : <a href="class15724546.html#ref4_15724546"><b>normalizedString</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseTypeCode</div></li>
+</ul>
+<a name="ref1_34338946"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CaseParty</b></div></td></tr></table>
+<p>A person alleged or found to have committed a crime or violation.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CaseParty : <a href="class15719938.html#ref4_15719938"><b>EntityType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseParty</div></li>
+</ul>
+<a name="ref1_34370562"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CaseNewIndicator</b></div></td></tr></table>
+<p>Indicates that the case is new.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CaseNewIndicator : <a href="class15715586.html#ref4_15715586"><b>boolean</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseNewIndicator</div></li>
+</ul>
+<a name="ref1_34374018"></a>
+<table><tr><td><div class="element">Attribute <b>nc:OrganizationAssociation</b></div></td></tr></table>
+<p>An association between an organization and another organization.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:OrganizationAssociation : <a href="class15750914.html#ref4_15750914"><b>OrganizationAssociationType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,OrganizationAssociation</div></li>
+</ul>
+<a name="ref1_34378882"></a>
+<table><tr><td><div class="element">Attribute <b>nc:PersonOrganizationAssociation</b></div></td></tr></table>
+<p>An association between a person and an organization.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:PersonOrganizationAssociation : <a href="class15751042.html#ref4_15751042"><b>PersonOrganizationAssociationType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,PersonOrganizationAssociation</div></li>
+</ul>
+<a name="ref1_34379266"></a>
+<table><tr><td><div class="element">Attribute <b>nc:PersonAssociation</b></div></td></tr></table>
+<p>An association between people.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:PersonAssociation : <a href="class15737346.html#ref4_15737346"><b>PersonAssociationType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,PersonAssociation</div></li>
+</ul>
+</div>
+</body>
+</html>

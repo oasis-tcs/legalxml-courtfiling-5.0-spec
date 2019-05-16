@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class BankruptcyCaseInformation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class BankruptcyCaseInformation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_136322"></a>
+<p>Additional information specific to bankruptcy cases.<br /></p>
+<p>Diagram : <a href="index.html#ref10_134530"><b>BankruptcyCase</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankruptcy:BankruptcyCase</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseAugmentationPoint, (^bankruptcy:CaseAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">bankruptcy:CaseAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">bankruptcy:CaseAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_143874"></a>
+<table><tr><td><div class="element">Attribute <b>assetNotice</b></div></td></tr></table>
+<p>Whether assets are available for distribution to creditors.<br /></p><p>Declaration :</p><ul><li>Uml : + assetNotice : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Include NIEM 2.0 bankruptcy forms as defined at http://www.pacer.gov/documents/CaseOpening/BankruptcyFilingForms.zip</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankrupcty:AssetNoticeIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">xs:any</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">bankruptcy:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">bankruptcy:CaseAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_181634"></a>
+<table><tr><td><div class="element">Relation <b>bankruptcyStatute (&lt;directional aggregation&gt;)</b></div></td></tr></table><p> Section 11 of the United States Code pertaining to bankruptcy. <br /></p><p>Declaration :</p><ul><li>Uml : + bankruptcyStatute : <a href="class136450.html#ref4_136450"><b>BankruptcyStatute</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankruptcy:BankruptcyStatute</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_181890"></a>
+<table><tr><td><div class="element">Relation <b>debtor (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The person or organization on whose behalf, or against whom, a bankruptcy petition is filed.<br /></p><p>Declaration :</p><ul><li>Uml : + debtor : <a href="class136578.html#ref4_136578"><b>Debtor</b></a>, multiplicity : 1..2</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankruptcy:Debtor</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,2</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_144642"></a>
+<table><tr><td><div class="element">Attribute <b>debtorTypeCode</b></div></td></tr></table>
+<p>"Form of Origin" indicator...one of seven code values from the Bankruptcy Petition Form.<br /></p><p>Declaration :</p><ul><li>Uml : + debtorTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankrupcty:CaseDebtorTypeCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_144130"></a>
+<table><tr><td><div class="element">Attribute <b>estimatedAssetsValueLevelCode</b></div></td></tr></table>
+<p>A coded set of ranges of dollar values for assets.  Generally used for statistical reporting, not case management.<br /></p><p>Declaration :</p><ul><li>Uml : + estimatedAssetsValueLevelCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankrupcty:EstimatedAssetsValueLevelCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_144258"></a>
+<table><tr><td><div class="element">Attribute <b>estimatedDebtsValueLevelCode</b></div></td></tr></table>
+<p>A coded set of ranges of dollar values for debts.  Generally used for statistical reporting, not case management.<br /></p><p>Declaration :</p><ul><li>Uml : + estimatedDebtsValueLevelCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankrupcty:EstimatedDebtsValueLevelCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_144770"></a>
+<table><tr><td><div class="element">Attribute <b>jointPetitionIndicator</b></div></td></tr></table>
+<p>Whether or not spouses are filing as joint debtors<br /></p><p>Declaration :</p><ul><li>Uml : + jointPetitionIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankrupcty:JointPetitionIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_144898"></a>
+<table><tr><td><div class="element">Attribute <b>natureOfDebtCode</b></div></td></tr></table>
+<p>Whether the debts involved in the case are "business" or "consumer".<br /></p><p>Declaration :</p><ul><li>Uml : + natureOfDebtCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankrupcty:CaseNatureOfDebtCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_144002"></a>
+<table><tr><td><div class="element">Attribute <b>numberOfCreditorsValueLevelCode</b></div></td></tr></table>
+<p>A coded set of ranges of numbers of creditors involved in the case.<br /></p><p>Declaration :</p><ul><li>Uml : + numberOfCreditorsValueLevelCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:ankruptcyCase/bankrupcty:NumberOfCreditorsValueLevelCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_144514"></a>
+<table><tr><td><div class="element">Attribute <b>section1121e</b></div></td></tr></table>
+<p>The debtor has elected to proceed under Section 1121 (e) of the bankruptcy code.<br /></p><p>Declaration :</p><ul><li>Uml : + section1121e : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankrupcty:ection1121eIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_144386"></a>
+<table><tr><td><div class="element">Attribute <b>smallBusiness</b></div></td></tr></table>
+<p>Whether the initiating party is a small business, as defined in bankruptcy code.<br /></p><p>Declaration :</p><ul><li>Uml : + smallBusiness : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankrupcty:SmallBusinessIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_145026"></a>
+<table><tr><td><div class="element">Attribute <b>voluntaryIndicator</b></div></td></tr></table>
+<p>Whether the debtor has initiated bankruptcy (true, corresponding to Federal code "V") or a creditor has initiated bankruptcy (false, corresponding to Federal code "I")<br /></p><p>Declaration :</p><ul><li>Uml : + voluntaryIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">bankrupcty:BankruptcyCase/bankrupcty:VoluntaryIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

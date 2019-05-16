@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class GetFilingStatusRequestMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class GetFilingStatusRequestMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_132994"></a>
+<p>This is query to get a filing status by Filing Number.<br /></p>
+<p>Diagram : <a href="index.html#ref10_136962"><b>GetFilingStatusRequestMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filingstatusrequest:FilingStatusQueryMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:RequestMessageType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_136962"></a>
+<table><tr><td><div class="element">Attribute <b>caseTrackingID</b></div></td></tr></table>
+<p>Court case number.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTrackingID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filingstatusrequest:FilingStatusQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessage/filingstatusrequest:FilingStatusQueryCriteria/ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_136706"></a>
+<table><tr><td><div class="element">Attribute <b>filerID</b></div></td></tr></table>
+<p>A unique identifier for a person or organization that requests information.<br /></p><p>Declaration :</p><ul><li>Uml : + filerID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:QueryMessage/ecf:QuerySubmitter/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentFiler</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessage/ecf:ParticipantID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_136834"></a>
+<table><tr><td><div class="element">Attribute <b>filingID</b></div></td></tr></table>
+<p>An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. "Transaction" means the sequence of messages from initial filing review through receipt of the asynchronous review callback.<br /></p><p>Declaration :</p><ul><li>Uml : + filingID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filingstatusrequest:FilingStatusQueryMessage/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessage/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_1547394"></a>
+<table><tr><td><div class="element">Attribute <b>messageExtension</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + messageExtension : <a href="class2113794.html#ref4_2113794"><b>extension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessage/filingstatusrequest:GetFilingStatusRequestMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_3360642"></a>
+<table><tr><td><div class="element">Relation <b>case (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The case associated with a filing.<br /></p><p>Declaration :</p><ul><li>Uml : + case : <a href="class131586.html#ref4_131586"><b>Case</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseNumberText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filingstatusrequest:FilingStatusQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessage/filingstatusrequest:FilingStatusQueryCriteria/j:CaseNumberText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_3360770"></a>
+<table><tr><td><div class="element">Relation <b>document (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The document that is the subject of this query.<br /></p><p>Declaration :</p><ul><li>Uml : + document : <a href="class131074.html#ref4_131074"><b>Document</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filingstatusrequest:FilingStatusQueryMessage/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filingstatusrequest:FilingStatusQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessage/filingstatusrequest:FilingStatusQueryCriteria/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_12126466"></a>
+<table><tr><td><div class="element">Relation <b>filingStatusQueryCriteria (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Criteria limiting the filing status information to be returned.<br /></p><p>Declaration :</p><ul><li>Uml : + filingStatusQueryCriteria : <a href="class13000450.html#ref4_13000450"><b>FilingStatusQueryCriteria</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">filingstatusrequest:FilingStatusQueryCriteria</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filingstatusrequest:GetFilingStatusRequestMessage/filingstatusrequest:FilingStatusQueryCriteria</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">filingstatusrequest:FilingStatusQueryCriteriaType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

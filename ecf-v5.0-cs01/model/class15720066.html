@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DocumentAugmentationType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DocumentAugmentationType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15720066"></a>
+<p>Properties:</p><ul>
+<li>Notes:<br /><div class="sub">Genericode code list RegisterActionDescriptionCode.gc; Reference nc:Metadata with nc:Document/&#64;structures:metadata; Genericode codelist ecf:DocumentTypeCode.gc</div></li>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,DocumentAugmentationType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34313346"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:AffectedParticipant</b></div></td></tr></table>
+<p>Identifier recognized by the court as being unique within this case,and used to identify a party other than the filer who is affected by the document.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:AffectedParticipant : <a href="class15719938.html#ref4_15719938"><b>EntityType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,AffectedParticipant</div></li>
+</ul>
+<a name="ref1_34342146"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:RegisterActionDescriptionCode</b></div></td></tr></table>
+<p>The docket code used by the court for the type of document submitted. Allowable values set forth in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:RegisterActionDescriptionCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,RegisterActionDescriptionCode</div></li>
+</ul>
+<a name="ref1_34344194"></a>
+<table><tr><td><div class="element">Attribute <b>nc:Metadata</b></div></td></tr></table>
+<p>Information that further qualifies primary data; data about data.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:Metadata : <a href="class15730562.html#ref4_15730562"><b>MetadataType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,Metadata</div></li>
+</ul>
+<a name="ref1_34344578"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:RedactionRequiredIndicator</b></div></td></tr></table>
+<p>Indicator by the filer that the document must be redacted by the court.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:RedactionRequiredIndicator : <a href="class15715586.html#ref4_15715586"><b>boolean</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,RedactionRequiredIndicator</div></li>
+</ul>
+<a name="ref1_34344706"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:DocumentRendition</b></div></td></tr></table>
+<p>Descriptors for a rendition of a Document. This is meant to include all the information about the document that is needed to  enter it into the Document Management System.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:DocumentRendition : <a href="class15723906.html#ref4_15723906"><b>DocumentRenditionType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,DocumentRendition</div></li>
+</ul>
+<a name="ref1_34345346"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:DocumentStatus</b></div></td></tr></table>
+<p>A status of a document.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:DocumentStatus : <a href="class15739778.html#ref4_15739778"><b>DocumentStatusType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,DocumentStatus</div></li>
+</ul>
+<a name="ref1_34345986"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:DocumentTypeCode</b></div></td></tr></table>
+<p>A type of document<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:DocumentTypeCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,DocumentTypeCode</div></li>
+</ul>
+<a name="ref1_34352770"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:DocumentFiler</b></div></td></tr></table>
+<p>An attorney, judicial official or a pro se (self-represented) litigant who electronically provides  filings (combinations of data and documents) for acceptance and filing by a court, or who has successfully filed filings with a court.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:DocumentFiler : <a href="class15719938.html#ref4_15719938"><b>EntityType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,DocumentFiler</div></li>
+</ul>
+<a name="ref1_34375042"></a>
+<table><tr><td><div class="element">Attribute <b>nc:DocumentAssociation</b></div></td></tr></table>
+<p>An association between documents.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:DocumentAssociation : <a href="class15734146.html#ref4_15734146"><b>DocumentAssociationType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,DocumentAssociation</div></li>
+</ul>
+<a name="ref1_34389762"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:SpecialHandlingInstructionsText</b></div></td></tr></table>
+<p>Any additional instructions for printing of a document (such as printing on front and back of the same page or printing on a particular color paper).<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:SpecialHandlingInstructionsText : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,SpecialHandlingInstructionsText</div></li>
+</ul>
+</div>
+</body>
+</html>

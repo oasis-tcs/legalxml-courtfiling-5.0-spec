@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class FinancialObligation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class FinancialObligation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_191746"></a>
+<p>A financial responsibility of a party in a case ordered by a court.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">domestic:FinancialObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_224898"></a>
+<table><tr><td><div class="element">Attribute <b>stateDisbursement</b></div></td></tr></table>
+<p>Indicates whether the obligation will be collected and disbursed by a state agency.<br /></p><p>Declaration :</p><ul><li>Uml : + stateDisbursement : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/domestic:StateDisbursementIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:StateDisbursementIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">domestic:FinancialObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/hs:StateDisbursementIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_224642"></a>
+<table><tr><td><div class="element">Attribute <b>financialObligationType</b></div></td></tr></table>
+<p>A type of financial obligation (e.g. child support, maintanence, medical, medical reimbursement).<br /></p><p>Declaration :</p><ul><li>Uml : + financialObligationType : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationCategoryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationCategoryText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationCategoryText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_224770"></a>
+<table><tr><td><div class="element">Attribute <b>incomeAttached</b></div></td></tr></table>
+<p>Indicates whether the responsible party income should be attached.<br /></p><p>Declaration :</p><ul><li>Uml : + incomeAttached : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/domestic:IncomeAttachedIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">domestic:IncomeAttachedIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">domestic:FinancialObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/domestic:IncomeAttachedIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_193922"></a>
+<table><tr><td><div class="element">Relation <b>obligatedParty (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A party in a case that is assigned a responsibility by a court.<br /></p><p>Declaration :</p><ul><li>Uml : + obligatedParty : <a href="class139394.html#ref4_139394"><b>DomesticCasePersonInformation</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationEntity</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationEntity</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationEntity</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_225026"></a>
+<table><tr><td><div class="element">Attribute <b>owedAmount</b></div></td></tr></table>
+<p>The amount past due.<br /></p><p>Declaration :</p><ul><li>Uml : + owedAmount : <a href="class177154.html#ref4_177154"><b>amount</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationDue</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationDueAbstract, (nc:ObligationDueAmount)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationDueAmount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AmountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_225154"></a>
+<table><tr><td><div class="element">Attribute <b>paymentAmount</b></div></td></tr></table>
+<p>he amount owed each payment period.<br /></p><p>Declaration :</p><ul><li>Uml : + paymentAmount : <a href="class177154.html#ref4_177154"><b>amount</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/domestic:ObligationPaymentAmount</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">domestic:ObligationPaymentAmount</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">domestic:FinancialObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/domestic:ObligationPaymentAmount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AmountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_194050"></a>
+<table><tr><td><div class="element">Relation <b>recipientParty (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A party in a case that is the benificary of a responsibility by a court.<br /></p><p>Declaration :</p><ul><li>Uml : + recipientParty : <a href="class139394.html#ref4_139394"><b>DomesticCasePersonInformation</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligationdomestic:FinancialObligation/nc:ObligationRecipient</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ObligationRecipient</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ObligationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation/nc:ObligationRecipient</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

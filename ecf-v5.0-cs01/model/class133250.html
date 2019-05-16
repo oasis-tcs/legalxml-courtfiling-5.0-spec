@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class GetFilingListRequestMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class GetFilingListRequestMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_133250"></a>
+<p>This is query to get a list of filings by Filer Identification, Case Identifier, or time period.<br /></p>
+<p>Diagram : <a href="index.html#ref10_136706"><b>GetFilingListRequestMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistrequest:FilingListQueryMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:RequestMessageType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_137986"></a>
+<table><tr><td><div class="element">Attribute <b>caseTrackingID</b></div></td></tr></table>
+<p>Court case number.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTrackingID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistrequest:FilingListQueryMessage/nc:CaseTrackingID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filinglistrequest:FilingListQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessage/filinglistrequest:FilingListQueryCriteria/ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_137858"></a>
+<table><tr><td><div class="element">Attribute <b>filerID</b></div></td></tr></table>
+<p>A unique identifier for a person or organization that requests information.<br /></p><p>Declaration :</p><ul><li>Uml : + filerID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistrequest:FilingListQueryMessage/nc:DocumentSubmitter</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentSubmitter</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filinglistrequest:FilingListQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessage/filinglistrequest:FilingListQueryCriteria/nc:DocumentSubmitter/nc:EntityPerson/ecf:PersonAugmentation/ecf:FilingPartyID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_164482"></a>
+<table><tr><td><div class="element">Relation <b>timeRange (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A period of time bounded by upper and lower (to and from) dates/times.<br /></p><p>Declaration :</p><ul><li>Uml : + timeRange : <a href="class133378.html#ref4_133378"><b>TimeRange</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">filinglistrequest:FilingListQueryMessage/nc:DateRange</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DateRange</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filinglistrequest:FilingListQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessage/filinglistrequest:FilingListQueryCriteria/nc:DateRange</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateRangeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_1547138"></a>
+<table><tr><td><div class="element">Attribute <b>messageExtension</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + messageExtension : <a href="class2113794.html#ref4_2113794"><b>extension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessage/filinglistrequest:GetFilingListRequestMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_7600642"></a>
+<table><tr><td><div class="element">Relation <b>case (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A court case.<br /></p><p>Declaration :</p><ul><li>Uml : + case : <a href="class131586.html#ref4_131586"><b>Case</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CaseNumberText</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filinglistrequest:FilingListQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessage/filinglistrequest:FilingListQueryCriteria/j:CaseNumberText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_12126338"></a>
+<table><tr><td><div class="element">Relation <b>filingListQueryCriteria (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Criteria limiting the list of filings to be returned.<br /></p><p>Declaration :</p><ul><li>Uml : + filingListQueryCriteria : <a href="class13000322.html#ref4_13000322"><b>FilingListQueryCriteria</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">filinglistrequest:FilingListQueryCriteria</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filinglistrequest:GetFilingListRequestMessage/filinglistrequest:FilingListQueryCriteria</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">filinglistrequest:FilingListQueryCriteriaType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

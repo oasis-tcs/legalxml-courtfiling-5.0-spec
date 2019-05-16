@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CoreFilingMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CoreFilingMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_130690"></a>
+<p>The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record.<br /></p>
+<p>Diagram : <a href="index.html#ref10_135810"><b>CoreFilingMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">core:CoreFilingMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filing:FilingMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filing:FilingMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_138370"></a>
+<table><tr><td><div class="element">Relation <b>case (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information needed to initiate a court case.<br /></p><p>Declaration :</p><ul><li>Uml : + case : <a href="class131586.html#ref4_131586"><b>Case</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">core:CoreFilingMessage/nc:Case</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filing:FilingMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filing:FilingMessage/nc:Case</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_130562"></a>
+<table><tr><td><div class="element">Attribute <b>confidentialityIndicator</b></div></td></tr></table>
+<p>Indicator by the filer that something in the message requires sensitive or confidential treatment.  (This replaces the former "request to seal" document metadata.)<br /></p><p>Declaration :</p><ul><li>Uml : + confidentialityIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list SensitivityText.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">core:CoreFilingMessage/core:FilingConfidentialityIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:SensitivityText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:MetadataType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filing:FilingMessage/ecf:DocumentAugmentation/nc:Metadata/nc:SensitivityText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">unsecured=access is available to all filers; restricted=access is limited to certain filers; secured=access is unavailable to all filers;</div></li>
+</ul>
+<a name="ref0_138882"></a>
+<table><tr><td><div class="element">Relation <b>connectedDocument (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A document included in a Filing that supports the Document.  This document is not separately entered on the docket or register of actions.<br /></p><p>Declaration :</p><ul><li>Uml : + connectedDocument : <a href="class131074.html#ref4_131074"><b>Document</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">core:CoreFilingMessage/core:FilingConnectedDocument</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^filing:FilingConnectedDocument</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filing:FilingMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filing:FilingMessage/filing:FilingConnectedDocument</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_138626"></a>
+<table><tr><td><div class="element">Relation <b>leadDocument (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The pleading, motion or order that is the main document in a Filing. A Document may have Attachments.<br /></p><p>Declaration :</p><ul><li>Uml : + leadDocument : <a href="class131074.html#ref4_131074"><b>Document</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">core:CoreFilingMessage/core:FilingLeadDocument</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^filing:FilingLeadDocument</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filing:FilingMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filing:FilingMessage/filing:FilingLeadDocument</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_281986"></a>
+<table><tr><td><div class="element">Attribute <b>messageExtension</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + messageExtension : <a href="class2113794.html#ref4_2113794"><b>extension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">filing:FilingMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">filing:FilingMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">filing:FilingMessage/filing:FilingMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_5274754"></a>
+<table><tr><td><div class="element">Relation <b>&lt;directional aggregation&gt;</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : +  : <a href="class145794.html#ref4_145794"><b>RecordDocketingMessage</b></a></li></ul></div>
+</body>
+</html>

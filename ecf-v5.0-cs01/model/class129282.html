@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class FilingReviewMDE</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class FilingReviewMDE</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_129282"></a>
+<p>The list of operations supported by the Filing Review MDE.<br /></p>
+<p>Declaration :</p><ul>
+<li>Java : public interface FilingReviewMDE </li><li>Php : interface FilingReviewMDE </li></ul><p>Component(s) : <a href="index.html#ref6_128130"><b>FilingReview</b></a></p>
+<p>Stereotype: interface</p>
+<div class="sub">
+<a name="ref2_156290"></a>
+<table><tr><td><div class="element">Operation <b>CancelFiling</b></div></td></tr></table><p>An operation to request a filing be cancelled.<br /></p><p>Declaration :</p><ul><li>Uml : + CancelFiling(in body : <a href="class1498626.html#ref4_1498626"><b>CancelFilingMessage</b></a> [1], in path: courtID : string [1], in path: filingID : string [1]) : <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">DELETE</div></li>
+</ul>
+<a name="ref2_128386"></a>
+<table><tr><td><div class="element">Operation <b>GetFeesCalculation</b></div></td></tr></table><p>An operation to query for the estimated fees required for a filing.<br /></p><p>Declaration :</p><ul><li>Uml : + GetFeesCalculation(in body : <a href="class134402.html#ref4_134402"><b>GetFeesCalculationRequestMessage</b></a> [1], in body : <a href="class135938.html#ref4_135938"><b>PaymentMessage</b></a> [0..1], in path: courtID : string [1]) : <a href="class134530.html#ref4_134530"><b>GetFeesCalculationResponseMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">POST</div></li>
+</ul>
+<a name="ref2_128514"></a>
+<table><tr><td><div class="element">Operation <b>GetFilingList</b></div></td></tr></table><p>An operation to query for a list of filings that match a set of criteria.<br /></p><p>Declaration :</p><ul><li>Uml : + GetFilingList(in body : <a href="class133250.html#ref4_133250"><b>GetFilingListRequestMessage</b></a> [1], in path: courtID : string [1]) : <a href="class133506.html#ref4_133506"><b>GetFilingListResponseMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">GET</div></li>
+</ul>
+<a name="ref2_128642"></a>
+<table><tr><td><div class="element">Operation <b>GetFilingStatus</b></div></td></tr></table><p>An operation to request the status of a filing.<br /></p><p>Declaration :</p><ul><li>Uml : + GetFilingStatus(in body : <a href="class132994.html#ref4_132994"><b>GetFilingStatusRequestMessage</b></a> [1], in path: courtID : string [1], in path: filingID : string [1]) : <a href="class133122.html#ref4_133122"><b>GetFilingStatusResponseMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">GET</div></li>
+</ul>
+<a name="ref2_128258"></a>
+<table><tr><td><div class="element">Operation <b>NotifyDocketingComplete</b></div></td></tr></table><p>An operation that is an asynchronous callback in response to a RecordDocketing operation to notify that a filing has been recorded in the court record system.<br /></p><p>Declaration :</p><ul><li>Uml : + NotifyDocketingComplete(in body : <a href="class132610.html#ref4_132610"><b>NotifyDocketingCompleteMessage</b></a> [1..*], in body : <a href="class135938.html#ref4_135938"><b>PaymentMessage</b></a> [0..1], in path: courtID : string [1], in path: filingID : string [1]) : <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">PUT</div></li>
+</ul>
+<a name="ref2_169602"></a>
+<table><tr><td><div class="element">Operation <b>NotifyDocumentStampInformation</b></div></td></tr></table><p>An operation that is an asynchronous callback in response to the GetDocumentStampInformation operation.  This operation is implemented by the system responsible for performing the stamping and is invoked by the system responsible for providing the information for the stamps.<br /></p><p>Declaration :</p><ul><li>Uml : + NotifyDocumentStampInformation(in body : <a href="class2113666.html#ref4_2113666"><b>NotifyDocumentStampInformationMessage</b></a> [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">PUT</div></li>
+</ul>
+<a name="ref2_128130"></a>
+<table><tr><td><div class="element">Operation <b>ReviewFiling</b></div></td></tr></table><p>An operation to submit a filing to a court for review.<br /></p><p>Declaration :</p><ul><li>Uml : + ReviewFiling(in body : <a href="class130690.html#ref4_130690"><b>CoreFilingMessage</b></a> [1..*], in body : <a href="class135938.html#ref4_135938"><b>PaymentMessage</b></a> [0..1], in path: courtID : string [1]) : <a href="class145666.html#ref4_145666"><b>MessageReceiptMessage</b></a></li></ul><p>Stereotype: niem-profile:webservice</p>
+<p>Properties:</p><ul>
+<li>niem-profile:webservice:HTTPMethods:<br /><div class="sub">POST</div></li>
+</ul>
+</div>
+<p>All public operations : <a href="class129282.html#ref2_156290"><b>CancelFiling</b></a>, <a href="class129282.html#ref2_128386"><b>GetFeesCalculation</b></a>, <a href="class129282.html#ref2_128514"><b>GetFilingList</b></a>, <a href="class129282.html#ref2_128642"><b>GetFilingStatus</b></a>, <a href="class129282.html#ref2_128258"><b>NotifyDocketingComplete</b></a>, <a href="class129282.html#ref2_169602"><b>NotifyDocumentStampInformation</b></a>, <a href="class129282.html#ref2_128130"><b>ReviewFiling</b></a></p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CitationAgency</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CitationAgency</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_144130"></a>
+<p>The law enforcement agency employing the law enforcement officer who issues a citation.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationAgency</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationAgency</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_168194"></a>
+<table><tr><td><div class="element">Attribute <b>lawEnforcementAgencyName</b></div></td></tr></table>
+<p>Name of agency of charging law enforcement officer.  May include local agency with responsibility for enforcement of local ordinance which is not a traditional law enforcement agency, such as park or recreation department or animal control department.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + lawEnforcementAgencyName : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationAgency/nc:OrganizationName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationAgency/nc:OrganizationName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_168578"></a>
+<table><tr><td><div class="element">Attribute <b>lawEnforcementAgencyORIID</b></div></td></tr></table>
+<p> ORIID of agency of charging law enforcement officer<br /></p><p>Declaration :</p><ul><li>Uml : + lawEnforcementAgencyORIID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/criminal:ArrestAgency/j:OrganizationAugmentation/j:OrganizationIIdentifation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationIdentification, (j:OrganizationORIIdentification)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationAgency/j:OrganizationAugmentation/j:OrganizationORIIdentifation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_168450"></a>
+<table><tr><td><div class="element">Attribute <b>lawEnforcementAgencyReportingDistrict</b></div></td></tr></table>
+<p>An indicator of an area designated by local authorities for citation reporting purposes.  Allowable values are set forth in Court Policy.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + lawEnforcementAgencyReportingDistrict : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationAgency/nc:OrganizationSubunitName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationSubUnitName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationAgency/nc:OrganizationSubunitName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_168322"></a>
+<table><tr><td><div class="element">Attribute <b>lawEnforcementAgencyStation</b></div></td></tr></table>
+<p> Name of an agency local office<br /></p><p>Declaration :</p><ul><li>Uml : + lawEnforcementAgencyStation : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:Citation/j:CitationAgency/nc:OrganizationUnitName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:OrganizationUnitName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:Citation/j:CitationAgency/nc:OrganizationUnitName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

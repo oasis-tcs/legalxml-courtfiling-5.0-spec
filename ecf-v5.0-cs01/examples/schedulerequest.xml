@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!-- Modifications:
+	
+		Added nc:IdentificationCategoryDescriptionText and nc:IdentificationSourceText for messageID.
+
+-->
+<schedulerequest:GetCourtScheduleRequestMessage xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:schedulerequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/schedulerequest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/schedulerequest ../schema/schedulerequest.xsd">
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>001-f786e6d6-558c-448f-b249-067002d716a0</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<ecf:DocumentAugmentation>
+		<ecf:DocumentFiler>
+			<nc:EntityPerson>
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</ecf:DocumentFiler>
+	</ecf:DocumentAugmentation>
+	<ecf:SendingMDELocationID>
+		<nc:IdentificationID>https://efilingprovider.com:8000</nc:IdentificationID>
+	</ecf:SendingMDELocationID>
+	<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+	<j:CaseCourt>
+		<nc:OrganizationIdentification>
+			<nc:IdentificationID>10</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<nc:OrganizationUnitName>Municipal Court</nc:OrganizationUnitName>
+	</j:CaseCourt>
+	<nc:DocumentPostDate>
+		<nc:DateTime>2007-06-06T14:20:47.0Z</nc:DateTime>
+	</nc:DocumentPostDate>
+	<schedulerequest:ScheduleQueryCriteria>
+		<ecf:CaseTypeCode>civil</ecf:CaseTypeCode>
+		<ecf:CourtEventTypeCode>hearing</ecf:CourtEventTypeCode>
+		<j:CourtAdministrativeUnitText>10</j:CourtAdministrativeUnitText>
+		<j:Judge>
+			<nc:RoleOfPerson>
+				<nc:PersonName>
+					<nc:PersonFullName>John Smith</nc:PersonFullName>
+				</nc:PersonName>
+			</nc:RoleOfPerson>
+			<j:JudicialOfficialRegistrationIdentification>
+				<nc:IdentificationID>100</nc:IdentificationID>
+			</j:JudicialOfficialRegistrationIdentification>
+		</j:Judge>
+		<nc:DateRange>
+			<nc:StartDate>
+				<nc:DateTime>2007-06-06T14:20:47.0Z</nc:DateTime>
+			</nc:StartDate>
+			<nc:EndDate>
+				<nc:DateTime>2007-06-07T14:20:47.0Z</nc:DateTime>
+			</nc:EndDate>
+		</nc:DateRange>
+	</schedulerequest:ScheduleQueryCriteria>
+</schedulerequest:GetCourtScheduleRequestMessage>

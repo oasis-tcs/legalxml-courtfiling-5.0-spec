@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class PaymentMeans</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class PaymentMeans</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_135810"></a>
+<p>The payment method employed to complete a transaction.  Examples: credit card, debit card, automatic funds transfer, debit to an escrow account held at the court, promise to pay at a future date.  Allowable values set forth in Court Policy.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:PaymentMeansType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_171522"></a>
+<table><tr><td><div class="element">Relation <b>cardAccount (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The number of the credit or debit account against which this payment will be charged. <br /></p><p>Declaration :</p><ul><li>Uml : + cardAccount : <a href="class136066.html#ref4_136066"><b>CardAccount</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cac:CardAccount</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:PaymentMeansType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cac:CardAccountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_171266"></a>
+<table><tr><td><div class="element">Relation <b>creditAccount (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The account against which this payment will be charged.<br /></p><p>Declaration :</p><ul><li>Uml : + creditAccount : <a href="class143362.html#ref4_143362"><b>CreditAccount</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CreditAccount</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cac:CreditAccount</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:PaymentMeansType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CreditAccount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cac:CreditAccountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_171650"></a>
+<table><tr><td><div class="element">Relation <b>financialAccount (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The account in a financial institution used for this payment.<br /></p><p>Declaration :</p><ul><li>Uml : + financialAccount : <a href="class136194.html#ref4_136194"><b>FinancialAccount</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:PayerFinancialAccount</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cac:PayerFinancialAccount</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:PaymentMeansType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:PayerFinancialAccount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cac:FinancialAccountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_171394"></a>
+<table><tr><td><div class="element">Relation <b>payment (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The payment for which this means is specified.<br /></p><p>Declaration :</p><ul><li>Uml : + payment : <a href="class135682.html#ref4_135682"><b>Payment</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:PaymentID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:PaymentMeansType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:PaymentIDType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_142210"></a>
+<table><tr><td><div class="element">Attribute <b>paymentMeansCode</b></div></td></tr></table>
+<p>A code representing the payment method employed.  Allowable values are set forth in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + paymentMeansCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cbc:PaymentMeansCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:PaymentMeansCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:PaymentMeansType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cbc:PaymentMeansCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:PaymentMeansCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

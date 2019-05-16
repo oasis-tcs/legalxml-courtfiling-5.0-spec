@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!-- Modifications:
+	
+		Added nc:IdentificationCategoryDescriptionText and nc:IdentificationSourceText for messageID.
+		Added message Id from the request message (e.g. reservedate).
+
+-->
+<datecallback:NotifyCourtDateMessage xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:datecallback="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/datecallback" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/datecallback ../schema/datecallback.xsd">
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>001-f786e6d6-558c-448f-b249-067002d716a0</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>CourtScheduling</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<!-- Add ReserveCourtDate Message ID -->
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>001-448f-b249-067002d716a0-f786e6d6-558c</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>	
+	<ecf:DocumentAugmentation>
+		<ecf:DocumentFiler>
+			<nc:EntityPerson>
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</ecf:DocumentFiler>
+	</ecf:DocumentAugmentation>
+	<ecf:SendingMDELocationID>
+		<nc:IdentificationID>https://efilingprovider.com:8000</nc:IdentificationID>
+	</ecf:SendingMDELocationID>
+	<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+	<j:CaseCourt>
+		<nc:OrganizationIdentification>
+			<nc:IdentificationID>10</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<nc:OrganizationUnitName>Municipal Court</nc:OrganizationUnitName>
+	</j:CaseCourt>
+	<nc:DocumentPostDate>
+		<nc:DateTime>2007-06-06T14:20:47.0Z</nc:DateTime>
+	</nc:DocumentPostDate>
+	<nc:Case>
+		<j:CaseAugmentation>
+			<j:CaseCourtEvent>
+				<j:CourtEventSchedule>
+					<nc:ScheduleDate>
+						<nc:Date>2007-06-06</nc:Date>
+					</nc:ScheduleDate>
+					<nc:ScheduleDayStartTime>14:20:00</nc:ScheduleDayStartTime>
+					<nc:ScheduleDayEndTime>15:20:00</nc:ScheduleDayEndTime>
+				</j:CourtEventSchedule>
+				<ecf:CourtEventAugmentation>
+					<ecf:CourtEventEnteredOnDocketDate>
+						<nc:DateTime>2007-06-06T14:20:47.0Z</nc:DateTime>
+					</ecf:CourtEventEnteredOnDocketDate>
+					<ecf:CourtEventTypeCode>hearing</ecf:CourtEventTypeCode>
+					<ecf:CourtLocationCode>10</ecf:CourtLocationCode>
+				</ecf:CourtEventAugmentation>
+			</j:CaseCourtEvent>
+		</j:CaseAugmentation>
+		<ecf:CaseAugmentation>
+			<ecf:CaseTrackingID>
+				<nc:IdentificationID>987654</nc:IdentificationID>
+			</ecf:CaseTrackingID>
+			<j:CaseNumberText>987654</j:CaseNumberText>
+		</ecf:CaseAugmentation>
+	</nc:Case>
+	<xcal:icalendar>
+		<xcal:vcalendar>
+			<xcal:properties>
+				<xcal:prodid>
+					<xcal:text>-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN</xcal:text>
+				</xcal:prodid>
+				<xcal:version>
+					<xcal:text>2.0</xcal:text>
+				</xcal:version>
+				<xcal:method>
+					<xcal:text>PUBLISH</xcal:text>
+				</xcal:method>
+			</xcal:properties>
+			<xcal:components>
+				<xcal:vtimezone>
+					<xcal:components>
+						<xcal:standard>
+							<xcal:properties>
+								<xcal:dtstart>
+									<xcal:date-time>1601-11-04T02:00:00.0Z</xcal:date-time>
+								</xcal:dtstart>
+								<xcal:rrule>
+									<xcal:recur>
+										<xcal:freq>YEARLY</xcal:freq>
+										<xcal:byday>1SU</xcal:byday>
+										<xcal:bymonth>11</xcal:bymonth>
+									</xcal:recur>
+								</xcal:rrule>
+								<xcal:tzoffsetfrom>
+									<xcal:utc-offset>-04:00</xcal:utc-offset>
+								</xcal:tzoffsetfrom>
+								<xcal:tzoffsetto>
+									<xcal:utc-offset>-05:00</xcal:utc-offset>
+								</xcal:tzoffsetto>
+							</xcal:properties>
+						</xcal:standard>
+						<xcal:daylight>
+							<xcal:properties>
+								<xcal:dtstart>
+									<xcal:date-time>1601-11-04T02:00:00</xcal:date-time>
+								</xcal:dtstart>
+								<xcal:rrule>
+									<xcal:recur>
+										<xcal:freq>YEARLY</xcal:freq>
+										<xcal:byday>1SU</xcal:byday>
+										<xcal:bymonth>11</xcal:bymonth>
+									</xcal:recur>
+								</xcal:rrule>
+								<xcal:tzoffsetfrom>
+									<xcal:utc-offset>-04:00</xcal:utc-offset>
+								</xcal:tzoffsetfrom>
+								<xcal:tzoffsetto>
+									<xcal:utc-offset>-05:00</xcal:utc-offset>
+								</xcal:tzoffsetto>
+							</xcal:properties>
+						</xcal:daylight>
+					</xcal:components>
+				</xcal:vtimezone>
+				<xcal:vevent>
+					<xcal:properties>
+						<xcal:class>
+							<xcal:text>PUBLIC</xcal:text>
+						</xcal:class>
+						<xcal:created>
+							<xcal:utc-date-time>2017-02-17T20:04:19.0Z</xcal:utc-date-time>
+						</xcal:created>
+						<xcal:description>
+							<xcal:text>Case Number 9999999</xcal:text>
+						</xcal:description>
+						<xcal:description>
+							<xcal:parameters>
+								<xcal:fmttype>
+									<xcal:text>text/html:</xcal:text>
+								</xcal:fmttype>
+							</xcal:parameters>
+							<xcal:text><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
+	from text/plain format -->\n\n<P><FONT SIZE=2>Case Number 9999999</FON
+	T>\n</P></BODY>\n</HTML>]]></xcal:text>
+						</xcal:description>
+						<xcal:dtend>
+							<xcal:parameters>
+								<xcal:tzid>
+									<xcal:text>Americas/New_York</xcal:text>
+								</xcal:tzid>
+							</xcal:parameters>
+							<xcal:date-time>2017-05-22T09:32:00Z</xcal:date-time>
+						</xcal:dtend>
+						<xcal:dtstart>
+							<xcal:parameters>
+								<xcal:tzid>
+									<xcal:text>Americas/New_York</xcal:text>
+								</xcal:tzid>
+							</xcal:parameters>
+							<xcal:date-time>2017-02-17T20:04:19Z</xcal:date-time>
+						</xcal:dtstart>
+						<xcal:last-modified>
+							<xcal:utc-date-time>2017-02-17T20:04:19.0Z</xcal:utc-date-time>
+						</xcal:last-modified>
+						<xcal:location>
+							<xcal:text>Department 10 | 100 Main St, Springfield, Illinois 55555</xcal:text>
+						</xcal:location>
+						<xcal:priority>
+							<xcal:integer>5</xcal:integer>
+						</xcal:priority>
+						<xcal:sequence>
+							<xcal:integer>0</xcal:integer>
+						</xcal:sequence>
+						<xcal:summary>
+							<xcal:parameters>
+								<xcal:language>
+									<xcal:text>en-us</xcal:text>
+								</xcal:language>
+							</xcal:parameters>
+							<xcal:text>STATE VS SMITH | Motion for Reconsideration</xcal:text>
+						</xcal:summary>
+						<xcal:transp>
+							<xcal:text>OPAQUE</xcal:text>
+						</xcal:transp>
+						<xcal:uid>
+							<xcal:text>040000008200E00074C5B7101A82E00800000000401B4A7F1489D201000000000000000
+	0100000003FF11357A5B3674789F1352497BD40F0</xcal:text>
+						</xcal:uid>
+						<xcal:x-microsoft-cdo-busystatus>
+							<xcal:text>BUSY</xcal:text>
+						</xcal:x-microsoft-cdo-busystatus>
+					</xcal:properties>
+					<xcal:components>
+						<xcal:valarm>
+							<xcal:properties>
+								<xcal:trigger>
+									<xcal:duration>-PT10M</xcal:duration>
+								</xcal:trigger>
+								<xcal:action>
+									<xcal:text>DISPLAY</xcal:text>
+								</xcal:action>
+								<xcal:description>
+									<xcal:text>Reminder</xcal:text>
+								</xcal:description>
+							</xcal:properties>
+						</xcal:valarm>
+					</xcal:components>
+				</xcal:vevent>
+			</xcal:components>
+		</xcal:vcalendar>
+	</xcal:icalendar>
+</datecallback:NotifyCourtDateMessage>

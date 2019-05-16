@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Juvenile</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Juvenile</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_140674"></a>
+<p>A minor who is the subject of a delinquency or dependency case.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenile</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:JuvenileAugmentationPoint, (juvenile:JuvenileAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:JuvenileType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">juvenile:JuvenileAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_194946"></a>
+<table><tr><td><div class="element">Relation <b>custody (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information concerning the custody of the juvenile.<br /></p><p>Declaration :</p><ul><li>Uml : + custody : <a href="class140930.html#ref4_140930"><b>Custody</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenile/j:SubjectSupervision</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SubjectSupervision</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SubjectType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/juvenile:JuvenileAugmentation/j:Subject/j:SubjectSupervision</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:SupervisionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_194690"></a>
+<table><tr><td><div class="element">Relation <b>extendedPersonInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Additional information about a person.<br /></p><p>Declaration :</p><ul><li>Uml : + extendedPersonInformation : <a href="class147586.html#ref4_147586"><b>CriminalPerson</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenile/nc:RoleOfPersonReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:RoleOfPerson</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:JuvenileType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/nc:RoleOfPerson</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_155138"></a>
+<table><tr><td><div class="element">Attribute <b>gangAffiliation</b></div></td></tr></table>
+<p>A gang a person is affiliated with<br /></p><p>Declaration :</p><ul><li>Uml : + gangAffiliation : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenile/nc:PersonGangAssociation/nc:OrganizationReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^hs:GangOrganization</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:JuvenileGangAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/juvenile:JuvenileAugmentation/hs:JuvenileGangAssociation/hs:GangOrganization</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:OrganizationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_154754"></a>
+<table><tr><td><div class="element">Attribute <b>iceNumber</b></div></td></tr></table>
+<p>Identifier assigned by the Immigration and Customs Enforcement Bureau of the U.S. Department of Homeland Security.<br /></p><p>Declaration :</p><ul><li>Uml : + iceNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenile/j:SubjectICEIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SubjectIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SubjectType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/juvenile:JuvenileAugmentation/j:Subject/j:SubjectIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_154498"></a>
+<table><tr><td><div class="element">Attribute <b>juvenileID</b></div></td></tr></table>
+<p>This is the reference to the person element in the Review Filing.<br /></p><p>Declaration :</p><ul><li>Uml : + juvenileID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenile/j:SubjectIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SubjectIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SubjectType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/juvenile:JuvenileAugmentation/j:Subject/j:SubjectIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_194818"></a>
+<table><tr><td><div class="element">Relation <b>parentGuardian (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information about the parent(s) or guardian(s) of a juvenile.<br /></p><p>Declaration :</p><ul><li>Uml : + parentGuardian : <a href="class141186.html#ref4_141186"><b>ParentGuardian</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenilejuvenile:GuardianAssociation/nc:PersonGuardianReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^hs:Parent</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:ParentChildAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/juvenile:JuvenileAugmentation/hs:ParentChildAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_155010"></a>
+<table><tr><td><div class="element">Attribute <b>personEmancipatedIndicator</b></div></td></tr></table>
+<p>Indicator whether a minor has been adjudicated an emancipated person by a court.<br /></p><p>Declaration :</p><ul><li>Uml : + personEmancipatedIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenilejuvenile:PersonEmancipatedIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">juvenile:PersonEmacipatedIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">juvenile:JuvenileAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/juvenile:JuvenileAugmentation/juvenile:PersonEmacipatedIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_195074"></a>
+<table><tr><td><div class="element">Relation <b>placement (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information about the person or organization orther than parent or guardian with whom the juvenile lives.<br /></p><p>Declaration :</p><ul><li>Uml : + placement : <a href="class141058.html#ref4_141058"><b>Placement</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenilejuvenile:PlacementAssociation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:JuvenilePlacement</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">juvenile:JuvenileAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/juvenile:JuvenileAugmentation/hs:JuvenilePlacement</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">hs:JuvenilePlacementType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_154882"></a>
+<table><tr><td><div class="element">Attribute <b>sexOffenderRegistrationID</b></div></td></tr></table>
+<p>Identifier assigned by state police or other statewide entity to identify a person convicted of an offense defined as a sex crime, such as rape, sexual assault, or stalking.<br /></p><p>Declaration :</p><ul><li>Uml : + sexOffenderRegistrationID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenilej:RegisteredSexOffender/j:RegisteredOffenderIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:RegisteredOffenderIdentification, (j:RegisteredSexOffender)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:RegisteredOffenderType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/juvenile:JuvenileAugmentation/j:RegisteredSexOffender/j:RegisteredSexOffenderIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_154626"></a>
+<table><tr><td><div class="element">Attribute <b>stateCriminalID</b></div></td></tr></table>
+<p>Identifier assigned by state police or other statewide entity to link multiple cases to the same subject. Example: OBTS Number.<br /></p><p>Declaration :</p><ul><li>Uml : + stateCriminalID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenile/j:SubjectIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:PersonStateFingerprintIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/nc:RoleOfPerson/j:PersonAugmentation/j:PersonStateFingerprintIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6362626"></a>
+<table><tr><td><div class="element">Attribute <b>subject</b></div></td></tr></table>
+<p>A juvenile subject.<br /></p><p>Declaration :</p><ul><li>Uml : + subject : , multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenile</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ArrestSubject</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ArrestType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/j:Arrestj:ArrestSubject</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:SubjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6362754"></a>
+<table><tr><td><div class="element">Attribute <b>sexOffenderRegistration</b></div></td></tr></table>
+<p>A juvenile sex offender registration.<br /></p><p>Declaration :</p><ul><li>Uml : + sexOffenderRegistration : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">juvenile:JuvenileCase/juvenile:JuvenileCaseJuvenilej:RegisteredSexOffender</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:RegisteredSexOffender</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">juvenile:JuvenileAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">juvenile:CaseAugmentation/hs:JuvenileCase/hs:Juvenile/juvenile:JuvenileAugmentation/j:RegisteredSexOffender</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:RegisteredOffenderType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

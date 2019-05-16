@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Act</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Act</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_141442"></a>
+<p>An action or behavior of a juvenile that makes the juvenile potentially subject to adjudication by the juvenile court as a delinquent.<br /></p>
+<p>Directly inherited by : <a href="class142850.html#ref4_142850"><b>DelinquentAct</b></a> <a href="class142722.html#ref4_142722"><b>StatusOffenseAct</b></a> </p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeOffense</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:OffenseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseChargeAssociation/j:Offense</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_225666"></a>
+<table><tr><td><div class="element">Attribute <b>actLocation</b></div></td></tr></table>
+<p>The place where the alleged act occurred.<br /></p><p>Declaration :</p><ul><li>Uml : + actLocation : <a href="class163330.html#ref4_163330"><b>address</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeOffense/nc:IncidentLocation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:Location, ^j:Offense</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:OffenseLocationAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseChargeAssociation/j:OffenseLocationAssociation/nc:Location</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:LocationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_157570"></a>
+<table><tr><td><div class="element">Attribute <b>actSequenceNumber</b></div></td></tr></table>
+<p>The order in which this charge appears in a listing of multiple charges against the same juvenile. Example: Ordering charges in descending order of seriousness so that a case management application can identify the most serious charge.<br /></p><p>Declaration :</p><ul><li>Uml : + actSequenceNumber : int, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeOffense/nc:ActivityIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseChargeAssociation/j:Offense/nc:ActivityIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_157442"></a>
+<table><tr><td><div class="element">Attribute <b>actText</b></div></td></tr></table>
+<p>Legal term used to describe the alleged offense, which would be a crime if committed by an adult.<br /></p><p>Declaration :</p><ul><li>Uml : + actText : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeOffense/nc:ActivityDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseChargeAssociation/j:Offense/nc:ActivityDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_157698"></a>
+<table><tr><td><div class="element">Attribute <b>actTime</b></div></td></tr></table>
+<p>The date and time on which an act is alleged or found to have occurred.<br /></p><p>Declaration :</p><ul><li>Uml : + actTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeOffense/nc:ActivityDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseChargeAssociation/j:Offense/nc:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

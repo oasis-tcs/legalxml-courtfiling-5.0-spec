@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+	appellate-ROA-005-NotifyDocketingCompleteRequest-00.xml
+
+	This xml example is an illustration of a case initiation e-filing submission modeled on Barabara Holmes' Test Case # 1100  
+	(Case Initiation, Court of Appeal, Petition for Appeal). In this use case, an attorney is appealing a case from a lower
+	trial court to an intermediary appellate court. 
+
+	The NotifyDocketingCompleteRequest is provided to the FRMDE at the conclusion of docketing within the CRMDE.
+
+
+	10-4-2018		Updated for WD37.
+					Revised comments regarding ecf:ParticipantID and commented out the ecf:ParticipantID elements which are
+					now optional.
+
+
+	Gary Graham
+	Arizona Supreme Court
+	October 1, 2018. 
+
+
+-->
+<wrapper:NotifyDocketingCompleteRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:reviewfilingcallback="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/reviewfilingcallback" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<docketcallback:NotifyDocketingCompleteMessage xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:docketcallback="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docketcallback" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docket ../schema/docket.xsd">
+
+		<nc:DocumentFiledDate>
+			<!-- Definition: "A date a document was officially filed with an organization or agency."
+				 Even though docketing did not occur until 2018-05-16, the court dockets the filing as of the submittal date of 2018-05-04.
+			-->
+			<nc:Date>2018-05-04</nc:Date>
+		</nc:DocumentFiledDate>
+
+		<nc:DocumentIdentification>
+			<!-- Message ID for this Message (i.e. NotifyDocketingCompleteMessage) -->
+			<nc:IdentificationID>X9-ROA-09786776</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>CourtRecord</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>	
+		
+		<nc:DocumentIdentification>
+			<!-- [ECF] Filing Identifier assigned by the FRMDE; this ID must be carried in messages within the e-filing transaction (6.2.4).  --> 
+			<nc:IdentificationID>90998R67O99A</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>filingID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>	
+
+		<!-- Below is the Message ID from the RecordDocketingMessage. Per 6.2.5 "A message identifier is a unique value 
+			 assigned to a message by the MDE that sends the message. All synchronous and asynchronous messages MUST, in
+			 addition to any message identifiers for the response message itself, include the message identifier for the
+			 original message it is responding to." -->
+
+		<!-- This RecordDocketingMessage ID was returned to the FRMDE in the RecordDocketingResponse 
+			 (see appellate-ROA-004-RecordDocketingResponse-00.xml) which is a 'synchronous' response. It must also be 
+			 contained in this NotifyDocketingCompleteRequest since this 'message' is an asynchronous response to the 
+			 RecordDocketingMessage. -->
+		<nc:DocumentIdentification>
+			<!-- Message ID for RecordDocketingMessage -->
+			<nc:IdentificationID>T6745R5609</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		<!-- Since both the RecordDocketingMessage MessageID and the Filing Identifier above, are both denoted as 'FilingReview', then
+			 how can they be distinguished? Ans: by nc:IdentificationCategoryDescriptionText -->				
+
+		<!-- The nc:DocumentIdentification element below is the Message Identifier, assigned by the FAMDE, to the filing:FilingMessage in the RecordFilingRequest. -->
+		<!-- Since the message identifier on a request message MUST be provided on any response messages to the request message (both synchronous and asynchronous 
+			 responses) and since reviewfilingcallback:NotifyFilingReviewCompleteMessage is an asynchronous response to filing:FilingMessage, then 
+			 NotifyFilingReviewCompleteMessage must contain the FilingMessage message identifier. The FilingMessage message identifier was forwarded to the
+			 Court Record MDE in the RecordDocktingRequest so that this MDE can provide it in the NotifyDocketingCompleteMessage so that the FRMDE is not required 
+			 to persist the filing:FilingMessage message identifier in order to add it to the NotifyFilingReviewCompleteMessage. -->
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>ROA-052753</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+
+		<nc:DocumentSubmitter>
+			<!-- This is the docketing clerk, who may or may not be the same as the reviewing clerk (in this use case, a different person). -->
+			<!-- When the docketing clerk is not the same as the filing review clerk, then implementations will need to decide which (if any) to provide. -->
+			<nc:EntityPerson structures:id="DocketClerk1">
+				<nc:PersonName>
+					<nc:PersonGivenName>John</nc:PersonGivenName>
+					<nc:PersonSurName>Petersen</nc:PersonSurName>
+				</nc:PersonName>			
+			</nc:EntityPerson>
+		</nc:DocumentSubmitter>
+
+		<ecf:SendingMDELocationID>
+			<!-- URL for Court Record MDE -->
+			<nc:IdentificationID>http://example.com/court</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<!-- content reference for a court organization -->
+				<nc:IdentificationID>002</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+			<nc:OrganizationLocation>
+				<nc:LocationName>Court of Appeals Division 1, 1501 West Washington, Phoenix AZ 85007</nc:LocationName>
+			</nc:OrganizationLocation>
+			<nc:OrganizationName>State of Arizona</nc:OrganizationName>
+			<j:CourtName>Court of Appeals Division One</j:CourtName>
+		</j:CaseCourt>
+	
+		<nc:DocumentPostDate>
+		<!-- Date and time for the conclusion of docketing and production of this message - this should be later than when 
+			 the RecordDocketingRequest was submitted from the FRMDE; also see ecf:FilingCompletionDate below. -->
+			<nc:DateTime>2018-05-16T16:54:08.000-07:00</nc:DateTime>
+		</nc:DocumentPostDate>
+		
+		<!-- ecf:ConnectedDocumentReview - even though there were hundreds of connected documents in the ReviewFilingRequest, this
+			 NotifyDocketingCompleteRequest (NDC) does not contain any ecf:ConnectedDocumentReview elements.
+		-->
+
+		<!-- As of WD34, ecf:FilingCompletionDate and ecf:FilingStatus are now sandwiched between ecf:ConnectedDocumentReview and 
+			 ecf:LeadDocumentReview. This is probably due to alphabetic ordering. It would be more logical if ecf:ConnectedDocumentReview
+			 appeared after ecf:LeadDocumentReview. -->
+
+		<ecf:FilingCompletionDate>
+		<!-- "The date and time at which the Court Record MDE docketing process was completed following the clerk review acceptance by the Filing Review MDE." -->
+			<nc:DateTime>2018-05-16T16:54:08-07:00</nc:DateTime>
+		</ecf:FilingCompletionDate>
+		
+		<!-- ecf:FilingStatus is the overall status of the filing (e.g. submission) and not the status of individual documents within the filing. -->
+		<ecf:FilingStatus>
+			<nc:StatusText>Accepted and Fully Docketed</nc:StatusText>
+			<nc:StatusDescriptionText>Authorization Code: 8C140404C3669BB8AC</nc:StatusDescriptionText>
+			<nc:StatusDate>
+				<!-- Status Date is defined as: "A date a status was set, effected, or reported."
+					 This definition provides wide latitude. In this use case, the status date is the 'effected' date for the filing. 
+					 Since the e-filing submission was original submitted 2018-05-04 (see nc:DocumentPostDate on filing:FilingMessage)
+					 the court of appeals considers the filing to be offically filed as of the date of submission if accepted, even
+					 though it was not docketed until 2018-05-16 (see ecf:FilingCompletionDate above). If this StatusDate were the date
+					 the status was 'set', it would contain 2018-05-16 and since this message is produced immediatly upon successful docketing
+					 then if StatusDate contained the 'reported' date, it would also contain 2018-05-16.
+				-->
+				<nc:Date>2018-05-04</nc:Date>
+			</nc:StatusDate>
+			<!-- Values from FilingDocketingStatusCode.gc which provides: 'successful', 'unsuccessful', and 'not applicable'. -->
+			<ecf:FilingDocketingStatusCode>successful</ecf:FilingDocketingStatusCode>
+			<!-- Overall Clerk Review episode Status. -->
+			<!-- Values from FilingReviewStatusCode.gc which provides: accepted, cancelled, partially-accepted, received, rejected, issued -->
+			<ecf:FilingReviewStatusCode>accepted</ecf:FilingReviewStatusCode>
+		</ecf:FilingStatus>
+
+		<!-- Unlike RecordDocketingMessage, the NotifyDocketingCompleteMessage only contains ecf:ReviewedDocument (within 
+			 ecf:ConnectedDocumentReview and ecf:LeadDocumentReview) and does not contain any ecf:FilingConnectedDocument or 
+			 ecf:FilingLeadDocument elements. As such, all document information must be contained in the reviewed document 
+			 element; in essense, merging the relevant document information from FilingMessage Filing-Document with the 
+			 RecordDocketingMessage Reviewed-Document. -->
+
+		<ecf:LeadDocumentReview structures:id="Document1Review">					<!-- Index of Record -->
+
+			<!-- The ecf:Document element MUST NOT be used in the NotifyDocketingCompleteRequest. It is only used in the 
+				 RecordDocketingRequest to identify, by reference, the document from the filing:FilingMessage that has 
+				 been reviewed. -->
+				 		
+			<ecf:DocumentReviewDisposition>		<!-- Clerk Review disposition for the Index of Record. -->
+				<ecf:DocumentReviewStatus>
+					<!-- nc:StatusText should be valid in DocumentReviewStatusCode.gc -->
+					<nc:StatusText>accepted</nc:StatusText>
+					<nc:StatusDate>
+						<!-- Date and Time that acceptance disposition was applied to this document - should be earlier
+							 or same as nc:DocumentPostDate above. -->
+						<nc:DateTime>2018-05-16T16:54:08.000-07:00</nc:DateTime>
+					</nc:StatusDate>
+				</ecf:DocumentReviewStatus>
+				<ecf:DocumentReviewer>
+				<!-- The clerk who reviewed this document and applied the disposition above. -->
+					<nc:EntityPerson structures:id="ReviewingClerk1">
+						<nc:PersonName>
+							<nc:PersonGivenName>Mary</nc:PersonGivenName>
+							<nc:PersonSurName>Smith</nc:PersonSurName>
+						</nc:PersonName>
+					</nc:EntityPerson>
+				</ecf:DocumentReviewer>
+			</ecf:DocumentReviewDisposition>
+			
+			<ecf:ReviewedDocument structures:id="ReviewedDocument1">
+			
+				<nc:DocumentCategoryText>Record</nc:DocumentCategoryText>
+				<nc:DocumentSoftwareName>Adobe Acrobat</nc:DocumentSoftwareName>
+				<nc:DocumentDescriptionText>Index of Record</nc:DocumentDescriptionText>
+				
+				<nc:DocumentFiledDate>
+					<nc:Date>2018-05-04</nc:Date>
+				</nc:DocumentFiledDate>
+				
+				<!-- This is an external reference for the document assigned by the FAMDE. --> 
+				<nc:DocumentIdentification>
+					<nc:IdentificationID>CV2013-052753-0</nc:IdentificationID>
+					<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+				</nc:DocumentIdentification>
+				
+				<nc:DocumentReceivedDate structures:id="_001_index_of_Record.pdf">
+					<!-- Definition: "A date a transmitted document was received." -->
+					<!-- In this example, this is the date that the document was uploaded by the submitter to the EFSP.  -->
+					<!-- This date could be a different date than the DocumentFiledDate (e.g. the eventual Docket date). -->
+					<nc:DateTime>2018-05-04T08:59:33Z</nc:DateTime>
+				</nc:DocumentReceivedDate>
+				
+				<nc:DocumentSequenceID>0</nc:DocumentSequenceID>
+				
+				<nc:DocumentTitleText>Index of Record</nc:DocumentTitleText>
+				<nc:DocumentSubmitter>
+					<!-- The document submitter is the Appeals Clerk -->
+					<nc:EntityPerson structures:ref="AppealsClerk1" xsi:nil="true"/>
+				</nc:DocumentSubmitter>
+				<ecf:DocumentAugmentation>
+					<ecf:DocumentFiler>
+						<!-- Document level association of the filer is allowed per section 6.2.6 -->
+						<!-- The document filer is the clerk of the case lineage predecessor court.. -->
+						<nc:EntityPerson structures:ref="ClerkoftheCourt" xsi:nil="true"/>
+					</ecf:DocumentFiler>
+					
+					<ecf:DocumentRendition>	
+					
+						<!-- The document storage ID for the document rendition. -->
+						<nc:DocumentFileControlID>2916533</nc:DocumentFileControlID>
+						
+						<nc:DocumentIdentification/>
+						
+						<!-- Per section 6.1.9 of the specification, a SHA 256 hash MUST be included. -->
+						<ecf:DocumentRenditionHash>9034jhfnwd7fhapfjvcfd763297berws9dnbdsapu</ecf:DocumentRenditionHash>
+						
+						<nc:Attachment structures:id="Attachment1">
+							<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+							<!-- MIME type for Adobe Acrobat PDF -->
+							<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>	
+							<!-- Since the Index of Record document rendition is not returned, binary attachment info is not included. -->
+							<!--
+							<nc:BinaryURI/>
+							<nc:BinarySizeValue/>	-->
+						</nc:Attachment>
+					</ecf:DocumentRendition>
+					
+					<!-- Docketing and Clerk Review status for this document. -->
+					<ecf:DocumentStatus>
+						<nc:StatusText>Docketed</nc:StatusText>		<!-- Index of Record was successfully docketed. -->
+						<nc:StatusDescriptionText>Index of Record successfully docketed.</nc:StatusDescriptionText>
+						<nc:StatusDate>
+							<!-- Date and Time that docketing occurred for this document. -->
+							<nc:DateTime>2018-05-16T16:54:08.000-07:00</nc:DateTime>
+						</nc:StatusDate>	
+						<!-- DocumentDocketingStatusCode should be valid in DocumentDocketingStatusCode.gc -->
+						<ecf:DocumentDocketingStatusCode>successful</ecf:DocumentDocketingStatusCode>
+						<!-- DocumentReviewStatusCode should be valid in DocumentReviewStatusCode.gc -->
+						<ecf:DocumentReviewStatusCode>accepted</ecf:DocumentReviewStatusCode>
+					</ecf:DocumentStatus>					
+					
+					<!-- The document type code for Index of Record. -->
+					<ecf:DocumentTypeCode>IOR</ecf:DocumentTypeCode>
+					<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+					<!-- ecf:RegisterActionDescriptionCode below contains the Docketing code for the filing of the 'Index of Record' as provided by Court Policy. -->
+					<!-- Schema definition: "The docket code used by the court for the type of document submitted. Allowable values set forth in Court Policy."-->
+					<ecf:RegisterActionDescriptionCode>IOR-FILED</ecf:RegisterActionDescriptionCode>
+					<!-- SpecialHandlingInstructionsText is used for the processing directive, e.g. 'FILE' or 'AMEND-ADD', 'AMEND-REPLACE', 'AMEND-REMOVE', or 'AMEND-INSERT'. -->
+					<ecf:SpecialHandlingInstructionsText>FILE</ecf:SpecialHandlingInstructionsText>
+				</ecf:DocumentAugmentation>
+				<ecf:ReviewedDocumentAugmentation>
+					<!-- CRMDE docket event identifier for lead document (Notice of Appeal) added during docketing operation. -->
+					<nc:CaseDocketID>1406075</nc:CaseDocketID>
+				</ecf:ReviewedDocumentAugmentation>				
+			</ecf:ReviewedDocument>
+		</ecf:LeadDocumentReview>
+
+		<nc:Case xmlns:appellate="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/appellate" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/appellate ../schema/appellate.xsd">
+			<!-- It appears that nc:CaseShortTitleText should generally be used instead of nc:CaseTitleText for a short title. -->
+			<!-- However, the element definition for ecf:CaseShortTitleText states: "No title exists when the message is intiating a new case." -->
+			<!-- Therefore, the short title is placed into nc:CaseTitleText -->
+			<nc:CaseTitleText>ARMSTRONG VS ROADSHIELD TIRE CO ET AL</nc:CaseTitleText>
+			
+			<j:CaseAugmentation>
+				<j:CaseCourt>
+					<nc:OrganizationIdentification>
+						<!-- content reference for a court organization -->
+						<nc:IdentificationID>002</nc:IdentificationID>
+					</nc:OrganizationIdentification>
+					<nc:OrganizationName>State of Arizona</nc:OrganizationName>
+					<j:CourtName>Court of Appeals Division One</j:CourtName>
+				</j:CaseCourt>
+				
+				<!-- Information about the predecessor lineage case from the trial court. -->
+				<j:CaseLineageCase>
+					<nc:CaseTitleText>ARMSTRONG vs ROADSHIELD TIRE CO. et al</nc:CaseTitleText>
+					<j:CaseAugmentation>
+						<j:CaseCourt>
+							<nc:OrganizationIdentification structures:id="Maricopa">
+								<nc:IdentificationID>MAR</nc:IdentificationID>
+							</nc:OrganizationIdentification>
+							<nc:OrganizationName>Maricopa County</nc:OrganizationName>
+							<j:CourtName>Maricopa Superior Court</j:CourtName>
+						</j:CaseCourt>
+						<j:CaseJudge>
+							<nc:RoleOfPerson structures:id="Judge1">
+								<nc:PersonName>
+									<nc:PersonGivenName>Robert</nc:PersonGivenName>
+									<nc:PersonMiddleName>J</nc:PersonMiddleName>
+									<nc:PersonSurName>Pilsbury</nc:PersonSurName>
+									<nc:PersonFullName>Hon. Robert J. Pilsbury</nc:PersonFullName>
+								</nc:PersonName>
+								<ecf:PersonAugmentation>
+									<ecf:CaseParticipantRoleCode>Judge</ecf:CaseParticipantRoleCode>
+									<!-- As of WD37 ecf:ParticipantID is no longer mandatory. The specification does not provide any guidance as to which 
+										 MDE assigns these ID values. Section 6.2.9 does require that they are unique within an e-filing system. -->
+									<!-- This is the Person ID for the Judge in the CRMDE. -->
+									<ecf:ParticipantID>
+										<nc:IdentificationID>PersonID:6567</nc:IdentificationID>
+										<ecf:PersonIdentificationCategoryCode>SourceParticipantID</ecf:PersonIdentificationCategoryCode>
+										<nc:IdentificationSourceText>PersonID</nc:IdentificationSourceText>
+									</ecf:ParticipantID>
+								</ecf:PersonAugmentation>
+							</nc:RoleOfPerson>
+						</j:CaseJudge>
+					</j:CaseAugmentation>
+					<ecf:CaseAugmentation>
+						<ecf:CaseTypeCode>Civil</ecf:CaseTypeCode>
+						<j:CaseNumberText>CV2013-052753</j:CaseNumberText>
+					</ecf:CaseAugmentation>
+				</j:CaseLineageCase>
+				<!-- End lineage case information. -->
+				
+				<j:CaseOfficial>
+					<nc:RoleOfPerson structures:id="AppealsClerk1">
+						<nc:PersonName>
+							<nc:PersonGivenName>Rhonda</nc:PersonGivenName>
+							<nc:PersonSurName>Cushion</nc:PersonSurName>
+							<nc:PersonFullName>Rhonda Cushion</nc:PersonFullName>
+						</nc:PersonName>
+						<ecf:PersonAugmentation>
+							<ecf:CaseParticipantRoleCode>Clerk</ecf:CaseParticipantRoleCode>
+							<!-- As of WD37 ecf:ParticipantID is no longer mandatory. The specification does not provide any guidance as to which 
+								 MDE assigns these ID values. Section 6.2.9 does require that they are unique within an e-filing system. -->
+							<ecf:ParticipantID/>
+						</ecf:PersonAugmentation>
+					</nc:RoleOfPerson>
+				</j:CaseOfficial>
+				<j:CaseOfficial>
+					<nc:RoleOfPerson structures:id="ClerkoftheCourt">
+						<nc:PersonName>
+							<nc:PersonFullName>Michael Jeanes</nc:PersonFullName>
+						</nc:PersonName>
+						<ecf:PersonAugmentation>
+							<ecf:CaseParticipantRoleCode>Clerk</ecf:CaseParticipantRoleCode>
+							<!-- As of WD37 ecf:ParticipantID is no longer mandatory. The specification does not provide any guidance as to which 
+								 MDE assigns these ID values. Section 6.2.9 does require that they are unique within an e-filing system. -->
+							<!-- This is the Person ID for the Clerk in the CRMDE. -->
+							<ecf:ParticipantID>
+								<nc:IdentificationID>PersonID:17973</nc:IdentificationID>
+								<ecf:PersonIdentificationCategoryCode>SourceParticipantID</ecf:PersonIdentificationCategoryCode>
+								<nc:IdentificationSourceText>PersonID</nc:IdentificationSourceText>								
+							</ecf:ParticipantID>
+						</ecf:PersonAugmentation>
+					</nc:RoleOfPerson>
+				</j:CaseOfficial>
+			</j:CaseAugmentation>
+			
+			<!-- Note: j:CaseAugmentation must appear before ecf:CaseAugmentation (see 4.2 Case Augmentations). -->
+			
+			<ecf:CaseAugmentation>
+				<!-- See 4.2 Case Augmentations: "The case type and category associated with a filing SHOULD be indicated with the 
+					 ecf:CaseTypeCode and ecf:CaseCategoryCode elements. -->			
+				<ecf:CaseCategoryCode>Civil Appeal</ecf:CaseCategoryCode>
+				<!-- Since this is a case initiation filing, then 'true'. -->
+				<ecf:CaseNewIndicator>true</ecf:CaseNewIndicator>
+				<ecf:CaseParty>
+					<nc:EntityOrganization structures:id="Organization1">
+						<nc:OrganizationName>Institute of Transportation Safety</nc:OrganizationName>
+						<ecf:OrganizationAugmentation>
+							<ecf:CaseParticipantRoleCode>Intervenor/Appellee</ecf:CaseParticipantRoleCode>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>OrgID:23893</nc:IdentificationID>
+								<ecf:PersonIdentificationCategoryCode>SourceparticipantID</ecf:PersonIdentificationCategoryCode>
+								<nc:IdentificationSourceText>OrganizationID</nc:IdentificationSourceText>
+							</ecf:ParticipantID>
+						</ecf:OrganizationAugmentation>
+					</nc:EntityOrganization>
+				</ecf:CaseParty>
+				<ecf:CaseParty>
+					<nc:EntityOrganization structures:id="Organization2">
+						<nc:OrganizationName>Roadshield Tire Company</nc:OrganizationName>
+						<ecf:OrganizationAugmentation>
+							<ecf:CaseParticipantRoleCode>Defendant/Appellant</ecf:CaseParticipantRoleCode>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>OrgID:2707</nc:IdentificationID>
+								<ecf:PersonIdentificationCategoryCode>SourceparticipantID</ecf:PersonIdentificationCategoryCode>
+								<nc:IdentificationSourceText>OrganizationID</nc:IdentificationSourceText>
+							</ecf:ParticipantID>
+						</ecf:OrganizationAugmentation>
+					</nc:EntityOrganization>
+				</ecf:CaseParty>
+				<ecf:CaseParty>
+					<nc:EntityOrganization structures:id="Organization3">
+						<nc:OrganizationName>Trojan Frames Inc.</nc:OrganizationName>
+						<ecf:OrganizationAugmentation>
+							<ecf:CaseParticipantRoleCode>Intervenor/Appellee</ecf:CaseParticipantRoleCode>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>OrgID:22721</nc:IdentificationID>
+								<ecf:PersonIdentificationCategoryCode>SourceparticipantID</ecf:PersonIdentificationCategoryCode>
+								<nc:IdentificationSourceText>OrganizationID</nc:IdentificationSourceText>
+							</ecf:ParticipantID>
+						</ecf:OrganizationAugmentation>
+					</nc:EntityOrganization>
+				</ecf:CaseParty>					
+				<!-- See 4.2 Case Augmentations: "The case type and category associated with a filing SHOULD be indicated with the 
+					 ecf:CaseTypeCode and ecf:CaseCategoryCode elements. -->
+				<ecf:CaseTypeCode>Civil</ecf:CaseTypeCode>
+				<j:CaseNumberText>CV-18-0244</j:CaseNumberText>
+
+			</ecf:CaseAugmentation>
+			<appellate:CaseAugmentation xsi:nil="true"/> 
+
+		</nc:Case>
+			
+	</docketcallback:NotifyDocketingCompleteMessage>
+	
+</wrapper:NotifyDocketingCompleteRequest>

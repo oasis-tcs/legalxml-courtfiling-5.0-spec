@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+	civil-Complaint-021-ReviewFilingRequest-Answer-04.xml
+
+	This xml example is from a series of examples that illustrate a full life cycle sequence use case for a minimalist illustration of  
+	Barabara Holmes' Test Case # 300 (Case Initiation Civil Complaint).
+
+	Defendant Answer filing.
+
+	In this example, the defendant Jane Q. Smith's attorney Ralph K. Williams files an answer to the complaint. 
+
+	05-21-2018	Updated for WD31.
+	08-03-2018	Updated for WD35 as version 03.
+	09-13-2018	Updated for WD36 as version 04.
+
+-->
+<wrapper:ReviewFilingRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<filing:FilingMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing ../schema/filing.xsd">
+		<!-- The nc:DocumentIdentification element below is a Message Identifier (see section 6.2.5), in this circumstance, assigned by the FAMDE -->
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>XYZ00989HGRXL</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		<nc:DocumentIdentification>
+			<!-- Illustrates the inclusion of a filing identifier supplied by the filer. -->
+			<nc:IdentificationID>H89VG640MN90</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>ClientMatterID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+			<!-- Per 6.2.4 the originating MDE for each filing identifier SHOULD be identified in nc:IdentificationSourceText (above) with a value from
+				 MajorDesignElementTypeCode.gc -->
+		</nc:DocumentIdentification>
+		<!-- The [ECF] Filing Identifier will be assigned by the FRMDE upon receipt of this ReviewFilingRequest (RvFR) -->
+		<!-- As specified in 6.2.5 each message MUST provide a message identfier (as above). However, a filing identifier (see 6.2.4) may, but need not be provided
+			 by the FAMDE in the ReviewFilingRequest. The [ECF] filing identifier, as described in 6.2.4, will be assigned by the FRMDE during FilingReview, This
+			 [ECF] filing identifier is provided to the FAMDE in the ReviewFilingResponse (see civil-complaint-002-ReviewFilingResponse-04.xml). Since the [ECF]
+			 filing identifier is assigned by the FRMDE, it does not appear in this message, as it has not yet been assigned. -->
+		<nc:DocumentSubmitter>
+		<!-- In this example, the Document Submitter is the not the same person as the Document Filer.
+			 The filer is the defendant's attorney, whereas the submitter is a legal assistant at the law firm. -->
+			<nc:EntityPerson structures:id="LegalAssistant1">
+				<!--j:PersonAugmentation></j:PersonAugmentation-->
+				<nc:PersonName>
+					<nc:PersonGivenName>Sally</nc:PersonGivenName>
+					<nc:PersonMiddleName>M.</nc:PersonMiddleName>
+					<nc:PersonSurName>Pane</nc:PersonSurName>
+				</nc:PersonName>
+				<j:PersonSexCode>F</j:PersonSexCode>
+				<ecf:PersonAugmentation>
+				<!-- value 'LegalAssistant' is NOT in CaseParticipantRoleCpde.gc -->
+					<ecf:CaseParticipantRoleCode>LegalAssistant</ecf:CaseParticipantRoleCode>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>221</nc:IdentificationID>
+					</ecf:ParticipantID>
+					<nc:ContactInformation>
+						<nc:ContactEmailID>SallyPane@SmithsRobertsLLC.com</nc:ContactEmailID>
+					</nc:ContactInformation>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</nc:DocumentSubmitter>
+		<ecf:DocumentAugmentation>
+			<ecf:DocumentFiler>
+				<!-- The filer is atttorney Ralph K. Williams (Person3) -->
+				<nc:EntityPerson structures:ref="Person3"/>
+			</ecf:DocumentFiler>
+		</ecf:DocumentAugmentation>	
+		<ecf:SendingMDELocationID>
+			<!-- URL for Filing Assembly MDE -->
+			<nc:IdentificationID>http://example.com/efsp1</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<!-- content reference for a court organization -->
+				<nc:IdentificationID>10</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+			<nc:OrganizationUnitName>Civil Court</nc:OrganizationUnitName>
+		</j:CaseCourt>
+		<!-- nc:DocumentInformationCutOffDate is optional per schema.
+			 Schema definition: "The date after which contributions to the content of a document will no longer be accepted." 
+			 Clarification for the use of this element was added into section 6.1.4 in WD30, as "The date and time the filer
+			 authorized submission of the complete filing to the court MAY be provided with nc:DocumentInformationCutOffDate." -->
+			 
+		<!-- Also see nc:DocumentPostDate below. Unlike nc:DocumentPostDate which is required per schema, nc:DocumentInformationCutOffDate
+			 is optional. Additionally, the 'practical' difference between the two moments in time (e.g. moment that filer authorizes
+			 submission, and the moment the submission is posted) is expected to be marginal in most implementations. In light of these
+			 considerations, the ECF TC has identified nc:DocumentInformationCutOffDate is optional as a 'legacy' element, and its usage 
+			 has been deprecated (see 6.1.4). The elements below are shown for reference but are commented out as not used. -->
+		<!--
+		<nc:DocumentInformationCutOffDate>
+			<nc:DateTime>2008-07-19T10:17:39.0Z</nc:DateTime>
+		</nc:DocumentInformationCutOffDate>
+		-->
+		<!-- nc:DocumentPostDate is required per schema. The schema definiton is: "a date a document is entered or posted to
+			 an information system or network; used when the date of posting is different than the date on which the
+			 document was officially filed." -->
+		<!-- This element is only available for messages and is not available for documents. -->
+		<!-- Since at this moment in the e-filing submission process, the documents (e.g. FilingLeadDocument) in the submission 
+			 are not yet 'officially filed' (this occurs in the Court Record MDE upon docketing). Essentially, this is understood 
+			 to be the date and time that filing:FilingMessage was created and saved. -->
+		<!-- It is not clear how the purpose of this element is different than that of nc:DocumentInformationCutOffDate above. 
+			 As a matter of practicality, these two moments may not be distinguishable. -->		
+		<nc:DocumentPostDate>
+			<nc:DateTime>2008-07-19T10:17:42.0Z</nc:DateTime>
+		</nc:DocumentPostDate>
+
+		<filing:FilingLeadDocument structures:id="Document1" structures:metadata="Document1Metadata">
+			<nc:DocumentCategoryText>Answer</nc:DocumentCategoryText>
+			<nc:DocumentSoftwareName>Adobe Acrobat</nc:DocumentSoftwareName>
+			<nc:DocumentDescriptionText>Answer</nc:DocumentDescriptionText>
+
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>20009153</nc:IdentificationID>
+				<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>
+			<nc:DocumentReceivedDate>
+				<!-- Definition: "A date a transmitted document was received." -->
+				<!-- In this example, this is the date that the document was uploaded by the submitter to the EFSP.  -->
+				<!-- This date could be a different date than the DocumentFiledDate (e.g. the eventual Docket date). -->
+				<nc:Date>2008-07-19</nc:Date>
+			</nc:DocumentReceivedDate>
+			<nc:DocumentSequenceID>1</nc:DocumentSequenceID>
+			<nc:DocumentSubmitter>
+				<!-- The document submitter is the legal assistant -->
+				<nc:EntityPerson structures:ref="LegalAssistant1" xsi:nil="true"/>
+			</nc:DocumentSubmitter>
+			<ecf:DocumentAugmentation>
+				<ecf:DocumentFiler>
+					<!-- The document filer is attorney Ralph K. Williams (Person3) -->
+					<nc:EntityPerson structures:ref="Person3" xsi:nil="true"/>
+				</ecf:DocumentFiler>
+				<ecf:DocumentRendition>
+					<nc:DocumentIdentification/>
+					<nc:Attachment structures:id="Attachment1">
+						<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+						<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>						
+						<nc:BinaryURI>cid://Payload1</nc:BinaryURI>
+						<nc:BinarySizeValue>27003</nc:BinarySizeValue>
+					</nc:Attachment>
+				</ecf:DocumentRendition>
+				<!-- Document type code for 'Answer'. -->
+				<ecf:DocumentTypeCode>ANS</ecf:DocumentTypeCode>
+				<!-- ecf:RegisterActionDescriptionCode below contains the Document Type code for 'Answer' -->
+				<!-- Schema definition: "The docket code used by the court for the type of document submitted. Allowable values set forth in Court Policy."-->
+				<ecf:RegisterActionDescriptionCode>ANS</ecf:RegisterActionDescriptionCode>
+				<nc:Metadata structures:id="Document1Metadata">
+					<nc:SensitivityText>public</nc:SensitivityText>
+					<nc:LanguageCode>eng</nc:LanguageCode>
+				</nc:Metadata>
+			</ecf:DocumentAugmentation>
+		</filing:FilingLeadDocument>
+
+		<nc:Case xmlns:civil="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/civil ../schema/civil.xsd">
+		
+			<nc:CaseTitleText>John Doe vs. Jane Smith</nc:CaseTitleText>
+			<j:CaseAugmentation>
+				<j:CaseCourt>
+					<nc:OrganizationIdentification>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</nc:OrganizationIdentification>
+					<j:CourtName>Civil Court</j:CourtName>
+				</j:CaseCourt>
+				<j:CaseOfficial>
+					<nc:RoleOfPerson structures:id="Person3">
+						<nc:PersonName>
+							<nc:PersonGivenName>Ralph</nc:PersonGivenName>
+							<nc:PersonMiddleName>K.</nc:PersonMiddleName>
+							<nc:PersonSurName>Williams</nc:PersonSurName>						
+							<nc:PersonFullName>Ralph K. Williams</nc:PersonFullName>
+						</nc:PersonName>
+						<ecf:PersonAugmentation>
+							<!-- value from CaseParticipantRoleCode.gc -->
+							<ecf:CaseParticipantRoleCode>Defendant counsel</ecf:CaseParticipantRoleCode>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>30</nc:IdentificationID>
+							</ecf:ParticipantID>
+						</ecf:PersonAugmentation>
+					</nc:RoleOfPerson>
+					<j:JudicialOfficialBarMembership>
+						<j:JudicialOfficialBarIdentification>
+							<nc:IdentificationID>10020034</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>IL</ecf:PersonIdentificationCategoryCode>
+						</j:JudicialOfficialBarIdentification>
+					</j:JudicialOfficialBarMembership>
+					<ecf:CaseOfficialAugmentation>
+						<ecf:CaseRepresentedParty>
+							<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>	<!-- Defendant Jane Jones -->
+						</ecf:CaseRepresentedParty>
+					</ecf:CaseOfficialAugmentation>
+				</j:CaseOfficial>
+			</j:CaseAugmentation>
+			<ecf:CaseAugmentation>
+				<ecf:CaseCategoryCode>Tort Motor Vehicle</ecf:CaseCategoryCode>
+				<!-- This is a subsequent filing. -->
+				<ecf:CaseNewIndicator>false</ecf:CaseNewIndicator>
+				
+				<ecf:CaseParty>
+					<nc:EntityPerson structures:id="Person2">
+						<nc:PersonBirthDate>
+							<nc:Date>1969-10-10</nc:Date>
+						</nc:PersonBirthDate>
+						<nc:PersonName>
+							<nc:PersonGivenName>Jane</nc:PersonGivenName>
+							<nc:PersonMiddleName>Q</nc:PersonMiddleName>
+							<nc:PersonSurName>Smith</nc:PersonSurName>
+							<nc:PersonMaidenName>Roberts</nc:PersonMaidenName>
+						</nc:PersonName>
+						<nc:PersonOtherIdentification>
+							<nc:IdentificationID>1234-56-789</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>DriverLicense</ecf:PersonIdentificationCategoryCode>
+							<nc:IdentificationSourceText>State Department of Motor Vehicles</nc:IdentificationSourceText>
+						</nc:PersonOtherIdentification>
+						<!-- Participant Matching (see civil-complaint-010-GetCaseResponse-04.xml) -->
+						<nc:PersonOtherIdentification>
+							<nc:IdentificationID>147700</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>SourceParticipantID</ecf:PersonIdentificationCategoryCode>
+							<nc:IdentificationSourceText>PartyID</nc:IdentificationSourceText>
+						</nc:PersonOtherIdentification>
+						<j:PersonSexCode>F</j:PersonSexCode>
+						<nc:PersonTaxIdentification>
+							<nc:IdentificationID>123-45-67890</nc:IdentificationID>
+						</nc:PersonTaxIdentification>
+						<ecf:PersonAugmentation>
+							<ecf:CaseParticipantRoleCode>Defendant</ecf:CaseParticipantRoleCode>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>20</nc:IdentificationID>
+							</ecf:ParticipantID>
+							<nc:ContactInformation>
+								<nc:ContactMailingAddress>
+									<nc:LocationStreet>
+										<nc:StreetFullText>456 South St.</nc:StreetFullText>
+									</nc:LocationStreet>
+									<nc:LocationCityName>Anytown</nc:LocationCityName>
+									<nc:LocationState>
+										<nc:LocationStateName>IN</nc:LocationStateName>
+									</nc:LocationState>
+									<nc:LocationPostalCode>12345</nc:LocationPostalCode>
+								</nc:ContactMailingAddress>
+							</nc:ContactInformation>
+						</ecf:PersonAugmentation>
+					</nc:EntityPerson>
+				</ecf:CaseParty>
+				<ecf:CaseTrackingID>
+					<nc:IdentificationID>123456ABC</nc:IdentificationID>
+					<nc:IdentificationCategoryDescriptionText>ACME eFiling Systems</nc:IdentificationCategoryDescriptionText> 
+					<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+				</ecf:CaseTrackingID>
+				<ecf:CaseTrackingID>
+					<nc:IdentificationID>98996423</nc:IdentificationID>
+					<nc:IdentificationCategoryDescriptionText>Law Firm Client Matter No.</nc:IdentificationCategoryDescriptionText> 
+					<nc:IdentificationSourceText>Other</nc:IdentificationSourceText>
+				</ecf:CaseTrackingID>
+				<ecf:CaseTypeCode>Civil</ecf:CaseTypeCode>
+				<!-- Since this is not a case initiation filing, the Case Number has already been assigned.-->
+				<j:CaseNumberText>CV-2017-010110</j:CaseNumberText>
+				
+				<nc:Metadata structures:id="Metadata1">
+					<nc:SensitivityText>public</nc:SensitivityText>
+					<nc:LanguageCode>eng</nc:LanguageCode>
+				</nc:Metadata>
+				
+				<nc:PersonOrganizationAssociation>
+					<nc:Person structures:ref="Person2"/>
+					<nc:Person structures:ref="LegalAssistant1"/>
+					<nc:Organization>
+						<nc:OrganizationName>Smth-Roberts, Attorneys At Law LLC</nc:OrganizationName>
+						<nc:OrganizationPrimaryContactInformation>
+							<nc:ContactTelephoneNumber>
+								<nc:FullTelephoneNumber>
+									<nc:TelephoneNumberFullID>897-854-2396</nc:TelephoneNumberFullID>
+								</nc:FullTelephoneNumber>
+							</nc:ContactTelephoneNumber>
+							<nc:ContactMailingAddress>
+								<nc:LocationStreet>
+									<nc:StreetFullText>1007 North St.</nc:StreetFullText>
+								</nc:LocationStreet>
+								<nc:LocationCityName>Anytown</nc:LocationCityName>
+								<nc:LocationState>
+									<nc:LocationStateName>IN</nc:LocationStateName>
+								</nc:LocationState>
+								<nc:LocationPostalCode>12345</nc:LocationPostalCode>							
+							</nc:ContactMailingAddress>
+						</nc:OrganizationPrimaryContactInformation>
+					</nc:Organization>
+				</nc:PersonOrganizationAssociation>
+
+			</ecf:CaseAugmentation>
+
+		</nc:Case>
+	</filing:FilingMessage>
+
+	<payment:PaymentMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment ../schema/payment.xsd">
+		<cac:Address>
+			<cbc:CityName>Anytown</cbc:CityName>
+			<cbc:PostalZone>12345</cbc:PostalZone>
+			<cbc:CountrySubentityCode>IN</cbc:CountrySubentityCode>
+			<cac:AddressLine>
+				<cbc:Line>1007 North St.</cbc:Line>
+			</cac:AddressLine>
+			<cac:AddressLine>
+				<cbc:Line>Anytown, IN 12345</cbc:Line>
+			</cac:AddressLine>
+			<cac:Country>
+				<cbc:IdentificationCode>US</cbc:IdentificationCode>
+			</cac:Country>
+		</cac:Address>
+		<cac:AllowanceCharge>
+			<cbc:ID>1</cbc:ID>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReasonCode>fee</cbc:AllowanceChargeReasonCode>
+			<cbc:AllowanceChargeReason>court fee</cbc:AllowanceChargeReason>
+			<cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
+			<cbc:PrepaidIndicator>false</cbc:PrepaidIndicator>
+			<cbc:SequenceNumeric>1</cbc:SequenceNumeric>
+			<cbc:Amount currencyID="USD">106.00</cbc:Amount>
+			<cbc:BaseAmount currencyID="USD">106.00</cbc:BaseAmount>
+			<cbc:PerUnitAmount currencyID="USD">106.00</cbc:PerUnitAmount>
+			<cac:PaymentMeans>
+				<cbc:ID>1</cbc:ID>
+				<cbc:PaymentMeansCode>credit</cbc:PaymentMeansCode>
+				<cbc:PaymentDueDate>2018-07-19</cbc:PaymentDueDate>
+				<cbc:PaymentID>1</cbc:PaymentID>
+				<cac:CardAccount>
+					<cbc:PrimaryAccountNumberID>5555-555-5555</cbc:PrimaryAccountNumberID>
+					<cbc:NetworkID>55555</cbc:NetworkID>
+					<cbc:CardTypeCode>visa</cbc:CardTypeCode>
+					<cbc:ValidityStartDate>2016-08-31</cbc:ValidityStartDate>
+					<cbc:ExpiryDate>2022-08-31</cbc:ExpiryDate>
+					<cbc:CV2ID>5555</cbc:CV2ID>
+					<cbc:CardChipCode>555555</cbc:CardChipCode>
+					<cbc:ChipApplicationID>55555</cbc:ChipApplicationID>
+					<cbc:HolderName>Ralph K. Williams</cbc:HolderName>
+				</cac:CardAccount>
+			</cac:PaymentMeans>
+		</cac:AllowanceCharge>
+		<cac:Payment>
+			<cbc:ID>1</cbc:ID>
+			<cbc:PaidAmount currencyID="USD">106.00</cbc:PaidAmount>
+			<cbc:ReceivedDate>2018-07-19</cbc:ReceivedDate>
+			<cbc:PaidDate>2018-07-19</cbc:PaidDate>
+			<cbc:PaidTime>10:47:42.0Z</cbc:PaidTime>
+			<cbc:InstructionID>5555</cbc:InstructionID>
+		</cac:Payment>
+		<ecf:FeeExceptionReasonCode>String</ecf:FeeExceptionReasonCode>
+		<ecf:FeeExceptionSupportingText>String</ecf:FeeExceptionSupportingText>
+		<payment:CorrectedPaymentIndicator>false</payment:CorrectedPaymentIndicator>
+		<payment:Payer structures:ref="Person3"/>			<!-- Attorney Ralph K. Williams	-->
+	</payment:PaymentMessage>
+</wrapper:ReviewFilingRequest>

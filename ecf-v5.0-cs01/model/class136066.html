@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CardAccount</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CardAccount</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_136066"></a>
+<p>An agreement between a person or organization and a financial institution by which the institution agrees to pay amounts incurred by the person or organization evidenced by the use of a card or card number issued by the institution to reflect a specific account at the institution.  The term includes both credit and debit accounts.<br /><br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:CardAccountType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_142850"></a>
+<table><tr><td><div class="element">Attribute <b>accountNumber</b></div></td></tr></table>
+<p>A number that idenitifies an account with a court or a financial institution.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + accountNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:PrimaryAccountNumberID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:PrimaryAccountNumberID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:CardAccountType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:PrimaryAccountNumberID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_142978"></a>
+<table><tr><td><div class="element">Attribute <b>accountOwnerName</b></div></td></tr></table>
+<p>The person or organization in whose name the account is established and maintained.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + accountOwnerName : <a href="class163458.html#ref4_163458"><b>name</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:HolderName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:HolderName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:CardAccountType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:HolderName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:HolderNameType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_143234"></a>
+<table><tr><td><div class="element">Attribute <b>cardExpirationDate</b></div></td></tr></table>
+<p>The month and year (expressed as mm/yy) after which the cardAccount will no longer be value unless renewed by the issuing financial institution.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + cardExpirationDate : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:EpiryDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:ExpiryDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:CardAccountType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:EpiryDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:ExpiryDateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_143362"></a>
+<table><tr><td><div class="element">Attribute <b>cardSecurityNumber</b></div></td></tr></table>
+<p>The secondary number (sometimes on the reverse) of the card for added security.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + cardSecurityNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:CV2ID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:CV2ID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:CardAccountType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:CV2ID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:CV2IDType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_143106"></a>
+<table><tr><td><div class="element">Attribute <b>cardTypeCode</b></div></td></tr></table>
+<p>The type of credit card account.  Examples:  American Express, Visa, Master Card, Discover.  Allowable types listed in court policy.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + cardTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:CardTypeCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:CardTypeCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:CardAccountType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans/cac:CardAccount/cbc:CardTypeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:CardTypeCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

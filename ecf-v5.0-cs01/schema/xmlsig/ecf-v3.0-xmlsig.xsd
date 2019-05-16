@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/schema/xmlsig/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<xsd:schema
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+xmlns:xmlsig="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0"
+targetNamespace="urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0"
+elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+<xsd:import namespace="http://www.w3.org/2000/09/xmldsig#" 
+schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
+
+<xsd:element name="Signatures" type="xmlsig:SignaturesType"/>
+<xsd:element name="Signature" type="xmlsig:SignatureType"/>
+<xsd:element name="SignerName" type="xsd:string"/>
+<xsd:element name="SignedDate" type="xsd:date"/>
+	
+<xsd:complexType name="SignaturesType">
+		<xsd:sequence>
+			<xsd:element ref="xmlsig:Signature" minOccurs="1" maxOccurs="unbounded"/>
+    	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="SignatureType">
+		<xsd:sequence>
+			<xsd:element ref="xmlsig:SignerName" minOccurs="1" maxOccurs="1"/>
+			<xsd:element ref="xmlsig:SignedDate" minOccurs="1" maxOccurs="1"/>
+			<xsd:element ref="ds:Signature" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+</xsd:complexType>
+
+</xsd:schema>

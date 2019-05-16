@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ReviewedDocument</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ReviewedDocument</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_132482"></a>
+<p>A document that has been reviewed through the clerk review process, and that potentially has been or will be reocrded in the court record system.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:ReviewedLeadDocument</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:ReviewedDocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_136322"></a>
+<table><tr><td><div class="element">Attribute <b>documentDocketID</b></div></td></tr></table>
+<p>The identifier from the court record system used to identify the document.  This attribute is populated by the MDE/process that is authorized to create docket identifiers; the attribute will not be present before that creation takes place.  For example, if the clerk review process creates docket identifiers, then this attribute will be present in the RecordDocketingMessage that goes to the court record MDE.  However, if the court record process creates docket identifiers, then this attribute will not be present in the RecordDocketingMessage, but will be present in subsequent callbacks. This attribute will be absent in callbacks when the ReviewedDocument was rejected, either by clerk review or the court record system.<br /></p><p>Declaration :</p><ul><li>Uml : + documentDocketID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:ReviewedLeadDocument/ecf:DocumentDocketID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CaseDocketID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:ReviewedDocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument/ecf:ReviewedDocumentAugmentation/nc:CaseDocketID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:string</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_135938"></a>
+<table><tr><td><div class="element">Attribute <b>documentHash</b></div></td></tr></table>
+<p>A hash of the document as it appears in the court record.  This attribute will be populated by either the clerk review process or the court record system.  If the latter, then it will be absent in the RecordDocketingMessage.  It will also be absent in callbacks for rejected documents.<br /></p><p>Declaration :</p><ul><li>Uml : + documentHash : <a href="class162818.html#ref4_162818"><b>binary</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:ReviewedLeadDocument/ecf:DocumentHashText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentRenditionHash</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentRenditionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument/ecf:DocumentAugmentation/ecf:DocumentRendition/ecf:DocumentHash</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_135810"></a>
+<table><tr><td><div class="element">Attribute <b>documentStatusCode</b></div></td></tr></table>
+<p>Code to describe the disposition of the document: accepted or rejected.  Allowable values defined in the specification (schema).<br /></p><p>Declaration :</p><ul><li>Uml : + documentStatusCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list DocumentReviewStatusCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:ReviewedLeadDocument/nc:DocumentStatus/nc:StatusText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentReviewStatusCode, ecf:DocumentDocketingStatusCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument/ecf:DocumentAugmentation/ecf:DocumentStatus/ecf:DocumentReviewStatusCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">accepted=document was received and accepted; received=document has been received but not yet accepted; rejected=document was rejected; issued=document has been issued;<br /></div></li>
+</ul>
+<a name="ref1_136066"></a>
+<table><tr><td><div class="element">Attribute <b>documentStatusReasonDescription</b></div></td></tr></table>
+<p>A textual description of the reason for the setting of the status in the documentStatusCode.<br /></p><p>Declaration :</p><ul><li>Uml : + documentStatusReasonDescription : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentStatus/nc:StatusDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:StatusDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentStatus/nc:StatusDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_136194"></a>
+<table><tr><td><div class="element">Attribute <b>originalDocumentID</b></div></td></tr></table>
+<p>The identifier for this document in the original ReviewFilingMessage structure.  This is provided to link each filed document to a docketed document identifier in the court record.<br /></p><p>Declaration :</p><ul><li>Uml : + originalDocumentID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_136450"></a>
+<table><tr><td><div class="element">Attribute <b>sealDocumentIndicator</b></div></td></tr></table>
+<p>Clerk instruction to court record system to seal this document.<br /></p><p>Declaration :</p><ul><li>Uml : + sealDocumentIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:ElectronicFilingCallbackMessage/ecf:ReviewedLeadDocument/ecf:SealDocumentIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:SealDocumentIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:ReviewedDocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument/ecf:ReviewedDocumentAugmentation/ecf:SealDocumentIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6363394"></a>
+<table><tr><td><div class="element">Attribute <b>documentStatus</b></div></td></tr></table>
+<p>A status of a document.<br /></p><p>Declaration :</p><ul><li>Uml : + documentStatus : string, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">docketcallback:RecordDocketingMessage/ecf::ReviewedLeadDocument/ecf:DocumentStatus</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentStatus</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument/ecf:DocumentAugmentation/ecf:DocumentStatus</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:DocumentStatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_15082754"></a>
+<table><tr><td><div class="element">Attribute <b>documentReviewer</b></div></td></tr></table>
+<p>The entity that reviews and accepts or rejects a filing.<br /></p><p>Declaration :</p><ul><li>Uml : + documentReviewer : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentReviewer</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentReviewDispositionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument/ecf:ReviewedDocumentAugmentation/ecf:DocumentReviewer</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_15082882"></a>
+<table><tr><td><div class="element">Attribute <b>documentReviewStatus</b></div></td></tr></table>
+<p>The status of a document in the filing review process.<br /></p><p>Declaration :</p><ul><li>Uml : + documentReviewStatus : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentReviewStatus</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentReviewDispositionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument/ecf:ReviewedDocumentAugmentation/ecf:DocumentReviewStatus</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_16960258"></a>
+<table><tr><td><div class="element">Attribute <b>reviewedDocumentInformation</b></div></td></tr></table>
+<p>Additional document information resulting from clerk review.<br /></p><p>Declaration :</p><ul><li>Uml : + reviewedDocumentInformation : , multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ReviewedDocumentAugmentationPoint, (ecf:ReviewedDocumentAugmentation)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:ReviewedDocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument/ecf:ReviewedDocumentAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:ReviewedDocumentAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_26663554"></a>
+<table><tr><td><div class="element">Attribute <b>documentReviewDisposition</b></div></td></tr></table>
+<p>The disposition of a document after review.<br /></p><p>Declaration :</p><ul><li>Uml : + documentReviewDisposition : string, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentReviewDisposition</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentReviewType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:DocumentReviewDisposition</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:DocumentReviewDispositionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_26835330"></a>
+<table><tr><td><div class="element">Attribute <b>reviewDisposition</b></div></td></tr></table>
+<p>The disposition of a document after review.<br /></p><p>Declaration :</p><ul><li>Uml : + reviewDisposition : string, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentReviewDispositionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:DocumentReviewDisposition</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_30141058"></a>
+<table><tr><td><div class="element">Attribute <b>documentAddedInReviewIndicator</b></div></td></tr></table>
+<p>Indicator that a document was added curing clerk review<br /></p><p>Declaration :</p><ul><li>Uml : + documentAddedInReviewIndicator : bool, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentAddedInReviewIndicator</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentReviewDispositionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:DocumentReviewDisposition/ecf:DocumentAddedInReviewIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_30403586"></a>
+<table><tr><td><div class="element">Attribute <b>documentDocketingStatusCode</b></div></td></tr></table>
+<p>The docketing status of a document<br /></p><p>Declaration :</p><ul><li>Uml : + documentDocketingStatusCode : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list DocumentDocketingStatusCode</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:CallbackMessage/ecf:LeadDocumentReview/ecf:ReviewedDocument/ecf:DocumentAugmentation/ecf:DocumentStatus/ecf:DocumentDocketingStatusCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">successful=document was docketed; unsuccessful=docketing of the document was not successful; not applicable=document is not appropriate for docketing</div></li>
+</ul>
+</div>
+</body>
+</html>

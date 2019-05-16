@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DomesticCasePersonInformation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DomesticCasePersonInformation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_139394"></a>
+<p>Information about persons in a domestic case.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCasePerson</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:Person</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:PersonCaseAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:PersonCaseAssociation/nc:Person</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_192898"></a>
+<table><tr><td><div class="element">Relation <b>extendedPersonInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Additional information about a person in a domestic case.  Note that only dateOfBirth, socialSecurityNumber, and sexCode are expected to be present for this association, with the exception of a DV Order respondent, when all ExtendedPersonInformation attributes and associations may be present.<br /></p><p>Declaration :</p><ul><li>Uml : + extendedPersonInformation : <a href="class147586.html#ref4_147586"><b>CriminalPerson</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCasePerson</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:Person</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:PersonCaseAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:PersonCaseAssociation/nc:Person</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_194306"></a>
+<table><tr><td><div class="element">Relation <b>insurance (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>nsurance coverage for an individual.<br /></p><p>Declaration :</p><ul><li>Uml : + insurance : <a href="class192002.html#ref4_192002"><b>Insurance</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCasePerson/ecf:PersonAugmentation/ecf:PersonInsurance</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Insurance</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/nc:Person/ecf:PersonAugmentation/nc:Insurance</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:InsuranceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_151682"></a>
+<table><tr><td><div class="element">Attribute <b>personID</b></div></td></tr></table>
+<p>The unique identifier assigned by the court at the time a person is first associated with a case. If the court has not yet assigned an identifier in this case, then the filing assembly MDE will leave this element blank.  This identifier is used to link other information in the case to a particular person.<br /></p><p>Declaration :</p><ul><li>Uml : + personID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

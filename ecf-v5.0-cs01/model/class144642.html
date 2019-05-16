@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ViolatedStatute</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ViolatedStatute</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_144642"></a>
+<p>The statutory or ordinance section a defendant or violator is alleged to have committed.  May include a probation violation.<br /><br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:Statute</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ViolatedStatuteAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_171138"></a>
+<table><tr><td><div class="element">Attribute <b>offenseCodeBookName</b></div></td></tr></table>
+<p>A set of charging codes.<br /></p><p>Declaration :</p><ul><li>Uml : + offenseCodeBookName : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j;StatuteCodeIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteCodeIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:StatuteCodeIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_170754"></a>
+<table><tr><td><div class="element">Attribute <b>offenseDescription</b></div></td></tr></table>
+<p>A description of the statute violated.<br /></p><p>Declaration :</p><ul><li>Uml : + offenseDescription : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:DescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_170882"></a>
+<table><tr><td><div class="element">Attribute <b>offenseLevel</b></div></td></tr></table>
+<p>felony, misdemeanor, infraction<br /></p><p>Declaration :</p><ul><li>Uml : + offenseLevel : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j:StatuteLevelText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteLevelText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteLevelText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_170626"></a>
+<table><tr><td><div class="element">Attribute <b>offenseSectionID</b></div></td></tr></table>
+<p>Alphanumerical reference indicating the statute violated within a charge code book.<br /></p><p>Declaration :</p><ul><li>Uml : + offenseSectionID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j;StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_171010"></a>
+<table><tr><td><div class="element">Attribute <b>statuteJurisdiction</b></div></td></tr></table>
+<p>The federal, state, county, municipal, or other public entity under whose authority the statute or ordinance was enacted.<br /></p><p>Declaration :</p><ul><li>Uml : + statuteJurisdiction : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteJurisdiction</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:JurisdictionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6173186"></a>
+<table><tr><td><div class="element">Attribute <b>statute</b></div></td></tr></table>
+<p>A statute violated.<br /></p><p>Declaration :</p><ul><li>Uml : + statute : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j:StatuteOffenseIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteOffenseIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteOffenseIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

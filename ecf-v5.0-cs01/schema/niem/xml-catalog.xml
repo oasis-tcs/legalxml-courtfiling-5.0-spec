@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-instance/" uri="utility/code-lists-spec/4.0/code-lists-instance.xsd"/>
+  <uri name="http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-schema-appinfo/" uri="utility/code-lists-spec/4.0/code-lists-schema-appinfo.xsd"/>
+  <uri name="http://release.niem.gov/niem/appinfo/4.0/" uri="utility/appinfo/4.0/appinfo.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/aamva_d20/4.0/" uri="codes/aamva_d20/4.0/aamva_d20.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/cbrncl/4.0/" uri="codes/cbrncl/4.0/cbrncl.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/fbi_ncic/4.0/" uri="codes/fbi_ncic/4.0/fbi_ncic.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/fbi_ucr/4.1/" uri="codes/fbi_ucr/4.1/fbi_ucr.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/iso_3166-1/4.0/" uri="codes/iso_3166-1/4.0/iso_3166.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/iso_4217/4.0/" uri="codes/iso_4217/4.0/iso_4217.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/iso_639-3/4.0/" uri="codes/iso_639-3/4.0/iso_639-3.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/mmucc/4.1/" uri="codes/mmucc/4.1/mmucc.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/unece_rec20/4.0/" uri="codes/unece_rec20/4.0/unece_rec20-misc.xsd"/>
+  <uri name="http://release.niem.gov/niem/codes/usps_states/4.0/" uri="codes/usps_states/4.0/usps_states.xsd"/>
+  <uri name="http://release.niem.gov/niem/conformanceTargets/3.0/" uri="utility/conformanceTargets/3.0/conformanceTargets.xsd"/>
+  <uri name="http://release.niem.gov/niem/domains/biometrics/4.1/" uri="domains/biometrics/4.1/biom.xsd"/>
+  <uri name="http://release.niem.gov/niem/domains/cbrn/4.1/" uri="domains/cbrn/4.1/cbrn.xsd"/>
+  <uri name="http://release.niem.gov/niem/domains/humanServices/4.1/" uri="domains/humanServices/4.1/hs.xsd"/>
+  <uri name="http://release.niem.gov/niem/domains/intelligence/4.1/" uri="domains/intelligence/4.1/intelligence.xsd"/>
+  <uri name="http://release.niem.gov/niem/domains/jxdm/6.1/" uri="domains/jxdm/6.1/jxdm.xsd"/>
+  <uri name="http://release.niem.gov/niem/niem-core/4.0/" uri="niem-core/4.0/niem-core.xsd"/>
+  <uri name="http://release.niem.gov/niem/proxy/xsd/4.0/" uri="proxy/xsd/4.0/xs.xsd"/>
+  <uri name="http://release.niem.gov/niem/structures/4.0/" uri="utility/structures/4.0/structures.xsd"/>
+</catalog>

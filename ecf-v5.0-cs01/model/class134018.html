@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class MatchingCase</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class MatchingCase</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_134018"></a>
+<p>A case meeting the criteria set forth in a query.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_140290"></a>
+<table><tr><td><div class="element">Attribute <b>caseStatus</b></div></td></tr></table>
+<p>The status of the case as of the date of inquiry.<br /></p><p>Declaration :</p><ul><li>Uml : + caseStatus : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/nc:ActivityStatus/nc:StatusText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:StatusAbstract, (nc:StatusText)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/nc:ActivityStatus/nc:StatusText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_140034"></a>
+<table><tr><td><div class="element">Attribute <b>caseTrackingID</b></div></td></tr></table>
+<p>Court case number.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTrackingID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/nc:CaseTrackingID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_139906"></a>
+<table><tr><td><div class="element">Attribute <b>caseTypeCode</b></div></td></tr></table>
+<p>The classification used by a court to denote the type of case for purposes of statistical categorization, court record keeping, or case assignment.  Allowable values set forth in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/nc:CaseCategoryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseCategoryCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/ecf:CaseCategoryCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_140418"></a>
+<table><tr><td><div class="element">Attribute <b>personName</b></div></td></tr></table>
+<p>Name of a person.<br /></p><p>Declaration :</p><ul><li>Uml : + personName : <a href="class163458.html#ref4_163458"><b>name</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:PersonCaseAssociation/nc:Person/nc:PersonName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonNameType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_140546"></a>
+<table><tr><td><div class="element">Attribute <b>personRelationshipToCaseTypeCode</b></div></td></tr></table>
+<p>A code for the relationship of a person to a case.  Allowable values set forth in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + personRelationshipToCaseTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list ecf:CaseParticipantRoleCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseParticipantRoleCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:PersonCaseAssociation/nc:Person/ecf:PersonAugmentation/ecf:CaseParticipantRoleCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Administrator=Court appointed manager of an estate;AdoptedChild=Child adopted by a parent;AdoptiveParent=Parent who adopts a child;Affiant=Author of an affidavit;Appellant=Party who appeals a to a higher court;Appellee=Party against whom an appeal is filed;Arbitrator=Person who decides disputes;Attorney=An advocate, counsel, or official agent employed in preparing, managing, and representing parties in cases in the courts.;Auditor=A person or organization appointed by the court to audit fiscal accountings;BailBondsman=Entity issuing bail bonds;Bailiff=A peace officer who keeps order in a court;Beneficiary=One who inherits under a will or other  estate, such as a trust;CASA=Person that provides assistance to a child in court matters;CaseWorker=Supervisor of a juvenile offender;Child=A person, age 12 or younger, who is the subject of an adoption, termination of parental rights or dependency matter;Claimant=The name given to a person who lays claim to property seized on a libel in rem. and who is authorized and admitted to defend the action;Clerk=An official who handles the business of a court;Constable=A peace officer;Contestee=A person who objects to a determination made by a personal representative.;Contestor=A personal representative, especially in the context of a trust.;CounterDefendant=A defendant in a counterclaim (the plaintiff of the original action);CounterPlaintiff=A plaintiff in a counterclaim (the defendant in the original action);CourtReporter=A person who records a court proceeding and produces a transcript;Creditor=An entity who is owed money or property, for example from an estate;CrossAppellant=The person or entity who files a cross appeal to counter an appeal already filed by the original appellant.;CrossAppellee=The person or entity who files a cross appeal to counter an appeal already filed by the original appellee.;CrossClaimant=Complainant in a cross-claim against a co-defendant or co-plaintiff;CrossDefendant=Defendant in a cross-claim against a co-defendant or co-plaintiff;Decedent=Person who died;Defendant=Party against whom an action is brought;Demandant=Initiator of a lawsuit;Executor=Manager of an estate designated by a will;Fiduciary=Person owing a duty of care or loyalty to another;Conflict defender=Alternate public defender;Defendant counsel=Attorney for a defendant;Guardian ad litem=Court appointed child's attorney;Interpleader attorney=Attorney for resolving property ownership ;Intervenor attorney=Attorney for an intervenor;Lead attorney=Advocate in charge;Petitioner attorney=Attorney for a petitioner;Plaintiff attorney=Attorney for a plaintiff;Private defense counsel=Attorney for a defendant;Pro hac vice=Out of state attorney;Prosecutor=Government attorney prosecuting crimes;Public defender=Defendant's appointed counsel;Respondent attorney=Attorney for a respondent;Third party plaintiff attorney=Attorney for a third party plaintiff;FosterParent=A person providing temporary care for a child;FriendOfCourt=Entity interested in influencing the outcome of a lawsuit but not an actual party to the suit;Garnishee=Person served with garnishment;GovernmentEntity=A governmental group, such as a municipality, county, parish, providence, commonwealth, country,<br /> tribal authority, or governmental agency.;GrandParent=The parent of one's parents;Guardian=Court appointed provider for the wellbeing of a person and/or as their fiduciary for a minor or incapacitated person;HearingOfficer=A person that can hear mental health or other matters, under the supervision of the court.;Heir=Person inheriting an estate;InterestedParty=Entity with an interest in a legal matter;Interpreter=A natural language or sign language translator;Intervenor=Entity joining with another party or parties in a case, such as a plaintiff, defendant, appellant, etc.;InRemProperty=Property which is the object of a legal proceeding.;Judge=Public officer who presides over a court and decides questions of law;JudicialStaff=A person working for a judge;LegalDefender=Defendant's appointed counsel, such as a public defender.;LocalCounsel=Secondary counsel;Magistrate=Public officer who perfoms some functions of a judge;MarriageApplicant=Person who requests a marriage permit;Master=A person that can make some determinations under the supervision of a Judge;Mediator=Neutral third party that leads a mediation betwene parties in dispute;MedicalExaminer=Public official who investigates a death;Minor=A juvenile;MinorVictim=Minor against whom a crime was committed;NextFriend=A person representing a minor in court - they wouldn't represent- they just provide services;NextOfKin=Spouse or nearest blood relative;Other=A miscellaneous role played by an entity that is not a judicial officer,  attorney, or litigant;Parent=Legal or natural father or mother of a person;Patient=Person receiving medical care;Payor=Entity that submits a payment.;Person=A Person;Petitioner=Requestor of a court action;Plaintiff=Initiator of a lawsuit;ProbationOfficer=Supervisor of an offender on probation;ProbateOfficer=One who makes determinations about administration of an estate;Probationer=Offender sentenced to probation;ProcessServer=Person who delivers court documents;Property=Anything owned by a person or entity;RealPartyInInterest=Entity other than the plaintiff that will benefit from a lawsuit;Rehabilitator=One who determines the distribution of assets in an insurance company dissolution under the supervision of a Judge;Respondent=Person against whom an action is brought;SelfRepresentedLitigant=Person or organization representing themselves, with (e.g. advisory counsel) or  without an attorney;SentencingJudge=Judge issuing a sentence;SpecialMaster=Court appointed investigator;SpecialRepresentative=Court appointed child's attorney;SubpoenaedEntity=Person compelled by a writ to testify;Surety=Entity issuing court bonds;ThirdPartyDefendant=A defendant who is not a principal party;ThirdPartyDefendantAttorney=Attorney for a third party defendant;ThirdPartyProvider=One that provides physical, social or mental health services;ThirdPartyPlaintiff=A plaintiff who is not a principal party;TrustMaker=One who creates a trust;Trustee=Manager of property held in trust;Victim=Person against whom a crime was committed;IncapacitatedPerson=Minor or incapacitated person lacking physical or mental abilities to manage their own affairs;Witness=Person with first-hand knowledge of an event;</div></li>
+</ul>
+<a name="ref1_140162"></a>
+<table><tr><td><div class="element">Attribute <b>shortCaseTitle</b></div></td></tr></table>
+<p>An official name of a Case.  No title exists when the message is initiating a new case.<br /></p><p>Declaration :</p><ul><li>Uml : + shortCaseTitle : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">caselistresponse:CaseListResponseMessage/nc:Case/nc:CaseTitleText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseShortTitleText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">caselistresponse:CaseListResponseMessage/nc:Case/ecf:CaseAugmentation/ecf:CaseShortTitleText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_4252418"></a>
+<table><tr><td><div class="element">Attribute <b>associationExtension</b></div></td></tr></table>
+<p>An extension point for an association<br /></p><p>Declaration :</p><ul><li>Uml : + associationExtension : <a href="class2113794.html#ref4_2113794"><b>extension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">hs:PersonCaseAssociationAugmentationPoint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">hs:PersonCaseAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/hs:PersonCaseAssociation/ecf:PersonCaseAssociationAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

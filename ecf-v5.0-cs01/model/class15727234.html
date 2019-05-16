@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class PaymentMeansType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class PaymentMeansType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15727234"></a>
+<p>The payment method employed to complete a transaction.  Examples: credit card, debit card, automatic funds transfer, debit to an escrow account held at the court, promise to pay at a future date.  Allowable values set forth in Court Policy.<br /></p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,PaymentMeansType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34320642"></a>
+<table><tr><td><div class="element">Attribute <b>cac:CardAccount</b></div></td></tr></table>
+<p>The number of the credit or debit account against which this payment will be charged.<br /></p><p>Declaration :</p><ul><li>Uml : + cac:CardAccount : <a href="class15716226.html#ref4_15716226"><b>CardAccountType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,CardAccount</div></li>
+</ul>
+<a name="ref1_34336770"></a>
+<table><tr><td><div class="element">Attribute <b>cac:CreditAccount</b></div></td></tr></table>
+<p>The account against which this payment will be charged.<br /></p><p>Declaration :</p><ul><li>Uml : + cac:CreditAccount : <a href="class15716482.html#ref4_15716482"><b>CreditAccountType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,CreditAccount</div></li>
+</ul>
+<a name="ref1_34355074"></a>
+<table><tr><td><div class="element">Attribute <b>cac:PayerFinancialAccount</b></div></td></tr></table>
+<p>The account in a financial institution used for this payment.<br /></p><p>Declaration :</p><ul><li>Uml : + cac:PayerFinancialAccount : <a href="class15717122.html#ref4_15717122"><b>FinancialAccountType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,PayerFinancialAccount</div></li>
+</ul>
+<a name="ref1_34376962"></a>
+<table><tr><td><div class="element">Attribute <b>cbc:PaymentID</b></div></td></tr></table>
+<p>The payment for which this means is specified.<br /></p><p>Declaration :</p><ul><li>Uml : + cbc:PaymentID : <a href="class15752322.html#ref4_15752322"><b>PaymentIDType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2,PaymentID</div></li>
+</ul>
+<a name="ref1_34377602"></a>
+<table><tr><td><div class="element">Attribute <b>cbc:PaymentMeansCode</b></div></td></tr></table>
+<p>A code representing the payment method employed.  Allowable values are set forth in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + cbc:PaymentMeansCode : <a href="class15752834.html#ref4_15752834"><b>PaymentMeansCodeType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2,PaymentMeansCode</div></li>
+</ul>
+</div>
+</body>
+</html>

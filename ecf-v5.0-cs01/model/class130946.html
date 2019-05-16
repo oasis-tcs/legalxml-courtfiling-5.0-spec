@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class AllowanceCharge</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class AllowanceCharge</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_130946"></a>
+<p>An authorization by the filer allowing the court to take money from the filer, for a particular purpose, and by a particular means.  Only for case-related activities.  This may only be included with the ReviewFiling message sent to the court - it must not be included with the ReviewFiling message served to other parties in the case.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:AllowanceChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_130690"></a>
+<table><tr><td><div class="element">Attribute <b>paymentAmount</b></div></td></tr></table>
+<p>An amount of money that the filer is paying to the court.<br /></p><p>Declaration :</p><ul><li>Uml : + paymentAmount : <a href="class177154.html#ref4_177154"><b>amount</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cbc:Amount</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:Amount</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:AllowanceChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cbc:Amount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:AmountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_171138"></a>
+<table><tr><td><div class="element">Relation <b>paymentMeans (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The payment method employed to complete the transaction.<br /></p><p>Declaration :</p><ul><li>Uml : + paymentMeans : <a href="class135810.html#ref4_135810"><b>PaymentMeans</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cac:PaymentMeans</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:AllowanceChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cac:PaymentMeans</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cac:PaymenMeansType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_130818"></a>
+<table><tr><td><div class="element">Attribute <b>paymentPurposeCode</b></div></td></tr></table>
+<p>Purpose or reason for the filer making the payment; this would be a code valid according to and described by Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + paymentPurposeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:AllowanceChargeReason</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:AllowanceChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:AllowanceCharge/cbc:AllowanceChargeReasonCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:AllowanceChargeReasonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Payment</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Payment</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_135682"></a>
+<p>The payment submitted with a filing.  The payment may consist of a fee for filing of the document(s) submitted, or for a fine or other payment due to the court.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:PaymentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_141826"></a>
+<table><tr><td><div class="element">Attribute <b>transactionID</b></div></td></tr></table>
+<p>An identifier that uniquely identifies the vendor, mechanism, etc., that handled this payment.<br /></p><p>Declaration :</p><ul><li>Uml : + transactionID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment/cbc:ID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:ID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:PaymentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment/cbc:ID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:IDType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_142082"></a>
+<table><tr><td><div class="element">Attribute <b>transactionTime</b></div></td></tr></table>
+<p>The date and time at which a transaction will or did occur.<br /></p><p>Declaration :</p><ul><li>Uml : + transactionTime : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment/cbc:PaidDate, cbc:PaidTime</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbc:PaidTime</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cac:PaymentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/cac:Payment/cbc:PaidDate, cbc:PaidTime</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbc:PaidTimeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_15748482"></a>
+<table><tr><td><div class="element">Attribute <b>correctedPayment</b></div></td></tr></table>
+<p>Indicates whether the payment has been corrected in the Filing Review MDE<br /></p><p>Declaration :</p><ul><li>Uml : + correctedPayment : bool, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">payment:CorrectedPaymentIndicator</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">payment:PaymentMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">payment:PaymentMessage/payment:CorrectedPaymentIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

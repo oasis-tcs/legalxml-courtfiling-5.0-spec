@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class GetFeesCalculationResponseMessageType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class GetFeesCalculationResponseMessageType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15743874"></a>
+<p>The response to a CalculatedFeesQueryMessage, which may either be 0 indicating no fee is due, a currency amount indicating the fee due upon filing, or unknown indicating that the court case management information system is unable to calculate the fee for the proposed filing.<br /></p>
+<p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/feesresponse,GetFeesCalculationResponseMessageType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34353794"></a>
+<table><tr><td><div class="element">Attribute <b>cac:AllowanceCharge</b></div></td></tr></table>
+<p>An authorization by the filer allowing the court to take money from the filer, for the purpose of this filing, by a particular means.<br /></p><p>Declaration :</p><ul><li>Uml : + cac:AllowanceCharge : <a href="class15720962.html#ref4_15720962"><b>AllowanceChargeType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,AllowanceCharge</div></li>
+</ul>
+<a name="ref1_34366594"></a>
+<table><tr><td><div class="element">Attribute <b>feesresponse:GetFeesCalculationResponseMessageAugmentationPoint</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + feesresponse:GetFeesCalculationResponseMessageAugmentationPoint : <a href="class15714434.html#ref4_15714434"><b>abstract</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/feesresponse,GetFeesCalculationResponseMessageAugmentationPoint</div></li>
+</ul>
+<a name="ref1_34395010"></a>
+<table><tr><td><div class="element">Attribute <b>feesresponse:FeesCalculationAmount</b></div></td></tr></table>
+<p>A total of all fees required to submit a document.<br /></p><p>Declaration :</p><ul><li>Uml : + feesresponse:FeesCalculationAmount : <a href="class15721602.html#ref4_15721602"><b>AmountType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/feesresponse,FeesCalculationAmount</div></li>
+</ul>
+</div>
+</body>
+</html>

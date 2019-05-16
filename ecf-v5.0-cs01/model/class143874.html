@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Charge</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Charge</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_143874"></a>
+<p>The crime or violation a defendant is alleged or found to have committed.  <br /><br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeAugmentationPoint, (criminal:ChargeAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">criminal:ChargeAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_166530"></a>
+<table><tr><td><div class="element">Attribute <b>amendedCharge</b></div></td></tr></table>
+<p>An indicator that the charge submitted amends an earlier submitted charge.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + amendedCharge : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeAmendedIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">criminal:ChargeAmendedIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">criminal:ChargeAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/criminal:ChargeAmendedIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_166914"></a>
+<table><tr><td><div class="element">Attribute <b>chargeChargingAgencyJurisdictionCodeSection</b></div></td></tr></table>
+<p>An identifier of a section or category within a code book that promulgates jurisdiction for the charging agency.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeChargingAgencyJurisdictionCodeSection : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargingAgencyJurisdictionCodeSection/j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/criminal:ChargeChargingAgencyJurisdictionStatute/j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_165378"></a>
+<table><tr><td><div class="element">Attribute <b>chargeDegree</b></div></td></tr></table>
+<p>A designation indicating the degree of the charge when appropriate. (e.g. 2nd degree murder)<br /></p><p>Declaration :</p><ul><li>Uml : + chargeDegree : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list ChargeDegreeText.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeDegreeText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeDegreeText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeDegreeText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_165762"></a>
+<table><tr><td><div class="element">Attribute <b>chargeDescription</b></div></td></tr></table>
+<p> Title or description of a specific charge.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeDescription : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_181250"></a>
+<table><tr><td><div class="element">Relation <b>chargeDisposition (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The findings of the trial court regarding a crime or violation a defendant was accused of.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeDisposition : <a href="class184706.html#ref4_184706"><b>ChargeDisposition</b></a>, multiplicity : 0..1</li></ul><p> Constraint :</p><ul>See CriminalCase</ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeDisposition</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeDisposition</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeDisposition</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:ChargeDispositionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_166146"></a>
+<table><tr><td><div class="element">Attribute <b>chargeEnhancingAllegationChargeDescriptionText</b></div></td></tr></table>
+<p> Title or description of the specific enhancement.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeEnhancingAllegationChargeDescriptionText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeEnhancingAllegationCharge/j:ChargeStatute/j:StatuteDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeEnhancingAllegationCharge/j:ChargeStatute/j:StatuteDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_165890"></a>
+<table><tr><td><div class="element">Attribute <b>chargeEnhancingAllegationCountNumber</b></div></td></tr></table>
+<p>A reference to the underlying Charge Count to which the Enhancing Allegation applies.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeEnhancingAllegationCountNumber : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeEnhancingAllegationCharge</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeSequenceID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeEnhancingAllegationCharge/j:ChargeSequenceID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_166018"></a>
+<table><tr><td><div class="element">Attribute <b>chargeEnhancingAllegationStatuteCodeSection</b></div></td></tr></table>
+<p>Legal code Section Number referenced in the charge allegation.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeEnhancingAllegationStatuteCodeSection : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeEnhancingAllegationCharge/j:ChargeStatute/j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeEnhancingAllegationCharge/j:ChargeStatute/j:StatuteCodeSectionID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_166274"></a>
+<table><tr><td><div class="element">Attribute <b>chargeEnhancingAllegationTypeCode</b></div></td></tr></table>
+<p>Code describing the type of charge enhancement allegation.  Example:  amount of drugs, amount of money, possession of weapon.  Allowable values defined in Court Policy.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + chargeEnhancingAllegationTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeEnhancingFactorText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeEnhancingFactorText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeEnhancingFactorType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeEnhancingFactor/j:ChargeEnhancingFactorText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_165634"></a>
+<table><tr><td><div class="element">Attribute <b>chargeLevel</b></div></td></tr></table>
+<p>Defines the level of severity of a charged offense at the Time of .  (Ex.  Class 3 misdemeanor or Class 5 felony, etc.)<br /></p><p>Declaration :</p><ul><li>Uml : + chargeLevel : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeSeverityLevel/j:SeverityLevelDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SeverityLevelDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SeverityLevelType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeSeverityLevel/j:SeverityLevelDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_164866"></a>
+<table><tr><td><div class="element">Attribute <b>chargeOffenseEndTime</b></div></td></tr></table>
+<p>The date and time at which the offense ended.  Not used if only one offense time is recorded.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeOffenseEndTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeOffense/nc:ActivityDateRange/nc:EndDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:Offense</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:OffenseChargeAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseChargeAssociation/j:Offense/nc:ActivityDateRange/nc:EndDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:OffenseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_164994"></a>
+<table><tr><td><div class="element">Attribute <b>chargeOffenseLocationCounty</b></div></td></tr></table>
+<p>The name of the county, parish, or vicinage where the offense was committed.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeOffenseLocationCounty : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeOffense/nc:IncidentLocation/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountyName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:LocationCountyAbstract, (nc:LocationCountyName)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseLocationAssociation/nc:Address/nc:LocationCountyName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ProperNameTextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_165122"></a>
+<table><tr><td><div class="element">Attribute <b>chargeOffenseLocationDescription</b></div></td></tr></table>
+<p> Brief description of the location where the offense occurred.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeOffenseLocationDescription : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeOffense/nc:IncidentLocation/nc:LocationDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:LocationDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:LocationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseLocationAssociation/j:OffenseLocationAssociation/nc:Location/nc:LocationDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_164738"></a>
+<table><tr><td><div class="element">Attribute <b>chargeOffenseStartTime</b></div></td></tr></table>
+<p>The date and time of day that a violation of law is alleged to have occurred.  Also, this attribute is to be used if only one offense time is recorded.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeOffenseStartTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/criminal:ChargeOffense/nc:ActivityDateRange/nc:StartDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseChargeAssociation/j:Offense/nc:ActivityDate/nc:StartDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_165250"></a>
+<table><tr><td><div class="element">Attribute <b>chargeQualifier</b></div></td></tr></table>
+<p>A designation showing how the record offense has been enhanced.  (Ex. Dangerousness, prior convictions, etc.)(Attempt, Conspiracy) <br /></p><p>Declaration :</p><ul><li>Uml : + chargeQualifier : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeQualifierText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeQualifierText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_165506"></a>
+<table><tr><td><div class="element">Attribute <b>chargeStatuteCodeSection</b></div></td></tr></table>
+<p>An identifier of a section or category within a code book.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeStatuteCodeSection : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeStatute/j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeStatute/j:StatuteCodeSectionIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_164610"></a>
+<table><tr><td><div class="element">Attribute <b>countNumber</b></div></td></tr></table>
+<p>A numeric designator identifying the order of a specific charge.  (Ex. Count 1 represented as 001, Count 2 as 002, Count 3 as 003, etc.).<br /></p><p>Declaration :</p><ul><li>Uml : + countNumber : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeSequenceID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeSequenceID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeSequenceID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_185730"></a>
+<table><tr><td><div class="element">Relation <b>defendant (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A person alleged to have committed the charge.<br /></p><p>Declaration :</p><ul><li>Uml : + defendant : <a href="class143490.html#ref4_143490"><b>Defendant</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:PersonChargeAssociation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">criminal:ChargeAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:PersonChargeAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:PersonChargeAssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_166402"></a>
+<table><tr><td><div class="element">Attribute <b>specialAllegation</b></div></td></tr></table>
+<p>Free form text describing the details of the charge allegation.<br /></p><p>Declaration :</p><ul><li>Uml : + specialAllegation : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list ChargeSpecialAllegationText.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeSpecialAllegationText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeSpecialAllegationText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeSpecialAllegationText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_6173954"></a>
+<table><tr><td><div class="element">Attribute <b>chargeEnhancingAllegation</b></div></td></tr></table>
+<p>An enhancement to a charge.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeEnhancingAllegation : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeEnhancingAllegationCharge</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:ChargeEnhancingAllegationCharge, j:ChargeEnhancingFactor</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeEnhancingAllegationCharge</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6174082"></a>
+<table><tr><td><div class="element">Attribute <b>chargeSeverity</b></div></td></tr></table>
+<p>The severity of a charge.<br /></p><p>Declaration :</p><ul><li>Uml : + chargeSeverity : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeSeverityLevel</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ChargeSeverityLevel</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeSeverityLevel</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:SeverityLevelType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6174210"></a>
+<table><tr><td><div class="element">Attribute <b>statute</b></div></td></tr></table>
+<p>The statute associated with a charge.<br /></p><p>Declaration :</p><ul><li>Uml : + statute : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseCharge/j:ChargeStatute</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:ChargeStatute</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/j:ChargeStatute</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:StatuteType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9247362"></a>
+<table><tr><td><div class="element">Attribute <b>offense</b></div></td></tr></table>
+<p>An offense associated with a charge.<br /></p><p>Declaration :</p><ul><li>Uml : + offense : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:OffenseChargeAssociation, j:OffenseLocationAssociation</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">criminal:ChargeAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:Charge/criminal:ChargeAugmentation/j:OffenseChargeAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:OffenseChargeAssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

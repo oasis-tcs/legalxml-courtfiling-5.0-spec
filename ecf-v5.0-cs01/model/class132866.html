@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ResponseMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ResponseMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_132866"></a>
+<p>The base message for a synchronous response to a request.<br /><br /></p>
+<p>Directly inherited by : <a href="class133890.html#ref4_133890"><b>GetCaseListResponseMessage</b></a> <a href="class145282.html#ref4_145282"><b>GetCaseResponseMessage</b></a> <a href="class199554.html#ref4_199554"><b>GetCourtScheduleResponseMessage</b></a> <a href="class134274.html#ref4_134274"><b>GetDocumentResponseMessage</b></a> <a href="class134530.html#ref4_134530"><b>GetFeesCalculationResponseMessage</b></a> <a href="class133506.html#ref4_133506"><b>GetFilingListResponseMessage</b></a> <a href="class133122.html#ref4_133122"><b>GetFilingStatusResponseMessage</b></a> <a href="class136834.html#ref4_136834"><b>GetPolicyResponseMessage</b></a> <a href="class142338.html#ref4_142338"><b>GetServiceInformationResponseMessage</b></a> <a href="class13742594.html#ref4_13742594"><b>RequestCourtDateResponseMessage</b></a> </p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:QueryResponseMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:ResponseMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:ResponseMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_136578"></a>
+<table><tr><td><div class="element">Attribute <b>queryError</b></div></td></tr></table>
+<p>A query error should be generated when:  * The query arguments are considered to be invalid by the receiver, and the query cannot be processed.  * The query represents a request for a specific data item, which cannot be retrieved. (another flavor of invalid argument) * The receiving system explicitly fails while processing the query.<br /></p><p>Declaration :</p><ul><li>Uml : + queryError : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:QueryResponseMessage/ecf:Error</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:MessageContentError</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:MessageStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">ecf:ResponseMessage/cbrn:MessageStatus/cbrn:MessageContentError</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbrn:MessageContentErrorType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

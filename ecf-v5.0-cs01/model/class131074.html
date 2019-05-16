@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Document</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Document</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_131074"></a>
+<p>The pleading, motion or order that is the main document in a Filing. A Document may have Connected Documents, which are "appendices" or "exhibits" that are intended for filing only in the context of the Lead Document.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">^ecf:Document </div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentAugmentationPoint, (^ecf:DocumentAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_139138"></a>
+<table><tr><td><div class="element">Relation <b>documentMetadata (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Document descriptors (title, type description, etc.) for the Document.<br /></p><p>Declaration :</p><ul><li>Uml : + documentMetadata : <a href="class131202.html#ref4_131202"><b>DocumentMetadata</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Reference nc:Metadata with nc:Document/&#64;structures:metadata</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Metadata</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/nc:Metadata</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:MetadataType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

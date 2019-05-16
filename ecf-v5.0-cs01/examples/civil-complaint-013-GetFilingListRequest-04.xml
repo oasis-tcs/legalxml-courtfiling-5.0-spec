@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+
+	civil-complaint-013-GetFilingListRequest-04.xml
+
+	A request to get a list of filings (e.g. documents) filed in case CV-2017-010110 in 'Civil Court' (10).
+
+	This xml example is from a series of examples that illustrate a full life cycle sequence use case for a minimalist illustration of  
+	Barabara Holmes' Test Case # 300 (Case Initiation Civil Complaint).
+
+	This GetFilingRequest is a request for all filings for case CV-2017-010110 in Court 10 (Civil Court) with filed dates 
+	between 07-05-2007 and 07-08-2007 inclusive.
+
+	At this moment, in this use case example, there has only been one filing for this case; i.e. the case initiation filing. This
+	filing was a civil complaint with an attached exhibit document. 
+
+	A 'Filing' as defined by ECF (1.1 Terminology) is "an electronic document (with any associated data, attachments and the like)
+	that has been assembled for the purpose of being filed into a specified court case." The term 'attachments' is understood to
+	mean 'connected document' and not "Attachment" as defined in section 4.4.
+
+	05-21-2018	Updated for WD31.
+	08-03-2018	Updated for WD35 as version 03.
+	09-13-2018	Updated for WD36 as version 04.
+
+-->
+<wrapper:GetFilingListRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<filinglistrequest:GetFilingListRequestMessage xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:filinglistrequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filinglistrequest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filinglistrequest ../schema/filinglistrequest.xsd">
+		<nc:DocumentIdentification>
+		<!-- This is the Request Message ID (message metadata). -->
+			<nc:IdentificationID>k90ldf-1234-56Aqx-BV56R0</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+			 
+		<!-- nc:DocumentSubmitter (below) is message metadata. -->
+		<nc:DocumentSubmitter structures:id="Submitter1">
+			<!-- This is the person making the get filing list request (message metadata). -->
+			<nc:EntityPerson>
+				<nc:PersonName>
+					<nc:PersonGivenName>Ralph</nc:PersonGivenName>
+					<nc:PersonMiddleName>K.</nc:PersonMiddleName>
+					<nc:PersonSurName>Williams</nc:PersonSurName>
+				</nc:PersonName>
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>107</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>		
+		</nc:DocumentSubmitter>
+		<!-- SendingMDELocationID and ServiceInteractionProfileCode are message metadata. -->
+		<ecf:SendingMDELocationID>
+			<!-- URL of the requesting MDE -->
+			<nc:IdentificationID>http://example.com/efsp1</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<!-- CaseCourt is a request query parameter but is not contained within FilingListQueryCriteria. -->
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>10</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+			<nc:OrganizationUnitName>Civil Court</nc:OrganizationUnitName>
+		</j:CaseCourt>
+		<!-- DocumentPostDate is message metadata. -->
+		<nc:DocumentPostDate>
+			<!-- The date and time of the request -->
+			<nc:DateTime>2008-07-08T14:22:51.0Z</nc:DateTime>	
+		</nc:DocumentPostDate>
+
+		<!-- All elements below are request query parameters. -->
+		<filinglistrequest:FilingListQueryCriteria>
+			<!-- One or the other, but not both CaseTrackingID or CaseNumberText would typically be used. -->
+			<ecf:CaseTrackingID>
+				<nc:IdentificationID>7876934321007</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>CourtRecord</nc:IdentificationCategoryDescriptionText> 
+				<nc:IdentificationSourceText>ACME Case Management System</nc:IdentificationSourceText>
+			</ecf:CaseTrackingID>		
+			<j:CaseNumberText>CV-2017-010110</j:CaseNumberText>
+			<nc:DateRange>
+				<!-- DateRange is defined by NIEM as "a time period measured by a starting and ending point." -->
+				<!-- Section 6.1.12 GetFilingStatus implies that this DateRange criteria is applied to Filed Date (i.e. "the filed
+					 date within a certain time range"). -->
+				<nc:StartDate>
+					<nc:Date>2008-07-05</nc:Date>
+				</nc:StartDate>
+				<nc:EndDate>
+					<nc:Date>2008-07-08</nc:Date>
+				</nc:EndDate>
+			</nc:DateRange>
+
+			<!-- A specific filing is being requested, so the requester can use the Filing Identifier to specify the filing by filingID, as in: -->
+			<nc:DocumentIdentification>
+				<!-- Filing Identifier assigned by the FRMDE; this must be returned to the FAMDE  --> 
+				<nc:IdentificationID>123456ABC</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>filingID</nc:IdentificationCategoryDescriptionText>
+				<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>	
+	
+			<!-- An nc:DocumentSubmitter element provided below as a query parameter.
+			 This element Could be used as retrieval criteria to specify that only filings submitted by the indicated
+			 submitter (not filer) should be returned in the response. -->
+			 <!-- Not querying by Submitter		 
+			<nc:DocumentSubmitter/>
+			-->
+			
+		</filinglistrequest:FilingListQueryCriteria>
+	
+	</filinglistrequest:GetFilingListRequestMessage>
+</wrapper:GetFilingListRequest>

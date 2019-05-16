@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DomesticLegalRelationshipInformation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DomesticLegalRelationshipInformation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_139522"></a>
+<p>Information about a marriage, civil domestic union, or other domestic relationship defined by law.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:MarriageAssociation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonUnionAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/nc:PersonUnionAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonAssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_151938"></a>
+<table><tr><td><div class="element">Attribute <b>dateOfDivorce</b></div></td></tr></table>
+<p>Date of legally effective ending of a marriage or similar legal relationship.<br /></p><p>Declaration :</p><ul><li>Uml : + dateOfDivorce : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:MarriageAssociation/nc:PersonUnionStatus/nc:StatusDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonDisunion</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonUnionAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/nc:PersonUnionAssociation/nc:PersonDisunion/nc:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonDisunionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_151810"></a>
+<table><tr><td><div class="element">Attribute <b>dateOfDomesticLegalRelationship</b></div></td></tr></table>
+<p>Date of marriage or similar legal relationship.<br /></p><p>Declaration :</p><ul><li>Uml : + dateOfDomesticLegalRelationship : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:MarriageAssociation/nc:PersonUnionStatus/nc:StatusDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/nc:PersonUnionAssociation/nc:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_152066"></a>
+<table><tr><td><div class="element">Attribute <b>dateOfSeparation</b></div></td></tr></table>
+<p>Date that parties to a domestic legal relationship separated from each other voluntarily with intent to remain apart.<br /></p><p>Declaration :</p><ul><li>Uml : + dateOfSeparation : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:MarriageAssociation/nc:PersonUnionStatus/nc:StatusDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonUnionSeparation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonUnionAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/nc:PersonUnionAssociation/nc:PersonUnionSeparation/nc:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonUnionSeparationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_152322"></a>
+<table><tr><td><div class="element">Attribute <b>divorcePending</b></div></td></tr></table>
+<p>Indicates if there is an ongoing divorce case.<br /></p><p>Declaration :</p><ul><li>Uml : + divorcePending : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:MarriageAssociation/scr:MarriageAssociationAugmentation/scr:DivorceDecreeIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonDisunionDecreeIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonDisunionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/nc:PersonUnionAssociation/nc:PersonDisunion/nc:PersonDisunionDecreeIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_152194"></a>
+<table><tr><td><div class="element">Attribute <b>marriageLocation</b></div></td></tr></table>
+<p>Text description of the location of the marriage  (civil union, domestic partnership, common law relationship, etc.).<br /></p><p>Declaration :</p><ul><li>Uml : + marriageLocation : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:MarriageAssociation/scr:MarriageAssociationAugmentation/scr:MarriageCityName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:PersonUnionLocation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonUnionAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/nc:PersonUnionAssociation/nc:PersonUnionLocation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:LocationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_192770"></a>
+<table><tr><td><div class="element">Relation <b>spouse (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information about persons in a domestic case.<br /></p><p>Declaration :</p><ul><li>Uml : + spouse : <a href="class139394.html#ref4_139394"><b>DomesticCasePersonInformation</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:MarriageAssociation/nc:PersonReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:Person</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">2,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/nc:PersonUnionAssociation/nc:Person</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">2,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9584514"></a>
+<table><tr><td><div class="element">Attribute <b>unionType</b></div></td></tr></table>
+<p>A type of legal union between persons (e.g. marriage)<br /></p><p>Declaration :</p><ul><li>Uml : + unionType : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:MarriageAssociation/nc:PersonUnionCategory</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonUnionCategoryAbstract, (nc:PersonUnionCategoryCode)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonUnionAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/nc:PersonUnionAssociation/nc:PersonUnionCategory</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonUnionCategoryCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

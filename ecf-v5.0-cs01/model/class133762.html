@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class GetCaseListRequestMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class GetCaseListRequestMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_133762"></a>
+<p>This is a query for a list of cases that match a set of criteria including case participants, case classification, case status, and date of the case was initiated.<br /></p>
+<p>Diagram : <a href="index.html#ref10_135298"><b>GetCaseListRequestMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">caselistrequest:CaseListQueryMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">caselistrequest:GetCaseListRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">caselistrequest:GetCaseListRequestMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:RequestMessageType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_153090"></a>
+<table><tr><td><div class="element">Relation <b>caseParticipant (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information describing a participant when a query seeks information about the cases in which the person or organization is a participant.<br /></p><p>Declaration :</p><ul><li>Uml : + caseParticipant : <a href="class149506.html#ref4_149506"><b>CaseParticipant</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">caselistrequest:CaseListQueryMessage/caselistrequest:CaseListQueryCaseParticipant</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">caselistrequest:CaseParticipant</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">caselistrequest:CaseListQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">caselistrequest:GetCaseListRequestMessage/caselistrequest:CaseListQueryCriteria/caselistrequest:CaseParticipant</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_139650"></a>
+<table><tr><td><div class="element">Attribute <b>caseStatus</b></div></td></tr></table>
+<p>The status of the case as of the date of inquiry.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + caseStatus : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">caselistrequest:CaseListQueryMessage/caselistrequest:CaseListQueryCase/nc:ActivityStatus/nc:StatusText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityStatus</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">caselistrequest:CaseListQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">caselistrequest:GetCaseListRequestMessage/caselistrequest:CaseListQueryCriteria/nc:ActivityStatus/nc:StatusText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_139778"></a>
+<table><tr><td><div class="element">Attribute <b>caseTypeCode</b></div></td></tr></table>
+<p>The classification used by a court to denote the type of case for purposes of statistical categorization, court record keeping, or case assignment.  Allowable values set forth in Court Policy.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + caseTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">caselistrequest:CaseListQueryMessage/caselistrequest:CaseListQueryCase/nc:CaseCategoryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseCategoryCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">caselistrequest:CaseListQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">caselistrequest:GetCaseListRequestMessage/caselistrequest:CaseListQueryCriteria/ecf:CaseCategoryText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_152962"></a>
+<table><tr><td><div class="element">Relation <b>timeRange (&lt;directional aggregation&gt;)</b></div></td></tr></table><p> The beginning and ending filing dates/times of cases about which information is sought in this query.<br /></p><p>Declaration :</p><ul><li>Uml : + timeRange : <a href="class133378.html#ref4_133378"><b>TimeRange</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">caselistrequest:CaseListQueryMessage/caselistrequest:CaseListQueryTimeRange</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DateRange</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">caselistrequest:CaseListQueryCriteriaType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">caselistrequest:GetCaseListRequestMessage/caselistrequest:CaseListQueryCriteria/nc:DateRange</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateRangeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_1545090"></a>
+<table><tr><td><div class="element">Attribute <b>messageExtension</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + messageExtension : <a href="class2113794.html#ref4_2113794"><b>extension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">caselistrequest:GetCaseListRequestMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">caselistrequest:GetCaseListRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">caselistrequest:GetCaseListRequestMessage/caselistrequest:GetCaseListRequestMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_12125954"></a>
+<table><tr><td><div class="element">Relation <b>caseListQueryCriteria (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Criteria limiting the list of cases to be returned.<br /></p><p>Declaration :</p><ul><li>Uml : + caseListQueryCriteria : <a href="class12999938.html#ref4_12999938"><b>CaseListQueryCriteria</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">caselistrequest:CaseListQueryCriteria</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">caselistrequest:GetCaseListRequestMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">caselistrequest:GetCaseListRequestMessage/caselistrequest:CaseListQueryCriteria</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">caselistrequest:CaseListQueryCriteriaType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

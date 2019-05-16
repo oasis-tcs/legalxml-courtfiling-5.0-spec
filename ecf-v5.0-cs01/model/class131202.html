@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DocumentMetadata</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DocumentMetadata</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_131202"></a>
+<p>Document descriptors (title, type description, etc.) for the Document. This is meant to include all the information about the document that is needed to index it into the Case Management System and enter it into the Document Management System.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_232450"></a>
+<table><tr><td><div class="element">Attribute <b>additionalMetadata</b></div></td></tr></table>
+<p>Additional metadata for a filed ocument.<br /></p><p>Declaration :</p><ul><li>Uml : + additionalMetadata : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_232322"></a>
+<table><tr><td><div class="element">Attribute <b>affectedPartyID</b></div></td></tr></table>
+<p>Identifier recognized by the court as being unique within this case,and used to identify a party other than the filer who is affected by the document.<br /></p><p>Declaration :</p><ul><li>Uml : + affectedPartyID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:AffectedParticipant</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:AffectedPartyID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_131074"></a>
+<table><tr><td><div class="element">Attribute <b>connectedDocumentSequenceNumber</b></div></td></tr></table>
+<p>Indicates the order (assigned by the filer) of the supporting document within the context of its parent lead document.<br /></p><p>Declaration :</p><ul><li>Uml : + connectedDocumentSequenceNumber : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentSequenceID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentSequenceID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentSequenceID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_131586"></a>
+<table><tr><td><div class="element">Attribute <b>documentDescription</b></div></td></tr></table>
+<p>Name of document given by filer.  Intended to supplement what is contained in the document type identifier property.<br /></p><p>Declaration :</p><ul><li>Uml : + documentDescription : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_130946"></a>
+<table><tr><td><div class="element">Attribute <b>documentID</b></div></td></tr></table>
+<p>A unique identifier for the document within this message.  This is the identifier for a "whole" document (if that document is split into parts).<br /><br /></p><p>Declaration :</p><ul><li>Uml : + documentID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ncDocumentIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_131970"></a>
+<table><tr><td><div class="element">Attribute <b>documentProducerDescriptionText</b></div></td></tr></table>
+<p>Application and version used to create the document. Optional attribute.<br /></p><p>Declaration :</p><ul><li>Uml : + documentProducerDescriptionText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentApplicationName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentSoftwareName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentSoftwareName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:SoftwareNameType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_132354"></a>
+<table><tr><td><div class="element">Attribute <b>documentRedactionRequiredIndicator</b></div></td></tr></table>
+<p>Indicator by the filer that the document must be redacted by the court.<br /></p><p>Declaration :</p><ul><li>Uml : + documentRedactionRequiredIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata/ecf:RedactionRequiredIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:RedactionRequiredIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:RedactionRequiredIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_139394"></a>
+<table><tr><td><div class="element">Relation <b>documentRenditionMetadata (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Descriptors for a rendition of a Document. This is meant to include all the information about the document that is needed to  enter it into the Document Management System.<br /></p><p>Declaration :</p><ul><li>Uml : + documentRenditionMetadata : <a href="class162690.html#ref4_162690"><b>DocumentRenditionMetadata</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^ecf:DocumentRendition</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:DocumentRenditionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_132226"></a>
+<table><tr><td><div class="element">Attribute <b>documentSensitivityCode</b></div></td></tr></table>
+<p>A code indicating the level of security associated with a document.  By default, a document will be considered to be "public" unless otherwise defined by court policy.  Other sensitivity levels may include "private", in which the document is only viewable by parties in the case, and "protected" in which the document is viewable by a broader set of parties and actors associated with the case.<br /></p><p>Declaration :</p><ul><li>Uml : + documentSensitivityCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Metadata/nc:SensitivityText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:SensitivityText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:MetadataType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/nc:Metadata/nc:SensitivityText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_131202"></a>
+<table><tr><td><div class="element">Attribute <b>docketTypeCode</b></div></td></tr></table>
+<p>The docket code used by the court for the type of document submitted. Allowable values set forth in Court Policy.<br /></p><p>Declaration :</p><ul><li>Uml : + docketTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list RegisterActionDescriptionCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata/j:RegisterActionDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:RegisterActionDescriptionCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:RegisterActionDescriptionCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_131714"></a>
+<table><tr><td><div class="element">Attribute <b>filingAttorneyID</b></div></td></tr></table>
+<p>Identifier recognized by the court as being unique within this case,and used to identify the entity who is filing this document.<br /></p><p>Declaration :</p><ul><li>Uml : + filingAttorneyID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata/ecf:FilingAttorneyID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ParticipantID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentFiler/ecf:EntityPerson/ecf:PersonAugmentation/ecf:ParticipantID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_131842"></a>
+<table><tr><td><div class="element">Attribute <b>filingPartyID</b></div></td></tr></table>
+<p>Identifier recognized by the court as being unique within this case,and used to identify the entity on whose behalf this document is being filed.<br /></p><p>Declaration :</p><ul><li>Uml : + filingPartyID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata/ecf:FilingPartyID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ParticipantID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:ItemAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentSubmitter/nc:EntityPerson/ecf:PersonAugmentation/ecf:ParticipantID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_131330"></a>
+<table><tr><td><div class="element">Attribute <b>parentDocumentID</b></div></td></tr></table>
+<p>Only present for supporting documents; indicates the identifier of the corresponding lead document.<br /></p><p>Declaration :</p><ul><li>Uml : + parentDocumentID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata/ecf:ParentDocumentReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:DocumentAssociation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/nc:DocumentAssociation/nc:PrimaryDocument</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DocumentAssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_131458"></a>
+<table><tr><td><div class="element">Attribute <b>priorRelatedDocumentID</b></div></td></tr></table>
+<p>An identifier of a related document that was previously filed in this case.  For instance, the document to which this document is a response.<br /></p><p>Declaration :</p><ul><li>Uml : + priorRelatedDocumentID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata/ecf:PriorRelatedDocumentID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:PrimaryDocument</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/nc:DocumentAssociation/nc:PrimaryDocument, nc:SecondaryDocument</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9325186"></a>
+<table><tr><td><div class="element">Attribute <b>relatedDocument</b></div></td></tr></table>
+<p>A related document that was previously filed in this case.  For instance, the document to which this document is a response.<br /></p><p>Declaration :</p><ul><li>Uml : + relatedDocument : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata/ecf:PriorRelatedDocumentID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentAssociationAugmentationPoint, (ecf:DocumentAssociationAugmentation)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/nc:DocumentAssociation/ecf:DocumentAssociationAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:DocumentAssociationAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9325314"></a>
+<table><tr><td><div class="element">Attribute <b>relatedDocumentType</b></div></td></tr></table>
+<p>A type of related document that was previously filed in this case.  For instance, the document to which this document is a response.<br /></p><p>Declaration :</p><ul><li>Uml : + relatedDocumentType : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list DocumentRelatedCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata/ecf:PriorRelatedDocumentID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentRelatedCode</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAssociationAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/nc:DocumentAssociation/ecf:DocumentAssociationAugmentation/ecf:DocumentRelatedCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">parent=association with a lead document;prior-related=association with a previously filed document</div></li>
+</ul>
+<a name="ref1_132098"></a>
+<table><tr><td><div class="element">Attribute <b>specialHandlingInstructions</b></div></td></tr></table>
+<p>Any additional instructions for printing of a document (such as printing on front and back of the same page or printing on a particular color paper).<br /><br /></p><p>Declaration :</p><ul><li>Uml : + specialHandlingInstructions : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Document/ecf:DocumentMetadata/ecf:SpecialHandlingIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:SpecialHandlingInstructionsText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:SpecialHandlingInstructionsText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9574146"></a>
+<table><tr><td><div class="element">Attribute <b>documentFileControlNumber</b></div></td></tr></table>
+<p>A file control number associated with a document.<br /></p><p>Declaration :</p><ul><li>Uml : + documentFileControlNumber : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentFileControlID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentFileControlID</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentFileControlID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:string</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9574274"></a>
+<table><tr><td><div class="element">Attribute <b>documentCategory</b></div></td></tr></table>
+<p>A categorization of a document.<br /></p><p>Declaration :</p><ul><li>Uml : + documentCategory : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentCategoryText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentCategoryAbstract, (nc:DocumentCategoryText)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentCategoryText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9574402"></a>
+<table><tr><td><div class="element">Attribute <b>documentTitle</b></div></td></tr></table>
+<p>The title of a document.<br /></p><p>Declaration :</p><ul><li>Uml : + documentTitle : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Document/nc:DocumentTitleText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:DocumentTitleText</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:DocumentType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/nc:DocumentTitleText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_30141186"></a>
+<table><tr><td><div class="element">Attribute <b>documentTypeCode</b></div></td></tr></table>
+<p>A type of document<br /></p><p>Declaration :</p><ul><li>Uml : + documentTypeCode : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode codelist ecf:DocumentTypeCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:DocumentTypeCode</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:DocumentAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Document/ecf:DocumentAugmentation/ecf:DocumentTypeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+</div>
+</body>
+</html>

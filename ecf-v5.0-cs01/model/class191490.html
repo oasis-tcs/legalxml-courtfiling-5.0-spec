@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class DomesticCaseOrderInformation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class DomesticCaseOrderInformation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_191490"></a>
+<p>Information concerning a court order in a domestic case.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">domestic:DomesticCaseOrderType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:CourtOrderType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_223490"></a>
+<table><tr><td><div class="element">Attribute <b>courtFindings</b></div></td></tr></table>
+<p>A description of the findings of the court.<br /></p><p>Declaration :</p><ul><li>Uml : + courtFindings : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:CourtFindingsText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">domestic:CourtFindingsText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">domestic:DomesticCaseOrderType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:CourtFindingsText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_223234"></a>
+<table><tr><td><div class="element">Attribute <b>executedOrder</b></div></td></tr></table>
+<p>Indicates that an order is executed (signed) by the court.<br /></p><p>Declaration :</p><ul><li>Uml : + executedOrder : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/j:CourtOrderStatus/nc:StatusText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:StatusAbstract, (nc:StatusText)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/j:CourtOrderStatus/nc:StatusText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_193282"></a>
+<table><tr><td><div class="element">Relation <b>obligation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A responsibility of a party in a case ordered by a court.<br /></p><p>Declaration :</p><ul><li>Uml : + obligation : <a href="class191874.html#ref4_191874"><b>Obligation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseObligation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">domestic:FinancialObligation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">domestic:DomesticCaseOrderType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:FinancialObligation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">domestic:FinancialObligationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_223362"></a>
+<table><tr><td><div class="element">Attribute <b>orderCategory</b></div></td></tr></table>
+<p>Category of order, including Establish, Modify, Enforce, Modify and Enforce, and Vacate.<br /></p><p>Declaration :</p><ul><li>Uml : + orderCategory : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">domestic:DomesticCase/domestic:DomesticCaseOrder/domestic:DomesticCaseOrderTypeText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">domestic:DomesticCaseOrderTypeText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">domestic:DomesticCaseOrderType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/domestic:DomesticCaseOrderTypeText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_15373826"></a>
+<table><tr><td><div class="element">Attribute <b>orderExtension</b></div></td></tr></table>
+<p>An extension to a court order.<br /></p><p>Declaration :</p><ul><li>Uml : + orderExtension : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CourtOrderAugmentationPoint</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CourtOrderType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">domestic:CaseAugmentation/domestic:DomesticCaseOrder/j:CourtOrderAugmentationPoint</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

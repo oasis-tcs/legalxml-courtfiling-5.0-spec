@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class SentenceComponent</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class SentenceComponent</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_184578"></a>
+<p>A required saction ordered by the court as part of a sentence.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:Sentence</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">criminal:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_216066"></a>
+<table><tr><td><div class="element">Attribute <b>sentenceFineAmount</b></div></td></tr></table>
+<p>The currency amount of a fine assigned to the defendant by the court.<br /></p><p>Declaration :</p><ul><li>Uml : + sentenceFineAmount : <a href="class177154.html#ref4_177154"><b>amount</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence/criminal:SentenceFineAmount</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SupervisionFineAmount</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence/j:SupervisionFineAmount</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AmountType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_216194"></a>
+<table><tr><td><div class="element">Attribute <b>sentenceOtherSentenceText</b></div></td></tr></table>
+<p>A description of a sentence other than a prison, probation or a fine sentence.<br /></p><p>Declaration :</p><ul><li>Uml : + sentenceOtherSentenceText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence/j:SentenceDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SentenceDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence/j:SentenceDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_215938"></a>
+<table><tr><td><div class="element">Attribute <b>sentenceTerm</b></div></td></tr></table>
+<p>The term of a sentence assigned to the defendant by a court.  e.g. Years/Months, Life, Death<br /></p><p>Declaration :</p><ul><li>Uml : + sentenceTerm : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence/j:SentenceTerm/j:TermDuration</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SentenceTerm</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence/j:SentenceTerm/j:TermDuration</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_215810"></a>
+<table><tr><td><div class="element">Attribute <b>sentenceType</b></div></td></tr></table>
+<p>The type of sentence assigned to a defendant by a court.  e.g. Prison, Probation, Fine, Other<br /></p><p>Declaration :</p><ul><li>Uml : + sentenceType : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence/nc:ActivityDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SentenceDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence/nc:SentenceDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

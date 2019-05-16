@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Insurance</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Insurance</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_192002"></a>
+<p>Insurance coverage for an individual.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/ecf:Person/ecf:Insurance</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:InsuranceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:Insurance</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:InsuranceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_225410"></a>
+<table><tr><td><div class="element">Attribute <b>insuranceStatus</b></div></td></tr></table>
+<p>The status of the insurance of a person.<br /></p><p>Declaration :</p><ul><li>Uml : + insuranceStatus : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/ecf:Person/ecf:Insurance/nc:InsuranceActiveIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:InsuranceActiveIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:InsuranceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:Insurance/nc:InsuranceActiveIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_225282"></a>
+<table><tr><td><div class="element">Attribute <b>insuranceType</b></div></td></tr></table>
+<p>The type of insurance the respondent possesses.<br /></p><p>Declaration :</p><ul><li>Uml : + insuranceType : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/ecf:Person/ecf:Insurance/nc:InsuranceCoverageCategoryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:InsuranceCoverageCategoryAbstract, (nc:InsuranceCoverageCategoryText)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:InsuranceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:Insurance/nc:InsuranceCoverageCategoryText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_194178"></a>
+<table><tr><td><div class="element">Relation <b>proofOfInsurance (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information concerning whether an individual possesses proof of insurance coverage.<br /></p><p>Declaration :</p><ul><li>Uml : + proofOfInsurance : <a href="class144514.html#ref4_144514"><b>ProofOfInsurance</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/ecf:Person/ecf:Insurance/ecf:InsuranceProofIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:InsuranceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:Insurance</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_239490"></a>
+<table><tr><td><div class="element">Attribute <b>insuranceCarrier</b></div></td></tr></table>
+<p>A name of a company which underwrites an insurance policy.<br /></p><p>Declaration :</p><ul><li>Uml : + insuranceCarrier : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/ecf:Person/ecf:Insurance/nc:InsuranceCarrierName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:InsuranceCarrierName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:InsuranceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:Insurancenc:InsuranceCarrierName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

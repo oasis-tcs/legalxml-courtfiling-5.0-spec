@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Person</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Person</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_131842"></a>
+<p>The person playing a role in a case.<br /></p>
+<p>Directly inherited by : <a href="class163074.html#ref4_163074"><b>Attorney</b></a> <a href="class149506.html#ref4_149506"><b>CaseParticipant</b></a> <a href="class139138.html#ref4_139138"><b>CivilPerson</b></a> <a href="class147586.html#ref4_147586"><b>CriminalPerson</b></a> <a href="class149378.html#ref4_149378"><b>JudicialOfficer</b></a> </p>
+<p>Diagram : <a href="index.html#ref10_244866"><b>Person</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Person</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonAugmentationPoint, (ecf:PersonAugmentation), (j:PersonAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_146050"></a>
+<table><tr><td><div class="element">Relation <b>contactInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information useable to contact this person, such as address, telephone number(s), and email address.<br /></p><p>Declaration :</p><ul><li>Uml : + contactInformation : <a href="class134914.html#ref4_134914"><b>ContactInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Person/ecf:PersonAugmentation/nc:ContactInformation, nc:PersonContactInformationAssociation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:ContactInformation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:ContactInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ContactInformationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_178818"></a>
+<table><tr><td><div class="element">Relation <b>electronicServiceInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information needed by the filing assembly MDE to electronically serve this person with a copy of a filing.<br /></p><p>Declaration :</p><ul><li>Uml : + electronicServiceInformation : <a href="class142466.html#ref4_142466"><b>ElectronicServiceInformation</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">ecf:Person/ecf:PersonAugmentation/ecf:ElectronicServiceInformation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ElectronicServiceInformation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/ecf:ElectronicServiceInformation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:ElectronicServiceInformationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_152834"></a>
+<table><tr><td><div class="element">Relation <b>employment (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Employment of an individual by an organization.<br /></p><p>Declaration :</p><ul><li>Uml : + employment : <a href="class163202.html#ref4_163202"><b>Employment</b></a>, multiplicity : 1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:PersonEmploymentAssociation/nc:EmpoyeeReference</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonEmploymentAssociation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/ecf:PersonAugmentation/nc:PersonEmploymentAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonEmploymentAssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_134018"></a>
+<table><tr><td><div class="element">Attribute <b>interpreterLanguageCode</b></div></td></tr></table>
+<p>A code identifying a language that a person is most comfortable using.<br /></p><p>Declaration :</p><ul><li>Uml : + interpreterLanguageCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonPrimaryLanguage/nc:LanguageCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:LanguageAbstract, (nc:LanguageCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonLanguageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonPrimaryLanguage/nc:LanguageCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">iso_639-3:LanguageCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_134146"></a>
+<table><tr><td><div class="element">Attribute <b>interpreterRequiredIndicator</b></div></td></tr></table>
+<p>An indicator that a person requires an interpreter.<br /></p><p>Declaration :</p><ul><li>Uml : + interpreterRequiredIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonLanguageEnglishIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonLanguageEnglishIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonLanguageEnglishIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_133762"></a>
+<table><tr><td><div class="element">Attribute <b>name</b></div></td></tr></table>
+<p>The name of a person or organization. <br /></p><p>Declaration :</p><ul><li>Uml : + name : <a href="class163458.html#ref4_163458"><b>name</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonName/nc:PersonGivenName, nc:PersonMiddleName, nc:PersonSurName, nc:PersonNameSuffixText, nc:PersonMaidenName, nc:PersonFullName</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonGivenName, nc:PersonMiddleName, nc:PersonSurName, nc:PersonNameSuffixText, nc:PersonMaidenName, nc:PersonFullName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonNameType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonName/nc:PersonGivenName, nc:PersonMiddleName, nc:PersonSurName, nc:PersonNameSuffixText, nc:PersonMaidenName, nc:PersonFullName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonNameTextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_134274"></a>
+<table><tr><td><div class="element">Attribute <b>otherCircumstances</b></div></td></tr></table>
+<p>Any other circumstances such as visually impaired, hearing impaired, physically impaired, or incarcerated.<br /></p><p>Declaration :</p><ul><li>Uml : + otherCircumstances : short</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonCapability/nc:CapabilityDescriptionText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CapabilityDescriptionText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CapabilityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonCapability/nc:CapabilityDescriptionText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_133634"></a>
+<table><tr><td><div class="element">Attribute <b>personID</b></div></td></tr></table>
+<p>The unique identifier assigned by the court at the time a person is first associated with a case. If the court has not yet assigned an identifier in this case, then the filing assembly MDE will leave this element blank.  This identifier is used to link other information in the case to a particular person.<br /></p><p>Declaration :</p><ul><li>Uml : + personID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_133890"></a>
+<table><tr><td><div class="element">Attribute <b>title</b></div></td></tr></table>
+<p>Person organizational position or title.<br /></p><p>Declaration :</p><ul><li>Uml : + title : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonName/nc:PersonNamePrefixText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonNamePrefixText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonNameType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonName/nc:PersonNamePrefixText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_4261250"></a>
+<table><tr><td><div class="element">Attribute <b>language</b></div></td></tr></table>
+<p>A language primarily spoken by a person.<br /></p><p>Declaration :</p><ul><li>Uml : + language : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonPrimaryLanguage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonPrimaryLanguage</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonPrimaryLanguage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonLanguageType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_4261378"></a>
+<table><tr><td><div class="element">Attribute <b>capability</b></div></td></tr></table>
+<p>A capability or lack thereof of a person	<br /></p><p>Declaration :</p><ul><li>Uml : + capability : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonCapability</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonCapability</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonCapability</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CapabilityType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Sentence</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Sentence</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_184450"></a>
+<p>A sentence associated with a specific charge in a case. A sentence may have multiple components (prison, probation, post-incarceration supervision/probation fine, etc.).<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SentenceAugmentationPoint, (criminal:SentenceAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence/criminal:SentenceAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">criminal:SentenceAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_180994"></a>
+<table><tr><td><div class="element">Relation <b>charge (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The charges for which this sentence is associated.<br /></p><p>Declaration :</p><ul><li>Uml : + charge : <a href="class143874.html#ref4_143874"><b>Charge</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence/j:SentenceCharge</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^j:SentenceCharge</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence/j:SentenceCharge</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:ChargeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_181378"></a>
+<table><tr><td><div class="element">Relation <b>concurrentSentence (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Reference to another sentence which is to be served concurrent with this sentence.  In the case of multiple sentences without references to concurrent sentences, they are assumed to be served consecutively.<br /></p><p>Declaration :</p><ul><li>Uml : + concurrentSentence : <a href="class184450.html#ref4_184450"><b>Sentence</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence/criminal:SentenceConcurrentAssociation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">criminal:SentenceConcurrentAssociation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">criminal:SentenceAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence/criminal:SentenceAugmentation/criminal:SentenceConcurrentAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:RelatedActivityAssociationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_181122"></a>
+<table><tr><td><div class="element">Relation <b>sentenceComponent (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>The required sactions ordered by the court as part of a sentence.<br /></p><p>Declaration :</p><ul><li>Uml : + sentenceComponent : <a href="class184578.html#ref4_184578"><b>SentenceComponent</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:Sentence</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">criminal:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:SentenceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_215682"></a>
+<table><tr><td><div class="element">Attribute <b>sentenceDate</b></div></td></tr></table>
+<p>The date the court sentenced the defendant.<br /></p><p>Declaration :</p><ul><li>Uml : + sentenceDate : <a href="class128386.html#ref4_128386"><b>date</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:Sentence/nc:ActivityDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ActivityDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ActivityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Sentence/nc:ActivityDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+	civil-complaint-018-GetDocumentResponse-Exhibit-04.xml
+
+	A response for a request to get/view the exhibit document rendition filed in case CV-2017-010110 in 'Civil Court' (10).
+
+	This xml example is from a series of examples that illustrate a full life cycle sequence use case for a minimalist illustration of  
+	Barabara Holmes' Test Case # 300 (Case Initiation Civil Complaint).
+
+	The Document Request (i.e. civil-complaint-016-GetDocumentRequest-Exhibit-04.xml) was a request for the exhibit document which is 
+	a connected document to the complaint. A GetDocumentResponse can only deliver a single document, so two GetDocumentResponses are required 
+	to return both requested documents, which must both be requested individually as well. 
+
+	The exhibit is a child document to the complaint document (returned in civil-complaint-017-GetDocumentResponse-Complaint-04.xml). This relationship
+	is described using the nc:DocumentAssociation element. The parent document (i.e. the complaint) is referenced using an external document
+	reference identifier.
+
+	05-21-2018	Updated for Wd31.
+	08-03-2018	Updated for WD35 as version 03.
+	09-13-2018	Updated for WD36 as version 04.
+
+-->
+<wrapper:GetDocumentResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:filing="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filing" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xmlns:payment="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<documentresponse:GetDocumentResponseMessage xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:documentresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/documentresponse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.1/" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/documentresponse ../schema/documentresponse.xsd http://release.niem.gov/niem/domains/cbrn/4.1/ ../schema/niem/domains/cbrn/4.1/cbrn.xsd">
+		<!-- This is the Message ID for this response -->
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>8795673902</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>CourtRecord</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>	
+
+		<nc:DocumentIdentification>
+		<!-- This is the Message ID from the Request Message-->
+			<nc:IdentificationID>ab1e-1234-56A-AD69</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+			<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+		</nc:DocumentIdentification>
+		<nc:DocumentSubmitter>
+			<!-- This is the person who made the document request (i.e. the requester). -->
+			<nc:EntityPerson>
+				<nc:PersonName>
+					<nc:PersonGivenName>Ralph</nc:PersonGivenName>
+					<nc:PersonMiddleName>K.</nc:PersonMiddleName>
+					<nc:PersonSurName>Williams</nc:PersonSurName>
+				</nc:PersonName>
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>107</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>		
+		</nc:DocumentSubmitter>		
+		<!-- URL of the responding MDE; i.e. CRMDE -->
+		<ecf:SendingMDELocationID>
+			<nc:IdentificationID>http://example.com/court</nc:IdentificationID>
+		</ecf:SendingMDELocationID>
+		<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+		<j:CaseCourt>
+			<nc:OrganizationIdentification>
+				<nc:IdentificationID>10</nc:IdentificationID>
+			</nc:OrganizationIdentification>
+			<nc:OrganizationUnitName>Civil Court</nc:OrganizationUnitName>
+		</j:CaseCourt>
+		<!-- Date and time of the response -->
+		<nc:DocumentPostDate>
+			<nc:DateTime>2008-07-07T14:23:58.0Z</nc:DateTime>
+		</nc:DocumentPostDate>
+		
+		<!-- cbrn:MessageStatus should only be used when an error has occurred and needs to be reported to the requester. -->
+		<!--
+		<cbrn:MessageStatus cbrn:systemSimulatedIndicator="">
+			<cbrn:SystemEventDateTime></cbrn:SystemEventDateTime>
+			<cbrn:SystemOperatingModeCode></cbrn:SystemOperatingModeCode>
+			<cbrn:CredentialsAuthenticatedCode></cbrn:CredentialsAuthenticatedCode>
+			<cbrn:MessageStatusCode></cbrn:MessageStatusCode>
+			<cbrn:MessageHandlingError>
+				<cbrn:ErrorCodeText></cbrn:ErrorCodeText>
+			</cbrn:MessageHandlingError>
+			<cbrn:ResendRequestIndicator></cbrn:ResendRequestIndicator>
+		</cbrn:MessageStatus>
+		-->
+		
+		<!-- In the response context, the court may provide both a CaseTrackingID and a Case Number. -->
+		<ecf:CaseTrackingID>
+			<nc:IdentificationID>7876934321007</nc:IdentificationID>
+			<nc:IdentificationCategoryDescriptionText>ACME Case Management System</nc:IdentificationCategoryDescriptionText> 
+			<nc:IdentificationSourceText>CourtRecord</nc:IdentificationSourceText>
+		</ecf:CaseTrackingID>		
+		<j:CaseNumberText>CV-2017-010110</j:CaseNumberText>
+		
+		<nc:Document structures:metadata="Document1Metadata">
+		
+			<nc:DocumentCategoryText>Exhibit</nc:DocumentCategoryText>
+			<nc:DocumentSoftwareName>Microsoft Word</nc:DocumentSoftwareName>
+			<nc:DocumentDescriptionText>Exhibit</nc:DocumentDescriptionText>
+
+			<!-- Since the exhibit is not docketed separately from the complaint, there is no nc:DocumentEffectiveDate.
+			<nc:DocumentEffectiveDate/> -->
+			<!-- And also no nc:DocumentFileDate.
+			<nc:DocumentFiledDate/> -->
+			
+			<!-- nc:DocumentIdentification is a mandatory element but left empty since nc:DocumentFileControlID is specified below. -->
+			<nc:DocumentIdentification/>
+
+			<!-- Since only a single document can be returned in this response, it may not make sense to return a document sequence number.
+				 If multiple documents were returned, then it may make sense to identify the order in which the documents should appear.
+			<nc:DocumentSequenceID>2</nc:DocumentSequenceID>
+			-->
+			<nc:DocumentTitleText>Plaintiff's Exhibit</nc:DocumentTitleText>
+			
+			<ecf:DocumentAugmentation>
+				<ecf:DocumentFiler>
+					<!-- The document filer is John W Doe (Person1), a Plaintiff on case CV-2017-010110 at Court 10. -->
+					<nc:EntityPerson structures:id="Person1">
+						<nc:PersonName>
+							<nc:PersonGivenName>John</nc:PersonGivenName>
+							<nc:PersonMiddleName>W.</nc:PersonMiddleName>
+							<nc:PersonSurName>Doe</nc:PersonSurName>
+						</nc:PersonName>	
+						<!-- Participant Matching Info - see civil-complaint-012-GetFilingListResponse-03.xml -->
+						<nc:PersonOtherIdentification>
+							<nc:IdentificationID>147699</nc:IdentificationID>
+							<ecf:PersonIdentificationCategoryCode>SourceParticipantID</ecf:PersonIdentificationCategoryCode>
+							<nc:IdentificationSourceText>PartyID</nc:IdentificationSourceText>
+						</nc:PersonOtherIdentification>
+						<ecf:PersonAugmentation>
+							<ecf:CaseParticipantRoleCode>Plaintiff</ecf:CaseParticipantRoleCode>
+							<ecf:CasePartySelfRepresentationIndicator>true</ecf:CasePartySelfRepresentationIndicator>
+							<ecf:ParticipantID>
+								<nc:IdentificationID>10</nc:IdentificationID>
+							</ecf:ParticipantID>
+						</ecf:PersonAugmentation>
+					</nc:EntityPerson>			
+				</ecf:DocumentFiler>
+				
+				<ecf:DocumentRendition>
+					<!--
+						Per 6.2.6 nc:DocumentFileControlID is a reference to a unique document in the Court Record system and is assigned
+						by the Court Record MDE with values unique to the court.
+		
+						In this example, the nc:DocumentFileControlID value is the document storage index number for the document rendition
+						within the Court's electronic document managment system (EDMS).	
+					-->
+					<nc:DocumentFileControlID>8690056387761</nc:DocumentFileControlID>
+					<!-- nc:DocumentIdentification is a mandatory element but left empty since nc:DocumentFileControlID is specified above. -->
+					<nc:DocumentIdentification/>	
+								
+					<ecf:DocumentRenditionHash>8gt5snc9fjrpojbdwytcd78z</ecf:DocumentRenditionHash>
+					<nc:Attachment structures:id="Attachment1">
+						<!-- Since there is no file stamped rendition, the orginal rendition is returned -->
+						<nc:BinaryDescriptionText>Adobe Acrobat</nc:BinaryDescriptionText>
+						<!-- nc:BinaryDescriptionText (above) should be 'a description of a binary object'. -->
+						<!-- Should nc:BinaryDescriptionText contain description a MIME type code provided in nc:BinaryFormatText? -->
+						<nc:BinaryFormatText>application/pdf</nc:BinaryFormatText>
+						<nc:BinaryURI>cid://Payload1</nc:BinaryURI>
+						<nc:BinarySizeValue>32000</nc:BinarySizeValue>
+					</nc:Attachment>
+
+				</ecf:DocumentRendition>
+
+				<!-- Document type code for Exhibit. -->
+				<ecf:DocumentTypeCode>XYZ</ecf:DocumentTypeCode>
+				<ecf:RegisterActionDescriptionCode>ABCF</ecf:RegisterActionDescriptionCode>
+
+				<!-- nc:DocumentAssociation should be used to indicate that the exhibit document is a child/attachment to 
+					 the complaint document.
+					 
+					 To do this, an appropriate ecf:DocumentRelatedCode needs to be selected from DocumentRelatedCode.gc
+					 (i.e. 'parent' is provided), and the parent document (i.e the complaint) needs to be identified 
+					 using an external document reference identifier. The complaint's nc:DocumentFileControlID is
+					 being used for this purpose.
+				-->
+				<nc:DocumentAssociation>
+					<nc:AssociationDescriptionText>Parent Document</nc:AssociationDescriptionText>
+					<nc:PrimaryDocument structures:id="parentdocument1" structures:metadata="ParentDoc1Metadata">
+						<!-- This nc:ParentDocument element MUST NOT be used to provided a fully elaborated document.
+							 It is permissible to freely make use of document descriptor elements such as nc:DocumentDescriptionText,
+							 or nc:DocumentTitleText, etc. as shown below, but document binary or reference to document binary content
+							 MUST NOT be provided. Although allowed by schema nc:Attachment MUST NOT be included except as an
+							 empty element. Note that in this context as a external reference, nc:DocumentIdentification MUST be
+							 provided. Using the nc:DocumentFileControlID value provided in the NotifyFilingReviewCompleteRequest as
+							 the nc:IdentificationID value is recommended.
+						-->
+						<nc:DocumentDescriptionText>Complaint</nc:DocumentDescriptionText>
+						<nc:DocumentIdentification>
+							<nc:IdentificationID>1234567889</nc:IdentificationID>
+							<!-- The 'DocumentRenditionFileControlID' element content below is NOT defined within the specification or controlled
+								 by a content list (e.g. gc file). -->
+							<nc:IdentificationCategoryDescriptionText>DocumentRenditionFileControlID</nc:IdentificationCategoryDescriptionText>
+							<nc:IdentificationSourceText>CourtRecord</nc:IdentificationSourceText>
+						</nc:DocumentIdentification>
+						<nc:DocumentTitleText>Plaintiff's Complaint</nc:DocumentTitleText>
+						<ecf:DocumentAugmentation>
+							<nc:Metadata structures:id="ParentDoc1Metadata">
+								<nc:SensitivityText>public</nc:SensitivityText>
+								<nc:LanguageCode>eng</nc:LanguageCode>
+							</nc:Metadata>						
+						</ecf:DocumentAugmentation>
+					</nc:PrimaryDocument>
+					<ecf:DocumentAssociationAugmentation>
+						<!-- Value below is from DocumentRelatedCode.gc -->
+						<ecf:DocumentRelatedCode>parent</ecf:DocumentRelatedCode>
+					</ecf:DocumentAssociationAugmentation>
+				</nc:DocumentAssociation>
+				
+				<nc:Metadata structures:id="Document1Metadata">
+					<nc:SensitivityText>public</nc:SensitivityText>
+					<nc:LanguageCode>eng</nc:LanguageCode>
+				</nc:Metadata>					
+			
+			</ecf:DocumentAugmentation>
+					
+		</nc:Document>		
+			
+	</documentresponse:GetDocumentResponseMessage>
+</wrapper:GetDocumentResponse>

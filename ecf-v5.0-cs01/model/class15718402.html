@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class CourtEventAugmentationType</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class CourtEventAugmentationType</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_15718402"></a>
+<p>Properties:</p><ul>
+<li>Notes:<br /><div class="sub">Genericode code list CourtEventTypeCode.gc; Genericode code list CourtLocationCode.gc</div></li>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CourtEventAugmentationType</div></li>
+</ul>
+<div class="sub">
+<a name="ref1_34311682"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CourtEventOnBehalfOfActor</b></div></td></tr></table>
+<p>The actor on whose behalf the filing was submitted to the court as set forth in the docket entry.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CourtEventOnBehalfOfActor : <a href="class15718274.html#ref4_15718274"><b>CourtEventActorType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CourtEventOnBehalfOfActor</div></li>
+</ul>
+<a name="ref1_34312322"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CourtEventActor</b></div></td></tr></table>
+<p>The actor who performed the action as set forth in the docket entry.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CourtEventActor : <a href="class15718530.html#ref4_15718530"><b>CourtEventOnBehalfOfActorType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CourtEventActor</div></li>
+</ul>
+<a name="ref1_34331138"></a>
+<table><tr><td><div class="element">Attribute <b>nc:CaseDocketID</b></div></td></tr></table>
+<p>An identifier used to reference a case docket.<br /></p><p>Declaration :</p><ul><li>Uml : + nc:CaseDocketID : <a href="class15717890.html#ref4_15717890"><b>string</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">http://release.niem.gov/niem/niem-core/4.0/,CaseDocketID</div></li>
+</ul>
+<a name="ref1_34341890"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CourtEventTypeCode</b></div></td></tr></table>
+<p>Filter criterion indicating that only calendar entries of a specified type are being requested.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CourtEventTypeCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 1,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CourtEventTypeCode</div></li>
+</ul>
+<a name="ref1_34348546"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CourtEventEnteredOnDocketDate</b></div></td></tr></table>
+<p>Date and time of entry into the court record.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CourtEventEnteredOnDocketDate : <a href="class15719298.html#ref4_15719298"><b>DateType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CourtEventEnteredOnDocketDate</div></li>
+</ul>
+<a name="ref1_34350210"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CourtLocationCode</b></div></td></tr></table>
+<p>A court location<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CourtLocationCode : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CourtLocationCode</div></li>
+</ul>
+<a name="ref1_34350338"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:CourtEventLocationText</b></div></td></tr></table>
+<p>A textual description of the location in a court of the calendar event.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:CourtEventLocationText : <a href="class15717762.html#ref4_15717762"><b>TextType</b></a>, multiplicity : 0,1</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CourtEventLocationText</div></li>
+</ul>
+<a name="ref1_34361986"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:ConnectedDocument</b></div></td></tr></table>
+<p>The pleading, motion or order that is the subject of this docket entry.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:ConnectedDocument : <a href="class15719682.html#ref4_15719682"><b>DocumentType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,ConnectedDocument</div></li>
+</ul>
+<a name="ref1_34383746"></a>
+<table><tr><td><div class="element">Attribute <b>ecf:ChildDocket</b></div></td></tr></table>
+<p>An entry on the docket or register of actions that is a child of the current docket entry.<br /></p><p>Declaration :</p><ul><li>Uml : + ecf:ChildDocket : <a href="class15726210.html#ref4_15726210"><b>CourtEventType</b></a>, multiplicity : 0,unbounded</li></ul><p>Properties:</p><ul>
+<li>URI:<br /><div class="sub">https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,ChildDocket</div></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!--
+	civil-complaint-008-NotifyDocketingCompleteResponse-04.xml
+
+	This xml example is from a series of examples that illustrate a full life cycle sequence use case for a minimalist illustration of  
+	Barabara Holmes' Test Case # 300 (Case Initiation Civil Complaint).
+
+	This example message is synchronously returned to the CRMDE by the FRMDE upon receipt of civil-complaint-007-RecordDocketingRequest-04.xml.
+
+	Updated for WD28.
+	Updated for WD31.
+	Updated for WD35 as version 03.
+	Updated for WD36 as version 04.
+-->
+<wrapper:NotifyDocketingCompleteResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:wrapper="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers ../schema/wrappers.xsd">
+
+	<cbrn:MessageStatus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:cbrn="http://release.niem.gov/niem/domains/cbrn/4.1/" xsi:schemaLocation="http://release.niem.gov/niem/domains/cbrn/4.1/ ../schema/niem/domains/cbrn/4.1/cbrn.xsd http://release.niem.gov/niem/niem-core/4.0/ ../schema/niem/niem-core/4.0/niem-core.xsd https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf ../schema/ecf.xsd" cbrn:systemSimulatedIndicator="false">
+	
+		<!-- Date/Time NotifyDocketingCompleteRequest was received by FRMDE. -->
+		<cbrn:SystemEventDateTime>2008-07-07T14:27:11.0Z</cbrn:SystemEventDateTime>
+		
+		<!-- A code for a system operating mode. Values must come from cbrncl.xsd -->		
+		<!-- A validation is being performed on this element enforcing one of the following required values: -->
+		<!-- 'Exercise', 'Ops', 'Other', 'Test', 'Unknown' -->
+		<!--
+			 "Exercise"	- The system is in use by an exercise.
+			 "Ops"		- The system is in live operational use.
+			 "Other"	- The system is in an unspecified operating mode. A description of this model needs to be 
+						  provided in the element SystemOperatingModeText.
+			 "Test"		- The system is in test operations.
+			 "Unknown"	- The operating mode of the system is unknown.
+		-->
+		<cbrn:SystemOperatingModeCode>Ops</cbrn:SystemOperatingModeCode>
+		
+		<!-- A verification of the authenticating credentials -->
+		<!-- Two chocies are available: 'Authenticated' and 'Not Authenticated' (see cbrncl.xsd)-->
+		<!--
+			"Authenticated"		- The credentials have been authenticated.
+			"Not Authenticated"	- The credentials have not been authenticated.
+		-->
+		<!-- When and how should these be used ? 
+			 Since credential authentication is not passed from the CRMDE to the FRMDE on the NotifyDocketingCompleteRequest, 
+			 then presumably this element identifies whether credentials were authenticated by the FRMDE in this example.  
+		-->	
+		<!-- The credentials are presumed to be the docketing clerk credentials. -->
+		<!-- This element is required and must be used. -->
+		<cbrn:CredentialsAuthenticatedCode>Authenticated</cbrn:CredentialsAuthenticatedCode>
+		
+		<!-- A code for the receiving status of a message.-->
+		<!-- A required enuerated list contains: 'ActivityCodeFailure', 'DeviceError', 'DuplicateMessage', -->
+		<!-- 'ErrorAcknowledgment', 'InvalidSchema', 'MessageError', 'Other', 'Success', 'SystemError', 'UnknownError' -->
+		
+		<!-- Where are definitions for the conditions provided in the enuerated list ? Ans: see cbrncl.xsd -->
+		<!--
+			"ActivityCodeFailure"	- The message was successfully received by not successfully processed due to an activity code error.
+			"DataError"				- The message was successfully received by not successfully processed due to a data error.
+			"DeviceError"			- The message was successfully received by not successfully processed due to a device error.
+			"DuplicateMessage"		- The message was successfully received but not processed since it is a duplicate of a message already processed.
+			"ErrorAcknowledgement"	- Acknowledgement of receipt of an error message.
+			"InvalidSchema"			- The message was received, but was not successfully processed due to an invalid schema.
+			"MessageError"			- The message was received, but was not successfully processed due to an invalid message error (invalid Message Type, encoding, format, etc.)
+			"Other"					- The message status does not fit any known category.
+			"Success"				- The message was sucessfully received and accepted.
+			"SystemError"			- The message was successfully received by not successfully processed due to a system error.
+			"UnknownError"			- The message was not successfully received and/or processed due to an unknown error.
+		-->
+		<cbrn:MessageStatusCode>Success</cbrn:MessageStatusCode>
+		
+		<!-- A set of information about the point in the XML payload where an error occurred processing the message. -->
+		
+		<!-- Upon review by an ECF TC work group, by consensus, it was agreed that, since in this use case example there was 
+			 not any XML content error, then the cbrn:MessageContentError element should be absent -->
+		<!-- element commented out
+		<cbrn:MessageContentError>
+			<cbrn:ErrorNodeName>wrapper:NotifyDocketingCompleteRequest</cbrn:ErrorNodeName>
+			<cbrn:ErrorDescription>
+				<cbrn:ErrorCodeText>0</cbrn:ErrorCodeText>	
+			</cbrn:ErrorDescription>
+		</cbrn:MessageContentError>
+		-->
+
+		<!-- Unlike cbrn:MessageContentError (above), cbrn:MessageHandlingError is required; therefore it is included and reports success. -->
+		<!-- Also See section 4.5 Error Handling -->
+		<cbrn:MessageHandlingError>
+			<cbrn:ErrorCodeText>0</cbrn:ErrorCodeText>
+			<cbrn:ErrorCodeDescriptionText>Success</cbrn:ErrorCodeDescriptionText>
+		</cbrn:MessageHandlingError>
+		
+		<!-- Shouldn't the specification address the use of ResendRequestIndicator ? -->
+		<!-- It is presumed, that an ECF 5 conformant implementation IS NOT REQUIRED to resend even when resend is requested. -->
+		<cbrn:ResendRequestIndicator>false</cbrn:ResendRequestIndicator>
+		
+		<ecf:MessageStatusAugmentation>
+			<!-- What is the purpose of the ServiceRecipientID element ? -->
+			<!-- Ans: ecf:ServiceRecipientID is provided for the response from the ServeFiling operation. -->
+			<!-- Is its usage appropriate in this context (i.e. NotifyDocketingCompleteResponse) ? Ans: No. -->
+			
+			<!-- When used, should Service Recipient ID have the same value as in the filing:FilingMessage ? Ans: Yes. -->
+			<!-- Commented out since this element is not appropriate in the NotifyDocketingCompleteRequest response scenario and is
+				 provided for the response to the serveprocess:ServeProcessMessage. 
+			<ecf:ServiceRecipientID>
+				<nc:IdentificationID>20</nc:IdentificationID>
+			</ecf:ServiceRecipientID>
+			-->
+			<!-- This is the Message ID for this response. -->
+			<nc:DocumentIdentification>
+				<nc:IdentificationID>P9j8H76gbt3409</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+				<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>
+			
+			<nc:DocumentIdentification>
+				<!-- Returning Message Identifier from NotifyDocketingCompleteMessage --> 
+				<nc:IdentificationID>mk090067gh</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+				<nc:IdentificationSourceText>CourtRecord</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>
+
+			<nc:DocumentIdentification>
+				<!-- Returning the [ECF] Filing Identifier assigned by FRMDE per 6.2.4 "MUST be included in all subsequent request and 
+					 response messages in the e-filing transaction". --> 				
+				<nc:IdentificationID>123456ABC</nc:IdentificationID>
+				<nc:IdentificationCategoryDescriptionText>filingID</nc:IdentificationCategoryDescriptionText>
+				<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+			</nc:DocumentIdentification>			
+			
+		</ecf:MessageStatusAugmentation>
+	</cbrn:MessageStatus>
+	
+</wrapper:NotifyDocketingCompleteResponse>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class RelatedCase</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class RelatedCase</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_131714"></a>
+<p>Case or cases sharing characteristics, such as common parties or events, with this case.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/nc:RelatedCaseAssociation</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:RelatedActivityAssociationAugmentationPoint, (ecf:RelationActivityAssociationAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:RelatedActivityAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/nc:RelatedCaseAssociation/ecf:RelatedCaseAssociationAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:RelatedActivityAssociationAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_133378"></a>
+<table><tr><td><div class="element">Attribute <b>associationTypeCode</b></div></td></tr></table>
+<p>Nature of the relationship between the current case and the related case.  Allowable values to be set forth in Court Policy. Examples: associated, consolidated, related.<br /></p><p>Declaration :</p><ul><li>Uml : + associationTypeCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list RelatedCaseAssociationTypeCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/nc:RelatedCaseAssociation/nc:CaseAssociationTypeCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:RelatedCaseAssociationTypeCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:RelatedActivityAssociationAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/nc:RelatedCaseAssociation/ecf:RelatedActivityAssociationAugmentation/ecf:RelatedCaseAssociationTypeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">associated; consolidated; jointly administered; other; related; transferred</div></li>
+</ul>
+<a name="ref1_133250"></a>
+<table><tr><td><div class="element">Attribute <b>caseTrackingID</b></div></td></tr></table>
+<p>Court case number.<br /></p><p>Declaration :</p><ul><li>Uml : + caseTrackingID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/nc:RelatedActivityAssociation/nc:ActivityReference/nc:Case/nc:CaseTrackingID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CaseAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/nc:RelatedCaseAssociation/nc:Case/ecf:CaseAugmentation/ecf:CaseTrackingID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_133506"></a>
+<table><tr><td><div class="element">Attribute <b>courtName</b></div></td></tr></table>
+<p>Name of court in which the related case was filed. CourtID is not used here, because the court may not be a participant in electronic filing.<br /></p><p>Declaration :</p><ul><li>Uml : + courtName : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:CourtName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:CourtType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/ecf:CaseAugmentation/nc:RelatedCaseAssociation/nc:Case/j:CaseAugmentation/j:CaseCourt/j:CourtName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

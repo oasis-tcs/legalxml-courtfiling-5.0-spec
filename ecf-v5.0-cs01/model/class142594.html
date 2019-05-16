@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ServiceRecipientStatus</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ServiceRecipientStatus</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_142594"></a>
+<p>A value describing the status of electronic service on a particular recipient.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">servicereceipt:ServiceRecipientStatus</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:MessageStatusAugmentationPoint, (ecf:MessageStatusAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:MessageStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/ecf:MessageStatusAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:MessageStatusAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_159106"></a>
+<table><tr><td><div class="element">Attribute <b>serviceRecipientID</b></div></td></tr></table>
+<p>A value assigned to a person, organization or item entity for the purpose of uniquely specifying the entity within a legal service context with respect to e-filing. The service recipient identifier value must be known and understood by both the service provider and the service requester. <br /></p><p>Declaration :</p><ul><li>Uml : + serviceRecipientID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">servicereceipt:ServiceRecipientStatus/ecf:ServiceRecipientID</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ServiceRecipientID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:MessageStatusAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/ecf:MessageStatusAugmentation/ecf:ServiceRecipientID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_159234"></a>
+<table><tr><td><div class="element">Attribute <b>statusCode</b></div></td></tr></table>
+<p>Enumerated values: unrecognized - filerID is not recognized, received - filing received by MDE, sent - filing sent by MDE to service recipient  Future versions may add additional values, such as: delivered - filing delivered to service recipient. (i.e. under the control of the recipient) opened - filing opened by service recipient<br /><br /></p><p>Declaration :</p><ul><li>Uml : + statusCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list ServiceStatusCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">servicereceipt:ServiceRecipientStatus/nc:StatusText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:ServiceStatusCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:MessageStatusAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/ecf:MessageStatusAugmentation/ecf:ServiceStatusCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">delivered=filing has been received by service recipient; opened=filing has been opened by service recipient; sent=filing sent by MDE to service recipient; unrecognized=filing ID is not recognized</div></li>
+</ul>
+<a name="ref1_159490"></a>
+<table><tr><td><div class="element">Attribute <b>statusTime</b></div></td></tr></table>
+<p>The date and time of a status.<br /></p><p>Declaration :</p><ul><li>Uml : + statusTime : <a href="class156034.html#ref4_156034"><b>dateTime</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">servicereceipt:ServiceRecipientStatus/nc:StatusDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:SystemEventDateTime</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:SystemEventType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/cbrn:SystemEventDateTime</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

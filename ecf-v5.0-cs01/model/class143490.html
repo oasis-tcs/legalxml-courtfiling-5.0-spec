@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Defendant</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Defendant</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_143490"></a>
+<p>A person or organization alleged or found to have committed a crime or violation.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SubjectAugmentationPoint, (ecf:SubjectAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SubjectType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:SubjectAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_162434"></a>
+<table><tr><td><div class="element">Attribute <b>custodyStatusCode</b></div></td></tr></table>
+<p>An indicator of whether or not a defendant or juvenile is held in a jail, prison, lock up or other facility.<br /></p><p>Declaration :</p><ul><li>Uml : + custodyStatusCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestSubject/j:SubjectSupervision</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:SupervisionCustodyStatus</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:SupervisionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/j:SubjectSupervision/nc:SupervisionCustodyStatus</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:StatusType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_162818"></a>
+<table><tr><td><div class="element">Attribute <b>defendantArrestWarrantIssuedIndicator</b></div></td></tr></table>
+<p>Indicates whether an arrest warrant has been issued against the defendant.<br /></p><p>Declaration :</p><ul><li>Uml : + defendantArrestWarrantIssuedIndicator : bool</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrestcriminal:Subject/criminal:WarrantIssuedIndicator</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:SubjectWarrantIssuedIndicator</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:SubjectAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/ecf:SubjectWarrantIssuedIndicator</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:boolean</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_161666"></a>
+<table><tr><td><div class="element">Attribute <b>defendantNumber</b></div></td></tr></table>
+<p>Number assigned to each Defendant.<br /></p><p>Declaration :</p><ul><li>Uml : + defendantNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_185090"></a>
+<table><tr><td><div class="element">Relation <b>extendedPersonInformation (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A person alleged to have committed the charge.<br /></p><p>Declaration :</p><ul><li>Uml : + extendedPersonInformation : <a href="class147586.html#ref4_147586"><b>CriminalPerson</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:EntityRepresentation, (^nc:EntityPerson)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:EntityType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_161794"></a>
+<table><tr><td><div class="element">Attribute <b>federalBureauOfInvestigationNumber</b></div></td></tr></table>
+<p>A number issued by the FBI Automated Fingerprint Identification System (AFIS) based on submitted fingerprints.<br /></p><p>Declaration :</p><ul><li>Uml : + federalBureauOfInvestigationNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/criminal:Subject/j:PersonAugmentation/j:PersonFBIIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:PersonFBIIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/j:PersonAugmentation/j:PersonFBIIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_162178"></a>
+<table><tr><td><div class="element">Attribute <b>localAgencyIDNumber</b></div></td></tr></table>
+<p>An identifier that does not belong to one of the standard explicitly defined types such as FBI Number or Social Security Number.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + localAgencyIDNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_162306"></a>
+<table><tr><td><div class="element">Attribute <b>localAgencyIDType</b></div></td></tr></table>
+<p>A name or brief descriptor of an identifier not belonging to one of the standard explicitly defined types such as FBI Number or State Identification Number.<br /><br /></p><p>Declaration :</p><ul><li>Uml : + localAgencyIDType : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification/nc:IdentificationSourceText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_162050"></a>
+<table><tr><td><div class="element">Attribute <b>stateFingerprintBasedIDNumber</b></div></td></tr></table>
+<p>Unique number assigned to persons by a state Automated Fingerprint Identification System based on fingerprint identification. <br /><br /></p><p>Declaration :</p><ul><li>Uml : + stateFingerprintBasedIDNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/criminal:Subject/j:PersonAugmentation/j:PersonAFISIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:PersonAFISIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/j:PersonAugmentation/j:PersonAFISIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_162562"></a>
+<table><tr><td><div class="element">Attribute <b>personID</b></div></td></tr></table>
+<p>The unique identifier assigned by the court at the time a person is first associated with a case. If the court has not yet assigned an identifier in this case, then the filing assembly MDE will leave this element blank.  This identifier is used to link other information in the case to a particular person.<br /></p><p>Declaration :</p><ul><li>Uml : + personID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9163906"></a>
+<table><tr><td><div class="element">Attribute <b>personIDType</b></div></td></tr></table>
+<p>A type of person identifier.<br /></p><p>Declaration :</p><ul><li>Uml : + personIDType : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list PersonIdentificationCategoryCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification/nc:IdentificationCategoryText</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:IdentificationCategoryAbstract, (ecf:PersonIdentificationCategoryCode)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification/ecf:PersonIdentificationCategoryType</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:normalizedString</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">DefendantNumber;LocalAgencyID;PersonID;PrisonerID</div></li>
+</ul>
+<a name="ref1_162690"></a>
+<table><tr><td><div class="element">Attribute <b>prisonerID</b></div></td></tr></table>
+<p>An identifier for the defendant assigned by a jail, prison, lock up or other detention facility.<br /></p><p>Declaration :</p><ul><li>Uml : + prisonerID : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_161922"></a>
+<table><tr><td><div class="element">Attribute <b>stateIDNumber</b></div></td></tr></table>
+<p>Unique number assigned to persons by the Department of Public Safety (or similar state agency) based on fingerprint identification. <br /><br /></p><p>Declaration :</p><ul><li>Uml : + stateIDNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/criminal:Subject/j:PersonAugmentation/j:PersonStateFingerprintIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:PersonStateFingerprintIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:PersonAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/j:PersonAugmentation/j:PersonStateFingerprintIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_6361858"></a>
+<table><tr><td><div class="element">Attribute <b>supervision</b></div></td></tr></table>
+<p>The supervision of a defendant.<br /></p><p>Declaration :</p><ul><li>Uml : + supervision : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">criminal:CriminalCase/criminal:CaseArrest/j:ArrestSubject/j:SubjectSupervision</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:SubjectSupervision</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:SubjectType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/j:SubjectSupervision</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:SupervisionType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9247746"></a>
+<table><tr><td><div class="element">Attribute <b>charge</b></div></td></tr></table>
+<p>A charge associated with a defendant<br /></p><p>Declaration :</p><ul><li>Uml : + charge : , multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">j:Charge/criminal:ChargeAugmentation/j:PersonChargeAssociation</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">^nc:Person</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:PersonChargeAssociationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseCharge/criminal:ChargeAugmentation/j:PersonChargeAssociation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9584130"></a>
+<table><tr><td><div class="element">Attribute <b>physicalFeature</b></div></td></tr></table>
+<p>A physical feature of a subject.<br /></p><p>Declaration :</p><ul><li>Uml : + physicalFeature : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonPhysicalFeature</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonPhysicalFeature</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonPhysicalFeature</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:PhysicalFeatureType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9584258"></a>
+<table><tr><td><div class="element">Attribute <b>physicalFeatureType</b></div></td></tr></table>
+<p>A type of physical feature (e.g., scars, marks, tattoos) of a subject<br /></p><p>Declaration :</p><ul><li>Uml : + physicalFeatureType : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonPhysicalFeature/nc:PhysicalFeatureCategoryCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PhysicalFeatureCategoryAbstract, (j:PhysicalFeatureCategoryCode)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PhysicalFeatureType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Person/nc:PersonPhysicalFeature/j:PhysicalFeatureCategoryCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">TODO: NIEM codelist contains duplicates. Use nc:PhysicalFeatureCategoryText and Genericode list instead?</div></li>
+</ul>
+<a name="ref1_9584386"></a>
+<table><tr><td><div class="element">Attribute <b>localFingerprintBasedIDNumber</b></div></td></tr></table>
+<p>Unique number assigned to persons by a local (county or municipal) Automated Fingerprint Identification System based on fingerprint identification. <br /></p><p>Declaration :</p><ul><li>Uml : + localFingerprintBasedIDNumber : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/nc:PersonStateIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:PersonStateIdentification</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:PersonType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonStateIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_4526594"></a>
+<table><tr><td><div class="element">Relation <b>biometric (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A biometric associated with a defendant.<br /></p><p>Declaration :</p><ul><li>Uml : + biometric : <a href="class5969794.html#ref4_5969794"><b>Biometric</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Person/j:PersonAugmentation/j:PersonPalmPrint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">biom:Biometric</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:SubjectAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">criminal:CaseAugmentation/j:Arrest/j:ArrestSubject/ecf:SubjectAugmentation/biom:Biometric</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">biom:BiometricDataType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

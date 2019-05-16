@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ReserveCourtDateMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ReserveCourtDateMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_199170"></a>
+<p>A request to allocate a court date on the schedule.<br /></p>
+<p>Diagram : <a href="index.html#ref10_178562"><b>ReserveCourtDateMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">reservedate:ReserveCourtDateMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">reservedate:ReserveCourtDateMessage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:CaseFilingType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_1545858"></a>
+<table><tr><td><div class="element">Attribute <b>messageExtension</b></div></td></tr></table>
+<p>An extension point for the enclosing message.<br /></p><p>Declaration :</p><ul><li>Uml : + messageExtension : <a href="class2113794.html#ref4_2113794"><b>extension</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">reservedate:ReserveCourtDateMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">reservedate:ReserveCourtDateMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">reservedate:ReserveCourtDateMessage/reservedate:ReserveCourtDateMessageAugmentationPoint</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">abstract</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14524674"></a>
+<table><tr><td><div class="element">Attribute <b>eventType</b></div></td></tr></table>
+<p>A type of court event<br /></p><p>Declaration :</p><ul><li>Uml : + eventType : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list CourtEventTypeCode.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CourtEventTypeCode</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">ecf:CourtEventAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">reservedate:ReserveCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventTypeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14526338"></a>
+<table><tr><td><div class="element">Attribute <b>partyType</b></div></td></tr></table>
+<p>A type of participant in a court case<br /></p><p>Declaration :</p><ul><li>Uml : + partyType : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:CaseParticipantRoleCode</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">reservedate:ReserveCourtDateMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">reservedate:ReserveCourtDateMessage/ecf:CaseParticipantRoleCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14524930"></a>
+<table><tr><td><div class="element">Attribute <b>startAfterTime</b></div></td></tr></table>
+<p>A time after which a court event may begin<br /></p><p>Declaration :</p><ul><li>Uml : + startAfterTime : , multiplicity : 0..3</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">reservedate:PotentialStartTimeRange</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">reservedate:ReserveCourtDateMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">reservedate:ReserveCourtDateMessage/reservedate:PotentialStartTimeRange/nc:StartDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateRangeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14524802"></a>
+<table><tr><td><div class="element">Attribute <b>startBeforeTime</b></div></td></tr></table>
+<p>A time before which a court date must begin	<br /></p><p>Declaration :</p><ul><li>Uml : + startBeforeTime : , multiplicity : 0..3</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">reservedate:PotentialStartTimeRange</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">reservedate:ReserveCourtDateMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">reservedate:ReserveCourtDateMessage/reservedate:PotentialTimeRange/nc:EndDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:DateRangeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_14525058"></a>
+<table><tr><td><div class="element">Attribute <b>duration</b></div></td></tr></table>
+<p>The estimated duration of a court hearing<br /></p><p>Declaration :</p><ul><li>Uml : + duration : , multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">reservedate:EstimatedDuration</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">reservedate:ReserveCourtDateMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">reservedate:ReserveCourtDateMessage/reservedate:EstimatedDuration</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:duration</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_5176962"></a>
+<table><tr><td><div class="element">Relation <b>case (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + case : <a href="class131586.html#ref4_131586"><b>Case</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Case</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">reservedate:ReserveCourtDateMessageType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">reservedate:ReserveCourtDateMessage/nc:Case</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CaseType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

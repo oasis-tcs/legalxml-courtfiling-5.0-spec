@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class PostalAddress</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class PostalAddress</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_5366146"></a>
+<p>A postal address.<br /></p>
+<p>Diagram : <a href="index.html#ref10_245122"><b>ContactInformation</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:Address</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_9585026"></a>
+<table><tr><td><div class="element">Attribute <b>recipientName</b></div></td></tr></table>
+<p>The name of a recipient at an address.<br /></p><p>Declaration :</p><ul><li>Uml : + recipientName : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:AddressRecipientName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:AddressRecipientName</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:AddressRecipientName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9585154"></a>
+<table><tr><td><div class="element">Attribute <b>deliveryPoint</b></div></td></tr></table>
+<p>A mail delivery point (e.g. mailbox number).<br /></p><p>Declaration :</p><ul><li>Uml : + deliveryPoint : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:AddressDeliveryPointID</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:AddressDeliveryPointAbstract, (nc:AddressDeliveryPointID)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:AddressDeliveryPointID</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:string</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9585282"></a>
+<table><tr><td><div class="element">Attribute <b>city</b></div></td></tr></table>
+<p>A city.<br /></p><p>Declaration :</p><ul><li>Uml : + city : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCityName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:LocationCityName</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:LocationCityName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ProperNameTextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9585410"></a>
+<table><tr><td><div class="element">Attribute <b>county</b></div></td></tr></table>
+<p>A county.<br /></p><p>Declaration :</p><ul><li>Uml : + county : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountyName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:LocationCountyAbstract, (nc:LocationCountyName)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:LocationCounty</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ProperNameTextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9585538"></a>
+<table><tr><td><div class="element">Attribute <b>state</b></div></td></tr></table>
+<p>A state.<br /></p><p>Declaration :</p><ul><li>Uml : + state : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStateName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:LocationState</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:LocationState</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:StateType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9585666"></a>
+<table><tr><td><div class="element">Attribute <b>country</b></div></td></tr></table>
+<p>A country.<br /></p><p>Declaration :</p><ul><li>Uml : + country : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountryName, nc:LocationCountryFIPS10-4Code</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:LocationCountry</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:LocationCountry</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:CountryType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9585794"></a>
+<table><tr><td><div class="element">Attribute <b>postalCode</b></div></td></tr></table>
+<p>A postal code for mail delivery within a country.<br /></p><p>Declaration :</p><ul><li>Uml : + postalCode : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStateUSPostalServiceCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:LocationPostalCode, (nc:LocationStateUSPostalServiceCode)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:LocationPostalCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">usps:USStateCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_9839362"></a>
+<table><tr><td><div class="element">Attribute <b>postalCodeExtension</b></div></td></tr></table>
+<p>A extension to a postal code.<br /></p><p>Declaration :</p><ul><li>Uml : + postalCodeExtension : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationPostalExtensionCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:LocationPostalExtensionCode</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:AddressType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:LocationPostalExtensionCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:string</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_18320002"></a>
+<table><tr><td><div class="element">Attribute <b>countryName</b></div></td></tr></table>
+<p>A country.<br /></p><p>Declaration :</p><ul><li>Uml : + countryName : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub">Genericode code list LocationCountryName.gc</div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountryName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CountryRepresentation, (nc:LocationCountryName)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CountryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationCountry/nc:LocationCountryName</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ProperNameTextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">Court-specific code list</div></li>
+</ul>
+<a name="ref1_18409986"></a>
+<table><tr><td><div class="element">Attribute <b>stateName</b></div></td></tr></table>
+<p>A state.<br /></p><p>Declaration :</p><ul><li>Uml : + stateName : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStateName</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:StateRepresentation, (nc:LocationStateName), (j:LocationStateNCICLISCode)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:StateType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:LocationState/nc:LocationStateName, j:LocationStateNCICLISCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:ProperNameTextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_32585602"></a>
+<table><tr><td><div class="element">Attribute <b>countryCode</b></div></td></tr></table>
+<p>A country code<br /></p><p>Declaration :</p><ul><li>Uml : + countryCode : string, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountryFIPS10-4Code</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:CountryRepresentation, (intel:LocationCountryFIPS10-4PlusNCTCCodeText)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:CountryType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">nc:Location/nc:LocationCountry/intel:LocationCountryFIPS10-4PlusNCTCCodeText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

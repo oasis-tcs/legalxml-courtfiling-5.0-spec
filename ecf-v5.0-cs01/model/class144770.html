@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Vehicle</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Vehicle</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_144770"></a>
+<p>Information describing a motor vehicle.<br /></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:VehicleAugmentationPoint, (citation:VehicleAugmentation)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:VehicleType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/citation:VehicleAugmentation</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">citation:VehicleAugmentationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,unbounded</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref1_5930114"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleRegistration</b></div></td></tr></table>
+<p>A registration for a vehicle.<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleRegistration : string, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:ConveyanceRegistrationPlateIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ConveyanceRegistration</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:VehicleAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/citation:VehicleAugmentation/j:ConveyanceRegistration</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">j:ConveyanceRegistrationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_183938"></a>
+<table><tr><td><div class="element">Relation <b>operatorInsurance (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information concerning whether a driver of a motor vehicle possesses proof of insurance coverage required by law.<br /></p><p>Declaration :</p><ul><li>Uml : + operatorInsurance : <a href="class144514.html#ref4_144514"><b>ProofOfInsurance</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:Vehicle/citation:VehicleOperatorInsuranceCoverage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:VehicleOperatorInsuranceCoverage</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:VehicleAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/citation:VehicleAugmentation/ecf:VehicleOperatorInsuranceCoverage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:InsuranceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref0_183810"></a>
+<table><tr><td><div class="element">Relation <b>ownerInsurance (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>Information concerning whether the owner of a motor vehicle possesses proof of insurance coverage required by law.<br /></p><p>Declaration :</p><ul><li>Uml : + ownerInsurance : <a href="class144514.html#ref4_144514"><b>ProofOfInsurance</b></a>, multiplicity : *</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">citation:CitationCaseAugmentation/citation:Vehicle/citation:VehicleOwnerInsuranceCoverage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">ecf:VehicleOperatorInsuranceCoverage</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">citation:VehicleAugmentationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/citation:VehicleAugmentation/ecf:VehicleOwnerInsuranceCoverage</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ecf:InsuranceType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_172162"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleBodyTypeOrVehicleStyle</b></div></td></tr></table>
+<p>model described in terms of 2 door, 4 door, van, pickup, etc.<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleBodyTypeOrVehicleStyle : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:VehicleStyleCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemStyleAbstract, (j:VehicleStyleCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/j:VehicleStyleCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ncic:VSTCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">TODO: NIEM codelist contains duplicates. Use Genericode list instead?</div></li>
+</ul>
+<a name="ref1_172290"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleColorCode</b></div></td></tr></table>
+<p>A code identifying a single, upper-most, front-most, or majority color of a vehicle.<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleColorCode : <a href="class192130.html#ref4_192130"><b>code</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:VehicleColorPrimaryCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemColorAbstract, (j:ConveyanceColorPrimaryCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/j:ConveyanceColorPrimaryCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ncic:VCOCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">TODO: NIEM codelist contains duplicates. Use Genericode list instead?</div></li>
+</ul>
+<a name="ref1_172418"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleColorText</b></div></td></tr></table>
+<p>A single, upper-most, front-most, or majority color of a vehicle.<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleColorText : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:ConveyanceColorPrimaryText</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemColorAbstract, (nc:ConveyanceColorPrimaryText)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/nc:ConveyanceColorPrimaryText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_171266"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleIdentificationNumber</b></div></td></tr></table>
+<p>Manufacturer identification number mounted on driver side at the corner of the windshield and post<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleIdentificationNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:VehicleIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:VehicleIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:VehicleType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/nc:VehicleIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_171394"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleLicensePlateNumber</b></div></td></tr></table>
+<p> The license plate displayed on vehicle offender was driving<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleLicensePlateNumber : <a href="class156162.html#ref4_156162"><b>id</b></a></li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:ConveyanceRegistrationPlateIdentification</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ConveyanceRegistrationPlateIdentification</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ConveyanceRegistrationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/citation:VehicleAugmentation/j:ConveyanceRegistration/j:ConveyanceRegistrationPlateIdentification</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:IdentificationType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_171650"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleLicensePlateState</b></div></td></tr></table>
+<p>State that issued the license plate displayed on the vehicle<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleLicensePlateState : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:ConveyanceRegistrationPlateIdentification/DrivingJurisdictionAuthorityNCICLSTACode, j:IdentificationJurisdictionNCICLISCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:JurisdictionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/citation:VehicleAugmentation/j:ConveyanceRegistration/j:ConveyanceRegistrationPlateIdentification/j:JurisdictionNCICLISCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">structures:ObjectType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_11564162"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleLicensePlateStateCode</b></div></td></tr></table>
+<p>A code for the state that issued the license plate displayed on the vehicle<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleLicensePlateStateCode : <a href="class156162.html#ref4_156162"><b>id</b></a>, multiplicity : 0..1</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:ConveyanceRegistrationPlateIdentification/DrivingJurisdictionAuthorityNCICLSTACode, j:IdentificationJurisdictionNCICLISCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:JurisdictionAbstract,  ( j:JurisdictionANSID20AuthorityCode)</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:JurisdictionType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/citation:VehicleAugmentation/j:ConveyanceRegistration/j:ConveyanceRegistrationPlateIdentification/j:JurisdictionANSID20AuthorityCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">aamva_d20:JurisdictionAuthorityCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_171522"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleLicensePlateType</b></div></td></tr></table>
+<p>Type of license plate displayed on vehicle offender was driving, i.e., commercial, truck<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleLicensePlateType : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:ConveyanceRegistrationPlateIdentification/nc:IdentificationCategory</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">j:ConveyanceRegistrationPlateCategoryAbstract, (j:ConveyanceRegistrationPlateCategoryText)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">j:ConveyanceRegistrationType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/citation:VehicleAugmentation/j:ConveyanceRegistration/j:ConveyanceRegistrationPlateCategoryText</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<a name="ref1_171778"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleMake</b></div></td></tr></table>
+<p>A code identifying the manufacturer of a vehicle.<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleMake : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:VehicleMakeCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:VehicleMakeAbstract, (j:VehicleMakeCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:VehicleType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/j:VehcileMakeCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ncic:VMACodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">TODO: NIEM codelist contains duplicates. Use Genericode list instead?</div></li>
+</ul>
+<a name="ref1_171906"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleModel</b></div></td></tr></table>
+<p>A code identifying the specific design or type of vehicle made by a manufacturer.  Sometimes referred to as the series model.<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleModel : string</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:VehicleModelCode</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:VehicleModelAbstract, (j:VehicleModelCode)</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:VehicleType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/j:VehcileModelCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">ncic:VMOCodeType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub">TODO: NIEM codelist contains duplicates. Use Genericode list instead?</div></li>
+</ul>
+<a name="ref1_172034"></a>
+<table><tr><td><div class="element">Attribute <b>vehicleYear</b></div></td></tr></table>
+<p>A year which is assigned to a vehicle by the manufacturer.<br /></p><p>Declaration :</p><ul><li>Uml : + vehicleYear : int</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">nc:Vehicle/nc:ItemModelYearDate</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">nc:ItemModelYearDate</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">nc:ItemType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">citation:CaseAugmentation/nc:Vehicle/nc:ItemModelYearDate</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">niem-xs:gYear</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">0,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class ServiceReceiptMessage</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class ServiceReceiptMessage</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref4_142082"></a>
+<p>A synchronous response by a Filing Assembly MDE acknowledging receipt of a service message for one of its clients.<br /></p>
+<p>Diagram : <a href="index.html#ref10_138754"><b>ServiceReceiptMessage</b></a></p>
+<p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">servicereceipt:ServiceReceiptMessage</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:MessageStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">cbrn:SystemEventType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref0_179458"></a>
+<table><tr><td><div class="element">Relation <b>serviceRecipientStatus (&lt;directional aggregation&gt;)</b></div></td></tr></table><p>A value describing the status of electronic service on a particular recipient<br /></p><p>Declaration :</p><ul><li>Uml : + serviceRecipientStatus : <a href="class142594.html#ref4_142594"><b>ServiceRecipientStatus</b></a>, multiplicity : 1..*</li></ul><p>Stereotype: niem-profile:niem</p>
+<p>Properties:</p><ul>
+<li>niem-profile:niem:Notes:<br /><div class="sub"></div></li>
+<li>niem-profile:niem:OldXPath:<br /><div class="sub">servicereceipt:ServiceReceiptMessage/servicereceipt:ServiceRecipientStatus</div></li>
+<li>niem-profile:niem:Property:<br /><div class="sub">cbrn:MessageStatusCode</div></li>
+<li>niem-profile:niem:OldMultiplicity:<br /><div class="sub">1,unbounded</div></li>
+<li>niem-profile:niem:Type:<br /><div class="sub">cbrn:MessageStatusType</div></li>
+<li>niem-profile:niem:XPath:<br /><div class="sub">cbrn:MessageStatus/cbrn:MessageStatusCode</div></li>
+<li>niem-profile:niem:BaseType:<br /><div class="sub">nc:TextType</div></li>
+<li>niem-profile:niem:Multiplicity:<br /><div class="sub">1,1</div></li>
+<li>niem-profile:niem:CodeList:<br /><div class="sub"></div></li>
+</ul>
+</div>
+</body>
+</html>

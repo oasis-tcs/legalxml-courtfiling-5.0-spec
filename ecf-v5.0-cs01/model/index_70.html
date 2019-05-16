@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>F</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">F</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<table>
+<tr bgcolor="#f0f0f0"><td align="center"><b>Name</b></td><td align="center"><b>Kind</b></td><td align="center"><b>Description</b></td></tr>
+<tr bgcolor="#f0f0f0"><td>Face</td><td>class instance</td><td>gml:Face represents the 2-dimensional topology primitive.<br />The topological boundary of a face (gml:directedEdge) consists of a sequence of directed edges. If provided, the aggregationType attribute shall have the value "sequence".<br />The optional coboundary of a face (gml:directedTopoSolid) is a pair of directed solids which are bounded by this face. A positively directed solid corresponds to a solid which lies in the direction of the negatively directed normal to the face in any geometric realisation. <br />A face may optionally be realised by a 2-dimensional geometric primitive (gml:surfaceProperty).</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImage</td><td>class instance</td><td>An image of a human face</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImage2DFeaturePoint</td><td>class instance</td><td>A set of attributes describing 2D, MPEG4 facial feature points and their locations</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImage3DFeaturePoint</td><td>class instance</td><td>A face feature point that includes a Z-coordinate</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImage3DFeaturePointAugmentationPoint</td><td>class instance</td><td>An augmentation point for FaceImage3DFeaturePoint</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImage3DFeaturePointType</td><td>class</td><td>A data type for an anthropometric landmark feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImage3DPoseAngle</td><td>class instance</td><td>A set of angular offsets of a subject from a full face or a profile, for a determined 3D pose</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionAugmentationPoint</td><td>class instance</td><td>An augmentation point for FaceImageAcquisition</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionCode</td><td>class instance</td><td>A code for the source of a facial photo</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionCodeSimpleType</td><td>class</td><td>A data type code for the source of a facial photo</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionCodeType</td><td>class</td><td>A data type code for the source of a facial photo</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionProfileAbstract</td><td>class instance</td><td>A data concept for a set of criteria under which the facial image was captured</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionProfileCode</td><td>class instance</td><td>A set of criteria under which the facial image was captured</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionProfileCodeSimpleType</td><td>class</td><td>A data type for a set of criteria under which the facial image was captured</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionProfileCodeType</td><td>class</td><td>A data type for a set of criteria under which the facial image was captured</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionSource</td><td>class instance</td><td>A source of an image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAcquisitionType</td><td>class</td><td>A data type for a description of a face image source</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAttribute</td><td>class instance</td><td>A special attribute of a captured facial image. Deprecated in favor of biom:FaceImageDescriptionCode.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAttributeAugmentationPoint</td><td>class instance</td><td>An augmentation point for FaceImageAttribute</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAttributeCode</td><td>class instance</td><td>An attribute of a captured facial image. Deprecated in favor of biom:FaceImageDescriptionCode.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAttributeText</td><td>class instance</td><td>A description of a special attribute of a captured facial image. Deprecated in favor of biom:FaceImageDescriptionText.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAttributeType</td><td>class</td><td>A data type for an attribute of a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageAugmentationPoint</td><td>class instance</td><td>An augmentation point for Face Image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundary</td><td>class instance</td><td>A polygon, ellipse, or circle containing a face image in a larger picture</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundaryAugmentationPoint</td><td>class instance</td><td>An augmentation point for Face Image Boundary</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundaryShapeCode</td><td>class instance</td><td>A shape of the boundary of a face image in a larger picture</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundaryType</td><td>class</td><td>A data type for a polygon containing a face image in a larger picture</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundingCategoryCode</td><td>class instance</td><td>A kind of face image in a bounding box</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundingCategoryCodeSimpleType</td><td>class</td><td>A data type for a kind of face image in a bounding box</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundingCategoryCodeType</td><td>class</td><td>A data type for a kind of face image in a bounding box</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundingSquare</td><td>class instance</td><td>A square bounding box containing a face image in a larger picture</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundingSquareAugmentationPoint</td><td>class instance</td><td>An augmentation point for Face Image Bounding Square</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageBoundingSquareType</td><td>class</td><td>A data type for a square bounding box containing a face image in a larger picture</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageContour</td><td>class instance</td><td>A contour feature in a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageContourAugmentationPoint</td><td>class instance</td><td>An augmentation point for FaceImageContour</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageContourCategoryCode</td><td>class instance</td><td>A kind of contour feature in this face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageContourCategoryCodeSimpleType</td><td>class</td><td>A data type for a kind of contour feature in a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageContourCategoryCodeType</td><td>class</td><td>A data type for a kind of contour feature in a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageContourType</td><td>class</td><td>A data type for a contour feature in a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageDescriptionAbstract</td><td>class instance</td><td>A data concept for a description of a facial expression of a subject and other attributes associated with a subject's captured facial image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageDescriptionCode</td><td>class instance</td><td>A description of a facial expression of a subject and other attributes associated with a subject's captured facial image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageDescriptionCodeSimpleType</td><td>class</td><td>A data type for a facial expression of the subject and other attributes associated with the subject's captured facial image, including physical characteristics</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageDescriptionCodeType</td><td>class</td><td>A data type for a facial expression of the subject and other attributes associated with the subject's captured facial image, including physical characteristics</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageDescriptionText</td><td>class instance</td><td>A description of a facial expression of a subject and other attributes associated with a subject's captured facial image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageFeaturePointAugmentationPoint</td><td>class instance</td><td>An augmentation point for Face Image Feature Point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageFeaturePointTierAbstract</td><td>class instance</td><td>A data concept for a number assigned to the tier level of a particular face image feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageFeaturePointTierCode</td><td>class instance</td><td>A number assigned to the tier level of a particular face image feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageFeaturePointTierCodeSimpleType</td><td>class</td><td>A data type for a number assigned to the tier level of a particular face image feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageFeaturePointTierCodeType</td><td>class</td><td>A data type for a number assigned to the tier level of a particular face image feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageFeaturePointTierNumeric</td><td>class instance</td><td>A user-defined number assigned to the tier level of a particular face image feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageFeaturePointTierNumericSimpleType</td><td>class</td><td>A data type for a user-defined number assigned to the tier level of a particular face image feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageFeaturePointTierNumericType</td><td>class</td><td>A data type for a user-defined number assigned to the tier level of a particular face image feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageFeaturePointType</td><td>class</td><td>A data type for a set of attributes describing 2D, MPEG4 facial feature points and their locations</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageLightingArtifactsCode</td><td>class instance</td><td>A lighting artifact in this face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageLightingArtifactsCodeSimpleType</td><td>class</td><td>A data type for a lighting artifact in a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageLightingArtifactsCodeType</td><td>class</td><td>A data type for a lighting artifact in a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageOcclusion</td><td>class instance</td><td>A blockage in a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageOcclusionAugmentationPoint</td><td>class instance</td><td>An augmentation point for FaceImageOcclusion</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageOcclusionCategoryCode</td><td>class instance</td><td>A kind of a blockage in a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageOcclusionOpacityCode</td><td>class instance</td><td>A level of opacity of a blockage in this face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageOcclusionType</td><td>class</td><td>A data type for a blockage in a face image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImagePoseOffsetAngleMeasure</td><td>class instance</td><td>An angular offset of a subject from full face or a profile, for an angled pose</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageSubjectPoseAbstract</td><td>class instance</td><td>A data concept for a pose of a subject</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageSubjectPoseCode</td><td>class instance</td><td>A pose of a subject</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceImageType</td><td>class</td><td>A data type for an image of a human face</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceOrTopoSolidPropertyType</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FaceType</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FacialImageMissingReasonCode</td><td>class instance</td><td>An image of a human face missing</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacialImageMissingReasonCodeType</td><td>class</td><td>A data type for a representation of the iris image missing reason codes.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacialImagePoseCategoryCodeSimpleType</td><td>class</td><td>A data type for a FACIAL IMAGE POSE TYPE.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacialImagePoseCategoryCodeType</td><td>class</td><td>A data type for a FACIAL IMAGE POSE TYPE.</td></tr>
+<tr bgcolor="#f0f0f0"><td>Facility</td><td>class instance</td><td>A building, place, or structure that provides a particular service.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAgeLimitationRange</td><td>class instance</td><td>A range of ages served by a facility from minimum to maximum.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAllegianceCountry</td><td>class instance</td><td>A designator for a country to which a facility owes its allegiance.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAreaDescriptionText</td><td>class instance</td><td>A description of a specific area of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAreaStatusText</td><td>class instance</td><td>A status for a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAssociation</td><td>class instance</td><td>An association between facilities.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAssociationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FacilityAssociationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAssociationType</td><td>class</td><td>A data type for an association between facilities.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAugmentation</td><td>class instance</td><td>Additional information about a Facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAugmentation</td><td>class instance</td><td>Additional information about a nc:Facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAugmentationPoint</td><td>class instance</td><td>An augmentation point for FacilityType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAugmentationType</td><td>class</td><td>A data type for additional information about a Facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityAugmentationType</td><td>class</td><td>A data type for additional information about a nc:Facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityBedVacantCountQuantity</td><td>class instance</td><td>A number of vacant beds available at a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityBuildingID</td><td>class instance</td><td>An numerical identifier of a facility building.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityCapacityDescriptionText</td><td>class instance</td><td>A description of the number of people a facility can manage at a time.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityCapacityQuantity</td><td>class instance</td><td>A number of people a facility can manage at a time.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityCategoryAbstract</td><td>class instance</td><td>A data concept for a category of facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityCategoryCode</td><td>class instance</td><td>A kind of facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityCategoryCodeSimpleType</td><td>class</td><td>A data type that defines the FacilityCategoryCodes</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityCategoryCodeType</td><td>class</td><td>A data type for the categories of facilities.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityCategoryText</td><td>class instance</td><td>A major kind of Category C work. Road and bridge repair.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityCategoryText</td><td>class instance</td><td>A kind of facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityContactInformation</td><td>class instance</td><td>A method of contact for a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityContainsItem</td><td>class instance</td><td>An item contained by a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityCurrentCaseLoadQuantity</td><td>class instance</td><td>A number of people a facility is currently managing.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityDescriptionText</td><td>class instance</td><td>A description of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityDocumentAssociation</td><td>class instance</td><td>An association between a facility and a document.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityDocumentAssociationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FacilityDocumentAssociationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityDocumentAssociationType</td><td>class</td><td>A data type for an association between a facility and a document.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityEquipmentCapacityText</td><td>class instance</td><td>A description of the equipment capacity of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityID</td><td>class instance</td><td>A unique identifier assigned to a facility.  There is no required format for the ID value.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25190914" target = "projectFrame"><b>FacilityIdentification</b></a></td><td>class instance</td><td>An identification assigned to a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityIdentification</td><td>class instance</td><td>An identification assigned to a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityImageAssociation</td><td>class instance</td><td>An association between a facility and an image.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityImageAssociationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FacilityImageAssociationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityImageAssociationType</td><td>class</td><td>A data type for an association between a facility and an image.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityJuvenileIndicator</td><td>class instance</td><td>True if a facility has the ability to accept people under the legal age of an adult; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityLocation</td><td>class instance</td><td>A location of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityMaxOccupancyQuantity</td><td>class instance</td><td>A maximum number of people that are authorized by permit to be contained in a facility at the same time.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityMemberCategoryText</td><td>class instance</td><td>A kind of occupant a facility manages.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25228290" target = "projectFrame"><b>FacilityName</b></a></td><td>class instance</td><td>A name of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityName</td><td>class instance</td><td>A name of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityOperatingSchedule</td><td>class instance</td><td>A schedule providing the beginning and ending hours of operation by weekday, for a designated time period.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityOperationalStatus</td><td>class instance</td><td>An operational status of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityOperationalStatusCodeSimpleType</td><td>class</td><td>A data type that defines the Facility Operational Status Codes</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityOperationalStatusCodeType</td><td>class</td><td>A data type for the operational states of a facility or site.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityPersonAssociation</td><td>class instance</td><td>An association between a facility and a person.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityPersonAssociationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FacilityPersonAssociationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityPersonAssociationType</td><td>class</td><td>A data type for an association between a facility and a person.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySecurityLevelText</td><td>class instance</td><td>A level of security at which a facility operates.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySiteAssociation</td><td>class instance</td><td>An association between a facility and a site.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySiteAssociationAugmentationPoint</td><td>class instance</td><td>An augmentation point for nc:FacilitySiteAssociationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySiteAssociationType</td><td>class</td><td>A data type for an association between a facility and a site.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySiteDiagram</td><td>class instance</td><td>A diagram of the layout of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityStaffingCapacityQuantity</td><td>class instance</td><td>A high range number of staff for a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityStatus</td><td>class instance</td><td>A status of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityStatusCodeSimpleType</td><td>class</td><td>A data type for a code set of facility status.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityStatusCodeType</td><td>class</td><td>A data type for a code set of facility status.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySubFacilityAssociation</td><td>class instance</td><td>An association between a facility and its sub-facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySubFacilityAssociationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FacilitySubFacilityAssociationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySubFacilityAssociationType</td><td>class</td><td>A data type for an association between a facility and its sub-facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySystemIdentification</td><td>class instance</td><td>An identification of a computing system that supports a facility's activities.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilitySystemIPAddressID</td><td>class instance</td><td>An IP address of a computing system that supports a facility's activities.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15738114.html#ref4_15738114" target = "projectFrame"><b>FacilityType</b></a></td><td>class</td><td>A data type for a building, place, or structure that provides a particular service.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityType</td><td>class</td><td>A data type for a building, place, or structure that provides a particular service.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageAbstract</td><td>class instance</td><td>A data concept for a data concept for the functional usage of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageCode</td><td>class instance</td><td>A description of the functional usage of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageCodeSimpleType</td><td>class</td><td>A data type to describe the uses of real property facilities.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageCodeSimpleType</td><td>class</td><td>A data type for the categories of facilities.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageCodeType</td><td>class</td><td>A data type for a description of the functional usage of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageCodeType</td><td>class</td><td>A data type for the categories of facilities.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageLevel1Code</td><td>class instance</td><td>A high-level usage category for a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageLevel1CodeSimpleType</td><td>class</td><td>A data type for Level 1 facility usage codes.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageLevel1CodeType</td><td>class</td><td>A data type for Level 1 facility usage codes.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageLevel2Code</td><td>class instance</td><td>A mid-level usage category for a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageLevel2CodeSimpleType</td><td>class</td><td>A data type for Level 2 facility usage codes.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageLevel2CodeType</td><td>class</td><td>A data type for Level 2 facility usage codes.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacilityUsageText</td><td>class instance</td><td>A description of the functional usage of a facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FacingHarmIndicator</td><td>class instance</td><td>True if the alien faces harm by returning to his/her country; false otherwise</td></tr>
+<tr bgcolor="#f0f0f0"><td>FamiliarityValue</td><td>class instance</td><td>An indication for the degree of familiarity between the data subject and the interlocutor.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FamilyIdentification</td><td>class instance</td><td>An identification assigned to a family for the purposes of discovering and connecting related records.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FamilyMemberBehaviorDescriptionText</td><td>class instance</td><td>A description of the behaviors of other family members.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FarmCodeSimpleType</td><td>class</td><td>A data type for 2.5: Vehicle Make/Brand Name (VMA) Field Codes for Farm and Garden Equipment and Farm Equipment Parts</td></tr>
+<tr bgcolor="#f0f0f0"><td>FarmCodeType</td><td>class</td><td>A data type for 2.5: Vehicle Make/Brand Name (VMA) Field Codes for Farm and Garden Equipment and Farm Equipment Parts</td></tr>
+<tr bgcolor="#f0f0f0"><td>FarmCropAcreage</td><td>class instance</td><td>A Farm within FSA state and county that contains a number of tracts fields and subfields on which crop acreage details have been reported.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FarmCropAcreageAugmentationPoint</td><td>class instance</td><td>An augmentation point for FarmProductionType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FarmCropAcreageType</td><td>class</td><td>A data type that contains farm related information including FSA state and county, farm number, and one to many tracts.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FarmNumberID</td><td>class instance</td><td>An identifier assigned to all land under control of a particular operator within a particular county.<br />  Each County assigns Farm Numbers independently. As a result, farms in different counties might be assigned the same Farm Number; i.e, a Farm Number might be unique only within a particular county. Thus, to uniquely identify a farm, the State FSA Code and County FSA Code must be specified in combination with the Farm Number.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FarmNumberIDSimpleType</td><td>class</td><td>A data type for identification number assigned to all land under control of a particular operator within a particular county.<br />  Each County assigns Farm Numbers independently. As a result, farms in different counties might be assigned the same Farm Number; i.e, a Farm Number might be unique only within a particular county. Thus, to uniquely identify a farm, the State FSA Code and County FSA Code must be specified in combination with the Farm Number.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FarmNumberIDType</td><td>class</td><td>A data type for identification number assigned to all land under control of a particular operator within a particular county.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_169986" target = "projectFrame"><b>fatalInjuryIndicator</b></a></td><td>attribute</td><td>Indicator of whether any person was fatally injured in the incident.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FatherUnknownText</td><td>class instance</td><td>A statement as to whether or not the father is unknown.</td></tr>
+<tr bgcolor="#f0f0f0"><td>Fault</td><td>class instance</td><td>A collection of information describing an error that occurred in an instrument, a specific detector, or during the analysis of data.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaultAugmentationPoint</td><td>class instance</td><td>An augmentation point for cbrn:FaultType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaultCodeValueText</td><td>class instance</td><td>An instrument-specific code that identifies the error or problem.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaultDescriptionText</td><td>class instance</td><td>A description of the problem that occurred.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaultSeverityCode</td><td>class instance</td><td>A code indicating the seriousness of a fault.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaultSeverityCodeSimpleType</td><td>class</td><td>A data type that defines the code values for the various categories of fault severity.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaultSeverityCodeType</td><td>class</td><td>A data type for the categories of fault severity.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaultType</td><td>class</td><td>A data type for describing an error that occurred in an instrument, a specific detector, or during the analysis of data.</td></tr>
+<tr bgcolor="#f0f0f0"><td>Favourites</td><td>class instance</td><td>A container for a list of favourites of a person</td></tr>
+<tr bgcolor="#f0f0f0"><td>FaxContactSupportIndicator</td><td>class instance</td><td>True if contact by fax machine is supported for follow up purposes; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FBIECRCode</td><td>class instance</td><td>A VGTOF Group Member Capability Criteria for Entry</td></tr>
+<tr bgcolor="#f0f0f0"><td>Feature</td><td>class instance</td><td>A generic GML feature adapter.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureArrayPropertyType</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureCollection</td><td>class instance</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureCollectionType</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureColorCommentText</td><td>class instance</td><td>A fourth information item, feature _ comment / COM, allows a free text comment or description to be provided by the examiner about the referenced field and subfield in this instance of a Type-9 record.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureColorFieldOccurenceReferencedValue</td><td>class instance</td><td>A second information item, feature _ field occurrence / FTO, indicates which repeating subfield of the specified field the label is applied to. Note that this is a 1-based index, not a 0-based index. Occurrences are numbered starting with 1.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureColorFieldReferencedCode</td><td>class instance</td><td>A data for one or both of the third or fourth information items shall be present in each subfield. The first two information items are mandatory. The first information item, feature - field number / FTF, indicates the field which is annotated with c</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureColorHexidecimalValue</td><td>class instance</td><td>A third information item, feature _ color / FTC, is an RGB color value expressed as a hexadecimal number.Some basic colors are red (FF0000), yellow (FFFF00), blue (0000FF), green (008000), black (000000) and white (FFFFFF). Leading zeros are require</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureLabelID</td><td>class instance</td><td>An index identifier or unique label applied to minutiae by a latent examiner to allow correlation of features between images</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureLineColorValue</td><td>class instance</td><td>A fifth information item, line color / TLC, is an RGB color value expressed as a hexadecimal number. Some basic colors are red (FF0000), yellow (FFFF00), blue (0000FF), green (008000), black (000000) and white (FFFFFF). Leading zeros are required.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureLineThicknessValue</td><td>class instance</td><td>A sixth information item, line thickness / TLT, is expressed as a positive integer. Thickness is expressed in units of 0.01 mm Any value from 1 through 99 is acceptable; suggested values are 3 (thin); 6 (medium); 9 (thick), and 15 (bold).</td></tr>
+<tr bgcolor="#f0f0f0"><td>featureMember</td><td>class instance</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>featureMembers</td><td>class instance</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FeaturePointCategoryAbstract</td><td>class instance</td><td>A data concept for a kind of feature point of a captured facial image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeaturePointCategoryCode</td><td>class instance</td><td>A kind of feature point of a captured facial image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeaturePointCategoryCodeSimpleType</td><td>class</td><td>A data type for a kind of feature point of a captured facial image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeaturePointCategoryCodeType</td><td>class</td><td>A data type for a kind of feature point of a captured facial image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeaturePointHorizontalCoordinateValue</td><td>class instance</td><td>An X coordinate of a facial feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeaturePointID</td><td>class instance</td><td>An identifier for a particular feature point, defined by ISO/IEC 14496-2</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeaturePointVerticalCoordinateValue</td><td>class instance</td><td>A Y coordinate of a facial feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeaturePointZCoordinateValue</td><td>class instance</td><td>A Z coordinate of a 3D face feature point</td></tr>
+<tr bgcolor="#f0f0f0"><td>featureProperty</td><td>class instance</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FeaturePropertyType</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureType</td><td>class</td><td>A data type that encapsulates a GML feature instance.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FeatureTypeList</td><td>class</td><td>List of person's physical features </td></tr>
+<tr bgcolor="#f0f0f0"><td>FederalAidRouteCode</td><td>class instance</td><td>A federal-aid/National Highway System (NHS) route code value</td></tr>
+<tr bgcolor="#f0f0f0"><td>FederalAidRouteCodeSimpleType</td><td>class</td><td>A data type indicating Federal-aid/National Highway System (NHS) route type</td></tr>
+<tr bgcolor="#f0f0f0"><td>FederalAidRouteCodeType</td><td>class</td><td>A data type indicating Federal-aid/National Highway System (NHS) route type</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_161794" target = "projectFrame"><b>federalBureauOfInvestigationNumber</b></a></td><td>attribute</td><td>A number issued by the FBI Automated Fingerprint Identification System (AFIS) based on submitted fingerprints.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FederalFindingsText</td><td>class instance</td><td>A court's description of its factual findings supporting conclusions about legal standards defined in federal law.  Usage:  factual findings regarding an agency's reasonable efforts to reunify a family, a child's placement in the least restrictive placement necessary, etc.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FederalGovernmentSponsorIndicator</td><td>class instance</td><td>True if the Federal Government is the sponsor of the Program; false otherwise</td></tr>
+<tr bgcolor="#f0f0f0"><td>FedFloodControlIndicator</td><td>class instance</td><td>True if repairs to this facility are the responsibility of USACE or NRCS; false if not</td></tr>
+<tr bgcolor="#f0f0f0"><td>FEDInfrastructureIndicator</td><td>class instance</td><td>True if this is a Federal road/bridge; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FEDMatchRequestIndicator</td><td>class instance</td><td>True if perform federal data match; false if there is no fed match.</td></tr>
+<tr bgcolor="#f0f0f0"><td>Fee</td><td>class instance</td><td>An amount of money charged.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25202946" target = "projectFrame"><b>FeeExceptionReasonCode</b></a></td><td>class instance</td><td>A code for the reason why a filer does not have to pay an otherwise applicable payment.  Allowable values set forth in Court Policy. Examples are in forma pauperis status granted or a fee waiver application submitted with the filing..</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25203074" target = "projectFrame"><b>FeeExceptionSupportingText</b></a></td><td>class instance</td><td>Any text needed to support the exemption assertion (reference to a court order, etc.)</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_142466" target = "projectFrame"><b>feeExemptionReasonCode</b></a></td><td>attribute</td><td>A code for the reason why a filer does not have to pay an otherwise applicable payment.  Allowable values set forth in Court Policy. Examples are in forma pauperis status granted or a fee waiver application submitted with the filing..</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_142594" target = "projectFrame"><b>feeExemptionSupportingText</b></a></td><td>attribute</td><td>Any text needed to support the exemption assertion (reference to a court order, etc.)</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25250690" target = "projectFrame"><b>FeesCalculationAmount</b></a></td><td>class instance</td><td>A total of all fees required to submit a document.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref18_1677570" target = "projectFrame"><b>feesrequest</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34366466" target = "projectFrame"><b>feesrequest:GetFeesCalculationRequestMessageAugmentationPoint</b></a></td><td>attribute</td><td>An extension point for the enclosing message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref18_1677314" target = "projectFrame"><b>feesresponse</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34395010" target = "projectFrame"><b>feesresponse:FeesCalculationAmount</b></a></td><td>attribute</td><td>A total of all fees required to submit a document.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34366594" target = "projectFrame"><b>feesresponse:GetFeesCalculationResponseMessageAugmentationPoint</b></a></td><td>attribute</td><td>An extension point for the enclosing message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25203202" target = "projectFrame"><b>FeesWaivedIndicator</b></a></td><td>class instance</td><td>Indicator that filing fees were waived or deferred in the case in the lower court.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_215042" target = "projectFrame"><b>feesWaivedIndicator</b></a></td><td>attribute</td><td>Indicator that filing fees were waived or deferred in the case in the lower court.</td></tr>
+<tr bgcolor="#f0f0f0"><td>Felony</td><td>class instance</td><td>A crime which is punishable by death or imprisonment in a state facility.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25203330" target = "projectFrame"><b>FiduciaryCaseAssociation</b></a></td><td>class instance</td><td>InfInformation about a guardianship, conservatorship, trust, or mental health case.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15743362.html#ref4_15743362" target = "projectFrame"><b>FiduciaryCaseAssociationType</b></a></td><td>class</td><td>Information about a guardianship, conservatorship, trust, or mental health case.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class139010.html#ref4_139010" target = "projectFrame"><b>FiduciaryCaseInformation</b></a></td><td>class</td><td>Information about a guardianship, conservatorship, trust, or mental health case.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_184322" target = "projectFrame"><b>fiduciaryCaseInformation</b></a></td><td>relation</td><td>InfInformation about a guardianship, conservatorship, trust, or mental health case.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25203458" target = "projectFrame"><b>FiduciaryTypeCode</b></a></td><td>class instance</td><td>Legal description of the role of a fiduciary. Examples: guardian, trustee, conservator of the person, conservator of the estate.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_150274" target = "projectFrame"><b>fiduciaryTypeCode</b></a></td><td>attribute</td><td>Legal description of the role of a fiduciary. Examples: guardian, trustee, conservator of the person, conservator of the estate.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FieldCropAcreage</td><td>class instance</td><td>A field of land within a tract on which groupings of crops can be planted.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FieldCropAcreageAugmentationPoint</td><td>class instance</td><td>An augmentation point for FieldProductionType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FieldCropAcreageType</td><td>class</td><td>A data type that contains field related information including CLU related information, field number, and one to many agriculture production plans.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FieldNumberID</td><td>class instance</td><td>An identifier number assigned to a field of land that is part of a farm tract.<br />  Field numbers are assigned by an FSA county office, and are unique within that offics farms. A Field Number is used in conjunction with Tract Number, State FSA Code and County FSA Code for uniqueness.<br />  Field number and Tract Number are not necessarily unique based upon State ANSI Code and County ANSI Code in instances where the ANSI codes are not the same as the FSA codes.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FieldNumberIDSimpleType</td><td>class</td><td>A data type for identification number assigned to a field of land that is part of a farm tract.<br />  Field numbers are assigned by an FSA county office, and are unique within that office''s farms. A Field Number is used in conjunction with Tract Number, State FSA Code and County FSA Code for uniqueness.<br />  Field number and Tract Number are not necessarily unique based upon State ANSI Code and County ANSI Code in instances where the ANSI codes are not the same as the FSA codes.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FieldNumberIDType</td><td>class</td><td>A data type for identification number assigned to a field of land that is part of a farm tract.</td></tr>
+<tr bgcolor="#f0f0f0"><td>File</td><td>class instance</td><td>for efficiency reasons, GML also provides a means of encoding the range set in an arbitrary external encoding, such as a binary file.  This encoding may be "well-known" but this is not required. This mode uses the gml:File element.<br />The values of the coverage (attribute values in the range set) are transmitted in a external file that is referenced from the XML structure described by gml:FileType.  The external file is referenced by the gml:fileReference property that is an anyURI (the gml:fileName property has been deprecated).  This means that the external file may be located remotely from the referencing GML instance. <br />The gml:compression property points to a definition of a compression algorithm through an anyURI.  This may be a retrievable, computable definition or simply a reference to an unambiguous name for the compression method.<br />The gml:mimeType property points to a definition of the file mime type.<br />The gml:fileStructure property is defined by a codelist. Note further that all values shall be enclosed in a single file. Multi-file structures for values are not supported in GML.<br />The semantics of the range set is described as above using the gml:rangeParameters property.<br />Note that if any compression algorithm is applied, the structure above applies only to the pre-compression or post-decompression structure of the file.<br />Note that the fields within a record match the gml:valueComponents of the gml:CompositeValue in document order.</td></tr>
+<tr bgcolor="#f0f0f0"><td>File</td><td>class instance</td><td>An official record or set of records associated with a person, project, task, or activity.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileAugmentationPoint</td><td>class instance</td><td>An augmentation point for FileType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FILECodeSimpleType</td><td>class</td><td>A data type for 4.2: Global Inquiry File (FILE) Field Codes</td></tr>
+<tr bgcolor="#f0f0f0"><td>FILECodeType</td><td>class</td><td>A data type for 4.2: Global Inquiry File (FILE) Field Codes</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileControlOfficeText</td><td>class instance</td><td>A Field Office or Service Center that has the authorization to handle the Alien's A-File and update CIS to reflect location and movement of the file.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileCustomerID</td><td>class instance</td><td>An internal identifier uniquely identifying a customer within a specific file. Each unique customer within a given file will have a unique File Customer Identifier. File Customer Identifier values are not unique across files.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileCustomerIDSimpleType</td><td>class</td><td>A data type for internal identifier uniquely identifying a customer within a specific file. Each unique customer within a given file will have a unique File Customer Identifier. File Customer Identifier values are not unique across files.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileCustomerIDType</td><td>class</td><td>A data type for internal identifier uniquely identifying a customer within a specific file.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileIdentification</td><td>class instance</td><td>An identification of the file number assigned to an alien immigration file.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileName</td><td>class instance</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FileName_PropertyType</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FileName_Type</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FileNewIndicator</td><td>class instance</td><td>True if the alien immigration file is new; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class232578.html#ref4_232578" target = "projectFrame"><b>Filer</b></a></td><td>class</td><td>A filer that submits filings to a court and serves filings to other parties in a case.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileReceivedDate</td><td>class instance</td><td>A date a file was received.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileRequestDate</td><td>class instance</td><td>A date on which the alien's immigration file was requested.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_15464322" target = "projectFrame"><b>filerID</b></a></td><td>attribute</td><td>An attorney, judicial official or a pro se (self-represented) litigant who electronically provides  filings (combinations of data and documents) for acceptance and filing by a court, or who has successfully filed filings with a court.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_137858" target = "projectFrame"><b>filerID</b></a></td><td>attribute</td><td>A unique identifier for a person or organization that requests information.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_136706" target = "projectFrame"><b>filerID</b></a></td><td>attribute</td><td>A unique identifier for a person or organization that requests information.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_14429314" target = "projectFrame"><b>filerPerformsServiceIndicator</b></a></td><td>attribute</td><td>Indicator whether the filer is required to serve</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25203842" target = "projectFrame"><b>FilerRequiredToServeIndicator</b></a></td><td>class instance</td><td>Indicator whether the filer is required to serve</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_197122" target = "projectFrame"><b>fileSize</b></a></td><td>attribute</td><td>Size of file expressed in kilobytes</td></tr>
+<tr bgcolor="#f0f0f0"><td>FileType</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FileType</td><td>class</td><td>A data type for an official record or set of records associated with a person, project, task, or activity.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref18_1674370" target = "projectFrame"><b>filing</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref12_205314" target = "projectFrame"><b>Filing Sequence</b></a></td><td>sequence diagram</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34333442" target = "projectFrame"><b>filing:FilingConnectedDocument</b></a></td><td>attribute</td><td>A document included in a Filing that supports the Document.  This document is not separately entered on the docket or register of actions.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34362114" target = "projectFrame"><b>filing:FilingLeadDocument</b></a></td><td>attribute</td><td>The pleading, motion or order that is the main document in a Filing. A Document may have Attachments.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34385922" target = "projectFrame"><b>filing:FilingMessage</b></a></td><td>attribute</td><td>The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34374402" target = "projectFrame"><b>filing:FilingMessage</b></a></td><td>attribute</td><td>The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34365186" target = "projectFrame"><b>filing:FilingMessageAugmentationPoint</b></a></td><td>attribute</td><td>An extension point for the enclosing message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref6_128002" target = "projectFrame"><b>FilingAssembly</b></a></td><td>component</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class129410.html#ref4_129410" target = "projectFrame"><b>FilingAssemblyMDE</b></a></td><td>class</td><td>The list of operations supported by the Filing Assembly MDE.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_131714" target = "projectFrame"><b>filingAttorneyID</b></a></td><td>attribute</td><td>Identifier recognized by the court as being unique within this case,and used to identify the entity who is filing this document.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_148354" target = "projectFrame"><b>filingAuthorizedTime</b></a></td><td>attribute</td><td>The time that the filer submitted the filing to the control of the filing assembly provider and authorized it for filing into the court.   At that point and time, the filer could no longer make any changes to the filing.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25204226" target = "projectFrame"><b>FilingCompletionDate</b></a></td><td>class instance</td><td>the date and time at which the Court Record MDE filing process was completed following the acceptance by the Filing Review MDE</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_174978" target = "projectFrame"><b>filingCompletionTime</b></a></td><td>attribute</td><td>the date and time at which the Court Record MDE filing process was completed following the acceptance by the Filing Review MDE</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25182466" target = "projectFrame"><b>FilingConnectedDocument</b></a></td><td>class instance</td><td>A document included in a Filing that supports the Document.  This document is not separately entered on the docket or register of actions.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25204354" target = "projectFrame"><b>FilingDocketingStatusCode</b></a></td><td>class instance</td><td>The docketing status of the filing or document</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_30403458" target = "projectFrame"><b>filingDocketingStatusCode</b></a></td><td>attribute</td><td>The docketing status of the filing or document	</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_175234" target = "projectFrame"><b>filingEnteredOnDocketTime</b></a></td><td>attribute</td><td>the date and time of day on which an entry in the docket or register of action in the court CMS was completed for a filing</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_141186" target = "projectFrame"><b>filingFee</b></a></td><td>attribute</td><td>A fee or price required to submit a document.<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_147202" target = "projectFrame"><b>filingFeesMayBeApplicableIndicator</b></a></td><td>attribute</td><td>Indicates whether fees may be required for some filings.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25204610" target = "projectFrame"><b>FilingFeesMayBeApplicableIndicator</b></a></td><td>class instance</td><td>Indicates whether fees may be required for some filings.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_174338" target = "projectFrame"><b>filingID</b></a></td><td>attribute</td><td>An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. "Transaction" means the sequence of messages from initial filing review through receipt of the asynchronous review callback.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_148098" target = "projectFrame"><b>filingID</b></a></td><td>attribute</td><td>An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. "Transaction" means the sequence of messages from initial filing review through receipt of the asynchronous review callback.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_30141314" target = "projectFrame"><b>filingID</b></a></td><td>attribute</td><td>A filing identifier</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_136834" target = "projectFrame"><b>filingID</b></a></td><td>attribute</td><td>An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. "Transaction" means the sequence of messages from initial filing review through receipt of the asynchronous review callback.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_137090" target = "projectFrame"><b>filingID</b></a></td><td>attribute</td><td>An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. "Transaction" means the sequence of messages from initial filing review through receipt of the asynchronous review callback.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_139010" target = "projectFrame"><b>filingID</b></a></td><td>attribute</td><td>A number assigned by the court for a filing.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_173826" target = "projectFrame"><b>filingID</b></a></td><td>attribute</td><td>An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. "Transaction" means the sequence of messages from initial filing review through receipt of the asynchronous review callback.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25215746" target = "projectFrame"><b>FilingLeadDocument</b></a></td><td>class instance</td><td>The pleading, motion or order that is the main document in a Filing. A Document may have Attachments.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25204738" target = "projectFrame"><b>FilingListQueryCriteria</b></a></td><td>class instance</td><td>Criteria limiting the list of filings to be returned.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_12126338" target = "projectFrame"><b>filingListQueryCriteria</b></a></td><td>relation</td><td>Criteria limiting the list of filings to be returned.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class13000322.html#ref4_13000322" target = "projectFrame"><b>FilingListQueryCriteria</b></a></td><td>class</td><td>Criteria limiting the list of filings to be returned.<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15728642.html#ref4_15728642" target = "projectFrame"><b>FilingListQueryCriteriaType</b></a></td><td>class</td><td>Criteria limiting the list of filings to be returned.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref18_1674882" target = "projectFrame"><b>filinglistrequest</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34354306" target = "projectFrame"><b>filinglistrequest:FilingListQueryCriteria</b></a></td><td>attribute</td><td>Criteria limiting the list of filings to be returned.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34366722" target = "projectFrame"><b>filinglistrequest:GetFilingListRequestMessageAugmentationPoint</b></a></td><td>attribute</td><td>An extension point for the enclosing message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref18_1677698" target = "projectFrame"><b>filinglistresponse</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34366850" target = "projectFrame"><b>filinglistresponse:GetFilingListResponseMessageAugmentationPoint</b></a></td><td>attribute</td><td>An extension point for the enclosing message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25183746" target = "projectFrame"><b>FilingMessage</b></a></td><td>class instance</td><td>The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25218818" target = "projectFrame"><b>FilingMessageAugmentationPoint</b></a></td><td>class instance</td><td>An extension point for the enclosing message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15728130.html#ref4_15728130" target = "projectFrame"><b>FilingMessageType</b></a></td><td>class</td><td>The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_174722" target = "projectFrame"><b>filingOfficialDate</b></a></td><td>attribute</td><td>the date of filing of a document recognized by the court in its docket entry upon acceptance of the document for entry into the court official records.  Note:  This date may be, but need to be, affixed to the document with an electronic filestamp.  There is no corresponding official hour of the filing.  The court may subsequently change the officialFilingDate by judicial order.<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_131842" target = "projectFrame"><b>filingPartyID</b></a></td><td>attribute</td><td>Identifier recognized by the court as being unique within this case,and used to identify the entity on whose behalf this document is being filed.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref6_128130" target = "projectFrame"><b>FilingReview</b></a></td><td>component</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25241602" target = "projectFrame"><b>FilingReviewCommentsText</b></a></td><td>class instance</td><td>Comments provided by the clerk to the court record system during review.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class129282.html#ref4_129282" target = "projectFrame"><b>FilingReviewMDE</b></a></td><td>class</td><td>The list of operations supported by the Filing Review MDE.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25205122" target = "projectFrame"><b>FilingReviewStatusCode</b></a></td><td>class instance</td><td>Status of the filing as determined by the system sending the callback. Values: accepted, partially accepted (e.g., some documents but not others), rejected.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25204994" target = "projectFrame"><b>FilingStatus</b></a></td><td>class instance</td><td>The status of a filing</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_11303042" target = "projectFrame"><b>filingStatus</b></a></td><td>attribute</td><td>The status of a filing</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_139266" target = "projectFrame"><b>filingStatus</b></a></td><td>attribute</td><td>Details about the status of a court processing of a ReviewFilingMessage submitted to it, and of its processing of the documents contained within that message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_174466" target = "projectFrame"><b>filingStatusCode</b></a></td><td>attribute</td><td>Status of the filing as determined by the system sending the callback. Values: accepted, partially accepted (e.g., some documents but not others), rejected.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_137730" target = "projectFrame"><b>filingStatusCode</b></a></td><td>attribute</td><td>Details about the status of a court processing of a ReviewFilingMessage submitted to it, and of its processing of the documents contained within that message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25205250" target = "projectFrame"><b>FilingStatusQueryCriteria</b></a></td><td>class instance</td><td>Criteria limiting the filing status information to be returned.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class13000450.html#ref4_13000450" target = "projectFrame"><b>FilingStatusQueryCriteria</b></a></td><td>class</td><td>Criteria limiting the filing status information to be returned.<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_12126466" target = "projectFrame"><b>filingStatusQueryCriteria</b></a></td><td>relation</td><td>Criteria limiting the filing status information to be returned.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15728770.html#ref4_15728770" target = "projectFrame"><b>FilingStatusQueryCriteriaType</b></a></td><td>class</td><td>Criteria limiting the filing status information to be returned.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_174594" target = "projectFrame"><b>filingStatusReasonDescription</b></a></td><td>attribute</td><td>A textual description of the reason for the setting of the status in the filingStatusCode.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref18_1675010" target = "projectFrame"><b>filingstatusrequest</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34354946" target = "projectFrame"><b>filingstatusrequest:FilingStatusQueryCriteria</b></a></td><td>attribute</td><td>Criteria limiting the filing status information to be returned.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34366978" target = "projectFrame"><b>filingstatusrequest:GetFilingStatusRequestMessageAugmentationPoint</b></a></td><td>attribute</td><td>An extension point for the enclosing message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref18_1676802" target = "projectFrame"><b>filingstatusresponse</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_34367106" target = "projectFrame"><b>filingstatusresponse:GetFilingStatusResponseMessageAugmentationPoint</b></a></td><td>attribute</td><td>An extension point for the enclosing message.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15743746.html#ref4_15743746" target = "projectFrame"><b>FilingStatusType</b></a></td><td>class</td><td>A textual description of the reason for the setting of the status in the filingStatusCode.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinalAdoptionDecreeIndicator</td><td>class instance</td><td>True if a copy of the final adoption decree for the ADOPTED CHILD was received by USCIS; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinalPlantedDate</td><td>class instance</td><td>A mandatory final value for the date that a specific crop was planted.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinalPlea</td><td>class instance</td><td>A final plea offered by a defendant in relation to a charge that was accepted by the court.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinalReportedAcreageSimpleType</td><td>class</td><td>A data type for final number of acres that were reported.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinalReportedAcreageType</td><td>class</td><td>A data type for final number of acres that were reported.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinalReportedAcreageValue</td><td>class instance</td><td>A final number of acres that were reported.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccount</td><td>class instance</td><td>A financial account maintained by a financial institution.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_171650" target = "projectFrame"><b>financialAccount</b></a></td><td>relation</td><td>The account in a financial institution used for this payment.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class136194.html#ref4_136194" target = "projectFrame"><b>FinancialAccount</b></a></td><td>class</td><td>An account in a financial institution.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountAugmentationPoint</td><td>class instance</td><td>An augmentation point for FinancialAccountType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountCategoryText</td><td>class instance</td><td>A kind of account or financial service maintained by a financial institution.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountClosedIndicator</td><td>class instance</td><td>True if the account was closed or transferred in its entirety during the calendar year; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountHolder</td><td>class instance</td><td>An entity that holds a financial account.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountHolderAugmentationPoint</td><td>class instance</td><td>An augmentation point for type nc:FinancialAccountHolderType</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountHolderCode</td><td>class instance</td><td>A kind of financial account holder.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountHolderCodeSimpleType</td><td>class</td><td>A data type for a kind of financial account holder.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountHolderCodeType</td><td>class</td><td>A data type for a kind of financial account holder.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountHolderType</td><td>class</td><td>A data type for an entity that holds a financial account.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountInstitutionAssociation</td><td>class instance</td><td>A relationship between a financial account and the institution that manages it.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountInstitutionAssociationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FinancialAccountInstitutionAssociationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountInstitutionAssociationType</td><td>class</td><td>A data type for a relationship between a financial account and the institution that manages it.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountListedName</td><td>class instance</td><td>A name of a person or organization appearing on a financial account.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountNumberCategoryCode</td><td>class instance</td><td>A kind of financial account number.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountNumberCategoryCodeSimpleType</td><td>class</td><td>A data type for a kind of financial account number.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountNumberCategoryCodeType</td><td>class</td><td>A data type for a kind of financial account number.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountNumberID</td><td>class instance</td><td>An identifier assigned to a type of financial account.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountPresentBalanceAmount</td><td>class instance</td><td>An account balance at the time of financial compilation.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15717122.html#ref4_15717122" target = "projectFrame"><b>FinancialAccountType</b></a></td><td>class</td><td>An account in a financial institution.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialAccountType</td><td>class</td><td>A data type for a financial account maintained by a financial institution.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialCompilation</td><td>class instance</td><td>A set of financial details for a person.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialCompilationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FinancialCompilationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialCompilationDate</td><td>class instance</td><td>A date of the financial compilation.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialCompilationType</td><td>class</td><td>A data type for a set of financial details for a person.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialInformationText</td><td>class instance</td><td>A text string denoting the Exchange Visitors financial information.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref0_171906" target = "projectFrame"><b>financialInstitution</b></a></td><td>relation</td><td>The bank, savings association, credit union or other entity of which the branch is a subunit.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25205506" target = "projectFrame"><b>FinancialInstitution</b></a></td><td>class instance</td><td>The bank, savings association, credit union or other entity of which the branch is a subunit.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class147970.html#ref4_147970" target = "projectFrame"><b>FinancialInstitution</b></a></td><td>class</td><td>The bank, savings association, credit union or other entity in which a financial account exists.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_181506" target = "projectFrame"><b>financialInstitutionAddress</b></a></td><td>attribute</td><td>The address of a financial institution.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25171202" target = "projectFrame"><b>FinancialInstitutionBranch</b></a></td><td>class instance</td><td>A subunit of a financial organization, usually denoted by a physical location, in which the account is maintained.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_181250" target = "projectFrame"><b>financialInstitutionID</b></a></td><td>attribute</td><td>The identifier for a financial institution.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_181378" target = "projectFrame"><b>financialInstitutionName</b></a></td><td>attribute</td><td>The name of a financial institution.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15744514.html#ref4_15744514" target = "projectFrame"><b>FinancialInstitutionType</b></a></td><td>class</td><td>The bank, savings association, credit union or other entity in which a financial account exists.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25225730" target = "projectFrame"><b>FinancialObligation</b></a></td><td>class instance</td><td>A responsibility of a party in a case ordered by a court.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class191746.html#ref4_191746" target = "projectFrame"><b>FinancialObligation</b></a></td><td>class</td><td>A financial responsibility of a party in a case ordered by a court.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialObligationExemptionAmount</td><td>class instance</td><td>An amount of an exemption from a payment obligation.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25251842" target = "projectFrame"><b>FinancialObligationExemptionAmount</b></a></td><td>class instance</td><td>An amount of an exemption from a payment obligation.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15744642.html#ref4_15744642" target = "projectFrame"><b>FinancialObligationType</b></a></td><td>class</td><td>A financial responsibility of a party in a case ordered by a court.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_224642" target = "projectFrame"><b>financialObligationType</b></a></td><td>attribute</td><td>A type of financial obligation (e.g. child support, maintanence, medical, medical reimbursement).</td></tr>
+<tr bgcolor="#f0f0f0"><td>FinancialSupportMethodSelectionCommentText</td><td>class instance</td><td>A method used to select and arrange financial support for EXCHANGE VISITORs.</td></tr>
+<tr bgcolor="#f0f0f0"><td>Finding</td><td>class instance</td><td>A statement containing the authoritative decision of the court.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FindingAugmentationPoint</td><td>class instance</td><td>An augmentation point for FindingType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FindingType</td><td>class</td><td>A data type for the details of the authoritative decision of the court.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerImpressionImageDetail</td><td>class instance</td><td>A detailing of the metadata for an image of a fingerprint</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerImpressionImageDetailAugmentationPoint</td><td>class instance</td><td>An augmentation point for FingerImpressionImageDetail</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerImpressionImageDetailType</td><td>class</td><td>A data type for the details about a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerMissingCode</td><td>class instance</td><td>A reason for a missing finger from a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerPatternCodeSimpleType</td><td>class</td><td>A data type for a fingerprint pattern classification.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerPatternCodeType</td><td>class</td><td>A data type for a fingerprint pattern classification.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerPositionCode</td><td>class instance</td><td>A finger position code</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerPositionCodeSimpleType</td><td>class</td><td>A data type for a finger position</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerPositionCodeType</td><td>class</td><td>A data type for a finger position</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_9574914" target = "projectFrame"><b>fingerprint</b></a></td><td>attribute</td><td>A print from a single finger.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintAcquisitionProfileAbstract</td><td>class instance</td><td>A data concept for a set of criteria under which the fingerprint image was captured</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintActivityAugmentationPoint</td><td>class instance</td><td>An augmentation point for FingerprintActivityType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintActivityType</td><td>class</td><td>A data type for a non-criminal fingerprint event segment.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCaptureTechnique</td><td>class instance</td><td>A classification of the manner in which the FINGERPRINT is taken.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCaptureTechniqueAugmentationPoint</td><td>class instance</td><td>An augmentation point for FingerprintCaptureTechniqueType</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCaptureTechniqueCategoryCode</td><td>class instance</td><td>A kind of fingerprint capture technique type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCaptureTechniqueCategoryCodeSimpleType</td><td>class</td><td>A data type for a kind of fingerprint capture technique type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCaptureTechniqueCategoryCodeSimpleType</td><td>class</td><td>A data type for a kind of fingerprint capture technique type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCaptureTechniqueCategoryCodeType</td><td>class</td><td>A data type for a kind of fingerprint capture technique type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCaptureTechniqueCategoryCodeType</td><td>class</td><td>A data type for a kind of fingerprint capture technique type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCaptureTechniqueDescriptionText</td><td>class instance</td><td>A description of the kind of fingerprint capture technique type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCaptureTechniqueType</td><td>class</td><td>A data type for kind of fingerprint capture technique type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerPrintCardIndicator</td><td>class instance</td><td>True if a legal hard copy of the BIOMETRIC IMAGE containing the patterns or ridges on the pad of a human finger exists; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCategoryCodeSimpleType</td><td>class</td><td>A data type for a kind of fingerprint type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCategoryCodeType</td><td>class</td><td>A data type for a kind of fingerprint type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCategoryDescriptionText</td><td>class instance</td><td>A description of a fingerprint type.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCompressionSoftware</td><td>class instance</td><td>A data type that specifies fingerprint compression software information</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCoordinate</td><td>class instance</td><td>A coordinate of the bounding box for an individual finger.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCoordinateAugmentationPoint</td><td>class instance</td><td>An augmentation point for Fingerprint Coordinate</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintCoordinateType</td><td>class</td><td>A data type for coordinates of the bounding box for an individual finger.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintDate</td><td>class instance</td><td>A date/time at which a person being booked was fingerprinted.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintDeltaLocationAugmentationPoint</td><td>class instance</td><td>An augmentation point for Fingerprint Delta Location</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintDeltaLocationType</td><td>class</td><td>A data type for a location of a delta in a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintFeatureLocationAugmentationPoint</td><td>class instance</td><td>An augmentation point for Fingerprint Feature Location</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintFeatureLocationType</td><td>class</td><td>A data type for a location of a minutia or finger pattern characteristic in a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintFeaturesFeedback</td><td>class instance</td><td>A kind of supplemental proprietary value describing minutiae and related information encoded from a fingerprint image.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintFeaturesFeedbackAugmentationPoint</td><td>class instance</td><td>An augmentation point for FingerprintFeaturesFeedbackType</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintFeaturesFeedbackType</td><td>class</td><td>A data type for supplemental proprietary values describing minutiae and related information encoded from a fingerprint image.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintFeaturesVersionText</td><td>class instance</td><td>A vendor and version of the fingerprint feature extraction software used to encode minutiae.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintIdentification</td><td>class instance</td><td>An identification that uniquely identifies a Person's fingerprints.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25170434" target = "projectFrame"><b>FingerprintImage</b></a></td><td>class instance</td><td>An image of a fingerprint</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImage</td><td>class instance</td><td>An image of a fingerprint</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageAcquisitionProfileAbstract</td><td>class instance</td><td>A data concept for a set of criteria under which the fingerprint image was captured</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageAcquisitionProfileCode</td><td>class instance</td><td>A set of criteria under which the fingerprint image was captured</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageAcquisitionProfileCodeSimpleType</td><td>class</td><td>A data type for a set of criteria under which the fingerprint image was captured or Subject acquisition profile(SAP)</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageAcquisitionProfileCodeType</td><td>class</td><td>A data type for a set of criteria under which the fingerprint image was captured</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageAugmentationPoint</td><td>class instance</td><td>An augmentation point for Fingerprint Image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageFingerMissing</td><td>class instance</td><td>A missing finger in a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageFingerMissingAugmentationPoint</td><td>class instance</td><td>An augmentation point for Fingerprint Image Finger Missing</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageFingerMissingType</td><td>class</td><td>A data type for a missing finger in a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageFingerprintOrientation</td><td>class instance</td><td>A deviation from upright of the finger tip within a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageFingerprintOrientationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FingerprintImageFingerprintOrientation type</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageFingerprintOrientationType</td><td>class</td><td>A data type for a deviation from upright of the finger tip within a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageImpressionCaptureCategoryCode</td><td>class instance</td><td>A kind of impression capture by which a fingerprint image information was obtained</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageMajorCasePrint</td><td>class instance</td><td>A set of information required when finger position code is "19" complete friction ridge exemplars</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageMajorCasePrintAugmentationPoint</td><td>class instance</td><td>An augmentation point for Fingerprint Image Major Case Print</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageMajorCasePrintType</td><td>class</td><td>A data type for a major case fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageMissingAreaReasonCodeSimpleType</td><td>class</td><td>A data type for a reason a fingerprint, facial image is missing</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageMissingAreaReasonCodeType</td><td>class</td><td>A data type for a reason a fingerprint is missing</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageNISTQuality</td><td>class instance</td><td>A quality measure of a fingerprint, as defined by NIST</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageNISTQualityAugmentationPoint</td><td>class instance</td><td>An augmentation point for FingerprintImageNISTQuality</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageNISTQualityType</td><td>class</td><td>A data type for a NIST quality measure for a particular fingerprint</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImagePosition</td><td>class instance</td><td>A set of possible finger position codes, most probable position first.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageQuality</td><td>class instance</td><td>A fingerprint image quality</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageQualityAugmentationPoint</td><td>class instance</td><td>An augmentation point for FingerprintImageQuality</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageQualityType</td><td>class</td><td>A data type for a quality measure for a particular fingerprint</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageSegmentationQuality</td><td>class instance</td><td>A measure of accuracy of a slap print segmentation</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageSegmentPositionPolygon</td><td>class instance</td><td>A fingerprint image segment position polygon</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageSegmentPositionPolygonAugmentationPoint</td><td>class instance</td><td>An augmentation point for FingerprintImageSegmentPositionPolygon</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageSegmentPositionPolygonType</td><td>class</td><td>A data type for a polygon segment position for a particular fingerprint</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageSegmentPositionSquare</td><td>class instance</td><td>A fingerprint image segment position square</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageSegmentPositionSquareAugmentationPoint</td><td>class instance</td><td>An augmentation point for Fingerprint Image Segment Position Square</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageSegmentPositionSquareType</td><td>class</td><td>A data type for a square segment position for a particular fingerprint</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageStitchedIndicator</td><td>class instance</td><td>True if the image was formed by stitching together separately captured images; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15725186.html#ref4_15725186" target = "projectFrame"><b>FingerprintImageType</b></a></td><td>class</td><td>A data type for a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImageType</td><td>class</td><td>A data type for a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImpressionCategoryCodeSimpleType</td><td>class</td><td>A data type for a kind of fingerprint impression.<br /></td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintImpressionCategoryDescriptionText</td><td>class instance</td><td>A description of a kind of fingerprint impression.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintLegacyImageImpressionCaptureCategoryCode</td><td>class instance</td><td>An element to represent the allowed capture category codes for legacy grayscale exemplar finger images</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintOffCenterCode</td><td>class instance</td><td>An off-center position of a finger or thumb image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintOffCenterCodeSimpleType</td><td>class</td><td>A data type for an off-center position of a finger or thumb image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintOffCenterCodeType</td><td>class</td><td>A data type for an off-center position of a finger or thumb image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternCategoryCodeSimpleType</td><td>class</td><td>A data type for a classification of fingerprint patterns into distinct groups based on general similarities.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternClassification</td><td>class instance</td><td>A classification and subclassification of a fingerprint pattern</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternClassificationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FingerprintPatternClassification type</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternClassificationType</td><td>class</td><td>A data type for a classification and sub-classification of a fingerprint pattern</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternCoreLocation</td><td>class instance</td><td>A location of a fingerprint pattern's core in a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternDeltaLocation</td><td>class instance</td><td>A location of a fingerprint pattern's delta in a fingerprint image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternGeneralClassCode</td><td>class instance</td><td>A class of fingerprint pattern used by most automated fingerprint information systems</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternGeneralClassCodeSimpleType</td><td>class</td><td>A data type for a class of fingerprint pattern used by most automated fingerprint information systems</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternGeneralClassCodeType</td><td>class</td><td>A data type for a class of fingerprint pattern used by most automated fingerprint information systems</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternSubClassCode</td><td>class instance</td><td>A subclass of fingerprint pattern that is an arch or whorl</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternSubClassCodeSimpleType</td><td>class</td><td>A data type for a detailed subclassification of fingerprint patterns arches and whorls</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternSubClassCodeType</td><td>class</td><td>A data type for a detailed subclassification of fingerprint patterns arches and whorls</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternWhorlDeltaRelationshipCode</td><td>class instance</td><td>A relationship between a whorl and a delta in a fingerprint pattern</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternWhorlDeltaRelationshipCodeSimpleType</td><td>class</td><td>A data type for a relationship between a whorl and a delta in a fingerprint pattern</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPatternWhorlDeltaRelationshipCodeType</td><td>class</td><td>A data type for a relationship between a whorl and a delta in a fingerprint pattern</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPositionListAugmentationPoint</td><td>class instance</td><td>An augmentation point for Fingerprint Position List</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintPositionListType</td><td>class</td><td>A data type for a list of finger positions</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_9573762" target = "projectFrame"><b>fingerprintSet</b></a></td><td>attribute</td><td>A set of fingerprints.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintSimultaneousCaptureID</td><td>class instance</td><td>An index identifier to reference a set of prints captured simultaneously on adjacent platens.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintTakenIndicator</td><td>class instance</td><td>True if a fingerprint biometric was taken; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerprintTakenIndicator</td><td>class instance</td><td>True if a fingerprint biometric was taken; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerRidgeMinutia</td><td>class instance</td><td>A minutia in a friction ridge image (Obsolete).</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerViewCodeSimpleType</td><td>class</td><td>A data type for a kind of finger view</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerViewCodeType</td><td>class</td><td>A data type for a kind of finger view</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerViewNumeric</td><td>class instance</td><td>A view number of a finger associated with minutiae data</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerViewNumericSimpleType</td><td>class</td><td>A data type for a view number of a finger associated with minutiae data</td></tr>
+<tr bgcolor="#f0f0f0"><td>FingerViewNumericType</td><td>class</td><td>A data type for a view number of a finger associated with minutiae data</td></tr>
+<tr bgcolor="#f0f0f0"><td>FIPS201ConformanceCode</td><td>class instance</td><td>A data element for FIPS 201 conformance level of an identification card</td></tr>
+<tr bgcolor="#f0f0f0"><td>FIPS201ConformanceCodeSimpleType</td><td>class</td><td>A data type code that represents the FIPS 201 conformance level of an identification card</td></tr>
+<tr bgcolor="#f0f0f0"><td>FIPS201ConformanceCodeType</td><td>class</td><td>A data type for a code that represents the FIPS 201 conformance level of an identification card</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref18_1678082" target = "projectFrame"><b>fips_10-4</b></a></td><td>class view</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>fips_5-2</td><td>class view</td><td>Source: National Institute for Standards and Technology (NIST); <br />Publication: Codes for the Identification of the States, the District of Columbia, and the Outlying Areas of the U.S., and Associated Areas; <br />Date: 28 May 1987; <br />Source Updates: 1 Jan 1988; <br />http://www.itl.nist.gov/fipspubs/fip5-2.htm</td></tr>
+<tr bgcolor="#f0f0f0"><td>Firearm</td><td>class instance</td><td>A weapon that will, or is designed to, or may readily be converted to expel a projectile by air, carbon dioxide, or the action of an explosive.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmAugmentationPoint</td><td>class instance</td><td>An augmentation point for FirearmType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmAutomaticIndicator</td><td>class instance</td><td>True if firearm is an automatic weapon and can be fired in quick succession; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmBarrelLengthMeasure</td><td>class instance</td><td>A measurement of the length of the tube of a firearm from which a projectile is expelled.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmBoreSizeAbstract</td><td>class instance</td><td>A data concept for a size of the inside diameter of a firearm barrel or bore.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmBoreSizeNCICCode</td><td>class instance</td><td>A size of the inside diameter of a firearm barrel or bore.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmBoreSizeNDEXCode</td><td>class instance</td><td>A size of the inside diameter of a firearm barrel or bore.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmBoreSizeText</td><td>class instance</td><td>A size of the inside diameter of a firearm barrel or bore.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmCategoryAbstract</td><td>class instance</td><td>A data concept for a kind of firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmCategoryCode</td><td>class instance</td><td>A kind of firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmCategoryDescriptionAbstract</td><td>class instance</td><td>A data concept for a description of a kind of firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmCategoryDescriptionCode</td><td>class instance</td><td>A description of a kind of firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmCategoryDescriptionText</td><td>class instance</td><td>A description of a kind of firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmCategoryText</td><td>class instance</td><td>A kind of firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmFinishAbstract</td><td>class instance</td><td>A data concept for a surface coating or finish of a firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmFinishCode</td><td>class instance</td><td>A surface coating or finish of a firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmFinishColorCode</td><td>class instance</td><td>A surface coating or finish of a firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmFinishText</td><td>class instance</td><td>A surface coating or finish of a firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmGripText</td><td>class instance</td><td>A handle of a firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmMakeAbstract</td><td>class instance</td><td>A data concept for a manufacturer of a firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmMakeCode</td><td>class instance</td><td>A manufacturer of a firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirearmType</td><td>class</td><td>A data type for a weapon that will, or is designed to, or may readily be converted to expel a projectile by air, carbon dioxide, or the action of an explosive.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FireboxText</td><td>class instance</td><td>A data element for the name of ID of a firebox</td></tr>
+<tr bgcolor="#f0f0f0"><td>FireSeverityLevelText</td><td>class instance</td><td>A data element for the severity of a fire and the corresponding response based on procedure (e.g. three alarm fire).</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstConditionCrashCodeSimpleType</td><td>class</td><td>A data type for any relevant condition of the individual (motorist or non-motorist) that is directly related to the crash.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstConditionCrashCodeType</td><td>class</td><td>A data type for any relevant condition of the individual (motorist or non-motorist) that is directly related to the crash.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstRecordCategoryCodeSimpleType</td><td>class</td><td>A data type for a kind of first record</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstRecordCategoryCodeType</td><td>class</td><td>A data type for a kind of first record</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponder</td><td>class instance</td><td>A data element for a person who is designated as a first responder</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponderAugmentationPoint</td><td>class instance</td><td>An augmentation point for FirstResponderType</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponderAvailabilityStatusCode</td><td>class instance</td><td>A data element that describes if a first responder is available</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponderAvailabilityStatusCodeSimpleType</td><td>class</td><td>A data type for a code that describes the status of availability</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponderAvailabilityStatusCodeType</td><td>class</td><td>A data type that describes if a first responder is available</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponderFilter</td><td>class instance</td><td>A data element for filtering result of a search for first responders</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponderFilterAugmentationPoint</td><td>class instance</td><td>An augmentation point for FirstResponderFilterType</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponderFilterType</td><td>class</td><td>A data type for filtering result of a search for first responders</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponderTeam</td><td>class instance</td><td>A data element for first responders that credential and deploy as a team</td></tr>
+<tr bgcolor="#f0f0f0"><td>FirstResponderType</td><td>class</td><td>A data type for a person who is a first responder</td></tr>
+<tr bgcolor="#f0f0f0"><td>FiscalYearDate</td><td>class instance</td><td>A year of a twelve month period that does not necessarily correspond to the calendar year.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FiscalYearDateType</td><td>class</td><td>A data type for a year of a twelve month period that does not necessarily correspond to the calendar year.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlashPointMeasure</td><td>class instance</td><td>A temperature value of a hazardous material where there is a risk of explosion or ignition.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightAlternateArrivalDate</td><td>class instance</td><td>A date for an authorized flight to arrive at an alternate destination airport facility</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightAlternateArrivalTime</td><td>class instance</td><td>A time for an authorized flight to arrive at an alternate destination airport facility</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightAlternateDestinationAirport</td><td>class instance</td><td>An airport facility identified as an alternate destination for a flight.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightFinalArrivalDate</td><td>class instance</td><td>A date for an authorized flight to arrive at a final destination airport facility</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightFinalArrivalTime</td><td>class instance</td><td>A time for an authorized flight to arrive at a final destination airport facility</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightFinalDestinationAirport</td><td>class instance</td><td>An airport facility identified as the final destination for a flight.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightFinalDestinationLocation</td><td>class instance</td><td>A location identified as the final destination place where a flight will land</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightIdentification</td><td>class instance</td><td>An identification value assigned to an authorized flight</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightOriginatingAirport</td><td>class instance</td><td>An airport facility identified as the originating airport for a flight.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightOriginatingFlightDate</td><td>class instance</td><td>A date for an authorized flight to leave from an originating airport facility</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightOriginatingFlightTime</td><td>class instance</td><td>A time for an authorized flight to leave from an originating airport facility</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightOriginatingLocation</td><td>class instance</td><td>A location identified as a place of origin</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightPlannedArrivalDate</td><td>class instance</td><td>A date for an authorized flight to arrive at a planned destination airport facility</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightPlannedArrivalTime</td><td>class instance</td><td>A time for an authorized flight to arrive at a planned destination airport facility</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightPlannedDestinationAirport</td><td>class instance</td><td>An airport facility identified as a planned destination for a flight.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightPlanSummary</td><td>class instance</td><td>A data type representing information related to a specific flight plan</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightPlanSummaryAugmentationPoint</td><td>class instance</td><td>An augmentation point for FlightPlanSummaryType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightPlanSummaryType</td><td>class</td><td>A data type for representing information related to a specific flight plan</td></tr>
+<tr bgcolor="#f0f0f0"><td>FlightPlanTransmittedDate</td><td>class instance</td><td>A date a flight plan was transmitted.</td></tr>
+<tr bgcolor="#f0f0f0"><td>float</td><td>class</td><td>A data type that is patterned after the IEEE single-precision 32-bit floating point type [IEEE 754-1985]. The basic value space of float consists of the values m x 2^e, where m is an integer whose absolute value is less than 2^24, and e is an integer between -149 and 104, inclusive. In addition to the basic value space described above, the value space of float also contains the following three special values: positive and negative infinity and not-a-number (NaN).</td></tr>
+<tr bgcolor="#f0f0f0"><td>float</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>Force</td><td>class instance</td><td>A force used, whether physical or aided by a tool or weapon.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceAugmentationPoint</td><td>class instance</td><td>An augmentation point for ForceType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceCategoryAbstract</td><td>class instance</td><td>A data concept for a kind of force used, which may be physical or aided by a weapon or tool.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceCategoryCode</td><td>class instance</td><td>A kind of force used.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceCategoryCodeSimpleType</td><td>class</td><td>A data type for kinds of weapons or forces used by a subject in committing an offense.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceCategoryCodeType</td><td>class</td><td>A data type for kinds of weapons or forces used by a subject in committing an offense.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceCategoryText</td><td>class instance</td><td>A kind of force used, which may be physical or aided by a weapon or tool.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceDescriptionText</td><td>class instance</td><td>A description of a kind of applied force.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceEffectiveShotsQuantity</td><td>class instance</td><td>A number of shots fired which were determined to have been effective.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceManagementIDSimpleType</td><td>class</td><td>A data type for a  set of identifiers and indexes used to identify data within the GFM XSD. FMIDs convey no information about the entity they identify, are a fixed size, and are exchanged as a single attribute.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceManagementIDType</td><td>class</td><td>A data type for a  set of identifiers and indexes used to identify data within the GFM XSD. FMIDs convey no information about the entity they identify, are a fixed size, and are exchanged as a single attribute.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceNumberOfTimesUsedQuantity</td><td>class instance</td><td>A number of times an applied force type was used.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceOtherForceCategoryText</td><td>class instance</td><td>A kind of other force.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForcePhysicalDescriptionText</td><td>class instance</td><td>A description of the physical force a person used against another person.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceRoundsQuantity</td><td>class instance</td><td>A maximum number of rounds for a firearm.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceShotsFiredQuantity</td><td>class instance</td><td>A total number of shots fired from firearm(s).</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceSubject</td><td>class instance</td><td>A person who used force against another.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceTakenAsEvidence</td><td>class instance</td><td>An evidence taken in an incident when specifically a tool or weapon was used.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceToolItem</td><td>class instance</td><td>A tool used to apply force to a person.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceType</td><td>class</td><td>A data type for details of a force used, whether physical or aided by a tool or weapon.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceUserEntity</td><td>class instance</td><td>An entity which used particular force/tool/weapon.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceVictim</td><td>class instance</td><td>A person who was a victim of force.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceWarningShotsQuantity</td><td>class instance</td><td>A number of shots fired as warning shots.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForceWeaponItem</td><td>class instance</td><td>A weapon used to apply force to a person.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForeignAuthorityNotifiedIndicator</td><td>class instance</td><td>True if the foreign authorities have been notified about this CHARGE; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForeignBornChildOfCitizenRole</td><td>class instance</td><td>A role of Foreign Born Child of Citizen Role Type that is played by a Person with respect to a Country</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForeignBornChildOfCitizenRoleAugmentationPoint</td><td>class instance</td><td>An augmentation point for ForeignBornChildofCitizenRoleType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForeignBornChildOfCitizenRoleType</td><td>class</td><td>A data type for the role of Foreign Born Child of Citizen that is played by a Person with respect to a Country.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForeignTradeZone</td><td>class instance</td><td>An identification of a foreign trade zone or FTZ where particular goods shipment has been moved.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicAnalystCategoryCode</td><td>class instance</td><td>A code that contains a single letter describing the head of the team that processed the forensic data</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicAnalystCategoryCodeSimpleType</td><td>class</td><td>A data type that contains a single letter describing the head of the team that processed the forensic data</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicAnalystCategoryCodeType</td><td>class</td><td>A data type that contains a single letter describing the head of the team that processed the forensic data</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicDentalCommentText</td><td>class instance</td><td>A comment regarding a forensic dental sample</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicDentalOralDetail</td><td>class instance</td><td>A forensic dental and oral record detail</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicDentalOralDetailAugmentationPoint</td><td>class instance</td><td>An augmentation point for Forensic Dental Oral Detail</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicDentalOralDetailType</td><td>class</td><td>A data type for a forensic dental and oral record detail</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicDentalSetting</td><td>class instance</td><td>A set of information regarding the forensic setting information that carried out the analysis of the dental and oral data to identify or confirm the identity of the subject.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicDentalSettingAugmentationPoint</td><td>class instance</td><td>An augmentation point for Forensic Dental Setting.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicDentalSettingType</td><td>class</td><td>A data type for a set of information regarding the forensic setting information that carried out the analysis of the dental and oral data to identify or confirm the identity of the subject.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicInvestigatoryVoiceDetail</td><td>class instance</td><td>A Forensic and Investigatory Voice Detail</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicInvestigatoryVoiceDetailAugmentationPoint</td><td>class instance</td><td>An augmentation point for ForensicInvestigatoryVoiceDetail</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicInvestigatoryVoiceDetailType</td><td>class</td><td>A data type for a Forensic and Investigatory Voice Detail</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicSourceCountry</td><td>class instance</td><td>A country code, describing where a forensic analysis was performed.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicSpecimen</td><td>class instance</td><td>A specimen collected for the purpose of analysis which may be of use as evidence in criminal, civil, judicial, or administrative proceedings.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicSpecimenAugmentationPoint</td><td>class instance</td><td>An augmentation point for ForensicSpecimenType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicSpecimenCategoryAbstract</td><td>class instance</td><td>A data concept for a kind of forensic specimen.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicSpecimenCategoryCode</td><td>class instance</td><td>A kind of forensic specimen.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicSpecimenCategoryText</td><td>class instance</td><td>A kind of forensic specimen.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicSpecimenCodeSimpleType</td><td>class</td><td>A data type for a code that identifies a type of forensic specimen collected.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicSpecimenCodeType</td><td>class</td><td>A data type for a code that identifies a type of forensic specimen collected.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForensicSpecimenType</td><td>class</td><td>A data type for a specimen collected for the purpose of analysis which may be of use as evidence in criminal, civil, judicial, or administrative proceedings.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FormAllotmentQuantity</td><td>class instance</td><td>A number indicating the number of DS-2019 forms that have been allocated for a PROGRAM.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FormNameDescriptionText</td><td>class instance</td><td>A description of the name of the last form the Alien filled out.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FormSubmittedDate</td><td>class instance</td><td>A date that the last form type was submitted by Alien.</td></tr>
+<tr bgcolor="#f0f0f0"><td>formula</td><td>class instance</td><td>gml:formula Formula(s) or procedure used by an operation method. The use of the codespace attribite has been deprecated. The property value shall be a character string.</td></tr>
+<tr bgcolor="#f0f0f0"><td>formulaCitation</td><td>class instance</td><td>gml:formulaCitation provides a reference to a publication giving the formula(s) or procedure used by an coordinate operation method.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FormulaType</td><td>class</td><td></td></tr>
+<tr bgcolor="#f0f0f0"><td>FormUsageTotalQuantity</td><td>class instance</td><td>A number indicating the total number of DS-2019 forms used by a PROGRAM.</td></tr>
+<tr bgcolor="#f0f0f0"><td>ForProfitIndicator</td><td>class instance</td><td>True if the Program Sponsor is a for-profit organization; false otherwise</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareAdoptionAssistanceFindingsText</td><td>class instance</td><td>A set of conclusions of the court as they relate to Foster Care and Adoption Assistance (IV-E).</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareCasePlanGoalCodeSimpleType</td><td>class</td><td>A data type for foster care plan goals.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareCasePlanGoalCodeType</td><td>class</td><td>A data type for foster care plan goals.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareCurrentPlacementDescriptionText</td><td>class instance</td><td>A description of the setting of an out-of-home placement.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareDischargeReasonDescriptionText</td><td>class instance</td><td>A description of the reason for discharge from out-of-home care.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareFirstRemovalDate</td><td>class instance</td><td>A date of first removal from a foster home.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareFundingSourceAbstract</td><td>class instance</td><td>A data concept for describing the source of funding for foster care.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareFundingSourceCode</td><td>class instance</td><td>A source for foster care funding.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareFundingSourceCodeSimpleType</td><td>class</td><td>A data type for decribing a source for foster care funding.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareFundingSourceCodeType</td><td>class</td><td>A data type for decribing a source for foster care funding.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareFundingSourceText</td><td>class instance</td><td>A source for foster care funding.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareLastRemovalDate</td><td>class instance</td><td>A date of most recent removal from a foster home.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareLiablePlacementCountyCode</td><td>class instance</td><td>A FIPs code of the legal liable county with the current placement setting.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareMonthlyPaymentAmount</td><td>class instance</td><td>An amount of the most recent full month expenditures for the juvenile including any negative or positive payments.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCarePreviousPlacementSettingsQuantity</td><td>class instance</td><td>A number of previous placement settings during this removal episode.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCarePriorDischargeDate</td><td>class instance</td><td>A date a juvenile was discharged from the most recent foster care episode.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareRemovalReasonAbstract</td><td>class instance</td><td>A data concept for expressing the reasons a child or youth was removed from a foster care placement.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareRemovalReasonCode</td><td>class instance</td><td>A data type for reasons a child was removed from a foster care placement.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareRemovalReasonCodeSimpleType</td><td>class</td><td>A data type for reasons a child was removed from a foster care placement.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareRemovalReasonCodeType</td><td>class</td><td>A data type for reasons a child was removed from a foster care placement.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareRemovalReasonText</td><td>class instance</td><td>A data type for reasons a child was removed from a foster care placement.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterCareTotalRemovalQuantity</td><td>class instance</td><td>A total number of removals from foster home to date.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterParentChildAssociation</td><td>class instance</td><td>An association between a child and a foster parent.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterParentChildAssociationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FosterParentChildAssociationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FosterParentChildAssociationType</td><td>class</td><td>A data type for an association between a child and a foster parent.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FPatternCodeSimpleType</td><td>class</td><td>A data type for 1.8: Fingerprint Pattern Classification (FPC) Field Codes</td></tr>
+<tr bgcolor="#f0f0f0"><td>FPatternCodeType</td><td>class</td><td>A data type for 1.8: Fingerprint Pattern Classification (FPC) Field Codes</td></tr>
+<tr bgcolor="#f0f0f0"><td>FPClassificationCodeSimpleType</td><td>class</td><td>A data type for 1.7: Fingerprint Classification (FPC) Field Codes</td></tr>
+<tr bgcolor="#f0f0f0"><td>FPClassificationCodeType</td><td>class</td><td>A data type for 1.7: Fingerprint Classification (FPC) Field Codes</td></tr>
+<tr bgcolor="#f0f0f0"><td>FracturedFingerPositionAbstract</td><td>class instance</td><td>A data concept for a finger position code for a finger that is fractured/broken.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FracturedFingerPositionText</td><td>class instance</td><td>A finger position code for a finger that is fractured/broken.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FraudIndicator</td><td>class instance</td><td>True if there has been fraudulent receipt of TANF benefits within the last ten years due to a misrepresentation of residence; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FraudulentIndicator</td><td>class instance</td><td>True if the ORGANIZATION is determined to be fraudulent; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FreeTextLines</td><td>class instance</td><td>Free text description of the party as line 1, line 2, line n. </td></tr>
+<tr bgcolor="#f0f0f0"><td>FreeTextLineTypeList</td><td>class</td><td>List of types for free text lines for defining party characteristics as free format text</td></tr>
+<tr bgcolor="#f0f0f0"><td>FreightCostAmount</td><td>class instance</td><td>An amount of costs incurred by the shipper in moving goods, by whatever means, from one place to another under the terms of the contract of carriage. In addition to transport costs, this may include such elements as packing, documentation, loading, unloading, and insu</td></tr>
+<tr bgcolor="#f0f0f0"><td>FreightPaymentCodeText</td><td>class instance</td><td>A code specifying the method of payment for Transport charges</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_224130" target = "projectFrame"><b>frequency</b></a></td><td>attribute</td><td>The frequency of an obligation (e.g. Weekly, Bi-Weekly, Semi-Monthly, Monthly, Quarterly, Semi-Annually, Annually).</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrequencyMeasure</td><td>class instance</td><td>A measure of occurrences of a repeating event per unit of time.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrequencyMeasureAugmentationPoint</td><td>class instance</td><td>An augmentation point for type mo:FrequencyMeasureType</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrequencyMeasureType</td><td>class</td><td>A data type for a measure of occurrences of a repeating event per unit of time.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrequencyUnitAbstract</td><td>class instance</td><td>A data concept for a unit of measure for a frequency value.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrequencyUnitTemporalCode</td><td>class instance</td><td>A unit of measure for a temporal frequency value.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrequencyUnitTemporalCodeSimpleType</td><td>class</td><td>A data type for a unit of measure for a temporal frequency value in accordance with NIST SP-330.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrequencyUnitTemporalCodeType</td><td>class</td><td>A data type for a unit of measure for a temporal frequency value in accordance with NIST SP-330.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeCaptureTechnologyCode</td><td>class instance</td><td>A technology used to capture friction ridge data</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeCaptureTechnologyCodeSimpleType</td><td>class</td><td>A data type for identifying the technology used to capture friction ridge data</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeCaptureTechnologyCodeType</td><td>class</td><td>A data type for identifying the technology used to capture friction ridge data</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeDetail</td><td>class instance</td><td>A set of details about a friction ridge print, which may represent a fingerprint, palm print, or plantar print</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeDetailAugmentationPoint</td><td>class instance</td><td>An augmentation point for FrictionRidgeDetail</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeDetailType</td><td>class</td><td>A data type for the details about a friction ridge image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageAreaOfCorrespondence</td><td>class instance</td><td>A portion of a friction ridge image that corresponds to another image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageAreaOfCorrespondenceAugmentationPoint</td><td>class instance</td><td>An augmentation point for FrictionRidgeImageAreaOfCorrespondence</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageAreaOfCorrespondenceType</td><td>class</td><td>A data type for a portion of a friction ridge image that corresponds to another image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageCenter</td><td>class instance</td><td>A location of the center of a friction ridge impression</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageCenterAugmentationPoint</td><td>class instance</td><td>An augmentation point for FrictionRidgeImageCenter</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageCenterLocationMethodCode</td><td>class instance</td><td>A method of determining the center of a friction ridge impression</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageCenterLocationMethodCodeSimpleType</td><td>class</td><td>A data type for a method of locating the center of a friction ridge impression</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageCenterLocationMethodCodeType</td><td>class</td><td>A data type for a method of locating the center of a friction ridge impression</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageCenterType</td><td>class</td><td>A data type for a location of the center of a friction ridge impression</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageImpressionCaptureCategoryAbstract</td><td>class instance</td><td>A data concept for a kind of impression capture by which a fingerprint image information was obtained</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageImpressionCaptureCategoryCode</td><td>class instance</td><td>A kind of impression capture by which friction ridge image information was obtained</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageLateralReversalCode</td><td>class instance</td><td>An indication that an image is or may be laterally reversed</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageLateralReversalCodeSimpleType</td><td>class</td><td>A data type for an indication that an image is or may be laterally reversed</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageLateralReversalCodeType</td><td>class</td><td>A data type for an indication that an image is or may be laterally reversed</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageQuality</td><td>class instance</td><td>A quality metric for a friction ridge image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageQualityAugmentationPoint</td><td>class instance</td><td>An augmentation point for FrictionRidgeImageQuality</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageQualityType</td><td>class</td><td>A data type for a quality measure for a generic friction ridge image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageRegionOfInterest</td><td>class instance</td><td>A square or polygon within a friction ridge image containing minutiae</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageRegionOfInterestAugmentationPoint</td><td>class instance</td><td>An augmentation point for Friction Ridge Image Region Of Interest</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageRegionOfInterestType</td><td>class</td><td>A data type for a square or polygon within a friction ridge image containing minutiae</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageRelativeRotation</td><td>class instance</td><td>A relative overall rotation necessary for two prints to be compared</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageRelativeRotationAugmentationPoint</td><td>class instance</td><td>An augmentation point for FrictionRidgeImageRelativeRotation</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageRelativeRotationType</td><td>class</td><td>A data type for a relative overall rotation necessary for two prints to be compared</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageSegmentPositionSquare</td><td>class instance</td><td>A friction ridge image segment position square</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageSegmentPositionSquareAugmentationPoint</td><td>class instance</td><td>An augmentation point for FrictionRidgeImageSegmentPositionSquare</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageSegmentPositionSquareType</td><td>class</td><td>A data type for a square segment position for a particular friction ridge</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageTonalReversalCode</td><td>class instance</td><td>A full or partial reversal of ridge and valley tones in an image</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageTonalReversalCodeSimpleType</td><td>class</td><td>A data type for a full or partial reversal of ridge and valley tones</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImageTonalReversalCodeType</td><td>class</td><td>A data type for a full or partial reversal of ridge and valley tones</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeImpressionCaptureCode</td><td>class instance</td><td>A method used to capture a friction ridge impression. Conforms to ITL 2015.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgePositionCode</td><td>class instance</td><td>A friction ridge position code</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgePositionCodeSimpleType</td><td>class</td><td>A data type for a friction ridge image position</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgePositionCodeType</td><td>class</td><td>A data type for a friction ridge position code</td></tr>
+<tr bgcolor="#f0f0f0"><td>FrictionRidgeSkeletonizedImageBinaryObject</td><td>class instance</td><td>A PNG-compressed, base64 encoded data block containing a ridge tracing of a friction ridge impression</td></tr>
+<tr bgcolor="#f0f0f0"><td>FridayHoursText</td><td>class instance</td><td>A text description of the normal Friday operating hours.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_138370" target = "projectFrame"><b>fromTime</b></a></td><td>attribute</td><td>The beginning time, in the time zone of the court on the beginning date.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FugitiveFelonIndicator</td><td>class instance</td><td>True if a person is a current fugitive felon; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_9584642" target = "projectFrame"><b>fullAddress</b></a></td><td>attribute</td><td>A complete street address.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FullEnergyPeakEfficiencyCalibration</td><td>class instance</td><td>A full-energy peak efficiency calibration. The full-energy peak efficiency at any value of energy is the ratio of the net counts in a peak at that energy to the number of photons emitted by a source at that energy.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref77_25224322" target = "projectFrame"><b>FullTelephoneNumber</b></a></td><td>class instance</td><td>A full telephone number.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FullTelephoneNumber</td><td>class instance</td><td>A full telephone number.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="index.html#ref1_9575042" target = "projectFrame"><b>fullTelephoneNumber</b></a></td><td>attribute</td><td>A complete telephone number</td></tr>
+<tr bgcolor="#f0f0f0"><td>FullTelephoneNumberAugmentationPoint</td><td>class instance</td><td>An augmentation point for FullTelephoneNumberType.</td></tr>
+<tr bgcolor="#f0f0f0"><td><a href="class15744898.html#ref4_15744898" target = "projectFrame"><b>FullTelephoneNumberType</b></a></td><td>class</td><td>A data type for a full telephone number.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FullTelephoneNumberType</td><td>class</td><td>A data type for a full telephone number.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FunctionalClassAbstract</td><td>class instance</td><td>A data concept for a functional class of the segment.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FunctionalClassCode</td><td>class instance</td><td>A functional class of the segment.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FunctionalClassCodeSimpleType</td><td>class</td><td>A data type indicating functional class of the segment</td></tr>
+<tr bgcolor="#f0f0f0"><td>FunctionalClassCodeType</td><td>class</td><td>A data type indicating functional class of the segment</td></tr>
+<tr bgcolor="#f0f0f0"><td>FunctionalUtilitiesIndicator</td><td>class instance</td><td>True if the utilities(Electricity, gas, water, sewage etc.) are functional; false if not.</td></tr>
+<tr bgcolor="#f0f0f0"><td>Funeral</td><td>class instance</td><td>A memorial or religious event for the recently deceased.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralAugmentationPoint</td><td>class instance</td><td>An augmentation point for type j:FuneralType</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeave</td><td>class instance</td><td>A temporary leave of custody for the purpose of attending the funeral of a close family member.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveAugmentationPoint</td><td>class instance</td><td>An augmentation point for type j:FuneralLeaveType</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveCemeteryText</td><td>class instance</td><td>A name of the cemetery.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveCheckoutCompletedIndicator</td><td>class instance</td><td>True if the checkout order has been completed; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveDenialNotesText</td><td>class instance</td><td>A comment on the denial of the subject attending the funeral.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveDenialNotifiedPartyAbstract</td><td>class instance</td><td>A data concept for a reason a party was notified that funeral leave was denied for a subject.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveDenialNotifiedPartyText</td><td>class instance</td><td>A reason a party was notified that funeral leave was denied for a subject.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveDenialPossibleText</td><td>class instance</td><td>A possible security problem associated with the subject attending the funeral.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveEscapeBulletinCompletedIndicator</td><td>class instance</td><td>True if the escape bulletin has been completed; false otherwise.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveFuneral</td><td>class instance</td><td>A specific funeral to be attended during a funeral leave.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralLeaveType</td><td>class</td><td>A data type for a temporary leave of custody for the purpose of attending the funeral of a close family member.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralProviderEntity</td><td>class instance</td><td>An entity or organization conducting or managing the funeral proceedings.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FuneralType</td><td>class</td><td>A data type for a memorial or religious event for the recently deceased.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FWHMCalibration</td><td>class instance</td><td>A FWHM calibration for a gamma radiation detector; i.e., FWHM as a function of energy.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FWHMCalibrationAugmentationPoint</td><td>class instance</td><td>An augmentation point for cbrn:FWHMCalibrationType.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FWHMCalibrationType</td><td>class</td><td>A data type for a FWHM calibration.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FWHMKeVType</td><td>class</td><td>A data type for a FWHM measure whose values are positive and measured in keV.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FWHMUncertaintiesKeVType</td><td>class</td><td>A data type for FWHM uncertaintymeasure whose values are nonnegative and measured in keV.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FWHMUncertaintyValueList</td><td>class instance</td><td>A list of the 1-sigma absolute uncertainties in units of keV, in the FWHM values contained in the FWHMValues element list.  The number and order of corresponding values in the FWHMValues and FWHMUncertaintyValues lists must match.</td></tr>
+<tr bgcolor="#f0f0f0"><td>FWHMValueList</td><td>class instance</td><td>A list of FWHM values, in units of keV.  The number and order of corresponding values in the EnergyValues and FWHMValues lists must match.</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Electronic Court Filing Version 5.0
+     Committee Specification 01
+     18 April 2019
+     Copyright (c) OASIS Open 2019. All Rights Reserved.
+     Source: https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/cs01/examples/
+     Latest version of narrative specification: http://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.0/ecf-v5.0.html
+     TC IPR Statement: https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php 
+-->
+<!-- Modifications:
+	
+		Added nc:IdentificationCategoryDescriptionText and nc:IdentificationSourceText for messageID.
+		Added message Id from the request message (e.g. GetFilingStatusRequestMessage).
+
+-->
+<filingstatusresponse:GetFilingStatusResponseMessage xmlns:structures="http://release.niem.gov/niem/structures/4.0/" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:filingstatusresponse="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusresponse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusresponse ../schema/filingstatusresponse.xsd">
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>10</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>FilingReview</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<nc:DocumentIdentification>
+		<nc:IdentificationID>123456ABC</nc:IdentificationID>
+		<nc:IdentificationCategoryDescriptionText>messageID</nc:IdentificationCategoryDescriptionText>
+		<nc:IdentificationSourceText>FilingAssembly</nc:IdentificationSourceText>
+	</nc:DocumentIdentification>
+	<ecf:DocumentAugmentation>
+		<ecf:DocumentFiler>
+			<nc:EntityPerson>
+				<ecf:PersonAugmentation>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>10</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</ecf:DocumentFiler>
+	</ecf:DocumentAugmentation>
+	<ecf:SendingMDELocationID>
+		<nc:IdentificationID>https://efilingmanager.com:8000</nc:IdentificationID>
+	</ecf:SendingMDELocationID>
+	<ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+	<j:CaseCourt>
+		<nc:OrganizationIdentification>
+			<nc:IdentificationID>01</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<j:CourtName>King County Superior Court</j:CourtName>
+	</j:CaseCourt>
+	<nc:DocumentPostDate>
+		<nc:DateTime>2007-06-06T14:20:47.0Z</nc:DateTime>
+	</nc:DocumentPostDate>
+	<ecf:MatchingFiling structures:id="Document1" structures:metadata="Document1Metadata">
+		<nc:DocumentCategoryText>Apperance</nc:DocumentCategoryText>
+		<nc:DocumentSoftwareName>Microsoft Word</nc:DocumentSoftwareName>
+		<nc:DocumentDescriptionText>Appearance</nc:DocumentDescriptionText>
+		<nc:DocumentEffectiveDate>
+			<nc:Date>2008-07-07</nc:Date>
+		</nc:DocumentEffectiveDate>
+		<nc:DocumentFileControlID>2</nc:DocumentFileControlID>
+		<nc:DocumentIdentification>
+			<nc:IdentificationID>2</nc:IdentificationID>
+		</nc:DocumentIdentification>
+		<nc:DocumentSequenceID>2</nc:DocumentSequenceID>
+		<nc:DocumentSubmitter>
+			<nc:EntityPerson structures:id="Person2">
+				<nc:PersonName>
+					<nc:PersonGivenName>John</nc:PersonGivenName>
+					<nc:PersonMiddleName>W.</nc:PersonMiddleName>
+					<nc:PersonSurName>Doe</nc:PersonSurName>
+				</nc:PersonName>
+				<ecf:PersonAugmentation>
+					<ecf:CaseParticipantRoleCode>Defendant</ecf:CaseParticipantRoleCode>
+					<ecf:ParticipantID>
+						<nc:IdentificationID>20</nc:IdentificationID>
+					</ecf:ParticipantID>
+				</ecf:PersonAugmentation>
+			</nc:EntityPerson>
+		</nc:DocumentSubmitter>
+		<ecf:DocumentAugmentation>
+			<ecf:DocumentFiler>
+				<nc:EntityPerson structures:ref="Person2" xsi:nil="true"/>
+			</ecf:DocumentFiler>
+			<ecf:RedactionRequiredIndicator>false</ecf:RedactionRequiredIndicator>
+			<ecf:RegisterActionDescriptionCode>Appearance</ecf:RegisterActionDescriptionCode>
+			<ecf:SpecialHandlingInstructionsText>Please verify TCN</ecf:SpecialHandlingInstructionsText>
+			<nc:Metadata structures:id="Document1Metadata">
+				<nc:SensitivityText>public</nc:SensitivityText>
+				<nc:LanguageCode>eng</nc:LanguageCode>
+			</nc:Metadata>
+		</ecf:DocumentAugmentation>
+		<ecf:SendingMDELocationID/>
+		<ecf:ServiceInteractionProfileCode/>
+		<j:CaseCourt/>
+		<nc:DocumentPostDate>
+			<nc:DateTime>2007-06-06T14:20:47.0Z</nc:DateTime>
+		</nc:DocumentPostDate>
+		<ecf:FilingStatus>
+			<ecf:FilingReviewStatusCode>submitted</ecf:FilingReviewStatusCode>
+		</ecf:FilingStatus>
+		<ecf:LeadDocumentReview>
+			<ecf:DocumentReviewDisposition/>
+			<ecf:ReviewedDocument>
+				<nc:DocumentIdentification/>
+			</ecf:ReviewedDocument>
+		</ecf:LeadDocumentReview>
+		<nc:Case>
+			<j:CaseAugmentation/>
+		</nc:Case>
+	</ecf:MatchingFiling>
+</filingstatusresponse:GetFilingStatusResponseMessage>
